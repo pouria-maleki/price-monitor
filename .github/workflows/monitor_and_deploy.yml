@@ -65,7 +65,7 @@ jobs:
       - name: Install Frontend dependencies & Build
         run: |
           cd frontend
-          npm ci
+          npm install
           npm run build
 
       - name: Setup GitHub Pages
