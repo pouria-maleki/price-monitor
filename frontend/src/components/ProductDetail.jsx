@@ -21,112 +21,174 @@ export default function ProductDetail() {
     Promise.all([fetchProduct(id), fetchHistory(id), fetchShops(id)])
       .then(([p, h, s]) => {
         setProduct(p);
-        setHistory(h);
-        setShops(s);
+        setHistory(h || []);
+        setShops(s || []);
         setError(null);
       })
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
   }, [id]);
 
-  if (loading) return <div className="py-10 text-center text-sm text-gray-500">در حال بارگذاری...</div>;
+  if (loading) return <div className="py-16 text-center text-sm text-gray-500">در حال بارگذاری اطلاعات محصول...</div>;
   if (error)
     return (
-      <div className="rounded-lg border border-red-500/30 bg-red-500/10 p-4 text-sm text-red-300">
+      <div className="rounded-2xl border border-red-500/30 bg-red-500/10 p-6 text-sm text-red-300">
         خطا: {error}
+        <div className="mt-3">
+          <Link to="/" className="text-sky-400 hover:underline">← بازگشت به لیست محصولات</Link>
+        </div>
       </div>
     );
   if (!product) return null;
 
+  const basePrice = product.initial_digikala_price || product.initial_torob_price;
+  const currentPrice = product.current_digikala_price || product.current_torob_price;
+  const percent = product.price_change_percent;
+
   return (
-    <div>
-      <Link to="/" className="mb-4 inline-block text-sm text-sky-400 hover:underline">
-        ← بازگشت به لیست محصولات
+    <div className="space-y-6">
+      <Link to="/" className="inline-flex items-center gap-1 text-sm text-sky-400 hover:text-sky-300 transition-colors">
+        ← بازگشت به داشبورد محصولات
       </Link>
 
-      <div className="mb-6 flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h2 className="text-xl font-bold text-white">{product.name}</h2>
-          <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-400">
-            {product.warehouse_title && <span>کد انبار: {product.warehouse_title}</span>}
-            {product.quantity !== null && <span>موجودی: {product.quantity}</span>}
-            <span>دسته: {product.category === "new" ? "نو" : "استوک"}</span>
+      {/* Product Hero Card */}
+      <div className="rounded-2xl border border-white/10 bg-bg-panel p-6 shadow-xl">
+        <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+          <div className="space-y-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="rounded bg-white/10 px-2 py-0.5 font-mono text-xs text-sky-400">
+                کد انبار: {product.warehouse_title || `#${product.row_index}`}
+              </span>
+              <span className={`text-xs rounded px-2 py-0.5 ${product.category === 'new' ? 'bg-sky-500/10 text-sky-400' : 'bg-purple-500/10 text-purple-400'}`}>
+                {product.category_fa || (product.category === 'new' ? 'محصولات نو' : 'محصولات استوک')}
+              </span>
+              {product.quantity !== null && product.quantity !== undefined && (
+                <span className="rounded bg-white/5 px-2 py-0.5 text-xs text-gray-400">
+                  موجودی انبار: {product.quantity} عدد
+                </span>
+              )}
+            </div>
+            <h2 className="text-xl font-bold text-white leading-relaxed">{product.name}</h2>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {product.digikala_url && (
+              <a
+                href={product.digikala_url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-red-500/10 border border-red-500/20 px-3.5 py-2 text-xs font-medium text-red-300 hover:bg-red-500/20 transition-colors"
+              >
+                مشاهده در دیجی‌کالا ↗
+              </a>
+            )}
+            {product.torob_url && (
+              <a
+                href={product.torob_url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-sky-500/10 border border-sky-500/20 px-3.5 py-2 text-xs font-medium text-sky-300 hover:bg-sky-500/20 transition-colors"
+              >
+                مشاهده در ترب ↗
+              </a>
+            )}
           </div>
         </div>
-        <div className="flex gap-2">
-          {product.digikala_url && (
-            <a
-              href={product.digikala_url}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg bg-red-500/10 px-3 py-2 text-xs font-medium text-red-300 hover:bg-red-500/20"
-            >
-              مشاهده در دیجی‌کالا
-            </a>
-          )}
-          {product.torob_url && (
-            <a
-              href={product.torob_url}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg bg-sky-500/10 px-3 py-2 text-xs font-medium text-sky-300 hover:bg-sky-500/20"
-            >
-              مشاهده در ترب
-            </a>
-          )}
+
+        {/* Pricing Comparison Grid */}
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 border-t border-white/5 pt-5">
+          <div className="rounded-xl bg-bg p-3.5">
+            <div className="text-[11px] text-gray-500">قیمت اولیه اکسل</div>
+            <div className="mt-1 font-mono text-base font-semibold text-gray-300">{formatPrice(basePrice)}</div>
+          </div>
+          <div className="rounded-xl bg-bg p-3.5">
+            <div className="text-[11px] text-gray-500">قیمت روز دیجی‌کالا</div>
+            <div className="mt-1 font-mono text-base font-semibold text-emerald-400">
+              {formatPrice(product.current_digikala_price)}
+            </div>
+            {product.digikala_seller && (
+              <div className="text-[10px] text-gray-500 mt-0.5">{product.digikala_seller}</div>
+            )}
+          </div>
+          <div className="rounded-xl bg-bg p-3.5">
+            <div className="text-[11px] text-gray-500">قیمت کف ترب</div>
+            <div className="mt-1 font-mono text-base font-semibold text-sky-400">
+              {formatPrice(product.current_torob_price || product.initial_torob_price)}
+            </div>
+          </div>
+          <div className="rounded-xl bg-bg p-3.5">
+            <div className="text-[11px] text-gray-500">تغییر نسبت به انبار</div>
+            <div className={`mt-1 font-mono text-base font-semibold ${percent > 0 ? 'text-red-400' : percent < 0 ? 'text-emerald-400' : 'text-gray-400'}`}>
+              {percent !== null && percent !== undefined ? `${percent > 0 ? '▲ +' : '▼ '}${Math.abs(percent)}%` : 'بدون تغییر'}
+            </div>
+          </div>
         </div>
       </div>
 
-      <h3 className="mb-2 text-sm font-semibold text-gray-300">روند قیمت</h3>
-      <div className="mb-6">
+      {/* History Chart */}
+      <div className="rounded-2xl border border-white/10 bg-bg-panel p-6 shadow-xl">
+        <h3 className="mb-4 text-base font-semibold text-white">روند تغییرات قیمت</h3>
         <PriceChart history={history} />
       </div>
 
-      <h3 className="mb-2 text-sm font-semibold text-gray-300">فروشندگان</h3>
-      <div className="overflow-hidden rounded-xl border border-white/10 bg-bg-panel">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b border-white/10 text-right text-gray-400">
-              <th className="px-4 py-3 font-medium">فروشگاه</th>
-              <th className="px-4 py-3 font-medium">قیمت</th>
-              <th className="px-4 py-3 font-medium">وضعیت</th>
-              <th className="px-4 py-3 font-medium">آخرین بررسی</th>
-              <th className="px-4 py-3 font-medium"></th>
-            </tr>
-          </thead>
-          <tbody>
-            {shops.map((s) => (
-              <tr key={s.id} className="border-b border-white/5 last:border-0">
-                <td className="px-4 py-3 text-gray-200">{s.store.name.replace("torob:", "")}</td>
-                <td className="px-4 py-3 font-medium text-white">{formatPrice(s.price)}</td>
-                <td className="px-4 py-3">
-                  {s.is_available ? (
-                    <span className="text-emerald-400">موجود</span>
-                  ) : (
-                    <span className="text-gray-500">ناموجود</span>
-                  )}
-                </td>
-                <td className="px-4 py-3 text-xs text-gray-500">
-                  {new Date(s.checked_at).toLocaleString("fa-IR")}
-                </td>
-                <td className="px-4 py-3">
-                  {s.url && (
-                    <a href={s.url} target="_blank" rel="noreferrer" className="text-xs text-sky-400 hover:underline">
-                      لینک
-                    </a>
-                  )}
-                </td>
+      {/* Seller Breakdown */}
+      <div className="rounded-2xl border border-white/10 bg-bg-panel p-6 shadow-xl space-y-4">
+        <h3 className="text-base font-semibold text-white">فروشندگان شناخته‌شده در بازار</h3>
+        <div className="overflow-hidden rounded-xl border border-white/10">
+          <table className="w-full text-right text-xs">
+            <thead>
+              <tr className="border-b border-white/10 bg-white/[0.02] text-gray-400 font-medium">
+                <th className="px-4 py-3">فروشگاه / فروشنده</th>
+                <th className="px-4 py-3 text-left">قیمت</th>
+                <th className="px-4 py-3 text-center">وضعیت موجودی</th>
+                <th className="px-4 py-3 text-center">لینک</th>
               </tr>
-            ))}
-            {shops.length === 0 && (
-              <tr>
-                <td colSpan={5} className="px-4 py-8 text-center text-gray-500">
-                  هنوز اطلاعات فروشنده‌ای ثبت نشده است
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
+            </thead>
+            <tbody className="divide-y divide-white/5">
+              {shops.map((s) => {
+                const storeName = (s.store?.name || s.name || "فروشگاه").replace("torob:", "");
+                return (
+                  <tr key={s.id} className="hover:bg-white/[0.02] transition-colors">
+                    <td className="px-4 py-3 font-medium text-gray-200">{storeName}</td>
+                    <td className="px-4 py-3 text-left font-mono font-semibold text-white">{formatPrice(s.price)}</td>
+                    <td className="px-4 py-3 text-center">
+                      {s.is_available ? (
+                        <span className="inline-block rounded bg-emerald-500/10 px-2 py-0.5 text-[11px] text-emerald-400">
+                          موجود
+                        </span>
+                      ) : (
+                        <span className="inline-block rounded bg-red-500/10 px-2 py-0.5 text-[11px] text-red-400">
+                          ناموجود
+                        </span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3 text-center">
+                      {s.url ? (
+                        <a
+                          href={s.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="rounded bg-white/5 px-2.5 py-1 text-[11px] text-sky-400 hover:bg-white/10"
+                        >
+                          خرید / مشاهده ↗
+                        </a>
+                      ) : (
+                        "—"
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
+              {shops.length === 0 && (
+                <tr>
+                  <td colSpan={4} className="px-4 py-8 text-center text-gray-500">
+                    اطلاعات فروشنده مجزایی برای این محصول ثبت نشده است.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

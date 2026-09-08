@@ -13,9 +13,13 @@ from __future__ import annotations
 
 import logging
 
+import os
 import requests
 
-from backend.app.config import get_settings
+try:
+    from backend.app.config import get_settings
+except ImportError:
+    get_settings = None
 
 logger = logging.getLogger("price_monitor.notifier")
 
@@ -45,16 +49,25 @@ def should_notify(change_percent: float | None, threshold: float) -> bool:
 
 def notify_price_change(product_name: str, store_name: str, old_price: int | None, new_price: int, change_percent: float) -> bool:
     """Returns True if a message was actually sent."""
-    settings = get_settings()
-    if not settings.TELEGRAM_BOT_TOKEN or not settings.TELEGRAM_CHAT_ID:
+    token = os.getenv("TELEGRAM_BOT_TOKEN")
+    chat_id = os.getenv("TELEGRAM_CHAT_ID")
+    if get_settings:
+        try:
+            settings = get_settings()
+            token = token or settings.TELEGRAM_BOT_TOKEN
+            chat_id = chat_id or settings.TELEGRAM_CHAT_ID
+        except Exception:
+            pass
+
+    if not token or not chat_id:
         logger.debug("Telegram not configured; skipping alert for %s", product_name)
         return False
 
     text = _format_message(product_name, store_name, old_price, new_price, change_percent)
     try:
         resp = requests.post(
-            _API_URL.format(token=settings.TELEGRAM_BOT_TOKEN),
-            json={"chat_id": settings.TELEGRAM_CHAT_ID, "text": text},
+            _API_URL.format(token=token),
+            json={"chat_id": chat_id, "text": text},
             timeout=10,
         )
         if resp.status_code != 200:

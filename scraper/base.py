@@ -75,12 +75,20 @@ class ScrapeResult:
 
 def fetch(url: str, timeout: int = 20, max_retries: int = 2, extra_headers: dict | None = None) -> Optional[requests.Response]:
     """GET a URL with a browser-like UA and light retry/backoff. Never raises."""
+    import os
     headers = {**DEFAULT_HEADERS, **(extra_headers or {})}
+    torob_cookie = os.getenv("TOROB_CLEARANCE_COOKIE")
+    if torob_cookie and "torob.com" in url and "Cookie" not in headers:
+        headers["Cookie"] = f"trb_clearance={torob_cookie}"
+
     for attempt in range(max_retries + 1):
         try:
             resp = requests.get(url, headers=headers, timeout=timeout)
             if resp.status_code == 200:
                 return resp
+            if resp.status_code == 490:
+                logger.info("Torob returned 490 (ArCaptcha challenge) for %s", url)
+                return None
             if resp.status_code in (403, 429):
                 # likely rate-limited / bot-blocked — back off and retry once
                 logger.warning("HTTP %s from %s (attempt %s)", resp.status_code, url, attempt + 1)

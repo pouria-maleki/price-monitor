@@ -1,0 +1,81 @@
+name: Monitor Prices & Deploy to GitHub Pages
+
+on:
+  schedule:
+    # هر ۶ ساعت یک‌بار به‌صورت خودکار اجرا می‌شود
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # امکان اجرای دستی با یک کلیک از تب Actions در گیت‌هاب
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Price Monitor Scraper
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TOROB_CLEARANCE_COOKIE: ${{ secrets.TOROB_CLEARANCE_COOKIE }}
+        run: |
+          python scripts/update_prices.py --concurrency 5
+
+      - name: Commit updated price data and Excel
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ frontend/public/data/ گزارش_انبار_قیمت_به_روز.xlsx || true
+          git diff --staged --quiet || git commit -m "chore(prices): auto-update prices and excel report [skip ci]"
+          git push origin main || true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Frontend dependencies & Build
+        run: |
+          cd frontend
+          npm ci
+          npm run build
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
