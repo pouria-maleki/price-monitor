@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "last_updated_iso": "2026-09-08T08:32:38.714148+00:00",
-    "last_updated_fa": "17 شهریور 1405 - 12:03",
+    "last_updated_iso": "2026-09-08T09:16:59.474690+00:00",
+    "last_updated_fa": "17 شهریور 1405 - 09:16",
     "total_products": 100,
     "new_count": 32,
     "stock_count": 68,
-    "increased_count": 23,
-    "decreased_count": 9,
-    "unchanged_count": 10,
-    "out_of_stock_count": 58,
-    "duration_seconds": 160.3
+    "increased_count": 33,
+    "decreased_count": 32,
+    "unchanged_count": 18,
+    "out_of_stock_count": 17,
+    "duration_seconds": 42.1
   },
   "items": [
     {
@@ -49,21 +49,77 @@
       ],
       "torob_url": "https://torob.com/p/d5a70b1b-de84-4c0e-8a97-7704d1e30812/%D8%B1%D9%88%D8%AA%D8%B1-%D8%A8%DB%8C-%D8%B3%DB%8C%D9%85-%D8%AF%D9%88-%D8%A8%D8%A7%D9%86%D8%AF%D9%87-%D8%AA%DB%8C-%D9%BE%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-archer-c80-ac1900/",
       "initial_torob_price": 7000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 9290000,
+      "current_torob_price": 6200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "گروه طراحان شبکه ایران",
+          "price": 6200000,
+          "url": null
+        },
+        {
+          "seller": "نانو شبکه",
+          "price": 8250000,
+          "url": null
+        },
+        {
+          "seller": "کی تک کالا",
+          "price": 8280000,
+          "url": null
+        },
+        {
+          "seller": "پی سی نور",
+          "price": 8440000,
+          "url": null
+        },
+        {
+          "seller": "راسارایان",
+          "price": 8440000,
+          "url": null
+        },
+        {
+          "seller": "در ۲۹ فروشگاه",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "کالاکووو",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "بازار شبکه",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "سانا ارتباط",
+          "price": 8500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6200000,
       "price_change_amount": -610000,
       "price_change_percent": -6.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:29:58.391662+00:00",
+      "last_checked": "2026-09-08T09:16:17.363669+00:00",
       "digikala_change_percent": -6.2,
-      "torob_change_percent": null,
+      "torob_change_percent": -11.4,
       "history": [
         {
           "timestamp": "2026-09-08T08:27:02.073910",
           "digikala_price": 9290000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:17.363669+00:00",
+          "digikala_price": 9290000,
+          "torob_price": 6200000
         }
       ]
     },
@@ -96,21 +152,77 @@
       ],
       "torob_url": "https://torob.com/p/3ecfc90f-9000-4222-8ac8-f3e4b1798404/",
       "initial_torob_price": 4250000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 5390000,
+      "current_torob_price": 4100000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "گروه طراحان شبکه ایران",
+          "price": 4100000,
+          "url": null
+        },
+        {
+          "seller": "پرونت",
+          "price": 4100000,
+          "url": null
+        },
+        {
+          "seller": "در ۳۹ فروشگاه",
+          "price": 4549000,
+          "url": null
+        },
+        {
+          "seller": "ام جی فون",
+          "price": 4549000,
+          "url": null
+        },
+        {
+          "seller": "دیجی نو دات آی آر",
+          "price": 4549000,
+          "url": null
+        },
+        {
+          "seller": "افق مارکت",
+          "price": 4680000,
+          "url": null
+        },
+        {
+          "seller": "ارتباط گستر آوای شهر امن",
+          "price": 4680000,
+          "url": null
+        },
+        {
+          "seller": "آوا ارتباط عظیم",
+          "price": 4680000,
+          "url": null
+        },
+        {
+          "seller": "اتصالات اکباتان",
+          "price": 4850000,
+          "url": null
+        },
+        {
+          "seller": "دنیای شبکه برتر",
+          "price": 4900000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4100000,
       "price_change_amount": 732000,
       "price_change_percent": 15.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:29:58.392364+00:00",
+      "last_checked": "2026-09-08T09:16:17.364135+00:00",
       "digikala_change_percent": 15.7,
-      "torob_change_percent": null,
+      "torob_change_percent": -3.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:27:02.074454",
           "digikala_price": 5390000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:17.364135+00:00",
+          "digikala_price": 5390000,
+          "torob_price": 4100000
         }
       ]
     },
@@ -151,21 +263,77 @@
       ],
       "torob_url": "https://torob.com/p/5d00374d-afa7-42ac-9f67-3ccba7601c8f/",
       "initial_torob_price": 4500000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7000000,
+      "current_torob_price": 4400000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "ایران لینک",
+          "price": 4400000,
+          "url": null
+        },
+        {
+          "seller": "آوا آی تی",
+          "price": 5400000,
+          "url": null
+        },
+        {
+          "seller": "در ۴۳ فروشگاه",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "مای تیسفون",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "نوآور رایانه پارس قم",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "الماس رایانه دات کام",
+          "price": 5650000,
+          "url": null
+        },
+        {
+          "seller": "الماس رایانه فلاورجان",
+          "price": 5650000,
+          "url": null
+        },
+        {
+          "seller": "مهرداد آی تی",
+          "price": 5700000,
+          "url": null
+        },
+        {
+          "seller": "کی تک کالا",
+          "price": 5790000,
+          "url": null
+        },
+        {
+          "seller": "کالاکووو",
+          "price": 5795000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4400000,
       "price_change_amount": 500000,
       "price_change_percent": 7.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:29:58.392897+00:00",
+      "last_checked": "2026-09-08T09:16:17.364574+00:00",
       "digikala_change_percent": 7.7,
-      "torob_change_percent": null,
+      "torob_change_percent": -2.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:27:02.078064",
           "digikala_price": 7000000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:17.364574+00:00",
+          "digikala_price": 7000000,
+          "torob_price": 4400000
         }
       ]
     },
@@ -198,21 +366,77 @@
       ],
       "torob_url": "https://torob.com/p/4c64139e-00c7-4ce3-bc05-3f214c7162b9/",
       "initial_torob_price": 12500000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 22900000,
+      "current_torob_price": 14200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۱۹ فروشگاه",
+          "price": 14200000,
+          "url": null
+        },
+        {
+          "seller": "مدامت",
+          "price": 14200000,
+          "url": null
+        },
+        {
+          "seller": "پرگاس نت",
+          "price": 14700000,
+          "url": null
+        },
+        {
+          "seller": "شبکه پل",
+          "price": 14800000,
+          "url": null
+        },
+        {
+          "seller": "بازارسو",
+          "price": 14900000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 14999000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 15000000,
+          "url": null
+        },
+        {
+          "seller": "کالاکووو",
+          "price": 15000000,
+          "url": null
+        },
+        {
+          "seller": "دایزیما",
+          "price": 15200000,
+          "url": null
+        },
+        {
+          "seller": "مهرداد آی تی",
+          "price": 15359000,
+          "url": null
+        }
+      ],
+      "best_current_price": 14200000,
       "price_change_amount": 778390,
       "price_change_percent": 3.5,
       "status": "increased",
-      "last_checked": "2026-09-08T08:29:58.393267+00:00",
+      "last_checked": "2026-09-08T09:16:17.364845+00:00",
       "digikala_change_percent": 3.5,
-      "torob_change_percent": null,
+      "torob_change_percent": 13.6,
       "history": [
         {
           "timestamp": "2026-09-08T08:29:58.393267+00:00",
           "digikala_price": 22900000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:17.364845+00:00",
+          "digikala_price": 22900000,
+          "torob_price": 14200000
         }
       ]
     },
@@ -239,7 +463,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:29:58.396195+00:00",
+      "last_checked": "2026-09-08T09:16:17.367887+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -266,21 +490,62 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/125dcaee-86af-45ac-99ed-1665301726a7/",
       "initial_torob_price": 7999000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:06.225598+00:00",
+      "current_torob_price": 8000000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۶ فروشگاه",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "یاس ارتباط",
+          "price": 8053000,
+          "url": null
+        },
+        {
+          "seller": "برقچی",
+          "price": 9000000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 9300000,
+          "url": null
+        },
+        {
+          "seller": "اسپان لینک شاپ",
+          "price": 9900000,
+          "url": null
+        },
+        {
+          "seller": "الفا مارک",
+          "price": 11220000,
+          "url": null
+        }
+      ],
+      "best_current_price": 8000000,
+      "price_change_amount": 1000,
+      "price_change_percent": 0.0,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:19.200428+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:06.225598+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:19.200428+00:00",
+          "digikala_price": null,
+          "torob_price": 8000000
         }
       ]
     },
@@ -300,21 +565,42 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/3b302ec6-8082-427e-a218-0fde23b40219/",
       "initial_torob_price": 17989000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
+      "current_torob_price": 17989000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۲ فروشگاه",
+          "price": 17989000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 17989000,
+          "url": null
+        },
+        {
+          "seller": "اسنپلی",
+          "price": 23200000,
+          "url": null
+        }
+      ],
+      "best_current_price": 17989000,
       "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:06.333399+00:00",
+      "price_change_percent": 0.0,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:19.517487+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:06.333399+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:19.517487+00:00",
+          "digikala_price": null,
+          "torob_price": 17989000
         }
       ]
     },
@@ -334,21 +620,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/66d73c1b-5798-430f-8f7c-26cd04e8c87a/",
       "initial_torob_price": 2880000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:11.901154+00:00",
+      "current_torob_price": 2600000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "ایران لینک",
+          "price": 2600000,
+          "url": null
+        },
+        {
+          "seller": "در ۵۹ فروشگاه",
+          "price": 3000000,
+          "url": null
+        },
+        {
+          "seller": "فارس شبکه",
+          "price": 3000000,
+          "url": null
+        },
+        {
+          "seller": "کامپیوتر دانیار",
+          "price": 3000000,
+          "url": null
+        },
+        {
+          "seller": "کی تک کالا",
+          "price": 3090000,
+          "url": null
+        },
+        {
+          "seller": "آونگ",
+          "price": 3149000,
+          "url": null
+        },
+        {
+          "seller": "آریا اندیش",
+          "price": 3150000,
+          "url": null
+        },
+        {
+          "seller": "آرانیکس",
+          "price": 3150000,
+          "url": null
+        },
+        {
+          "seller": "هفت کالا",
+          "price": 3200000,
+          "url": null
+        },
+        {
+          "seller": "فانوس آیتی",
+          "price": 3200000,
+          "url": null
+        }
+      ],
+      "best_current_price": 2600000,
+      "price_change_amount": -280000,
+      "price_change_percent": -9.7,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:19.687393+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -9.7,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:11.901154+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:19.687393+00:00",
+          "digikala_price": null,
+          "torob_price": 2600000
         }
       ]
     },
@@ -375,7 +717,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:12.415445+00:00",
+      "last_checked": "2026-09-08T09:16:19.726202+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -407,21 +749,77 @@
       ],
       "torob_url": "https://torob.com/p/601c1bf7-868c-4efe-afd1-f4b867c16624/",
       "initial_torob_price": 3230000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 4250000,
+      "current_torob_price": 380000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۶۸ فروشگاه",
+          "price": 380000,
+          "url": null
+        },
+        {
+          "seller": "شبیر",
+          "price": 380000,
+          "url": null
+        },
+        {
+          "seller": "اپل استور عبدالهی",
+          "price": 2700000,
+          "url": null
+        },
+        {
+          "seller": "مهندسی کامپیوتر پیکسل",
+          "price": 2891000,
+          "url": null
+        },
+        {
+          "seller": "پردیس کامپیوتر",
+          "price": 3050000,
+          "url": null
+        },
+        {
+          "seller": "آزیو",
+          "price": 3200000,
+          "url": null
+        },
+        {
+          "seller": "ایران لینک",
+          "price": 3200000,
+          "url": null
+        },
+        {
+          "seller": "موبایل جوان (کریمی)",
+          "price": 3290000,
+          "url": null
+        },
+        {
+          "seller": "لوازم کامپیوتری مبین",
+          "price": 3300000,
+          "url": null
+        },
+        {
+          "seller": "دیجی شاپ مشهد",
+          "price": 3500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 380000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:12.681762+00:00",
+      "last_checked": "2026-09-08T09:16:19.848584+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -88.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:12.681762+00:00",
           "digikala_price": 4250000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:19.848584+00:00",
+          "digikala_price": 4250000,
+          "torob_price": 380000
         }
       ]
     },
@@ -454,21 +852,52 @@
       ],
       "torob_url": "https://torob.com/p/f4bf53ab-d3e1-4e58-8ef1-c87f0702185e/%D9%85%D9%88%D8%AF%D9%85-5g-%D8%AF%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-dwr-2000m/",
       "initial_torob_price": 21000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 24000000,
+      "current_torob_price": 22950000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۴ فروشگاه",
+          "price": 22950000,
+          "url": null
+        },
+        {
+          "seller": "آربابا مال",
+          "price": 22950000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم شاپ",
+          "price": 23000000,
+          "url": null
+        },
+        {
+          "seller": "هلدینگ حلاج",
+          "price": 33000000,
+          "url": null
+        },
+        {
+          "seller": "مودم tfi60",
+          "price": 33000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 22950000,
       "price_change_amount": 2500000,
       "price_change_percent": 11.6,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:12.723123+00:00",
+      "last_checked": "2026-09-08T09:16:20.560921+00:00",
       "digikala_change_percent": 11.6,
-      "torob_change_percent": null,
+      "torob_change_percent": 9.3,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:12.723123+00:00",
           "digikala_price": 24000000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:20.560921+00:00",
+          "digikala_price": 24000000,
+          "torob_price": 22950000
         }
       ]
     },
@@ -488,21 +917,72 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/aa4d7dba-8aa1-4c94-9968-0589d8854cf2/",
       "initial_torob_price": 6000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:16.580458+00:00",
+      "current_torob_price": 6250000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۸ فروشگاه",
+          "price": 6250000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 6250000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "دایزیما",
+          "price": 6660000,
+          "url": null
+        },
+        {
+          "seller": "تحلیلگران داده پرداز توس",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "داده پردازان فناوری اطلاعات",
+          "price": 7159200,
+          "url": null
+        },
+        {
+          "seller": "برقچی",
+          "price": 7400000,
+          "url": null
+        },
+        {
+          "seller": "باسلام",
+          "price": 7517200,
+          "url": null
+        },
+        {
+          "seller": "اندمود",
+          "price": 7607000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6250000,
+      "price_change_amount": 250000,
+      "price_change_percent": 4.2,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:21.398459+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 4.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:16.580458+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:21.398459+00:00",
+          "digikala_price": null,
+          "torob_price": 6250000
         }
       ]
     },
@@ -575,21 +1055,57 @@
       ],
       "torob_url": "https://torob.com/p/599a406e-90a5-49c4-9103-7379179e25c0/",
       "initial_torob_price": 6000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7042250,
+      "current_torob_price": 6899000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "سام رایان",
+          "price": 6899000,
+          "url": null
+        },
+        {
+          "seller": "در ۴ فروشگاه",
+          "price": 7800000,
+          "url": null
+        },
+        {
+          "seller": "تجهیزات آرتانت",
+          "price": 7800000,
+          "url": null
+        },
+        {
+          "seller": "هلدینگ حلاج",
+          "price": 16200000,
+          "url": null
+        },
+        {
+          "seller": "مودم",
+          "price": 16200000,
+          "url": null
+        },
+        {
+          "seller": "مودم tfi60",
+          "price": 16200000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6899000,
       "price_change_amount": 1042250,
       "price_change_percent": 17.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:16.715187+00:00",
+      "last_checked": "2026-09-08T09:16:21.468364+00:00",
       "digikala_change_percent": 17.4,
-      "torob_change_percent": null,
+      "torob_change_percent": 15.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:16.715187+00:00",
           "digikala_price": 7042250,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:21.468364+00:00",
+          "digikala_price": 7042250,
+          "torob_price": 6899000
         }
       ]
     },
@@ -616,7 +1132,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:21.354878+00:00",
+      "last_checked": "2026-09-08T09:16:21.488218+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -660,21 +1176,77 @@
       ],
       "torob_url": "https://torob.com/p/93b449fa-25f7-4a8d-b87f-e4c9562bf7b0/",
       "initial_torob_price": 4989000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7460210,
+      "current_torob_price": 3600000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "دیجی ویو",
+          "price": 3600000,
+          "url": null
+        },
+        {
+          "seller": "سازگار آی تی تهران",
+          "price": 3900000,
+          "url": null
+        },
+        {
+          "seller": "در ۲۳ فروشگاه",
+          "price": 5100000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 5100000,
+          "url": null
+        },
+        {
+          "seller": "مهندسی کاوه",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "پرونت",
+          "price": 5870000,
+          "url": null
+        },
+        {
+          "seller": "آی سورس",
+          "price": 6000000,
+          "url": null
+        },
+        {
+          "seller": "مهرداد آی تی",
+          "price": 6000000,
+          "url": null
+        },
+        {
+          "seller": "شبکه سام",
+          "price": 6000000,
+          "url": null
+        },
+        {
+          "seller": "مودمک",
+          "price": 6150000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3600000,
       "price_change_amount": 1102350,
       "price_change_percent": 17.3,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:21.953915+00:00",
+      "last_checked": "2026-09-08T09:16:22.217432+00:00",
       "digikala_change_percent": 17.3,
-      "torob_change_percent": null,
+      "torob_change_percent": -27.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:21.953915+00:00",
           "digikala_price": 7460210,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:22.217432+00:00",
+          "digikala_price": 7460210,
+          "torob_price": 3600000
         }
       ]
     },
@@ -703,21 +1275,37 @@
       ],
       "torob_url": "https://torob.com/p/b7d720d7-b627-4dba-b2fb-ddb8064fa968/%D9%85%D9%88%D8%AF%D9%85-%D9%81%DB%8C%D8%A8%D8%B1-%D9%86%D9%88%D8%B1%DB%8C-%D9%87%D9%88%D8%A7%D9%88%DB%8C-%D9%85%D8%AF%D9%84-hg8245h-%D8%A8%D8%A7-%D8%A7%D9%86%D8%AA%D9%86-5dbi/",
       "initial_torob_price": 5100000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7640000,
+      "current_torob_price": 5500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در شبکه سنتر دات آی آر",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "شبکه سنتر دات آی آر",
+          "price": 5500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 5500000,
       "price_change_amount": 2035640,
       "price_change_percent": 36.3,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:22.763875+00:00",
+      "last_checked": "2026-09-08T09:16:22.304589+00:00",
       "digikala_change_percent": 36.3,
-      "torob_change_percent": null,
+      "torob_change_percent": 7.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:22.763875+00:00",
           "digikala_price": 7640000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:22.304589+00:00",
+          "digikala_price": 7640000,
+          "torob_price": 5500000
         }
       ]
     },
@@ -731,13 +1319,13 @@
       "quantity": 11,
       "digikala_url": "https://www.digikala.com/product/dkp-21217990/",
       "initial_digikala_price": 6600000,
-      "current_digikala_price": 7943260,
+      "current_digikala_price": 8053520,
       "digikala_available": true,
       "digikala_seller": "های نو",
       "digikala_offers": [
         {
           "seller": "های نو",
-          "price": 7943260
+          "price": 8053520
         },
         {
           "seller": "فناوران تک",
@@ -746,21 +1334,77 @@
       ],
       "torob_url": "https://torob.com/p/826924a7-bcd1-41d1-9138-3e1bed6e05d3/",
       "initial_torob_price": 4850000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7943260,
-      "price_change_amount": 1343260,
-      "price_change_percent": 20.4,
+      "current_torob_price": 5300000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "نوین رایان تهران",
+          "price": 5300000,
+          "url": null
+        },
+        {
+          "seller": "لوازم جانبی نوین بهشهر",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "نانو شبکه",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "در ۳۵ فروشگاه",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "الکترو مودم",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "الکترو شاپینگ",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "آوا آی تی",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "هاناتل",
+          "price": 5700000,
+          "url": null
+        },
+        {
+          "seller": "آپانا آی تی",
+          "price": 5800000,
+          "url": null
+        },
+        {
+          "seller": "سازگار آی تی",
+          "price": 5950000,
+          "url": null
+        }
+      ],
+      "best_current_price": 5300000,
+      "price_change_amount": 1453520,
+      "price_change_percent": 22.0,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:25.596694+00:00",
-      "digikala_change_percent": 20.4,
-      "torob_change_percent": null,
+      "last_checked": "2026-09-08T09:16:22.418469+00:00",
+      "digikala_change_percent": 22.0,
+      "torob_change_percent": 9.3,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:25.596694+00:00",
           "digikala_price": 7943260,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:22.418469+00:00",
+          "digikala_price": 8053520,
+          "torob_price": 5300000
         }
       ]
     },
@@ -780,21 +1424,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/90d5e94e-3d05-43cb-a7e4-aaaf9447db25/%D8%B1%D9%88%D8%AA%D8%B1-tp-link-ax3000-wifi-6-%D8%B1%D9%88%D8%AA%D8%B1-%D8%A8%DB%8C-%D8%B3%DB%8C%D9%85-80211ax-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%DB%8C%D8%AA-%D8%B1%D9%88%D8%AA%D8%B1-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D8%AF%D9%88-%D8%A8%D8%A7%D9%86%D8%AF%D9%87-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C-%D8%A7%D8%B2-%D8%B3%D8%B1%D9%88%D8%B1-vpn-%D9%88-%DA%A9%D9%84%D8%A7%DB%8C%D9%86%D8%AA-%D8%B3%D8%A7%D8%B2%DA%AF%D8%A7%D8%B1-%D8%A8%D8%A7-onemesh-archer-ax55/",
       "initial_torob_price": 15800000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:25.927275+00:00",
+      "current_torob_price": 19176000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در میکرولس",
+          "price": 19176000,
+          "url": null
+        },
+        {
+          "seller": "میکرولس",
+          "price": 19176000,
+          "url": null
+        }
+      ],
+      "best_current_price": 19176000,
+      "price_change_amount": 3376000,
+      "price_change_percent": 21.4,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:23.355125+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 21.4,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:25.927275+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:23.355125+00:00",
+          "digikala_price": null,
+          "torob_price": 19176000
         }
       ]
     },
@@ -808,13 +1468,13 @@
       "quantity": 2,
       "digikala_url": "https://www.digikala.com/product/dkp-16721408/",
       "initial_digikala_price": 7250000,
-      "current_digikala_price": 7552500,
+      "current_digikala_price": 7950000,
       "digikala_available": true,
       "digikala_seller": "چلسی",
       "digikala_offers": [
         {
           "seller": "چلسی",
-          "price": 7552500
+          "price": 7950000
         },
         {
           "seller": "مانیارتک",
@@ -830,17 +1490,22 @@
       "current_torob_price": null,
       "torob_available": false,
       "torob_offers": [],
-      "best_current_price": 7552500,
-      "price_change_amount": 302500,
-      "price_change_percent": 4.2,
+      "best_current_price": 7950000,
+      "price_change_amount": 700000,
+      "price_change_percent": 9.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:26.159645+00:00",
-      "digikala_change_percent": 4.2,
+      "last_checked": "2026-09-08T09:16:23.506295+00:00",
+      "digikala_change_percent": 9.7,
       "torob_change_percent": null,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:26.159645+00:00",
           "digikala_price": 7552500,
+          "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:23.506295+00:00",
+          "digikala_price": 7950000,
           "torob_price": null
         }
       ]
@@ -861,21 +1526,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/3c92109e-d9d8-478a-a028-1e6edf93a425/",
       "initial_torob_price": 10300000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:30.926881+00:00",
+      "current_torob_price": 14500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در عصر رایان",
+          "price": 14500000,
+          "url": null
+        },
+        {
+          "seller": "عصر رایان",
+          "price": 14500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 14500000,
+      "price_change_amount": 4200000,
+      "price_change_percent": 40.8,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:23.764975+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 40.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:30.926881+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:23.764975+00:00",
+          "digikala_price": null,
+          "torob_price": 14500000
         }
       ]
     },
@@ -928,21 +1609,77 @@
       ],
       "torob_url": "https://torob.com/p/a9e2568b-382b-400b-81bc-09d1e66ce319/",
       "initial_torob_price": 2696000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 3324800,
+      "current_torob_price": 2550000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "کامپیوتر و لپتاپ خسروبگی",
+          "price": 2550000,
+          "url": null
+        },
+        {
+          "seller": "کامپیوتر تراشه",
+          "price": 2599000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۲۸ فروشگاه",
+          "price": 2740000,
+          "url": null
+        },
+        {
+          "seller": "قسطی بخر",
+          "price": 2740000,
+          "url": null
+        },
+        {
+          "seller": "تهران رایانه یزد",
+          "price": 2800000,
+          "url": null
+        },
+        {
+          "seller": "کامپیوتر ماهان اصفهان",
+          "price": 2820000,
+          "url": null
+        },
+        {
+          "seller": "تایتان سیستم",
+          "price": 2840000,
+          "url": null
+        },
+        {
+          "seller": "اوج گستران ارتباط میهن",
+          "price": 2850000,
+          "url": null
+        },
+        {
+          "seller": "آگومان آیتین",
+          "price": 2880000,
+          "url": null
+        },
+        {
+          "seller": "سیستم های امنیتی دوربین نت",
+          "price": 2887000,
+          "url": null
+        }
+      ],
+      "best_current_price": 2550000,
       "price_change_amount": 30800,
       "price_change_percent": 0.9,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:30.992881+00:00",
+      "last_checked": "2026-09-08T09:16:24.294308+00:00",
       "digikala_change_percent": 0.9,
-      "torob_change_percent": null,
+      "torob_change_percent": -5.4,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:30.992881+00:00",
           "digikala_price": 3324800,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:24.294308+00:00",
+          "digikala_price": 3324800,
+          "torob_price": 2550000
         }
       ]
     },
@@ -991,21 +1728,77 @@
       ],
       "torob_url": "https://torob.com/p/eb3ff6b1-01dd-472b-99fb-c6c748f1ad98/",
       "initial_torob_price": 8100000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 10200000,
+      "current_torob_price": 7960000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "ایران فون",
+          "price": 7960000,
+          "url": null
+        },
+        {
+          "seller": "در ۳۴ فروشگاه",
+          "price": 8200000,
+          "url": null
+        },
+        {
+          "seller": "لاین کانکت",
+          "price": 8200000,
+          "url": null
+        },
+        {
+          "seller": "تی مودم",
+          "price": 8900000,
+          "url": null
+        },
+        {
+          "seller": "شیرازمودم",
+          "price": 9200000,
+          "url": null
+        },
+        {
+          "seller": "مرکز سیمکارت ایران",
+          "price": 9250000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات نوین چکاوک",
+          "price": 9250000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان طاهری",
+          "price": 9350000,
+          "url": null
+        },
+        {
+          "seller": "بیانت",
+          "price": 9400000,
+          "url": null
+        },
+        {
+          "seller": "هایپرمودم",
+          "price": 9400000,
+          "url": null
+        }
+      ],
+      "best_current_price": 7960000,
       "price_change_amount": 450000,
       "price_change_percent": 4.6,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:31.546264+00:00",
+      "last_checked": "2026-09-08T09:16:24.338407+00:00",
       "digikala_change_percent": 4.6,
-      "torob_change_percent": null,
+      "torob_change_percent": -1.7,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:31.546264+00:00",
           "digikala_price": 10200000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:24.338407+00:00",
+          "digikala_price": 10200000,
+          "torob_price": 7960000
         }
       ]
     },
@@ -1030,21 +1823,77 @@
       ],
       "torob_url": "https://torob.com/p/3f4bb37d-893b-4742-9309-51abed232a46/",
       "initial_torob_price": 7840000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 9800000,
+      "current_torob_price": 6500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "بازرگانی فربد",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "خاتم توس",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "خدمات ارتباطی کثیری",
+          "price": 6850000,
+          "url": null
+        },
+        {
+          "seller": "دیجی نت مارکت",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "آراد حفاظ",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "در ۲۶ فروشگاه",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "اورکا استور",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "ناب کنترل",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "رایان همراه اول",
+          "price": 8500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6500000,
       "price_change_amount": 500000,
       "price_change_percent": 5.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:34.362243+00:00",
+      "last_checked": "2026-09-08T09:16:24.721399+00:00",
       "digikala_change_percent": 5.4,
-      "torob_change_percent": null,
+      "torob_change_percent": -17.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:34.362243+00:00",
           "digikala_price": 9800000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:24.721399+00:00",
+          "digikala_price": 9800000,
+          "torob_price": 6500000
         }
       ]
     },
@@ -1109,21 +1958,77 @@
       ],
       "torob_url": "https://torob.com/p/a348a5ed-09a0-4cab-a972-63338b4fc348/",
       "initial_torob_price": 4400000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 5500000,
+      "current_torob_price": 4450000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "مرکز خدمات ایرانسل نیلی",
+          "price": 4450000,
+          "url": null
+        },
+        {
+          "seller": "کرج سل",
+          "price": 4475000,
+          "url": null
+        },
+        {
+          "seller": "در ۵۹ فروشگاه",
+          "price": 4490000,
+          "url": null
+        },
+        {
+          "seller": "نوساسل",
+          "price": 4490000,
+          "url": null
+        },
+        {
+          "seller": "سیم بازار",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "پیداتک",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "ایرانسل شعبه سیتی سنتر",
+          "price": 4600000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات نوین دات آی آر",
+          "price": 4699000,
+          "url": null
+        },
+        {
+          "seller": "مبین سیم استور",
+          "price": 4700000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4450000,
       "price_change_amount": 281000,
       "price_change_percent": 5.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:34.792855+00:00",
+      "last_checked": "2026-09-08T09:16:25.044912+00:00",
       "digikala_change_percent": 5.4,
-      "torob_change_percent": null,
+      "torob_change_percent": 1.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:34.792855+00:00",
           "digikala_price": 5500000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:25.044912+00:00",
+          "digikala_price": 5500000,
+          "torob_price": 4450000
         }
       ]
     },
@@ -1156,21 +2061,77 @@
       ],
       "torob_url": "https://torob.com/p/42d159b5-2bcb-45b3-a7d7-548bc3fbbb82/",
       "initial_torob_price": 8800000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 10950000,
+      "current_torob_price": 6900000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "پیشخوان پناهی",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "ایران فون",
+          "price": 7960000,
+          "url": null
+        },
+        {
+          "seller": "در ۵۳ فروشگاه",
+          "price": 8400000,
+          "url": null
+        },
+        {
+          "seller": "لاین کانکت",
+          "price": 8400000,
+          "url": null
+        },
+        {
+          "seller": "لاین کانکت",
+          "price": 8600000,
+          "url": null
+        },
+        {
+          "seller": "نوساسل",
+          "price": 8700000,
+          "url": null
+        },
+        {
+          "seller": "سیم بازار",
+          "price": 8700000,
+          "url": null
+        },
+        {
+          "seller": "نوساسل",
+          "price": 8740000,
+          "url": null
+        },
+        {
+          "seller": "سی تی مهر",
+          "price": 8980000,
+          "url": null
+        },
+        {
+          "seller": "هایپرمودم",
+          "price": 9000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6900000,
       "price_change_amount": 1250000,
       "price_change_percent": 12.9,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:35.175781+00:00",
+      "last_checked": "2026-09-08T09:16:25.216381+00:00",
       "digikala_change_percent": 12.9,
-      "torob_change_percent": null,
+      "torob_change_percent": -21.6,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:35.175781+00:00",
           "digikala_price": 10950000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:25.216381+00:00",
+          "digikala_price": 10950000,
+          "torob_price": 6900000
         }
       ]
     },
@@ -1211,21 +2172,77 @@
       ],
       "torob_url": "https://torob.com/p/7dd0d153-e8be-4fff-9bab-d146a7b29955/",
       "initial_torob_price": 4440000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 5600000,
+      "current_torob_price": 2906000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "موبایل نور کوشک",
+          "price": 2906000,
+          "url": null
+        },
+        {
+          "seller": "آرین تل گرگان",
+          "price": 3800000,
+          "url": null
+        },
+        {
+          "seller": "مرکز خدمات ایرانسل نیلی",
+          "price": 4200000,
+          "url": null
+        },
+        {
+          "seller": "ارتباط با ایرانسل شهرضا",
+          "price": 4300000,
+          "url": null
+        },
+        {
+          "seller": "نت رسان ایران",
+          "price": 4300000,
+          "url": null
+        },
+        {
+          "seller": "در ۴۳ فروشگاه",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "پخش ناوک",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "کرج سل",
+          "price": 4615000,
+          "url": null
+        },
+        {
+          "seller": "امینسل",
+          "price": 4790000,
+          "url": null
+        }
+      ],
+      "best_current_price": 2906000,
       "price_change_amount": -85000,
       "price_change_percent": -1.5,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:30:39.076195+00:00",
+      "last_checked": "2026-09-08T09:16:26.587957+00:00",
       "digikala_change_percent": -1.5,
-      "torob_change_percent": null,
+      "torob_change_percent": -34.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:39.076195+00:00",
           "digikala_price": 5600000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:26.587957+00:00",
+          "digikala_price": 5600000,
+          "torob_price": 2906000
         }
       ]
     },
@@ -1250,21 +2267,77 @@
       ],
       "torob_url": "https://torob.com/p/fb69686b-6788-4506-8f5b-a0b471c1a74e/",
       "initial_torob_price": 12600000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 12990000,
+      "current_torob_price": 6710000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "چی چی سنتر",
+          "price": 6710000,
+          "url": null
+        },
+        {
+          "seller": "فربد اسپیکر",
+          "price": 11300000,
+          "url": null
+        },
+        {
+          "seller": "ایران میکروفون 1",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "امید جانبی",
+          "price": 11800000,
+          "url": null
+        },
+        {
+          "seller": "مهتاب اسپیکر",
+          "price": 12000000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۱ فروشگاه",
+          "price": 12870000,
+          "url": null
+        },
+        {
+          "seller": "ماویم",
+          "price": 12870000,
+          "url": null
+        },
+        {
+          "seller": "دیجیتال باران",
+          "price": 12900000,
+          "url": null
+        },
+        {
+          "seller": "راهبُرد نت",
+          "price": 12990000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 12990000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6710000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:39.531544+00:00",
+      "last_checked": "2026-09-08T09:16:26.635661+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -46.7,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:39.531544+00:00",
           "digikala_price": 12990000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:26.635661+00:00",
+          "digikala_price": 12990000,
+          "torob_price": 6710000
         }
       ]
     },
@@ -1293,21 +2366,77 @@
       ],
       "torob_url": "https://torob.com/p/7fe65d08-aa4d-4d44-8d04-3d140bc231f1/",
       "initial_torob_price": 14990000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 15490000,
+      "current_torob_price": 6790000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "چی چی سنتر",
+          "price": 6790000,
+          "url": null
+        },
+        {
+          "seller": "مهتاب اسپیکر",
+          "price": 14500000,
+          "url": null
+        },
+        {
+          "seller": "فربد اسپیکر",
+          "price": 14900000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۲ فروشگاه",
+          "price": 14990000,
+          "url": null
+        },
+        {
+          "seller": "نتومی",
+          "price": 14990000,
+          "url": null
+        },
+        {
+          "seller": "ایران میکروفون 1",
+          "price": 15300000,
+          "url": null
+        },
+        {
+          "seller": "امید جانبی",
+          "price": 15450000,
+          "url": null
+        },
+        {
+          "seller": "ارزون استور",
+          "price": 15490000,
+          "url": null
+        },
+        {
+          "seller": "ماویم",
+          "price": 15840000,
+          "url": null
+        },
+        {
+          "seller": "جو استور",
+          "price": 15890000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6790000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:43.350018+00:00",
+      "last_checked": "2026-09-08T09:16:27.198260+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -54.7,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:43.350018+00:00",
           "digikala_price": 15490000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:27.198260+00:00",
+          "digikala_price": 15490000,
+          "torob_price": 6790000
         }
       ]
     },
@@ -1334,7 +2463,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:44.019787+00:00",
+      "last_checked": "2026-09-08T09:16:27.667447+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -1361,21 +2490,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/2d337c2d-ba7b-456f-b5e3-963b1f3101e8/",
       "initial_torob_price": 10709600,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:44.532964+00:00",
+      "current_torob_price": 6450000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "ایرانسل پاساژ چارسو",
+          "price": 6450000,
+          "url": null
+        },
+        {
+          "seller": "منفرد زنجان",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "مودم خلیفه",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم اصفهان",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "ویهان جانبی",
+          "price": 11000000,
+          "url": null
+        },
+        {
+          "seller": "همراه من",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "ایرانسل شعبه سیتی سنتر",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "مهندسان سیستم فارس",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۴ فروشگاه",
+          "price": 11890000,
+          "url": null
+        },
+        {
+          "seller": "دیجیتال استور",
+          "price": 11890000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6450000,
+      "price_change_amount": -4259600,
+      "price_change_percent": -39.8,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:27.697498+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -39.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:44.532964+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:27.697498+00:00",
+          "digikala_price": null,
+          "torob_price": 6450000
         }
       ]
     },
@@ -1395,21 +2580,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/25b12b35-275b-47fa-b248-69204f0de52f/",
       "initial_torob_price": 11000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:48.744198+00:00",
+      "current_torob_price": 7700000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "نت رسان ایران",
+          "price": 7700000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 7800000,
+          "url": null
+        },
+        {
+          "seller": "منفرد زنجان",
+          "price": 8800000,
+          "url": null
+        },
+        {
+          "seller": "هایپر سام",
+          "price": 9000000,
+          "url": null
+        },
+        {
+          "seller": "در ۹ فروشگاه",
+          "price": 11000000,
+          "url": null
+        },
+        {
+          "seller": "هایتک2022",
+          "price": 11000000,
+          "url": null
+        },
+        {
+          "seller": "مهندسان سیستم فارس",
+          "price": 11300000,
+          "url": null
+        },
+        {
+          "seller": "آر اس آی تی",
+          "price": 11400000,
+          "url": null
+        },
+        {
+          "seller": "مستر مودم",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "پارک تخفیف",
+          "price": 11500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 7700000,
+      "price_change_amount": -3300000,
+      "price_change_percent": -30.0,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:29.020895+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -30.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:48.744198+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:29.020895+00:00",
+          "digikala_price": null,
+          "torob_price": 7700000
         }
       ]
     },
@@ -1433,7 +2674,7 @@
         },
         {
           "seller": "های نو",
-          "price": 5544130
+          "price": 5539960
         },
         {
           "seller": "آیرا پرو",
@@ -1446,21 +2687,77 @@
       ],
       "torob_url": "https://torob.com/p/0dc48549-7c0f-48b3-be45-d276fc0b3fa1/",
       "initial_torob_price": 3084000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 5700000,
+      "current_torob_price": 3240000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "مفید کاربردی",
+          "price": 3240000,
+          "url": null
+        },
+        {
+          "seller": "شیاتک",
+          "price": 3350000,
+          "url": null
+        },
+        {
+          "seller": "دیجی ویو",
+          "price": 3400000,
+          "url": null
+        },
+        {
+          "seller": "تیوان آی تی تهران",
+          "price": 3450000,
+          "url": null
+        },
+        {
+          "seller": "موبایل جوان (کریمی)",
+          "price": 3499999,
+          "url": null
+        },
+        {
+          "seller": "در ۲۷۲ فروشگاه",
+          "price": 3500000,
+          "url": null
+        },
+        {
+          "seller": "باسلام",
+          "price": 3500000,
+          "url": null
+        },
+        {
+          "seller": "لوازم جانبی دیاکو",
+          "price": 3500000,
+          "url": null
+        },
+        {
+          "seller": "سیستم های امنیتی دوربین نت",
+          "price": 3500000,
+          "url": null
+        },
+        {
+          "seller": "متین تکنو",
+          "price": 3500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3240000,
       "price_change_amount": 1840000,
       "price_change_percent": 47.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:48.935136+00:00",
+      "last_checked": "2026-09-08T09:16:29.205149+00:00",
       "digikala_change_percent": 47.7,
-      "torob_change_percent": null,
+      "torob_change_percent": 5.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:48.935136+00:00",
           "digikala_price": 5700000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:29.205149+00:00",
+          "digikala_price": 5700000,
+          "torob_price": 3240000
         }
       ]
     },
@@ -1487,7 +2784,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:51.817466+00:00",
+      "last_checked": "2026-09-08T09:16:29.296392+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -1514,21 +2811,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/7c57b80c-b6d4-48ed-aa1a-be0454d2ffd4/",
       "initial_torob_price": 9600000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
+      "current_torob_price": 9600000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در تکنولینک",
+          "price": 9600000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 9600000,
+          "url": null
+        }
+      ],
+      "best_current_price": 9600000,
       "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:51.910013+00:00",
+      "price_change_percent": 0.0,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:29.523344+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:51.910013+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:29.523344+00:00",
+          "digikala_price": null,
+          "torob_price": 9600000
         }
       ]
     },
@@ -1573,21 +2886,77 @@
       ],
       "torob_url": "https://torob.com/p/d2ad6441-684e-420b-b5d5-ea972a3aa5ca/%D9%85%D9%88%D8%AF%D9%85-%D9%81%DB%8C%D8%A8%D8%B1-%D9%86%D9%88%D8%B1%DB%8C-%D8%AA%DB%8C-%D9%BE%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-xx230v-ax1800-%D8%AF%D9%88%D8%A8%D8%A7%D9%86%D8%AF%D9%87-wi-fi-6/",
       "initial_torob_price": 15000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 15412800,
+      "current_torob_price": 14979000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۲۵ فروشگاه",
+          "price": 14979000,
+          "url": null
+        },
+        {
+          "seller": "شبکه سام",
+          "price": 14979000,
+          "url": null
+        },
+        {
+          "seller": "پارس گستر",
+          "price": 14980000,
+          "url": null
+        },
+        {
+          "seller": "آرسین کالا",
+          "price": 15000000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 15000000,
+          "url": null
+        },
+        {
+          "seller": "بازار شبکه",
+          "price": 15000000,
+          "url": null
+        },
+        {
+          "seller": "اینفینیتی نتورک",
+          "price": 15000000,
+          "url": null
+        },
+        {
+          "seller": "دریانت",
+          "price": 15000000,
+          "url": null
+        },
+        {
+          "seller": "ویکو گیم",
+          "price": 15200000,
+          "url": null
+        },
+        {
+          "seller": "یاس ارتباط",
+          "price": 15200000,
+          "url": null
+        }
+      ],
+      "best_current_price": 14979000,
       "price_change_amount": -1386100,
       "price_change_percent": -8.3,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:30:52.717755+00:00",
+      "last_checked": "2026-09-08T09:16:30.189872+00:00",
       "digikala_change_percent": -8.3,
-      "torob_change_percent": null,
+      "torob_change_percent": -0.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:52.717755+00:00",
           "digikala_price": 15412800,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:30.189872+00:00",
+          "digikala_price": 15412800,
+          "torob_price": 14979000
         }
       ]
     },
@@ -1614,7 +2983,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:55.977132+00:00",
+      "last_checked": "2026-09-08T09:16:30.544333+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -1646,21 +3015,77 @@
       ],
       "torob_url": "https://torob.com/p/62d2a028-104e-46df-9652-410114bcf78c/",
       "initial_torob_price": 9480000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 19500000,
+      "current_torob_price": 9500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "اسمارت دیجیتال",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "در ۲۵ فروشگاه",
+          "price": 9633000,
+          "url": null
+        },
+        {
+          "seller": "هزاره سوم پلاس",
+          "price": 9633000,
+          "url": null
+        },
+        {
+          "seller": "هزاره سوم تهران پلاس",
+          "price": 9633000,
+          "url": null
+        },
+        {
+          "seller": "پرگاس نت",
+          "price": 9650000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 10200000,
+          "url": null
+        },
+        {
+          "seller": "برقچی",
+          "price": 10200000,
+          "url": null
+        },
+        {
+          "seller": "پی سی نور",
+          "price": 10200000,
+          "url": null
+        },
+        {
+          "seller": "راسارایان",
+          "price": 10200000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 10450000,
+          "url": null
+        }
+      ],
+      "best_current_price": 9500000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:56.335046+00:00",
+      "last_checked": "2026-09-08T09:16:30.646107+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:56.335046+00:00",
           "digikala_price": 19500000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:30.646107+00:00",
+          "digikala_price": 19500000,
+          "torob_price": 9500000
         }
       ]
     },
@@ -1687,7 +3112,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:56.880952+00:00",
+      "last_checked": "2026-09-08T09:16:31.344703+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -1714,21 +3139,67 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/4a4929b3-a0a9-4f2e-8ae3-f49b80666143/",
       "initial_torob_price": 6800000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:56.975342+00:00",
+      "current_torob_price": 1000000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۵ فروشگاه",
+          "price": 1000000,
+          "url": null
+        },
+        {
+          "seller": "ای لینک",
+          "price": 1000000,
+          "url": null
+        },
+        {
+          "seller": "هاینو",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "دایزیما",
+          "price": 6660000,
+          "url": null
+        },
+        {
+          "seller": "نت پلاس یزد",
+          "price": 7300000,
+          "url": null
+        },
+        {
+          "seller": "دیجیسام تک",
+          "price": 9750000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 9889000,
+          "url": null
+        },
+        {
+          "seller": "رایان همراه اول",
+          "price": 9900000,
+          "url": null
+        }
+      ],
+      "best_current_price": 1000000,
+      "price_change_amount": -5800000,
+      "price_change_percent": -85.3,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:32.064289+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -85.3,
       "history": [
         {
           "timestamp": "2026-09-08T08:30:56.975342+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:32.064289+00:00",
+          "digikala_price": null,
+          "torob_price": 1000000
         }
       ]
     },
@@ -1748,21 +3219,72 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/abf2e2d3-973a-4cd8-bd4c-4e6f4c59ee72/",
       "initial_torob_price": 4900000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:00.785143+00:00",
+      "current_torob_price": 4350000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۳ فروشگاه",
+          "price": 4350000,
+          "url": null
+        },
+        {
+          "seller": "سیم بازار",
+          "price": 4350000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت خانجانی",
+          "price": 4850000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان و کافی نت سما",
+          "price": 4900000,
+          "url": null
+        },
+        {
+          "seller": "منفرد زنجان",
+          "price": 4900000,
+          "url": null
+        },
+        {
+          "seller": "کلاب جانبی",
+          "price": 5300000,
+          "url": null
+        },
+        {
+          "seller": "راهبُرد نت",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "کافینت آلفا",
+          "price": 5800000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4350000,
+      "price_change_amount": -550000,
+      "price_change_percent": -11.2,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:32.182833+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -11.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:00.785143+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:32.182833+00:00",
+          "digikala_price": null,
+          "torob_price": 4350000
         }
       ]
     },
@@ -1782,21 +3304,67 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/dd9d4987-d0f5-4b75-a150-35cc8a007ee5/",
       "initial_torob_price": 5700000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:00.923975+00:00",
+      "current_torob_price": 5500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "رایان همراه اول",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "در ۵ فروشگاه",
+          "price": 5800000,
+          "url": null
+        },
+        {
+          "seller": "حفاظتی زوبین",
+          "price": 5800000,
+          "url": null
+        },
+        {
+          "seller": "اکسپرس مارکتینک",
+          "price": 5980000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 5989000,
+          "url": null
+        },
+        {
+          "seller": "موبایل جامع",
+          "price": 6000000,
+          "url": null
+        },
+        {
+          "seller": "هدیار",
+          "price": 7785700,
+          "url": null
+        },
+        {
+          "seller": "باسلام",
+          "price": 7800000,
+          "url": null
+        }
+      ],
+      "best_current_price": 5500000,
+      "price_change_amount": -200000,
+      "price_change_percent": -3.5,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:32.222330+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -3.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:00.923975+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:32.222330+00:00",
+          "digikala_price": null,
+          "torob_price": 5500000
         }
       ]
     },
@@ -1821,21 +3389,77 @@
       ],
       "torob_url": "https://torob.com/p/601c1bf7-868c-4efe-afd1-f4b867c16624/",
       "initial_torob_price": 3230000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 4250000,
+      "current_torob_price": 380000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۷۶ فروشگاه",
+          "price": 380000,
+          "url": null
+        },
+        {
+          "seller": "شبیر",
+          "price": 380000,
+          "url": null
+        },
+        {
+          "seller": "الماس رایانه دات کام",
+          "price": 3600000,
+          "url": null
+        },
+        {
+          "seller": "الو آرکا",
+          "price": 3640000,
+          "url": null
+        },
+        {
+          "seller": "پلاک7",
+          "price": 3669000,
+          "url": null
+        },
+        {
+          "seller": "کورد سیم",
+          "price": 3680000,
+          "url": null
+        },
+        {
+          "seller": "کی تک کالا",
+          "price": 3680000,
+          "url": null
+        },
+        {
+          "seller": "تحلیلگران داده پرداز توس",
+          "price": 3800000,
+          "url": null
+        },
+        {
+          "seller": "نیکو کام",
+          "price": 3800000,
+          "url": null
+        },
+        {
+          "seller": "پارسان کاوشگر",
+          "price": 3800000,
+          "url": null
+        }
+      ],
+      "best_current_price": 380000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:03.564545+00:00",
+      "last_checked": "2026-09-08T09:16:32.483110+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -88.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:03.564545+00:00",
           "digikala_price": 4250000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:32.483110+00:00",
+          "digikala_price": 4250000,
+          "torob_price": 380000
         }
       ]
     },
@@ -1855,21 +3479,42 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/10f66920-fd5f-45f1-8098-b80a64be4a0c/%D8%A8%D8%A7%D8%AA%D8%B1%DB%8C-%D9%85%D9%88%D8%AF%D9%85-%D8%AC%DB%8C-%DB%8C%D9%88-jiofi-m2-%D9%85%D8%AF%D9%84-h12348/",
       "initial_torob_price": 1200000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:04.169837+00:00",
+      "current_torob_price": 1052400,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۲ فروشگاه",
+          "price": 1052400,
+          "url": null
+        },
+        {
+          "seller": "آلمانی استور",
+          "price": 1052400,
+          "url": null
+        },
+        {
+          "seller": "باتری تل",
+          "price": 1417000,
+          "url": null
+        }
+      ],
+      "best_current_price": 1052400,
+      "price_change_amount": -147600,
+      "price_change_percent": -12.3,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:32.498476+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -12.3,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:04.169837+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:32.498476+00:00",
+          "digikala_price": null,
+          "torob_price": 1052400
         }
       ]
     },
@@ -1898,21 +3543,77 @@
       ],
       "torob_url": "https://torob.com/p/ed50f1e4-14bb-4a4d-9f1d-2fbe950c1326/",
       "initial_torob_price": 6750000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 13700000,
+      "current_torob_price": 4200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "خبره",
+          "price": 4200000,
+          "url": null
+        },
+        {
+          "seller": "دید آزما",
+          "price": 4900000,
+          "url": null
+        },
+        {
+          "seller": "نما",
+          "price": 5100000,
+          "url": null
+        },
+        {
+          "seller": "نوین‌پرداز اصفهان",
+          "price": 5450000,
+          "url": null
+        },
+        {
+          "seller": "ماهان آقای امیر روحانی",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "پردیس کامپیوتر",
+          "price": 5950000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۶ فروشگاه",
+          "price": 6750000,
+          "url": null
+        },
+        {
+          "seller": "سیم بازار",
+          "price": 6750000,
+          "url": null
+        },
+        {
+          "seller": "مشتاق سیستم",
+          "price": 6750000,
+          "url": null
+        },
+        {
+          "seller": "مهندسی فن آوران",
+          "price": 6990000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4200000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:04.740659+00:00",
+      "last_checked": "2026-09-08T09:16:33.329241+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -37.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:04.740659+00:00",
           "digikala_price": 13700000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:33.329241+00:00",
+          "digikala_price": 13700000,
+          "torob_price": 4200000
         }
       ]
     },
@@ -1939,7 +3640,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:08.169982+00:00",
+      "last_checked": "2026-09-08T09:16:33.906130+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -1971,21 +3672,77 @@
       ],
       "torob_url": "https://torob.com/p/7833754b-b1c9-4334-86a9-6917e94a2240/%D9%85%D9%88%D8%AF%D9%85-4g-%D9%87%D9%85%D8%B1%D8%A7%D9%87-%D8%A7%D9%88%D9%84-%D9%85%D8%AF%D9%84-ha4200-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-70-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA/",
       "initial_torob_price": 6000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 9000000,
+      "current_torob_price": 3500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "دفتر خدمات تکیه",
+          "price": 3500000,
+          "url": null
+        },
+        {
+          "seller": "در ۹ فروشگاه",
+          "price": 5900000,
+          "url": null
+        },
+        {
+          "seller": "اورکا استور",
+          "price": 5900000,
+          "url": null
+        },
+        {
+          "seller": "سیم سل دات آی آر",
+          "price": 6000000,
+          "url": null
+        },
+        {
+          "seller": "آزو شاپ",
+          "price": 6450000,
+          "url": null
+        },
+        {
+          "seller": "پیشخوان دولت موسوی",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "مرکز سیمکارت ایران",
+          "price": 6550000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات نوین چکاوک",
+          "price": 6550000,
+          "url": null
+        },
+        {
+          "seller": "باسلام",
+          "price": 6992000,
+          "url": null
+        },
+        {
+          "seller": "مرکز ایرانسل عباسی",
+          "price": 7000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3500000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:08.170033+00:00",
+      "last_checked": "2026-09-08T09:16:33.906154+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -41.7,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:08.170033+00:00",
           "digikala_price": 9000000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:33.906154+00:00",
+          "digikala_price": 9000000,
+          "torob_price": 3500000
         }
       ]
     },
@@ -2005,21 +3762,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/6f4cb5a8-2516-4345-802a-01773372c80b/%D9%85%D9%88%D8%AF%D9%85-%D8%B1%D9%88%D8%AA%D8%B1-%D9%81%DB%8C%D8%A8%D8%B1-%D9%86%D9%88%D8%B1%DB%8C-%DB%8C%D9%88%D8%AA%D9%84-%D9%85%D8%AF%D9%84-g442-%D8%A8%DB%8C-%D8%B3%DB%8C%D9%85-ac1200/",
       "initial_torob_price": 6800000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:08.629226+00:00",
+      "current_torob_price": 5000000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "ایران لینک",
+          "price": 5000000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۱ فروشگاه",
+          "price": 6899000,
+          "url": null
+        },
+        {
+          "seller": "شبکه سام",
+          "price": 6899000,
+          "url": null
+        },
+        {
+          "seller": "راهبُرد نت",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "ترنج کامپیوتر",
+          "price": 6950000,
+          "url": null
+        },
+        {
+          "seller": "یاس ارتباط",
+          "price": 6950000,
+          "url": null
+        },
+        {
+          "seller": "ثمین رایان ایرانیان",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "پویا شبکه فرتاک دات کام",
+          "price": 7050000,
+          "url": null
+        },
+        {
+          "seller": "پویا شبکه فرتاک هیرکان",
+          "price": 7050000,
+          "url": null
+        },
+        {
+          "seller": "هاینو",
+          "price": 7100000,
+          "url": null
+        }
+      ],
+      "best_current_price": 5000000,
+      "price_change_amount": -1800000,
+      "price_change_percent": -26.5,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:33.956907+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -26.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:08.629226+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:33.956907+00:00",
+          "digikala_price": null,
+          "torob_price": 5000000
         }
       ]
     },
@@ -2039,21 +3852,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/3c30f058-1029-4340-b649-1cec495a6371/",
       "initial_torob_price": 9000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:09.018219+00:00",
+      "current_torob_price": 6900000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۷۸ فروشگاه",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "مودم",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "مودم tfi60",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "هلدینگ حلاج",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "زد ال تی نت",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "مدیاتک",
+          "price": 9780000,
+          "url": null
+        },
+        {
+          "seller": "مدیا تک شاپ",
+          "price": 9780000,
+          "url": null
+        },
+        {
+          "seller": "دیجی نو دات آی آر",
+          "price": 10999000,
+          "url": null
+        },
+        {
+          "seller": "ام جی فون",
+          "price": 10999000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6900000,
+      "price_change_amount": -2100000,
+      "price_change_percent": -23.3,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:34.172951+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -23.3,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:09.018219+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:34.172951+00:00",
+          "digikala_price": null,
+          "torob_price": 6900000
         }
       ]
     },
@@ -2106,21 +3975,77 @@
       ],
       "torob_url": "https://torob.com/p/b89e0089-8f3b-43b9-9cb0-2ce1353a37a2/",
       "initial_torob_price": 5900000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 6950000,
+      "current_torob_price": 3500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "موبایل نور کوشک",
+          "price": 3500000,
+          "url": null
+        },
+        {
+          "seller": "ایران لینک",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "در ۲۸ فروشگاه",
+          "price": 6190000,
+          "url": null
+        },
+        {
+          "seller": "مبین سیم استور",
+          "price": 6190000,
+          "url": null
+        },
+        {
+          "seller": "مبین سیم",
+          "price": 6190000,
+          "url": null
+        },
+        {
+          "seller": "مودم ایران",
+          "price": 6200000,
+          "url": null
+        },
+        {
+          "seller": "آی تی فول",
+          "price": 6400000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 6489000,
+          "url": null
+        },
+        {
+          "seller": "مودم ایران",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "مودم همراه ایران",
+          "price": 6500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3500000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:10.587886+00:00",
+      "last_checked": "2026-09-08T09:16:34.548894+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -40.7,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:10.587886+00:00",
           "digikala_price": 6950000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:34.548894+00:00",
+          "digikala_price": 6950000,
+          "torob_price": 3500000
         }
       ]
     },
@@ -2140,21 +4065,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/f4835856-fdae-4194-b4b4-125dfd7634c1/",
       "initial_torob_price": 9500000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:12.807744+00:00",
+      "current_torob_price": 8300000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۶ فروشگاه",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "مدیاتک",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "مدیا تک شاپ",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "هایپرمودم",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "باما آپ",
+          "price": 8900000,
+          "url": null
+        },
+        {
+          "seller": "پارک تخفیف",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "سیستم های حفاظتی آریسا",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "سپاس آی‌ تی",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "موبایل و مودم سیمونت",
+          "price": 9500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 8300000,
+      "price_change_amount": -1200000,
+      "price_change_percent": -12.6,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:34.948937+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -12.6,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:12.807744+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:34.948937+00:00",
+          "digikala_price": null,
+          "torob_price": 8300000
         }
       ]
     },
@@ -2179,21 +4160,77 @@
       ],
       "torob_url": "https://torob.com/p/3f4bb37d-893b-4742-9309-51abed232a46/",
       "initial_torob_price": 7840000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 9800000,
+      "current_torob_price": 6500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "بازرگانی فربد",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "خاتم توس",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "خدمات ارتباطی کثیری",
+          "price": 6850000,
+          "url": null
+        },
+        {
+          "seller": "دیجی نت مارکت",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "آراد حفاظ",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "در ۲۶ فروشگاه",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "اورکا استور",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "ناب کنترل",
+          "price": 8300000,
+          "url": null
+        },
+        {
+          "seller": "رایان همراه اول",
+          "price": 8500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6500000,
       "price_change_amount": 500000,
       "price_change_percent": 5.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:13.299447+00:00",
+      "last_checked": "2026-09-08T09:16:35.522747+00:00",
       "digikala_change_percent": 5.4,
-      "torob_change_percent": null,
+      "torob_change_percent": -17.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:13.299447+00:00",
           "digikala_price": 9800000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:35.522747+00:00",
+          "digikala_price": 9800000,
+          "torob_price": 6500000
         }
       ]
     },
@@ -2213,21 +4250,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/e8860f56-833a-4f4a-a0c4-5ea5b786f027/%D9%85%D9%88%D8%AF%D9%85-45g-%D9%82%D8%A7%D8%A8%D9%84-%D8%AD%D9%85%D9%84-%D8%A7%D9%84%DA%A9%D8%A7%D8%AA%D9%84-%D9%85%D8%AF%D9%84-alcatel-bt70/",
       "initial_torob_price": 6000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:16.055244+00:00",
+      "current_torob_price": 5965700,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در هدیار",
+          "price": 5965700,
+          "url": null
+        },
+        {
+          "seller": "هدیار",
+          "price": 5965700,
+          "url": null
+        }
+      ],
+      "best_current_price": 5965700,
+      "price_change_amount": -34300,
+      "price_change_percent": -0.6,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:35.857601+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -0.6,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:16.055244+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:35.857601+00:00",
+          "digikala_price": null,
+          "torob_price": 5965700
         }
       ]
     },
@@ -2268,21 +4321,77 @@
       ],
       "torob_url": "https://torob.com/p/5c35b492-e79e-4911-b23a-8db98fc52262/",
       "initial_torob_price": 3980000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 5300000,
+      "current_torob_price": 4195000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۲۹ فروشگاه",
+          "price": 4195000,
+          "url": null
+        },
+        {
+          "seller": "مهرسا رایان استور",
+          "price": 4195000,
+          "url": null
+        },
+        {
+          "seller": "زمانی",
+          "price": 4200000,
+          "url": null
+        },
+        {
+          "seller": "ژوپیتل",
+          "price": 4290000,
+          "url": null
+        },
+        {
+          "seller": "کال تو تک",
+          "price": 4295000,
+          "url": null
+        },
+        {
+          "seller": "مودم دیجیتال",
+          "price": 4300000,
+          "url": null
+        },
+        {
+          "seller": "همراه من",
+          "price": 4300000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 4300000,
+          "url": null
+        },
+        {
+          "seller": "شبکه روز",
+          "price": 4400000,
+          "url": null
+        },
+        {
+          "seller": "نت پلاس یزد",
+          "price": 4400000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4195000,
       "price_change_amount": 1320000,
       "price_change_percent": 33.2,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:16.320371+00:00",
+      "last_checked": "2026-09-08T09:16:36.714475+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 5.4,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:16.320371+00:00",
           "digikala_price": 5300000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:36.714475+00:00",
+          "digikala_price": 5300000,
+          "torob_price": 4195000
         }
       ]
     },
@@ -2311,21 +4420,77 @@
       ],
       "torob_url": "https://torob.com/p/d1f6692b-0ad2-4055-971d-df7ad25e236e/",
       "initial_torob_price": 10900000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 14800000,
+      "current_torob_price": 12700000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۱۰ فروشگاه",
+          "price": 12700000,
+          "url": null
+        },
+        {
+          "seller": "آذین کامپیوتر",
+          "price": 12700000,
+          "url": null
+        },
+        {
+          "seller": "باسلام",
+          "price": 12800000,
+          "url": null
+        },
+        {
+          "seller": "ژوپیتل",
+          "price": 12900000,
+          "url": null
+        },
+        {
+          "seller": "فنی مهندسی ماهان",
+          "price": 12900000,
+          "url": null
+        },
+        {
+          "seller": "بیانت",
+          "price": 13050000,
+          "url": null
+        },
+        {
+          "seller": "همراه من",
+          "price": 13800000,
+          "url": null
+        },
+        {
+          "seller": "اسمارت دیجیتال",
+          "price": 13900000,
+          "url": null
+        },
+        {
+          "seller": "کالاکووو",
+          "price": 14750000,
+          "url": null
+        },
+        {
+          "seller": "شیرازمودم",
+          "price": 16000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 12700000,
       "price_change_amount": 1000000,
       "price_change_percent": 7.2,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:19.352413+00:00",
+      "last_checked": "2026-09-08T09:16:37.208267+00:00",
       "digikala_change_percent": 7.2,
-      "torob_change_percent": null,
+      "torob_change_percent": 16.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:19.352413+00:00",
           "digikala_price": 14800000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:37.208267+00:00",
+          "digikala_price": 14800000,
+          "torob_price": 12700000
         }
       ]
     },
@@ -2358,21 +4523,77 @@
       ],
       "torob_url": "https://torob.com/p/054af9e5-3e57-4468-bf4d-374b03542d2c/",
       "initial_torob_price": 6000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 15594000,
+      "current_torob_price": 6750000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "لندی دیجیتال",
+          "price": 6750000,
+          "url": null
+        },
+        {
+          "seller": "نت پلاس یزد",
+          "price": 7500000,
+          "url": null
+        },
+        {
+          "seller": "در ۶ فروشگاه",
+          "price": 7560000,
+          "url": null
+        },
+        {
+          "seller": "امینا تک",
+          "price": 7560000,
+          "url": null
+        },
+        {
+          "seller": "مودمک",
+          "price": 7699000,
+          "url": null
+        },
+        {
+          "seller": "آوا پلاس",
+          "price": 10800000,
+          "url": null
+        },
+        {
+          "seller": "پاریس موبایل کرمان",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "دیجیتال مروارید",
+          "price": 12800000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 12900000,
+          "url": null
+        },
+        {
+          "seller": "متین تکنو",
+          "price": 13000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6750000,
       "price_change_amount": -3006000,
       "price_change_percent": -16.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:21.598154+00:00",
+      "last_checked": "2026-09-08T09:16:37.233888+00:00",
       "digikala_change_percent": -16.2,
-      "torob_change_percent": null,
+      "torob_change_percent": 12.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:21.598154+00:00",
           "digikala_price": 15594000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:37.233888+00:00",
+          "digikala_price": 15594000,
+          "torob_price": 6750000
         }
       ]
     },
@@ -2392,21 +4613,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/2879173f-42a4-48c0-90c1-c1c05446ef7d/",
       "initial_torob_price": 5200000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:22.472238+00:00",
+      "current_torob_price": 4500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "ایران لینک",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "در ۸ فروشگاه",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "یاس ارتباط",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "دایزیما",
+          "price": 5700000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 5800000,
+          "url": null
+        },
+        {
+          "seller": "کالی شاپ",
+          "price": 5900000,
+          "url": null
+        },
+        {
+          "seller": "پارس گستر استور",
+          "price": 5999000,
+          "url": null
+        },
+        {
+          "seller": "ایزی مارکت",
+          "price": 6178700,
+          "url": null
+        },
+        {
+          "seller": "تشباد",
+          "price": 6294000,
+          "url": null
+        },
+        {
+          "seller": "کالای دیجیتال جزیره",
+          "price": 14970000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4500000,
+      "price_change_amount": -700000,
+      "price_change_percent": -13.5,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:37.282820+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -13.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:22.472238+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:37.282820+00:00",
+          "digikala_price": null,
+          "torob_price": 4500000
         }
       ]
     },
@@ -2435,21 +4712,77 @@
       ],
       "torob_url": "https://torob.com/p/e7d8dadb-e333-4654-ae7e-9276c19f3cf6/",
       "initial_torob_price": 3290000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 4890000,
+      "current_torob_price": 3000000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "پارسیان مهاباد",
+          "price": 3000000,
+          "url": null
+        },
+        {
+          "seller": "در ۲۰ فروشگاه",
+          "price": 3290000,
+          "url": null
+        },
+        {
+          "seller": "آی تی مهندس",
+          "price": 3290000,
+          "url": null
+        },
+        {
+          "seller": "موسوی موبایل",
+          "price": 3390000,
+          "url": null
+        },
+        {
+          "seller": "موبایل موسوی تیران",
+          "price": 3390000,
+          "url": null
+        },
+        {
+          "seller": "مدیاتک",
+          "price": 3400000,
+          "url": null
+        },
+        {
+          "seller": "مدیا تک شاپ",
+          "price": 3400000,
+          "url": null
+        },
+        {
+          "seller": "هاینو",
+          "price": 3500000,
+          "url": null
+        },
+        {
+          "seller": "منفرد زنجان",
+          "price": 3600000,
+          "url": null
+        },
+        {
+          "seller": "نودیوم",
+          "price": 3720000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3000000,
       "price_change_amount": -110000,
       "price_change_percent": -2.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:24.755801+00:00",
+      "last_checked": "2026-09-08T09:16:37.888947+00:00",
       "digikala_change_percent": -2.2,
-      "torob_change_percent": null,
+      "torob_change_percent": -8.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:24.755801+00:00",
           "digikala_price": 4890000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:37.888947+00:00",
+          "digikala_price": 4890000,
+          "torob_price": 3000000
         }
       ]
     },
@@ -2502,21 +4835,77 @@
       ],
       "torob_url": "https://torob.com/p/3c5544f1-2704-4dcb-a918-a41d404325f8/",
       "initial_torob_price": 3844000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 6049090,
+      "current_torob_price": 3906000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "آپادانا کاشان",
+          "price": 3906000,
+          "url": null
+        },
+        {
+          "seller": "رایان پرداز اسپادانا",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "نت پلاس یزد",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۳۶ فروشگاه",
+          "price": 4650000,
+          "url": null
+        },
+        {
+          "seller": "پی سی بای",
+          "price": 4650000,
+          "url": null
+        },
+        {
+          "seller": "گرین استور",
+          "price": 4800000,
+          "url": null
+        },
+        {
+          "seller": "تیشک کالا",
+          "price": 4850000,
+          "url": null
+        },
+        {
+          "seller": "کیس سفید",
+          "price": 4900000,
+          "url": null
+        },
+        {
+          "seller": "دیباگستر",
+          "price": 4900000,
+          "url": null
+        },
+        {
+          "seller": "مهرکامپیوتر جنوب",
+          "price": 4900000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3906000,
       "price_change_amount": 1049090,
       "price_change_percent": 21.0,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:24.975391+00:00",
+      "last_checked": "2026-09-08T09:16:38.971234+00:00",
       "digikala_change_percent": 21.0,
-      "torob_change_percent": null,
+      "torob_change_percent": 1.6,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:24.975391+00:00",
           "digikala_price": 6049090,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:38.971234+00:00",
+          "digikala_price": 6049090,
+          "torob_price": 3906000
         }
       ]
     },
@@ -2543,7 +4932,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:28.267554+00:00",
+      "last_checked": "2026-09-08T09:16:39.309901+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -2570,21 +4959,42 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/7bf65415-8ab1-4755-bb3a-862596f1efe0/",
       "initial_torob_price": 5890000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:29.706258+00:00",
+      "current_torob_price": 8549000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۲ فروشگاه",
+          "price": 8549000,
+          "url": null
+        },
+        {
+          "seller": "مهرداد آی تی",
+          "price": 8549000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 12000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 8549000,
+      "price_change_amount": 2659000,
+      "price_change_percent": 45.1,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:39.516034+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 45.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:29.706258+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:39.516034+00:00",
+          "digikala_price": null,
+          "torob_price": 8549000
         }
       ]
     },
@@ -2604,21 +5014,62 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/ad640783-c8e5-43b6-9bcb-d19f85a03c0f/",
       "initial_torob_price": 8000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:30.757615+00:00",
+      "current_torob_price": 9900000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۴ فروشگاه",
+          "price": 9900000,
+          "url": null
+        },
+        {
+          "seller": "پویا شبکه فرتاک دات کام",
+          "price": 9900000,
+          "url": null
+        },
+        {
+          "seller": "پویا شبکه فرتاک هیرکان",
+          "price": 9900000,
+          "url": null
+        },
+        {
+          "seller": "خانه کامپیوتر",
+          "price": 9945000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 10000000,
+          "url": null
+        },
+        {
+          "seller": "ایرنت شاپ",
+          "price": 12650000,
+          "url": null
+        },
+        {
+          "seller": "ایران لینک",
+          "price": 15000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 9900000,
+      "price_change_amount": 1900000,
+      "price_change_percent": 23.8,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:39.616518+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 23.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:30.757615+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:39.616518+00:00",
+          "digikala_price": null,
+          "torob_price": 9900000
         }
       ]
     },
@@ -2645,7 +5096,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:33.767816+00:00",
+      "last_checked": "2026-09-08T09:16:39.992922+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -2689,21 +5140,57 @@
       ],
       "torob_url": "https://torob.com/p/dced5007-ce8b-4502-ac7f-857d0257c3fe/",
       "initial_torob_price": 5800000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7880000,
+      "current_torob_price": 4850000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "اسپاد دنیا مودم نیشابور",
+          "price": 4850000,
+          "url": null
+        },
+        {
+          "seller": "در ۴ فروشگاه",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "تپسی شاپ",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "این چند",
+          "price": 7990000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 9200000,
+          "url": null
+        },
+        {
+          "seller": "مودم دیجیتال",
+          "price": 10950000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4850000,
       "price_change_amount": -120000,
       "price_change_percent": -1.5,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:36.750823+00:00",
+      "last_checked": "2026-09-08T09:16:40.682314+00:00",
       "digikala_change_percent": -1.5,
-      "torob_change_percent": null,
+      "torob_change_percent": -16.4,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:36.750823+00:00",
           "digikala_price": 7880000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:40.682314+00:00",
+          "digikala_price": 7880000,
+          "torob_price": 4850000
         }
       ]
     },
@@ -2723,21 +5210,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/c297b2dc-66f4-4a18-a9df-8e87dafbeeac/",
       "initial_torob_price": 5300000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:38.806647+00:00",
+      "current_torob_price": 6200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "بوکان",
+          "price": 6200000,
+          "url": null
+        },
+        {
+          "seller": "آربابا شاپ",
+          "price": 6300000,
+          "url": null
+        },
+        {
+          "seller": "خاتم توس",
+          "price": 6400000,
+          "url": null
+        },
+        {
+          "seller": "در ۳۱ فروشگاه",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "زد ال تی نت",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم",
+          "price": 6850000,
+          "url": null
+        },
+        {
+          "seller": "نانو شبکه",
+          "price": 7200000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم شاپ",
+          "price": 7270000,
+          "url": null
+        },
+        {
+          "seller": "هگزا مودم",
+          "price": 7300000,
+          "url": null
+        },
+        {
+          "seller": "عصر رایان",
+          "price": 7500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6200000,
+      "price_change_amount": 900000,
+      "price_change_percent": 17.0,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:41.026729+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 17.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:38.806647+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:41.026729+00:00",
+          "digikala_price": null,
+          "torob_price": 6200000
         }
       ]
     },
@@ -2757,21 +5300,47 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/55be2a2b-40e5-4364-b6d8-d046adf53f46/",
       "initial_torob_price": 3580000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:39.747858+00:00",
+      "current_torob_price": 2600000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "تبریز مودم",
+          "price": 2600000,
+          "url": null
+        },
+        {
+          "seller": "در ۲ فروشگاه",
+          "price": 3580000,
+          "url": null
+        },
+        {
+          "seller": "مودم ارزان آداک",
+          "price": 3580000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 4789000,
+          "url": null
+        }
+      ],
+      "best_current_price": 2600000,
+      "price_change_amount": -980000,
+      "price_change_percent": -27.4,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:41.765659+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -27.4,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:39.747858+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:41.765659+00:00",
+          "digikala_price": null,
+          "torob_price": 2600000
         }
       ]
     },
@@ -2791,21 +5360,52 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/95ca713f-8b85-4da4-870d-f93e86deddd9/%D9%85%D9%88%D8%AF%D9%85-td-lte-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84-%D9%85%D8%AF%D9%84-b5142/",
       "initial_torob_price": 4000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:40.116265+00:00",
+      "current_torob_price": 3980000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۳ فروشگاه",
+          "price": 3980000,
+          "url": null
+        },
+        {
+          "seller": "مودم ارزان آداک",
+          "price": 3980000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 4989000,
+          "url": null
+        },
+        {
+          "seller": "هدیار",
+          "price": 6485700,
+          "url": null
+        },
+        {
+          "seller": "تکنو سافت",
+          "price": 9500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3980000,
+      "price_change_amount": -20000,
+      "price_change_percent": -0.5,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:42.371846+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -0.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:40.116265+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:42.371846+00:00",
+          "digikala_price": null,
+          "torob_price": 3980000
         }
       ]
     },
@@ -2825,21 +5425,42 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/b0224afb-5f78-417c-a17d-d22d8a6c27e8/",
       "initial_torob_price": 3580000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
+      "current_torob_price": 3580000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۲ فروشگاه",
+          "price": 3580000,
+          "url": null
+        },
+        {
+          "seller": "مودم ارزان آداک",
+          "price": 3580000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 5889000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3580000,
       "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:40.361144+00:00",
+      "price_change_percent": 0.0,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:42.847003+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:40.361144+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:42.847003+00:00",
+          "digikala_price": null,
+          "torob_price": 3580000
         }
       ]
     },
@@ -2859,21 +5480,57 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/11d3e064-7819-4dbe-b188-73c546f84ea7/%D9%85%D9%88%D8%AF%D9%85-%D9%81%D8%B6%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84-%D9%85%D8%AF%D9%84-zw101/",
       "initial_torob_price": 10000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:42.908785+00:00",
+      "current_torob_price": 6800000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "مرکز کامپیوتر پایتخت",
+          "price": 6800000,
+          "url": null
+        },
+        {
+          "seller": "در ۴ فروشگاه",
+          "price": 10000000,
+          "url": null
+        },
+        {
+          "seller": "راهبُرد نت",
+          "price": 10000000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 10989000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ می",
+          "price": 10989000,
+          "url": null
+        },
+        {
+          "seller": "هدیار",
+          "price": 15600000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6800000,
+      "price_change_amount": -3200000,
+      "price_change_percent": -32.0,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:43.853173+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -32.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:42.908785+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:43.853173+00:00",
+          "digikala_price": null,
+          "torob_price": 6800000
         }
       ]
     },
@@ -2893,21 +5550,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/2d337c2d-ba7b-456f-b5e3-963b1f3101e8/",
       "initial_torob_price": 10709600,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:44.215340+00:00",
+      "current_torob_price": 6450000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "ایرانسل پاساژ چارسو",
+          "price": 6450000,
+          "url": null
+        },
+        {
+          "seller": "منفرد زنجان",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "مودم خلیفه",
+          "price": 8000000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم اصفهان",
+          "price": 9500000,
+          "url": null
+        },
+        {
+          "seller": "ویهان جانبی",
+          "price": 11000000,
+          "url": null
+        },
+        {
+          "seller": "ایرانسل شعبه سیتی سنتر",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "همراه من",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "مهندسان سیستم فارس",
+          "price": 11500000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۴ فروشگاه",
+          "price": 11890000,
+          "url": null
+        },
+        {
+          "seller": "دیجیتال استور",
+          "price": 11890000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6450000,
+      "price_change_amount": -4259600,
+      "price_change_percent": -39.8,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:44.088231+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -39.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:44.215340+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:44.088231+00:00",
+          "digikala_price": null,
+          "torob_price": 6450000
         }
       ]
     },
@@ -2934,7 +5647,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:45.303126+00:00",
+      "last_checked": "2026-09-08T09:16:44.292951+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -2961,21 +5674,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/d7b8686f-8d4b-4f88-879c-5b68a5e6a1e9/",
       "initial_torob_price": 7200000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:45.303182+00:00",
+      "current_torob_price": 4990000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "فاطر کمرا",
+          "price": 4990000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "خدمات ارتباطی کثیری",
+          "price": 5650000,
+          "url": null
+        },
+        {
+          "seller": "ایرانسل قاسمی",
+          "price": 5900000,
+          "url": null
+        },
+        {
+          "seller": "در ۶ فروشگاه",
+          "price": 6850000,
+          "url": null
+        },
+        {
+          "seller": "مودم ایران",
+          "price": 6850000,
+          "url": null
+        },
+        {
+          "seller": "دیجی نت مارکت",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "پارک تخفیف",
+          "price": 7200000,
+          "url": null
+        },
+        {
+          "seller": "شیراز شبکه نوین آسیاتک",
+          "price": 7200000,
+          "url": null
+        },
+        {
+          "seller": "مهندسان سیستم فارس",
+          "price": 7200000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4990000,
+      "price_change_amount": -2210000,
+      "price_change_percent": -30.7,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:44.292973+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -30.7,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:45.303182+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:44.292973+00:00",
+          "digikala_price": null,
+          "torob_price": 4990000
         }
       ]
     },
@@ -2995,21 +5764,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/b2a40679-a363-4a54-8634-b877007f4988/",
       "initial_torob_price": 5248000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:46.958013+00:00",
+      "current_torob_price": 5200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "بوکان",
+          "price": 5200000,
+          "url": null
+        },
+        {
+          "seller": "آربابا شاپ",
+          "price": 5240000,
+          "url": null
+        },
+        {
+          "seller": "در ۹ فروشگاه",
+          "price": 5490000,
+          "url": null
+        },
+        {
+          "seller": "آربابا مال",
+          "price": 5490000,
+          "url": null
+        },
+        {
+          "seller": "قشم دیجیتال دات کام",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "مودم همراه ایران",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ می",
+          "price": 5989000,
+          "url": null
+        },
+        {
+          "seller": "رایانت شاپ",
+          "price": 6299000,
+          "url": null
+        },
+        {
+          "seller": "اسمارت دیجیتال",
+          "price": 6800000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 6900000,
+          "url": null
+        }
+      ],
+      "best_current_price": 5200000,
+      "price_change_amount": -48000,
+      "price_change_percent": -0.9,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:44.570267+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -0.9,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:46.958013+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:44.570267+00:00",
+          "digikala_price": null,
+          "torob_price": 5200000
         }
       ]
     },
@@ -3036,7 +5861,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:48.338348+00:00",
+      "last_checked": "2026-09-08T09:16:44.741286+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -3063,21 +5888,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/683a7714-95a6-4887-86f0-4a1d4f520b67/",
       "initial_torob_price": 3879000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
+      "current_torob_price": 3879000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در دیجیتال استور",
+          "price": 3879000,
+          "url": null
+        },
+        {
+          "seller": "دیجیتال استور",
+          "price": 3879000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3879000,
       "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:48.659413+00:00",
+      "price_change_percent": 0.0,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:45.883599+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:48.659413+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:45.883599+00:00",
+          "digikala_price": null,
+          "torob_price": 3879000
         }
       ]
     },
@@ -3097,21 +5938,42 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/44332429-8179-4d52-98b2-15831c65815a/%D9%85%D9%88%D8%AF%D9%85-%D9%87%D9%85%D8%B1%D8%A7%D9%87-4g-lte-%D8%A8%DB%8C-%D8%B3%DB%8C%D9%85-%D9%87%D9%88%D8%A7%D9%88%DB%8C-%D9%85%D8%AF%D9%84-e5577/",
       "initial_torob_price": 7000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:51.392727+00:00",
+      "current_torob_price": 7200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در بهاگیر استور",
+          "price": 7200000,
+          "url": null
+        },
+        {
+          "seller": "بهاگیر استور",
+          "price": 7200000,
+          "url": null
+        },
+        {
+          "seller": "مودم نوراسل",
+          "price": 7500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 7200000,
+      "price_change_amount": 200000,
+      "price_change_percent": 2.9,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:46.113552+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 2.9,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:51.392727+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:46.113552+00:00",
+          "digikala_price": null,
+          "torob_price": 7200000
         }
       ]
     },
@@ -3140,21 +6002,77 @@
       ],
       "torob_url": "https://torob.com/p/d1f6692b-0ad2-4055-971d-df7ad25e236e/",
       "initial_torob_price": 10900000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 14800000,
+      "current_torob_price": 12700000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۱۰ فروشگاه",
+          "price": 12700000,
+          "url": null
+        },
+        {
+          "seller": "آذین کامپیوتر",
+          "price": 12700000,
+          "url": null
+        },
+        {
+          "seller": "باسلام",
+          "price": 12800000,
+          "url": null
+        },
+        {
+          "seller": "ژوپیتل",
+          "price": 12900000,
+          "url": null
+        },
+        {
+          "seller": "فنی مهندسی ماهان",
+          "price": 12900000,
+          "url": null
+        },
+        {
+          "seller": "بیانت",
+          "price": 13050000,
+          "url": null
+        },
+        {
+          "seller": "همراه من",
+          "price": 13800000,
+          "url": null
+        },
+        {
+          "seller": "اسمارت دیجیتال",
+          "price": 13900000,
+          "url": null
+        },
+        {
+          "seller": "کالاکووو",
+          "price": 14750000,
+          "url": null
+        },
+        {
+          "seller": "شیرازمودم",
+          "price": 16000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 12700000,
       "price_change_amount": 1000000,
       "price_change_percent": 7.2,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:52.498244+00:00",
+      "last_checked": "2026-09-08T09:16:46.292117+00:00",
       "digikala_change_percent": 7.2,
-      "torob_change_percent": null,
+      "torob_change_percent": 16.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:52.498244+00:00",
           "digikala_price": 14800000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:46.292117+00:00",
+          "digikala_price": 14800000,
+          "torob_price": 12700000
         }
       ]
     },
@@ -3181,7 +6099,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:53.598554+00:00",
+      "last_checked": "2026-09-08T09:16:46.422873+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -3208,21 +6126,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/2823150d-5529-4dbc-9007-0724a0b24cf0/",
       "initial_torob_price": 4500000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
+      "current_torob_price": 4500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در مودم همراه ایران",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "مودم همراه ایران",
+          "price": 4500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4500000,
       "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:53.598595+00:00",
+      "price_change_percent": 0.0,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:46.422897+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:53.598595+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:46.422897+00:00",
+          "digikala_price": null,
+          "torob_price": 4500000
         }
       ]
     },
@@ -3242,21 +6176,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/c3798053-4bf0-441a-bf52-36245133aaca/",
       "initial_torob_price": 5800000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:56.545563+00:00",
+      "current_torob_price": 6500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در دارت مارکت دات کلیک",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "دارت مارکت دات کلیک",
+          "price": 6500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6500000,
+      "price_change_amount": 700000,
+      "price_change_percent": 12.1,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:49.684640+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 12.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:56.545563+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:49.684640+00:00",
+          "digikala_price": null,
+          "torob_price": 6500000
         }
       ]
     },
@@ -3276,21 +6226,52 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/46fb7b66-9965-4934-b971-3066bbe9cb2d/",
       "initial_torob_price": 4489000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:56.767980+00:00",
+      "current_torob_price": 2280000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۴ فروشگاه",
+          "price": 2280000,
+          "url": null
+        },
+        {
+          "seller": "مودم ارزان آداک",
+          "price": 2280000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 4489000,
+          "url": null
+        },
+        {
+          "seller": "تهران مودم",
+          "price": 5100000,
+          "url": null
+        },
+        {
+          "seller": "هدیار",
+          "price": 5835700,
+          "url": null
+        }
+      ],
+      "best_current_price": 2280000,
+      "price_change_amount": -2209000,
+      "price_change_percent": -49.2,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:50.027731+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -49.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:56.767980+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:50.027731+00:00",
+          "digikala_price": null,
+          "torob_price": 2280000
         }
       ]
     },
@@ -3319,21 +6300,57 @@
       ],
       "torob_url": "https://torob.com/p/29be3f2e-f747-4c98-8d61-bd58644f8288/",
       "initial_torob_price": 4989000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7500000,
+      "current_torob_price": 2100000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "تبریز مودم",
+          "price": 2100000,
+          "url": null
+        },
+        {
+          "seller": "در ۴ فروشگاه",
+          "price": 2780000,
+          "url": null
+        },
+        {
+          "seller": "مودم ارزان آداک",
+          "price": 2780000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 4989000,
+          "url": null
+        },
+        {
+          "seller": "هدیار",
+          "price": 6485700,
+          "url": null
+        },
+        {
+          "seller": "ایسام",
+          "price": 24000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 2100000,
       "price_change_amount": -1230000,
       "price_change_percent": -14.1,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:58.852552+00:00",
+      "last_checked": "2026-09-08T09:16:50.867257+00:00",
       "digikala_change_percent": -14.1,
-      "torob_change_percent": null,
+      "torob_change_percent": -57.9,
       "history": [
         {
           "timestamp": "2026-09-08T08:31:58.852552+00:00",
           "digikala_price": 7500000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:50.867257+00:00",
+          "digikala_price": 7500000,
+          "torob_price": 2100000
         }
       ]
     },
@@ -3360,7 +6377,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:01.519509+00:00",
+      "last_checked": "2026-09-08T09:16:51.109114+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -3392,21 +6409,77 @@
       ],
       "torob_url": "https://torob.com/p/613960de-720e-4f00-afd5-3ce32b01df80/",
       "initial_torob_price": 5795000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 9700000,
+      "current_torob_price": 6755000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۱۲ فروشگاه",
+          "price": 6755000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 6755000,
+          "url": null
+        },
+        {
+          "seller": "ارتباطات شبکه ثامن",
+          "price": 6800000,
+          "url": null
+        },
+        {
+          "seller": "ویکو گیم",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "یاس ارتباط",
+          "price": 6900000,
+          "url": null
+        },
+        {
+          "seller": "آذین کامپیوتر",
+          "price": 6930000,
+          "url": null
+        },
+        {
+          "seller": "دایزیما",
+          "price": 6970000,
+          "url": null
+        },
+        {
+          "seller": "برقچی",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 7190000,
+          "url": null
+        },
+        {
+          "seller": "آی سورس",
+          "price": 7200000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6755000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:32:03.390210+00:00",
+      "last_checked": "2026-09-08T09:16:51.689717+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": 16.6,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:03.390210+00:00",
           "digikala_price": 9700000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:51.689717+00:00",
+          "digikala_price": 9700000,
+          "torob_price": 6755000
         }
       ]
     },
@@ -3439,21 +6512,77 @@
       ],
       "torob_url": "https://torob.com/p/97e3d335-891b-46b1-9204-c01e9498ef9e/",
       "initial_torob_price": 5740000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 10200000,
+      "current_torob_price": 4470000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "تجهیزات شبکه استوک",
+          "price": 4470000,
+          "url": null
+        },
+        {
+          "seller": "فانوس آیتی",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "شبكه نور",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۳ فروشگاه",
+          "price": 5750000,
+          "url": null
+        },
+        {
+          "seller": "آریا اندیش",
+          "price": 5750000,
+          "url": null
+        },
+        {
+          "seller": "ایران لینک",
+          "price": 6000000,
+          "url": null
+        },
+        {
+          "seller": "کی تک کالا",
+          "price": 6350000,
+          "url": null
+        },
+        {
+          "seller": "یاس ارتباط",
+          "price": 6360000,
+          "url": null
+        },
+        {
+          "seller": "سانا ارتباط",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "هفت کالا",
+          "price": 6500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4470000,
       "price_change_amount": -100000,
       "price_change_percent": -1.0,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:32:05.028797+00:00",
+      "last_checked": "2026-09-08T09:16:52.144494+00:00",
       "digikala_change_percent": -1.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -22.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:05.028797+00:00",
           "digikala_price": 10200000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:52.144494+00:00",
+          "digikala_price": 10200000,
+          "torob_price": 4470000
         }
       ]
     },
@@ -3490,33 +6619,81 @@
         {
           "seller": "کلاب جانبی دنیز",
           "price": 34000000
-        },
-        {
-          "seller": "تجهیزات معینی",
-          "price": 43000000
-        },
-        {
-          "seller": "تجهیزات شبکه معینی",
-          "price": 43000000
         }
       ],
       "torob_url": "https://torob.com/p/c2ffcf7c-da72-4b43-a65e-d30359577853/",
       "initial_torob_price": 19500000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 28000000,
+      "current_torob_price": 19200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "پیشخوان هزار جریب",
+          "price": 19200000,
+          "url": null
+        },
+        {
+          "seller": "منفرد زنجان",
+          "price": 19500000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۳ فروشگاه",
+          "price": 19800000,
+          "url": null
+        },
+        {
+          "seller": "منفردسیم",
+          "price": 19800000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت شهرک میلاد",
+          "price": 19800000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت خانجانی",
+          "price": 19900000,
+          "url": null
+        },
+        {
+          "seller": "سیم سل دات آی آر",
+          "price": 21000000,
+          "url": null
+        },
+        {
+          "seller": "آی سام شاپ",
+          "price": 21350000,
+          "url": null
+        },
+        {
+          "seller": "تجارت هوشمند",
+          "price": 21500000,
+          "url": null
+        },
+        {
+          "seller": "مرکز سیمکارت ایران",
+          "price": 21900000,
+          "url": null
+        }
+      ],
+      "best_current_price": 19200000,
       "price_change_amount": -8000000,
       "price_change_percent": -22.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:32:05.349643+00:00",
+      "last_checked": "2026-09-08T09:16:52.200363+00:00",
       "digikala_change_percent": -22.2,
-      "torob_change_percent": null,
+      "torob_change_percent": -1.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:05.349643+00:00",
           "digikala_price": 28000000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:52.200363+00:00",
+          "digikala_price": 28000000,
+          "torob_price": 19200000
         }
       ]
     },
@@ -3545,21 +6722,77 @@
       ],
       "torob_url": "https://torob.com/p/ed50f1e4-14bb-4a4d-9f1d-2fbe950c1326/",
       "initial_torob_price": 6750000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 13700000,
+      "current_torob_price": 4200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "خبره",
+          "price": 4200000,
+          "url": null
+        },
+        {
+          "seller": "دید آزما",
+          "price": 4900000,
+          "url": null
+        },
+        {
+          "seller": "نما",
+          "price": 5100000,
+          "url": null
+        },
+        {
+          "seller": "نوین‌پرداز اصفهان",
+          "price": 5450000,
+          "url": null
+        },
+        {
+          "seller": "ماهان آقای امیر روحانی",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "پردیس کامپیوتر",
+          "price": 5950000,
+          "url": null
+        },
+        {
+          "seller": "در ۱۶ فروشگاه",
+          "price": 6750000,
+          "url": null
+        },
+        {
+          "seller": "مشتاق سیستم",
+          "price": 6750000,
+          "url": null
+        },
+        {
+          "seller": "سیم بازار",
+          "price": 6750000,
+          "url": null
+        },
+        {
+          "seller": "مهندسی فن آوران",
+          "price": 6990000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4200000,
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:32:07.120160+00:00",
+      "last_checked": "2026-09-08T09:16:52.520338+00:00",
       "digikala_change_percent": 0.0,
-      "torob_change_percent": null,
+      "torob_change_percent": -37.8,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:07.120160+00:00",
           "digikala_price": 13700000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:52.520338+00:00",
+          "digikala_price": 13700000,
+          "torob_price": 4200000
         }
       ]
     },
@@ -3586,7 +6819,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:09.548982+00:00",
+      "last_checked": "2026-09-08T09:16:52.623550+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -3622,21 +6855,77 @@
       ],
       "torob_url": "https://torob.com/p/9e162f9b-7816-4c18-bc2f-862a87dff380/",
       "initial_torob_price": 5300000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 11490000,
+      "current_torob_price": 5590000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۴۱ فروشگاه",
+          "price": 5590000,
+          "url": null
+        },
+        {
+          "seller": "آربابا مال",
+          "price": 5590000,
+          "url": null
+        },
+        {
+          "seller": "مدیاتک",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "مدیا تک شاپ",
+          "price": 5600000,
+          "url": null
+        },
+        {
+          "seller": "توسعه ارتباطات شبکه آراد",
+          "price": 5800000,
+          "url": null
+        },
+        {
+          "seller": "کامیتل شاپ",
+          "price": 6200000,
+          "url": null
+        },
+        {
+          "seller": "آربابا شاپ",
+          "price": 6290000,
+          "url": null
+        },
+        {
+          "seller": "قشم دیجیتال دات کام",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "زد ال تی نت",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "خاتم توس",
+          "price": 6500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 5590000,
       "price_change_amount": 1110000,
       "price_change_percent": 10.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:32:11.043976+00:00",
+      "last_checked": "2026-09-08T09:16:53.603556+00:00",
       "digikala_change_percent": 10.7,
-      "torob_change_percent": null,
+      "torob_change_percent": 5.5,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:11.043976+00:00",
           "digikala_price": 11490000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:53.603556+00:00",
+          "digikala_price": 11490000,
+          "torob_price": 5590000
         }
       ]
     },
@@ -3656,21 +6945,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/c297b2dc-66f4-4a18-a9df-8e87dafbeeac/",
       "initial_torob_price": 5300000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:12.869136+00:00",
+      "current_torob_price": 6200000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "بوکان",
+          "price": 6200000,
+          "url": null
+        },
+        {
+          "seller": "آربابا شاپ",
+          "price": 6300000,
+          "url": null
+        },
+        {
+          "seller": "خاتم توس",
+          "price": 6400000,
+          "url": null
+        },
+        {
+          "seller": "در ۳۱ فروشگاه",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "زد ال تی نت",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم",
+          "price": 6850000,
+          "url": null
+        },
+        {
+          "seller": "نانو شبکه",
+          "price": 7200000,
+          "url": null
+        },
+        {
+          "seller": "آقای مودم شاپ",
+          "price": 7270000,
+          "url": null
+        },
+        {
+          "seller": "هگزا مودم",
+          "price": 7300000,
+          "url": null
+        },
+        {
+          "seller": "عصر رایان",
+          "price": 7500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6200000,
+      "price_change_amount": 900000,
+      "price_change_percent": 17.0,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:53.964263+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 17.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:12.869136+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:53.964263+00:00",
+          "digikala_price": null,
+          "torob_price": 6200000
         }
       ]
     },
@@ -3707,21 +7052,77 @@
       ],
       "torob_url": "https://torob.com/p/7b905a85-31a3-4aa4-8cb0-c623df59507d/",
       "initial_torob_price": 6590000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 8500000,
+      "current_torob_price": 5000000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "نما",
+          "price": 5000000,
+          "url": null
+        },
+        {
+          "seller": "دیجی ویو",
+          "price": 5000000,
+          "url": null
+        },
+        {
+          "seller": "آگومان آیتی نور",
+          "price": 6520000,
+          "url": null
+        },
+        {
+          "seller": "ایوانو",
+          "price": 6800000,
+          "url": null
+        },
+        {
+          "seller": "جزیره چارسو",
+          "price": 6800000,
+          "url": null
+        },
+        {
+          "seller": "ایران لینک",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "الکتریکی میرسلطانی",
+          "price": 7000000,
+          "url": null
+        },
+        {
+          "seller": "در ۴۲ فروشگاه",
+          "price": 7099000,
+          "url": null
+        },
+        {
+          "seller": "دیجی نو دات آی آر",
+          "price": 7099000,
+          "url": null
+        },
+        {
+          "seller": "ام جی فون",
+          "price": 7099000,
+          "url": null
+        }
+      ],
+      "best_current_price": 5000000,
       "price_change_amount": 1100000,
       "price_change_percent": 14.9,
       "status": "increased",
-      "last_checked": "2026-09-08T08:32:13.326429+00:00",
+      "last_checked": "2026-09-08T09:16:54.132385+00:00",
       "digikala_change_percent": 14.9,
-      "torob_change_percent": null,
+      "torob_change_percent": -24.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:13.326429+00:00",
           "digikala_price": 8500000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:54.132385+00:00",
+          "digikala_price": 8500000,
+          "torob_price": 5000000
         }
       ]
     },
@@ -3741,21 +7142,52 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/abee013c-c70b-4f1c-ac1f-16c2b7f37e15/",
       "initial_torob_price": 6350000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
+      "current_torob_price": 6350000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۳ فروشگاه",
+          "price": 6350000,
+          "url": null
+        },
+        {
+          "seller": "جور جور",
+          "price": 6350000,
+          "url": null
+        },
+        {
+          "seller": "ماهسوتک",
+          "price": 6460000,
+          "url": null
+        },
+        {
+          "seller": "ماهسو تک",
+          "price": 6460000,
+          "url": null
+        },
+        {
+          "seller": "نت کامپیوتر",
+          "price": 7500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 6350000,
       "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:15.760792+00:00",
+      "price_change_percent": 0.0,
+      "status": "unchanged",
+      "last_checked": "2026-09-08T09:16:54.351008+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:15.760792+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:54.351008+00:00",
+          "digikala_price": null,
+          "torob_price": 6350000
         }
       ]
     },
@@ -3775,21 +7207,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/1d353b04-577b-4e03-8fec-d60175761243/",
       "initial_torob_price": 2700000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:17.533718+00:00",
+      "current_torob_price": 2400000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در باسلام",
+          "price": 2400000,
+          "url": null
+        },
+        {
+          "seller": "باسلام",
+          "price": 2400000,
+          "url": null
+        }
+      ],
+      "best_current_price": 2400000,
+      "price_change_amount": -300000,
+      "price_change_percent": -11.1,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:54.706372+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -11.1,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:17.533718+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:54.706372+00:00",
+          "digikala_price": null,
+          "torob_price": 2400000
         }
       ]
     },
@@ -3809,21 +7257,77 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/39faee36-ac5f-4623-a4bf-1b5e78cd489f/",
       "initial_torob_price": 9900000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:18.443409+00:00",
+      "current_torob_price": 7500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "دفتر پیشخوان دولت ۱۴۷۲",
+          "price": 7500000,
+          "url": null
+        },
+        {
+          "seller": "پارسا سیم",
+          "price": 7500000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان و کافی نت سما",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "رد پی سی",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "در ۵ فروشگاه",
+          "price": 8700000,
+          "url": null
+        },
+        {
+          "seller": "سیم بازار",
+          "price": 8700000,
+          "url": null
+        },
+        {
+          "seller": "دفتر پیشخوان دولت شهرک میلاد",
+          "price": 8800000,
+          "url": null
+        },
+        {
+          "seller": "راهبُرد نت",
+          "price": 8900000,
+          "url": null
+        },
+        {
+          "seller": "تجهیزات شبکه سون",
+          "price": 9000000,
+          "url": null
+        },
+        {
+          "seller": "اورکا استور",
+          "price": 9200000,
+          "url": null
+        }
+      ],
+      "best_current_price": 7500000,
+      "price_change_amount": -2400000,
+      "price_change_percent": -24.2,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:55.590915+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -24.2,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:18.443409+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:55.590915+00:00",
+          "digikala_price": null,
+          "torob_price": 7500000
         }
       ]
     },
@@ -3848,21 +7352,77 @@
       ],
       "torob_url": "https://torob.com/p/b94abadf-bdd1-494b-9203-db4b187aaeb6/",
       "initial_torob_price": 6000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": 7900000,
+      "current_torob_price": 4500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "نت پلاس یزد",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "ایران سیستم",
+          "price": 4500000,
+          "url": null
+        },
+        {
+          "seller": "مودم نوراسل",
+          "price": 4600000,
+          "url": null
+        },
+        {
+          "seller": "در ۸ فروشگاه",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "آنزانسل دات آی آر",
+          "price": 5500000,
+          "url": null
+        },
+        {
+          "seller": "همراه من",
+          "price": 6400000,
+          "url": null
+        },
+        {
+          "seller": "بیانت",
+          "price": 6500000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ",
+          "price": 6989000,
+          "url": null
+        },
+        {
+          "seller": "آ اس پ می",
+          "price": 6989000,
+          "url": null
+        },
+        {
+          "seller": "تکنولینک",
+          "price": 7400000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4500000,
       "price_change_amount": 400000,
       "price_change_percent": 5.3,
       "status": "increased",
-      "last_checked": "2026-09-08T08:32:19.676820+00:00",
+      "last_checked": "2026-09-08T09:16:56.004399+00:00",
       "digikala_change_percent": 5.3,
-      "torob_change_percent": null,
+      "torob_change_percent": -25.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:19.676820+00:00",
           "digikala_price": 7900000,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:56.004399+00:00",
+          "digikala_price": 7900000,
+          "torob_price": 4500000
         }
       ]
     },
@@ -3889,7 +7449,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:23.543126+00:00",
+      "last_checked": "2026-09-08T09:16:56.196407+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -3916,21 +7476,47 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/b6d9d644-4ea5-43c5-b811-78ba5178a103/",
       "initial_torob_price": 15000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:24.985885+00:00",
+      "current_torob_price": 8500000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "دانا 8",
+          "price": 8500000,
+          "url": null
+        },
+        {
+          "seller": "در ۲ فروشگاه",
+          "price": 11000000,
+          "url": null
+        },
+        {
+          "seller": "زمانی",
+          "price": 11000000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 17500000,
+          "url": null
+        }
+      ],
+      "best_current_price": 8500000,
+      "price_change_amount": -6500000,
+      "price_change_percent": -43.3,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:56.221222+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -43.3,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:24.985885+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:56.221222+00:00",
+          "digikala_price": null,
+          "torob_price": 8500000
         }
       ]
     },
@@ -3957,7 +7543,7 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:27.522696+00:00",
+      "last_checked": "2026-09-08T09:16:56.859732+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
@@ -3984,21 +7570,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/8451be08-ff42-4be2-8459-daadd7bfc4a0/",
       "initial_torob_price": 4000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:28.125442+00:00",
+      "current_torob_price": 4000000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در مسترنت",
+          "price": 4000000,
+          "url": null
+        },
+        {
+          "seller": "مسترنت",
+          "price": 4000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 4000000,
+      "price_change_amount": -100000,
+      "price_change_percent": -2.4,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:57.494009+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 0.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:28.125442+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:57.494009+00:00",
+          "digikala_price": null,
+          "torob_price": 4000000
         }
       ]
     },
@@ -4018,21 +7620,42 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/7bf65415-8ab1-4755-bb3a-862596f1efe0/",
       "initial_torob_price": 5900000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:28.433334+00:00",
+      "current_torob_price": 8549000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در ۲ فروشگاه",
+          "price": 8549000,
+          "url": null
+        },
+        {
+          "seller": "مهرداد آی تی",
+          "price": 8549000,
+          "url": null
+        },
+        {
+          "seller": "اسنپ شاپ",
+          "price": 12000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 8549000,
+      "price_change_amount": 2649000,
+      "price_change_percent": 44.9,
+      "status": "increased",
+      "last_checked": "2026-09-08T09:16:57.644926+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": 44.9,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:28.433334+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:57.644926+00:00",
+          "digikala_price": null,
+          "torob_price": 8549000
         }
       ]
     },
@@ -4052,21 +7675,37 @@
       "digikala_offers": [],
       "torob_url": "https://torob.com/p/18e480a6-0b3b-4c62-a22f-916ccae4f7ad/",
       "initial_torob_price": 4000000,
-      "current_torob_price": null,
-      "torob_available": false,
-      "torob_offers": [],
-      "best_current_price": null,
-      "price_change_amount": 0,
-      "price_change_percent": null,
-      "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:31.661830+00:00",
+      "current_torob_price": 3000000,
+      "torob_available": true,
+      "torob_offers": [
+        {
+          "seller": "در پارسیان مودم",
+          "price": 3000000,
+          "url": null
+        },
+        {
+          "seller": "پارسیان مودم",
+          "price": 3000000,
+          "url": null
+        }
+      ],
+      "best_current_price": 3000000,
+      "price_change_amount": -1000000,
+      "price_change_percent": -25.0,
+      "status": "decreased",
+      "last_checked": "2026-09-08T09:16:57.908276+00:00",
       "digikala_change_percent": null,
-      "torob_change_percent": null,
+      "torob_change_percent": -25.0,
       "history": [
         {
           "timestamp": "2026-09-08T08:32:31.661830+00:00",
           "digikala_price": null,
           "torob_price": null
+        },
+        {
+          "timestamp": "2026-09-08T09:16:57.908276+00:00",
+          "digikala_price": null,
+          "torob_price": 3000000
         }
       ]
     }
