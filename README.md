@@ -46,12 +46,21 @@ git remote add origin https://github.com/<نام-کاربری-شما>/<نام-ر
 git push -u origin main
 ```
 
-### ۲. فعال‌سازی GitHub Pages در تنظیمات گیت‌هاب
+### ۲. تنظیم دسترسی کامیت و فعال‌سازی GitHub Pages
 
-1. در صفحه ریپازیتوری در سایت GitHub به تب **Settings** بروید.
-2. از منوی سمت چپ روی گزینه **Pages** کلیک کنید.
-3. در بخش **Build and deployment**، گزینه **Source** را از حالت Deploy from a branch به **GitHub Actions** تغییر دهید.
-4. کار تمام است! ورک‌فلو موجود در `.github/workflows/monitor_and_deploy.yml` به صورت خودکار اجرا شده و سایت شما را منتشر می‌کند.
+پس از Push کردن پروژه، این دو تنظیم ساده را در سایت GitHub انجام دهید:
+
+#### الف) تنظیم مجوزهای Workflow (بسیار مهم):
+برای اینکه سرورهای گیت‌هاب بتوانند فایل اکسل و JSON قیمت‌های جدید را در مخزن ذخیره کنند:
+1. در صفحه مخزن خود در GitHub به تب **Settings** بروید.
+2. از منوی سمت چپ به مسیر **Actions** > **General** بروید.
+3. در انتهای صفحه به بخش **Workflow permissions** رفته و گزینه **Read and write permissions** را انتخاب کنید.
+4. دکمه **Save** را بزنید.
+
+#### ب) فعال‌سازی GitHub Pages:
+1. در همان صفحه **Settings**، از ستون سمت چپ روی **Pages** کلیک کنید.
+2. در بخش **Build and deployment**، گزینه **Source** را از حالت Deploy from a branch به **GitHub Actions** تغییر دهید.
+3. کار تمام است! گیت‌هاب به‌طور خودکار سایت را بیلد کرده و آدرس آنلاین آن را در بالای صفحه Pages به شما نمایش می‌دهد.
 
 ### ۳. تنظیم نوتیفیکیشن تلگرام (اختیاری)
 

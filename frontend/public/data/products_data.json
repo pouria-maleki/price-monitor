@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated_iso": "2026-09-08T08:32:38.714148+00:00",
-    "last_updated_fa": "17 شهریور 1405 - 12:03",
+    "last_updated_iso": "2026-09-08T09:28:27.565195+00:00",
+    "last_updated_fa": "17 شهریور 1405 - 12:58",
     "total_products": 100,
     "new_count": 32,
     "stock_count": 68,
@@ -9,7 +9,7 @@
     "decreased_count": 9,
     "unchanged_count": 10,
     "out_of_stock_count": 58,
-    "duration_seconds": 160.3
+    "duration_seconds": 115.3
   },
   "items": [
     {
@@ -56,7 +56,7 @@
       "price_change_amount": -610000,
       "price_change_percent": -6.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:29:58.391662+00:00",
+      "last_checked": "2026-09-08T09:26:32.301908+00:00",
       "digikala_change_percent": -6.2,
       "torob_change_percent": null,
       "history": [
@@ -103,7 +103,7 @@
       "price_change_amount": 732000,
       "price_change_percent": 15.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:29:58.392364+00:00",
+      "last_checked": "2026-09-08T09:26:32.311976+00:00",
       "digikala_change_percent": 15.7,
       "torob_change_percent": null,
       "history": [
@@ -158,12 +158,12 @@
       "price_change_amount": 500000,
       "price_change_percent": 7.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:29:58.392897+00:00",
+      "last_checked": "2026-09-08T09:26:32.316985+00:00",
       "digikala_change_percent": 7.7,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:27:02.078064",
+          "timestamp": "2026-09-08T09:26:32.316985+00:00",
           "digikala_price": 7000000,
           "torob_price": null
         }
@@ -205,12 +205,12 @@
       "price_change_amount": 778390,
       "price_change_percent": 3.5,
       "status": "increased",
-      "last_checked": "2026-09-08T08:29:58.393267+00:00",
+      "last_checked": "2026-09-08T09:26:32.320222+00:00",
       "digikala_change_percent": 3.5,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:29:58.393267+00:00",
+          "timestamp": "2026-09-08T09:26:32.320222+00:00",
           "digikala_price": 22900000,
           "torob_price": null
         }
@@ -239,12 +239,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:29:58.396195+00:00",
+      "last_checked": "2026-09-08T09:26:32.329740+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:29:58.396195+00:00",
+          "timestamp": "2026-09-08T09:26:32.329740+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -273,12 +273,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:06.225598+00:00",
+      "last_checked": "2026-09-08T09:26:32.482466+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:06.225598+00:00",
+          "timestamp": "2026-09-08T09:26:32.482466+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -307,12 +307,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:06.333399+00:00",
+      "last_checked": "2026-09-08T09:26:40.025289+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:06.333399+00:00",
+          "timestamp": "2026-09-08T09:26:40.025289+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -341,12 +341,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:11.901154+00:00",
+      "last_checked": "2026-09-08T09:26:40.047570+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:11.901154+00:00",
+          "timestamp": "2026-09-08T09:26:40.047570+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -375,12 +375,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:12.415445+00:00",
+      "last_checked": "2026-09-08T09:26:40.361414+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:12.415445+00:00",
+          "timestamp": "2026-09-08T09:26:40.361414+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -414,12 +414,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:12.681762+00:00",
+      "last_checked": "2026-09-08T09:26:40.593423+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:12.681762+00:00",
+          "timestamp": "2026-09-08T09:26:40.593423+00:00",
           "digikala_price": 4250000,
           "torob_price": null
         }
@@ -461,12 +461,12 @@
       "price_change_amount": 2500000,
       "price_change_percent": 11.6,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:12.723123+00:00",
+      "last_checked": "2026-09-08T09:26:40.635700+00:00",
       "digikala_change_percent": 11.6,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:12.723123+00:00",
+          "timestamp": "2026-09-08T09:26:40.635700+00:00",
           "digikala_price": 24000000,
           "torob_price": null
         }
@@ -495,12 +495,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:16.580458+00:00",
+      "last_checked": "2026-09-08T09:26:40.735820+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:16.580458+00:00",
+          "timestamp": "2026-09-08T09:26:40.735820+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -582,12 +582,12 @@
       "price_change_amount": 1042250,
       "price_change_percent": 17.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:16.715187+00:00",
+      "last_checked": "2026-09-08T09:26:45.996760+00:00",
       "digikala_change_percent": 17.4,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:16.715187+00:00",
+          "timestamp": "2026-09-08T09:26:45.996760+00:00",
           "digikala_price": 7042250,
           "torob_price": null
         }
@@ -616,12 +616,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:21.354878+00:00",
+      "last_checked": "2026-09-08T09:26:46.016503+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:21.354878+00:00",
+          "timestamp": "2026-09-08T09:26:46.016503+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -667,12 +667,12 @@
       "price_change_amount": 1102350,
       "price_change_percent": 17.3,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:21.953915+00:00",
+      "last_checked": "2026-09-08T09:26:49.955518+00:00",
       "digikala_change_percent": 17.3,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:21.953915+00:00",
+          "timestamp": "2026-09-08T09:26:49.955518+00:00",
           "digikala_price": 7460210,
           "torob_price": null
         }
@@ -710,12 +710,12 @@
       "price_change_amount": 2035640,
       "price_change_percent": 36.3,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:22.763875+00:00",
+      "last_checked": "2026-09-08T09:26:51.000687+00:00",
       "digikala_change_percent": 36.3,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:22.763875+00:00",
+          "timestamp": "2026-09-08T09:26:51.000687+00:00",
           "digikala_price": 7640000,
           "torob_price": null
         }
@@ -731,17 +731,17 @@
       "quantity": 11,
       "digikala_url": "https://www.digikala.com/product/dkp-21217990/",
       "initial_digikala_price": 6600000,
-      "current_digikala_price": 7943260,
+      "current_digikala_price": 8053520,
       "digikala_available": true,
       "digikala_seller": "های نو",
       "digikala_offers": [
         {
           "seller": "های نو",
-          "price": 7943260
+          "price": 8053520
         },
         {
           "seller": "فناوران تک",
-          "price": 7943000
+          "price": 8053000
         }
       ],
       "torob_url": "https://torob.com/p/826924a7-bcd1-41d1-9138-3e1bed6e05d3/",
@@ -749,17 +749,17 @@
       "current_torob_price": null,
       "torob_available": false,
       "torob_offers": [],
-      "best_current_price": 7943260,
-      "price_change_amount": 1343260,
-      "price_change_percent": 20.4,
+      "best_current_price": 8053520,
+      "price_change_amount": 1453520,
+      "price_change_percent": 22.0,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:25.596694+00:00",
-      "digikala_change_percent": 20.4,
+      "last_checked": "2026-09-08T09:26:51.021078+00:00",
+      "digikala_change_percent": 22.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:25.596694+00:00",
-          "digikala_price": 7943260,
+          "timestamp": "2026-09-08T09:26:51.021078+00:00",
+          "digikala_price": 8053520,
           "torob_price": null
         }
       ]
@@ -787,12 +787,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:25.927275+00:00",
+      "last_checked": "2026-09-08T09:26:51.088893+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:25.927275+00:00",
+          "timestamp": "2026-09-08T09:26:51.088893+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -808,13 +808,13 @@
       "quantity": 2,
       "digikala_url": "https://www.digikala.com/product/dkp-16721408/",
       "initial_digikala_price": 7250000,
-      "current_digikala_price": 7552500,
+      "current_digikala_price": 7950000,
       "digikala_available": true,
       "digikala_seller": "چلسی",
       "digikala_offers": [
         {
           "seller": "چلسی",
-          "price": 7552500
+          "price": 7950000
         },
         {
           "seller": "مانیارتک",
@@ -830,17 +830,17 @@
       "current_torob_price": null,
       "torob_available": false,
       "torob_offers": [],
-      "best_current_price": 7552500,
-      "price_change_amount": 302500,
-      "price_change_percent": 4.2,
+      "best_current_price": 7950000,
+      "price_change_amount": 700000,
+      "price_change_percent": 9.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:26.159645+00:00",
-      "digikala_change_percent": 4.2,
+      "last_checked": "2026-09-08T09:26:51.360239+00:00",
+      "digikala_change_percent": 9.7,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:26.159645+00:00",
-          "digikala_price": 7552500,
+          "timestamp": "2026-09-08T09:26:51.360239+00:00",
+          "digikala_price": 7950000,
           "torob_price": null
         }
       ]
@@ -868,12 +868,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:30.926881+00:00",
+      "last_checked": "2026-09-08T09:26:54.107053+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:30.926881+00:00",
+          "timestamp": "2026-09-08T09:26:54.107053+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -935,12 +935,12 @@
       "price_change_amount": 30800,
       "price_change_percent": 0.9,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:30.992881+00:00",
+      "last_checked": "2026-09-08T09:26:55.400266+00:00",
       "digikala_change_percent": 0.9,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:30.992881+00:00",
+          "timestamp": "2026-09-08T09:26:55.400266+00:00",
           "digikala_price": 3324800,
           "torob_price": null
         }
@@ -998,12 +998,12 @@
       "price_change_amount": 450000,
       "price_change_percent": 4.6,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:31.546264+00:00",
+      "last_checked": "2026-09-08T09:26:57.748563+00:00",
       "digikala_change_percent": 4.6,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:31.546264+00:00",
+          "timestamp": "2026-09-08T09:26:57.748563+00:00",
           "digikala_price": 10200000,
           "torob_price": null
         }
@@ -1037,12 +1037,12 @@
       "price_change_amount": 500000,
       "price_change_percent": 5.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:34.362243+00:00",
+      "last_checked": "2026-09-08T09:26:57.942959+00:00",
       "digikala_change_percent": 5.4,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:34.362243+00:00",
+          "timestamp": "2026-09-08T09:26:57.942959+00:00",
           "digikala_price": 9800000,
           "torob_price": null
         }
@@ -1116,12 +1116,12 @@
       "price_change_amount": 281000,
       "price_change_percent": 5.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:34.792855+00:00",
+      "last_checked": "2026-09-08T09:26:58.504570+00:00",
       "digikala_change_percent": 5.4,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:34.792855+00:00",
+          "timestamp": "2026-09-08T09:26:58.504570+00:00",
           "digikala_price": 5500000,
           "torob_price": null
         }
@@ -1163,12 +1163,12 @@
       "price_change_amount": 1250000,
       "price_change_percent": 12.9,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:35.175781+00:00",
+      "last_checked": "2026-09-08T09:26:59.369070+00:00",
       "digikala_change_percent": 12.9,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:35.175781+00:00",
+          "timestamp": "2026-09-08T09:26:59.369070+00:00",
           "digikala_price": 10950000,
           "torob_price": null
         }
@@ -1218,12 +1218,12 @@
       "price_change_amount": -85000,
       "price_change_percent": -1.5,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:30:39.076195+00:00",
+      "last_checked": "2026-09-08T09:26:59.488458+00:00",
       "digikala_change_percent": -1.5,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:39.076195+00:00",
+          "timestamp": "2026-09-08T09:26:59.488458+00:00",
           "digikala_price": 5600000,
           "torob_price": null
         }
@@ -1257,12 +1257,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:39.531544+00:00",
+      "last_checked": "2026-09-08T09:27:03.797006+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:39.531544+00:00",
+          "timestamp": "2026-09-08T09:27:03.797006+00:00",
           "digikala_price": 12990000,
           "torob_price": null
         }
@@ -1300,12 +1300,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:43.350018+00:00",
+      "last_checked": "2026-09-08T09:27:05.152782+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:43.350018+00:00",
+          "timestamp": "2026-09-08T09:27:05.152782+00:00",
           "digikala_price": 15490000,
           "torob_price": null
         }
@@ -1334,12 +1334,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:44.019787+00:00",
+      "last_checked": "2026-09-08T09:27:05.339213+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:44.019787+00:00",
+          "timestamp": "2026-09-08T09:27:05.339213+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1368,12 +1368,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:44.532964+00:00",
+      "last_checked": "2026-09-08T09:27:05.778741+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:44.532964+00:00",
+          "timestamp": "2026-09-08T09:27:05.778741+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1402,12 +1402,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:48.744198+00:00",
+      "last_checked": "2026-09-08T09:27:06.060570+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:48.744198+00:00",
+          "timestamp": "2026-09-08T09:27:06.060570+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1433,7 +1433,7 @@
         },
         {
           "seller": "های نو",
-          "price": 5544130
+          "price": 5538570
         },
         {
           "seller": "آیرا پرو",
@@ -1453,12 +1453,12 @@
       "price_change_amount": 1840000,
       "price_change_percent": 47.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:30:48.935136+00:00",
+      "last_checked": "2026-09-08T09:27:06.454851+00:00",
       "digikala_change_percent": 47.7,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:48.935136+00:00",
+          "timestamp": "2026-09-08T09:27:06.454851+00:00",
           "digikala_price": 5700000,
           "torob_price": null
         }
@@ -1487,12 +1487,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:51.817466+00:00",
+      "last_checked": "2026-09-08T09:27:10.572538+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:51.817466+00:00",
+          "timestamp": "2026-09-08T09:27:10.572538+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1521,12 +1521,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:51.910013+00:00",
+      "last_checked": "2026-09-08T09:27:12.483210+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:51.910013+00:00",
+          "timestamp": "2026-09-08T09:27:12.483210+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1580,12 +1580,12 @@
       "price_change_amount": -1386100,
       "price_change_percent": -8.3,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:30:52.717755+00:00",
+      "last_checked": "2026-09-08T09:27:12.657687+00:00",
       "digikala_change_percent": -8.3,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:52.717755+00:00",
+          "timestamp": "2026-09-08T09:27:12.657687+00:00",
           "digikala_price": 15412800,
           "torob_price": null
         }
@@ -1614,12 +1614,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:55.977132+00:00",
+      "last_checked": "2026-09-08T09:27:13.031316+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:55.977132+00:00",
+          "timestamp": "2026-09-08T09:27:13.031316+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1653,12 +1653,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:30:56.335046+00:00",
+      "last_checked": "2026-09-08T09:27:13.034979+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:56.335046+00:00",
+          "timestamp": "2026-09-08T09:27:13.034979+00:00",
           "digikala_price": 19500000,
           "torob_price": null
         }
@@ -1687,12 +1687,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:56.880952+00:00",
+      "last_checked": "2026-09-08T09:27:13.357303+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:56.880952+00:00",
+          "timestamp": "2026-09-08T09:27:13.357303+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1721,12 +1721,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:30:56.975342+00:00",
+      "last_checked": "2026-09-08T09:27:14.171603+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:30:56.975342+00:00",
+          "timestamp": "2026-09-08T09:27:14.171603+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1755,12 +1755,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:00.785143+00:00",
+      "last_checked": "2026-09-08T09:27:16.709514+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:00.785143+00:00",
+          "timestamp": "2026-09-08T09:27:16.709514+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1789,12 +1789,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:00.923975+00:00",
+      "last_checked": "2026-09-08T09:27:17.390818+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:00.923975+00:00",
+          "timestamp": "2026-09-08T09:27:17.390818+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1828,12 +1828,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:03.564545+00:00",
+      "last_checked": "2026-09-08T09:27:20.381688+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:03.564545+00:00",
+          "timestamp": "2026-09-08T09:27:20.381688+00:00",
           "digikala_price": 4250000,
           "torob_price": null
         }
@@ -1862,12 +1862,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:04.169837+00:00",
+      "last_checked": "2026-09-08T09:27:20.493949+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:04.169837+00:00",
+          "timestamp": "2026-09-08T09:27:20.493949+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1905,12 +1905,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:04.740659+00:00",
+      "last_checked": "2026-09-08T09:27:20.649967+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:04.740659+00:00",
+          "timestamp": "2026-09-08T09:27:20.649967+00:00",
           "digikala_price": 13700000,
           "torob_price": null
         }
@@ -1939,12 +1939,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:08.169982+00:00",
+      "last_checked": "2026-09-08T09:27:21.026532+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:08.169982+00:00",
+          "timestamp": "2026-09-08T09:27:21.026532+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -1978,12 +1978,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:08.170033+00:00",
+      "last_checked": "2026-09-08T09:27:21.026570+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:08.170033+00:00",
+          "timestamp": "2026-09-08T09:27:21.026570+00:00",
           "digikala_price": 9000000,
           "torob_price": null
         }
@@ -2012,12 +2012,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:08.629226+00:00",
+      "last_checked": "2026-09-08T09:27:24.373869+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:08.629226+00:00",
+          "timestamp": "2026-09-08T09:27:24.373869+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2046,12 +2046,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:09.018219+00:00",
+      "last_checked": "2026-09-08T09:27:24.741510+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:09.018219+00:00",
+          "timestamp": "2026-09-08T09:27:24.741510+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2113,12 +2113,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:31:10.587886+00:00",
+      "last_checked": "2026-09-08T09:27:24.843903+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:10.587886+00:00",
+          "timestamp": "2026-09-08T09:27:24.843903+00:00",
           "digikala_price": 6950000,
           "torob_price": null
         }
@@ -2147,12 +2147,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:12.807744+00:00",
+      "last_checked": "2026-09-08T09:27:27.555357+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:12.807744+00:00",
+          "timestamp": "2026-09-08T09:27:27.555357+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2186,12 +2186,12 @@
       "price_change_amount": 500000,
       "price_change_percent": 5.4,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:13.299447+00:00",
+      "last_checked": "2026-09-08T09:27:28.444264+00:00",
       "digikala_change_percent": 5.4,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:13.299447+00:00",
+          "timestamp": "2026-09-08T09:27:28.444264+00:00",
           "digikala_price": 9800000,
           "torob_price": null
         }
@@ -2220,12 +2220,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:16.055244+00:00",
+      "last_checked": "2026-09-08T09:27:28.506396+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:16.055244+00:00",
+          "timestamp": "2026-09-08T09:27:28.506396+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2275,12 +2275,12 @@
       "price_change_amount": 1320000,
       "price_change_percent": 33.2,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:16.320371+00:00",
+      "last_checked": "2026-09-08T09:27:28.555238+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:16.320371+00:00",
+          "timestamp": "2026-09-08T09:27:28.555238+00:00",
           "digikala_price": 5300000,
           "torob_price": null
         }
@@ -2318,12 +2318,12 @@
       "price_change_amount": 1000000,
       "price_change_percent": 7.2,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:19.352413+00:00",
+      "last_checked": "2026-09-08T09:27:29.110766+00:00",
       "digikala_change_percent": 7.2,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:19.352413+00:00",
+          "timestamp": "2026-09-08T09:27:29.110766+00:00",
           "digikala_price": 14800000,
           "torob_price": null
         }
@@ -2365,12 +2365,12 @@
       "price_change_amount": -3006000,
       "price_change_percent": -16.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:21.598154+00:00",
+      "last_checked": "2026-09-08T09:27:32.800564+00:00",
       "digikala_change_percent": -16.2,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:21.598154+00:00",
+          "timestamp": "2026-09-08T09:27:32.800564+00:00",
           "digikala_price": 15594000,
           "torob_price": null
         }
@@ -2399,12 +2399,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:22.472238+00:00",
+      "last_checked": "2026-09-08T09:27:34.226323+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:22.472238+00:00",
+          "timestamp": "2026-09-08T09:27:34.226323+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2442,12 +2442,12 @@
       "price_change_amount": -110000,
       "price_change_percent": -2.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:24.755801+00:00",
+      "last_checked": "2026-09-08T09:27:36.099365+00:00",
       "digikala_change_percent": -2.2,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:24.755801+00:00",
+          "timestamp": "2026-09-08T09:27:36.099365+00:00",
           "digikala_price": 4890000,
           "torob_price": null
         }
@@ -2509,12 +2509,12 @@
       "price_change_amount": 1049090,
       "price_change_percent": 21.0,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:24.975391+00:00",
+      "last_checked": "2026-09-08T09:27:36.326631+00:00",
       "digikala_change_percent": 21.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:24.975391+00:00",
+          "timestamp": "2026-09-08T09:27:36.326631+00:00",
           "digikala_price": 6049090,
           "torob_price": null
         }
@@ -2543,12 +2543,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:28.267554+00:00",
+      "last_checked": "2026-09-08T09:27:36.366556+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:28.267554+00:00",
+          "timestamp": "2026-09-08T09:27:36.366556+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2577,12 +2577,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:29.706258+00:00",
+      "last_checked": "2026-09-08T09:27:36.680078+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:29.706258+00:00",
+          "timestamp": "2026-09-08T09:27:36.680078+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2611,12 +2611,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:30.757615+00:00",
+      "last_checked": "2026-09-08T09:27:40.806624+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:30.757615+00:00",
+          "timestamp": "2026-09-08T09:27:40.806624+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2645,12 +2645,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:33.767816+00:00",
+      "last_checked": "2026-09-08T09:27:40.999113+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:33.767816+00:00",
+          "timestamp": "2026-09-08T09:27:40.999113+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2696,12 +2696,12 @@
       "price_change_amount": -120000,
       "price_change_percent": -1.5,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:36.750823+00:00",
+      "last_checked": "2026-09-08T09:27:43.825588+00:00",
       "digikala_change_percent": -1.5,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:36.750823+00:00",
+          "timestamp": "2026-09-08T09:27:43.825588+00:00",
           "digikala_price": 7880000,
           "torob_price": null
         }
@@ -2730,12 +2730,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:38.806647+00:00",
+      "last_checked": "2026-09-08T09:27:43.858086+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:38.806647+00:00",
+          "timestamp": "2026-09-08T09:27:43.858086+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2764,12 +2764,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:39.747858+00:00",
+      "last_checked": "2026-09-08T09:27:44.300027+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:39.747858+00:00",
+          "timestamp": "2026-09-08T09:27:44.300027+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2798,12 +2798,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:40.116265+00:00",
+      "last_checked": "2026-09-08T09:27:44.434097+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:40.116265+00:00",
+          "timestamp": "2026-09-08T09:27:44.434097+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2832,12 +2832,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:40.361144+00:00",
+      "last_checked": "2026-09-08T09:27:44.939772+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:40.361144+00:00",
+          "timestamp": "2026-09-08T09:27:44.939772+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2866,12 +2866,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:42.908785+00:00",
+      "last_checked": "2026-09-08T09:27:47.925648+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:42.908785+00:00",
+          "timestamp": "2026-09-08T09:27:47.925648+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2900,12 +2900,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:44.215340+00:00",
+      "last_checked": "2026-09-08T09:27:48.243968+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:44.215340+00:00",
+          "timestamp": "2026-09-08T09:27:48.243968+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2934,12 +2934,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:45.303126+00:00",
+      "last_checked": "2026-09-08T09:27:48.313523+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:45.303126+00:00",
+          "timestamp": "2026-09-08T09:27:48.313523+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -2968,12 +2968,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:45.303182+00:00",
+      "last_checked": "2026-09-08T09:27:48.313570+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:45.303182+00:00",
+          "timestamp": "2026-09-08T09:27:48.313570+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3002,12 +3002,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:46.958013+00:00",
+      "last_checked": "2026-09-08T09:27:50.903648+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:46.958013+00:00",
+          "timestamp": "2026-09-08T09:27:50.903648+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3036,12 +3036,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:48.338348+00:00",
+      "last_checked": "2026-09-08T09:27:51.979121+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:48.338348+00:00",
+          "timestamp": "2026-09-08T09:27:51.979121+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3070,12 +3070,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:48.659413+00:00",
+      "last_checked": "2026-09-08T09:27:52.084616+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:48.659413+00:00",
+          "timestamp": "2026-09-08T09:27:52.084616+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3104,12 +3104,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:51.392727+00:00",
+      "last_checked": "2026-09-08T09:27:52.188586+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:51.392727+00:00",
+          "timestamp": "2026-09-08T09:27:52.188586+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3147,12 +3147,12 @@
       "price_change_amount": 1000000,
       "price_change_percent": 7.2,
       "status": "increased",
-      "last_checked": "2026-09-08T08:31:52.498244+00:00",
+      "last_checked": "2026-09-08T09:27:56.014946+00:00",
       "digikala_change_percent": 7.2,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:52.498244+00:00",
+          "timestamp": "2026-09-08T09:27:56.014946+00:00",
           "digikala_price": 14800000,
           "torob_price": null
         }
@@ -3181,12 +3181,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:53.598554+00:00",
+      "last_checked": "2026-09-08T09:27:56.099111+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:53.598554+00:00",
+          "timestamp": "2026-09-08T09:27:56.099111+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3215,12 +3215,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:53.598595+00:00",
+      "last_checked": "2026-09-08T09:27:56.099150+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:53.598595+00:00",
+          "timestamp": "2026-09-08T09:27:56.099150+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3249,12 +3249,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:56.545563+00:00",
+      "last_checked": "2026-09-08T09:27:57.916890+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:56.545563+00:00",
+          "timestamp": "2026-09-08T09:27:57.916890+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3283,12 +3283,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:31:56.767980+00:00",
+      "last_checked": "2026-09-08T09:27:59.011903+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:56.767980+00:00",
+          "timestamp": "2026-09-08T09:27:59.011903+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3326,12 +3326,12 @@
       "price_change_amount": -1230000,
       "price_change_percent": -14.1,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:31:58.852552+00:00",
+      "last_checked": "2026-09-08T09:27:59.786161+00:00",
       "digikala_change_percent": -14.1,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:31:58.852552+00:00",
+          "timestamp": "2026-09-08T09:27:59.786161+00:00",
           "digikala_price": 7500000,
           "torob_price": null
         }
@@ -3360,12 +3360,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:01.519509+00:00",
+      "last_checked": "2026-09-08T09:28:00.154159+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:01.519509+00:00",
+          "timestamp": "2026-09-08T09:28:00.154159+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3399,12 +3399,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:32:03.390210+00:00",
+      "last_checked": "2026-09-08T09:28:04.426386+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:03.390210+00:00",
+          "timestamp": "2026-09-08T09:28:04.426386+00:00",
           "digikala_price": 9700000,
           "torob_price": null
         }
@@ -3446,12 +3446,12 @@
       "price_change_amount": -100000,
       "price_change_percent": -1.0,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:32:05.028797+00:00",
+      "last_checked": "2026-09-08T09:28:04.478252+00:00",
       "digikala_change_percent": -1.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:05.028797+00:00",
+          "timestamp": "2026-09-08T09:28:04.478252+00:00",
           "digikala_price": 10200000,
           "torob_price": null
         }
@@ -3490,14 +3490,6 @@
         {
           "seller": "کلاب جانبی دنیز",
           "price": 34000000
-        },
-        {
-          "seller": "تجهیزات معینی",
-          "price": 43000000
-        },
-        {
-          "seller": "تجهیزات شبکه معینی",
-          "price": 43000000
         }
       ],
       "torob_url": "https://torob.com/p/c2ffcf7c-da72-4b43-a65e-d30359577853/",
@@ -3509,12 +3501,12 @@
       "price_change_amount": -8000000,
       "price_change_percent": -22.2,
       "status": "decreased",
-      "last_checked": "2026-09-08T08:32:05.349643+00:00",
+      "last_checked": "2026-09-08T09:28:04.899342+00:00",
       "digikala_change_percent": -22.2,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:05.349643+00:00",
+          "timestamp": "2026-09-08T09:28:04.899342+00:00",
           "digikala_price": 28000000,
           "torob_price": null
         }
@@ -3552,12 +3544,12 @@
       "price_change_amount": 0,
       "price_change_percent": 0.0,
       "status": "unchanged",
-      "last_checked": "2026-09-08T08:32:07.120160+00:00",
+      "last_checked": "2026-09-08T09:28:05.474696+00:00",
       "digikala_change_percent": 0.0,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:07.120160+00:00",
+          "timestamp": "2026-09-08T09:28:05.474696+00:00",
           "digikala_price": 13700000,
           "torob_price": null
         }
@@ -3586,12 +3578,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:09.548982+00:00",
+      "last_checked": "2026-09-08T09:28:06.510272+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:09.548982+00:00",
+          "timestamp": "2026-09-08T09:28:06.510272+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3629,12 +3621,12 @@
       "price_change_amount": 1110000,
       "price_change_percent": 10.7,
       "status": "increased",
-      "last_checked": "2026-09-08T08:32:11.043976+00:00",
+      "last_checked": "2026-09-08T09:28:06.832546+00:00",
       "digikala_change_percent": 10.7,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:11.043976+00:00",
+          "timestamp": "2026-09-08T09:28:06.832546+00:00",
           "digikala_price": 11490000,
           "torob_price": null
         }
@@ -3663,12 +3655,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:12.869136+00:00",
+      "last_checked": "2026-09-08T09:28:11.544752+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:12.869136+00:00",
+          "timestamp": "2026-09-08T09:28:11.544752+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3714,12 +3706,12 @@
       "price_change_amount": 1100000,
       "price_change_percent": 14.9,
       "status": "increased",
-      "last_checked": "2026-09-08T08:32:13.326429+00:00",
+      "last_checked": "2026-09-08T09:28:11.556564+00:00",
       "digikala_change_percent": 14.9,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:13.326429+00:00",
+          "timestamp": "2026-09-08T09:28:11.556564+00:00",
           "digikala_price": 8500000,
           "torob_price": null
         }
@@ -3748,12 +3740,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:15.760792+00:00",
+      "last_checked": "2026-09-08T09:28:12.382893+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:15.760792+00:00",
+          "timestamp": "2026-09-08T09:28:12.382893+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3782,12 +3774,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:17.533718+00:00",
+      "last_checked": "2026-09-08T09:28:12.636062+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:17.533718+00:00",
+          "timestamp": "2026-09-08T09:28:12.636062+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3816,12 +3808,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:18.443409+00:00",
+      "last_checked": "2026-09-08T09:28:13.125298+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:18.443409+00:00",
+          "timestamp": "2026-09-08T09:28:13.125298+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3855,12 +3847,12 @@
       "price_change_amount": 400000,
       "price_change_percent": 5.3,
       "status": "increased",
-      "last_checked": "2026-09-08T08:32:19.676820+00:00",
+      "last_checked": "2026-09-08T09:28:13.545374+00:00",
       "digikala_change_percent": 5.3,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:19.676820+00:00",
+          "timestamp": "2026-09-08T09:28:13.545374+00:00",
           "digikala_price": 7900000,
           "torob_price": null
         }
@@ -3889,12 +3881,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:23.543126+00:00",
+      "last_checked": "2026-09-08T09:28:15.396318+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:23.543126+00:00",
+          "timestamp": "2026-09-08T09:28:15.396318+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3923,12 +3915,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:24.985885+00:00",
+      "last_checked": "2026-09-08T09:28:18.758052+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:24.985885+00:00",
+          "timestamp": "2026-09-08T09:28:18.758052+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3957,12 +3949,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:27.522696+00:00",
+      "last_checked": "2026-09-08T09:28:19.430402+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:27.522696+00:00",
+          "timestamp": "2026-09-08T09:28:19.430402+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -3991,12 +3983,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:28.125442+00:00",
+      "last_checked": "2026-09-08T09:28:19.708728+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:28.125442+00:00",
+          "timestamp": "2026-09-08T09:28:19.708728+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -4025,12 +4017,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:28.433334+00:00",
+      "last_checked": "2026-09-08T09:28:20.051704+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:28.433334+00:00",
+          "timestamp": "2026-09-08T09:28:20.051704+00:00",
           "digikala_price": null,
           "torob_price": null
         }
@@ -4059,12 +4051,12 @@
       "price_change_amount": 0,
       "price_change_percent": null,
       "status": "out_of_stock",
-      "last_checked": "2026-09-08T08:32:31.661830+00:00",
+      "last_checked": "2026-09-08T09:28:20.208007+00:00",
       "digikala_change_percent": null,
       "torob_change_percent": null,
       "history": [
         {
-          "timestamp": "2026-09-08T08:32:31.661830+00:00",
+          "timestamp": "2026-09-08T09:28:20.208007+00:00",
           "digikala_price": null,
           "torob_price": null
         }
