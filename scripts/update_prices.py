@@ -430,7 +430,9 @@ def export_to_excel(items: list[dict], output_path: str | Path):
 def run_update(
     excel_path: str | Path,
     output_dirs: list[Path],
-    concurrency: int = 4,
+    concurrency: int = 1,
+    delay_min: float = 2.5,
+    delay_max: float = 5.0,
     limit: int | None = None,
     only_digikala: bool = False,
     dry_run: bool = False,
@@ -451,30 +453,58 @@ def run_update(
     logger.info("Starting live price extraction with concurrency=%d ...", concurrency)
 
     start_time = time.time()
-    with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
-        future_to_item = {
-            executor.submit(scrape_product_live, p, previous_data.get(p["id"]), only_digikala): p
-            for p in products
-        }
+    if concurrency > 1:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
+            future_to_item = {
+                executor.submit(scrape_product_live, p, previous_data.get(p["id"]), only_digikala): p
+                for p in products
+            }
 
-        for idx, future in enumerate(concurrent.futures.as_completed(future_to_item), 1):
-            orig_p = future_to_item[future]
+            for idx, future in enumerate(concurrent.futures.as_completed(future_to_item), 1):
+                orig_p = future_to_item[future]
+                try:
+                    res = future.result()
+                    updated_items.append(res)
+                    p_curr = res.get("current_digikala_price")
+                    p_init = res.get("initial_digikala_price")
+                    change_str = f"({res.get('price_change_percent')}%)" if res.get('price_change_percent') is not None else ""
+                    logger.info(
+                        "[%d/%d] %s: Live DK=%s (Excel was %s) %s",
+                        idx, len(products), res["name"][:35],
+                        f"{p_curr:,}" if p_curr else "None",
+                        f"{p_init:,}" if p_init else "None",
+                        change_str
+                    )
+                except Exception as exc:
+                    logger.error("Error processing %s: %s", orig_p["name"], exc)
+                    updated_items.append(orig_p)
+    else:
+        # Gentle sequential processing with human-like random jitter to prevent rate limiting & bot bans
+        import random
+        for idx, p in enumerate(products, 1):
+            orig_p = p
             try:
-                res = future.result()
+                res = scrape_product_live(p, previous_data.get(p["id"]), only_digikala)
                 updated_items.append(res)
                 p_curr = res.get("current_digikala_price")
-                p_init = res.get("initial_digikala_price")
+                p_tr = res.get("current_torob_price")
+                p_init = res.get("initial_digikala_price") or res.get("initial_torob_price")
                 change_str = f"({res.get('price_change_percent')}%)" if res.get('price_change_percent') is not None else ""
                 logger.info(
-                    "[%d/%d] %s: Live DK=%s (Excel was %s) %s",
-                    idx, len(products), res["name"][:35],
-                    f"{p_curr:,}" if p_curr else "None",
-                    f"{p_init:,}" if p_init else "None",
+                    "[%d/%d] %s: DK=%s, TR=%s (Base was %s) %s",
+                    idx, len(products), res["name"][:30],
+                    f"{p_curr:,}" if p_curr else "-",
+                    f"{p_tr:,}" if p_tr else "-",
+                    f"{p_init:,}" if p_init else "-",
                     change_str
                 )
             except Exception as exc:
                 logger.error("Error processing %s: %s", orig_p["name"], exc)
                 updated_items.append(orig_p)
+
+            if idx < len(products) and (delay_min > 0 or delay_max > 0):
+                jitter = random.uniform(delay_min, max(delay_min, delay_max))
+                time.sleep(jitter)
 
     duration = round(time.time() - start_time, 1)
     logger.info("Extraction finished in %s seconds.", duration)
@@ -560,7 +590,9 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description="Price Monitor Updater")
     parser.add_argument("--excel", default=str(BASE_DIR / "گزارش انبارمون - لینک و قیمت.xlsx"), help="Path to Excel")
-    parser.add_argument("--concurrency", type=int, default=4, help="Thread count")
+    parser.add_argument("--concurrency", type=int, default=1, help="Thread count (1 for gentle sequential with delay)")
+    parser.add_argument("--delay-min", type=float, default=2.5, help="Minimum delay between requests in seconds")
+    parser.add_argument("--delay-max", type=float, default=5.0, help="Maximum delay between requests in seconds")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of items for test")
     parser.add_argument("--only-digikala", action="store_true", help="Only scrape Digikala")
     parser.add_argument("--dry-run", action="store_true", help="Do not write files")
@@ -578,6 +610,8 @@ def main():
         excel_path=args.excel,
         output_dirs=output_dirs,
         concurrency=args.concurrency,
+        delay_min=args.delay_min,
+        delay_max=args.delay_max,
         limit=args.limit,
         only_digikala=args.only_digikala,
         dry_run=args.dry_run,

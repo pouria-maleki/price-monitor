@@ -61,6 +61,77 @@ def _offer_from_dict(d: dict) -> SellerOffer | None:
     return SellerOffer(store_name=str(store_name).strip(), price=price, url=url, is_available=True)
 
 
+_PRK_RE = re.compile(r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})")
+
+
+def _strategy_api(url: str) -> ScrapeResult | None:
+    """Strategy 1: Direct JSON API from Torob."""
+    m = _PRK_RE.search(url)
+    if not m:
+        return None
+    prk = m.group(1)
+
+    extra_h = {
+        "Accept": "application/json, text/plain, */*",
+        "Referer": f"https://torob.com/p/{prk}/",
+        "Origin": "https://torob.com",
+    }
+
+    # 1. Try sellers list API
+    sellers_url = f"https://api.torob.com/v4/base-product/sellers/?prk={prk}"
+    resp = fetch(sellers_url, extra_headers=extra_h)
+    if resp is not None and resp.status_code == 200:
+        try:
+            data = resp.json()
+            results = data.get("results", [])
+            offers: list[SellerOffer] = []
+            seen = set()
+            for r in results:
+                price = normalize_price(r.get("price"))
+                shop = r.get("shop_name") or r.get("shop_name2") or "فروشگاه ترب"
+                page_url = r.get("page_url")
+                is_avail = bool(r.get("availability", True))
+                if price and is_avail and price > 1000 and (shop, price) not in seen:
+                    offers.append(SellerOffer(store_name=shop, price=price, url=page_url, is_available=True))
+                    seen.add((shop, price))
+            if offers:
+                offers.sort(key=lambda o: o.price)
+                return ScrapeResult(
+                    source="torob",
+                    product_name=None,
+                    price=offers[0].price,
+                    is_available=True,
+                    url=url,
+                    offers=offers[:10],
+                    strategy_used="torob_api_v4_sellers",
+                )
+        except Exception as exc:
+            logger.info("Torob sellers API parse error: %s", exc)
+
+    # 2. Try details-log-click API
+    details_url = f"https://api.torob.com/v4/base-product/details-log-click/?prk={prk}"
+    resp_details = fetch(details_url, extra_headers=extra_h)
+    if resp_details is not None and resp_details.status_code == 200:
+        try:
+            d = resp_details.json()
+            price = normalize_price(d.get("price"))
+            name = d.get("name1")
+            if price and price > 1000:
+                return ScrapeResult(
+                    source="torob",
+                    product_name=name,
+                    price=price,
+                    is_available=True,
+                    url=url,
+                    offers=[SellerOffer(store_name="کف قیمت ترب", price=price, is_available=True)],
+                    strategy_used="torob_api_v4_details",
+                )
+        except Exception as exc:
+            logger.info("Torob details API parse error: %s", exc)
+
+    return None
+
+
 def _strategy_next_data(url: str) -> ScrapeResult | None:
     resp = fetch(url)
     if resp is None:
@@ -154,7 +225,7 @@ def scrape_torob(url: str, min_sellers: int = 3) -> ScrapeResult:
     if not url or "torob.com" not in url:
         return ScrapeResult(source="torob", url=url, error="invalid or missing url")
 
-    for strategy in (_strategy_next_data, _strategy_playwright):
+    for strategy in (_strategy_api, _strategy_next_data, _strategy_playwright):
         try:
             result = strategy(url)
         except Exception as exc:

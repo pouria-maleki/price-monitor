@@ -2,8 +2,8 @@ name: Monitor Prices & Deploy to GitHub Pages
 
 on:
   schedule:
-    # هر ۱ ساعت یک‌بار به‌صورت خودکار اجرا می‌شود
-    - cron: '0 * * * *'
+    # هر ۱ ساعت یک‌بار (دقیقه ۲۳) با تاخیر هوشمند اجرا می‌شود
+    - cron: '23 * * * *'
   workflow_dispatch: # امکان اجرای دستی با یک کلیک از تب Actions در گیت‌هاب
   push:
     branches: [main]
@@ -45,7 +45,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TOROB_CLEARANCE_COOKIE: ${{ secrets.TOROB_CLEARANCE_COOKIE }}
         run: |
-          python scripts/update_prices.py --concurrency 5
+          python scripts/update_prices.py --concurrency 1 --delay-min 2.5 --delay-max 4.5
 
       - name: Commit updated price data and Excel
         run: |

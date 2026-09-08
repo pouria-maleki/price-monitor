@@ -77,9 +77,12 @@ def fetch(url: str, timeout: int = 20, max_retries: int = 2, extra_headers: dict
     """GET a URL with a browser-like UA and light retry/backoff. Never raises."""
     import os
     headers = {**DEFAULT_HEADERS, **(extra_headers or {})}
-    torob_cookie = os.getenv("TOROB_CLEARANCE_COOKIE")
+    torob_cookie = os.getenv("TOROB_CLEARANCE_COOKIE") or os.getenv("TOROB_COOKIE")
     if torob_cookie and "torob.com" in url and "Cookie" not in headers:
-        headers["Cookie"] = f"trb_clearance={torob_cookie}"
+        if "=" in torob_cookie:
+            headers["Cookie"] = torob_cookie.strip()
+        else:
+            headers["Cookie"] = f"trb_clearance={torob_cookie.strip()}"
 
     for attempt in range(max_retries + 1):
         try:
