@@ -63,7 +63,15 @@ export async function fetchProducts({ q, category, status, sortBy = "default" } 
     }
 
     // Sorting
-    if (sortBy === "change_desc") {
+    if (sortBy === "quantity_desc" || sortBy === "default") {
+      items.sort((a, b) => (b.quantity || 0) - (a.quantity || 0) || (a.row_index - b.row_index));
+    } else if (sortBy === "quantity_asc") {
+      items.sort((a, b) => (a.quantity || 0) - (b.quantity || 0) || (a.row_index - b.row_index));
+    } else if (sortBy === "profit_desc") {
+      items.sort((a, b) => (b.inventory_profit_loss || 0) - (a.inventory_profit_loss || 0));
+    } else if (sortBy === "profit_asc") {
+      items.sort((a, b) => (a.inventory_profit_loss || 0) - (b.inventory_profit_loss || 0));
+    } else if (sortBy === "change_desc") {
       items.sort((a, b) => (b.price_change_percent || 0) - (a.price_change_percent || 0));
     } else if (sortBy === "change_asc") {
       items.sort((a, b) => (a.price_change_percent || 0) - (b.price_change_percent || 0));
@@ -71,6 +79,8 @@ export async function fetchProducts({ q, category, status, sortBy = "default" } 
       items.sort((a, b) => (b.best_current_price || 0) - (a.best_current_price || 0));
     } else if (sortBy === "price_asc") {
       items.sort((a, b) => (a.best_current_price || 999999999) - (b.best_current_price || 999999999));
+    } else if (sortBy === "row_index") {
+      items.sort((a, b) => (a.category === "new" ? 0 : 1) - (b.category === "new" ? 0 : 1) || (a.row_index - b.row_index));
     }
 
     return {

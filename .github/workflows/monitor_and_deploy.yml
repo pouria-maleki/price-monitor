@@ -2,8 +2,8 @@ name: Monitor Prices & Deploy to GitHub Pages
 
 on:
   schedule:
-    # هر ۶ ساعت یک‌بار به‌صورت خودکار اجرا می‌شود
-    - cron: '0 */6 * * *'
+    # هر ۱ ساعت یک‌بار به‌صورت خودکار اجرا می‌شود
+    - cron: '0 * * * *'
   workflow_dispatch: # امکان اجرای دستی با یک کلیک از تب Actions در گیت‌هاب
   push:
     branches: [main]
