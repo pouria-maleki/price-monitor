@@ -4,8 +4,10 @@ import { fetchProduct, fetchHistory, fetchShops } from "../api";
 import PriceChart from "./PriceChart";
 
 function formatPrice(v) {
-  if (v === null || v === undefined) return "—";
-  return v.toLocaleString("fa-IR") + " تومان";
+  if (v === null || v === undefined || v === 0) {
+    return <span className="text-gray-500 font-medium">ناموجود</span>;
+  }
+  return <span>{v.toLocaleString("fa-IR")} ت</span>;
 }
 
 export default function ProductDetail() {
@@ -42,12 +44,28 @@ export default function ProductDetail() {
 
   const isNew = product.item_type === "New";
   const royalPrice = product.royaldigi_price;
-  const torobPrice = product.torob_price;
+  const t1 = product.torob_1;
+  const t2 = product.torob_2;
+  const t3 = product.torob_3;
   const dkPrice = product.digikala_price;
-  const marketAvg = product.market_avg_price;
-  const isDiscrepant = product.is_discrepant;
-  const diffPercent = product.diff_percent;
-  const diffAmount = product.diff_amount;
+
+  let royalBoxClass = "bg-slate-950/60 border-white/5";
+  let royalTextClass = "text-gray-200";
+  let royalSubtitle = null;
+
+  if (product.top3_status === "higher_than_top_3") {
+    royalBoxClass = "bg-red-950/30 border-red-500/30";
+    royalTextClass = "text-red-300";
+    royalSubtitle = <div className="text-[11px] text-red-400 mt-1 font-bold">❌ گران‌تر از ۳ تای اول ترب ({product.top3_rank_label})</div>;
+  } else if (product.top3_status === "lower_than_top_1") {
+    royalBoxClass = "bg-amber-950/30 border-amber-500/30";
+    royalTextClass = "text-amber-300";
+    royalSubtitle = <div className="text-[11px] text-amber-400 mt-1 font-bold">⚠️ ارزان‌تر از رتبه ۱ ترب ({product.top3_rank_label})</div>;
+  } else if (product.top3_status === "in_top_3") {
+    royalBoxClass = "bg-emerald-950/30 border-emerald-500/30";
+    royalTextClass = "text-emerald-300";
+    royalSubtitle = <div className="text-[11px] text-emerald-400 mt-1 font-bold">✓ رقابتی: {product.top3_badge}</div>;
+  }
 
   return (
     <div className="space-y-6">
@@ -76,6 +94,11 @@ export default function ProductDetail() {
             <h2 className="text-xl font-bold text-white leading-relaxed">{product.name}</h2>
             {product.warranty && <p className="text-xs text-gray-400">گارانتی: {product.warranty}</p>}
             {product.notes && <p className="text-xs text-amber-300/80 bg-amber-500/10 p-2 rounded-lg inline-block">{product.notes}</p>}
+            {product.top3_explanation && (
+              <p className="text-xs text-sky-300 bg-sky-950/40 border border-sky-500/20 p-2.5 rounded-xl">
+                💡 وضعیت رقابت ترب: {product.top3_explanation}
+              </p>
+            )}
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -86,7 +109,7 @@ export default function ProductDetail() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-xl bg-sky-500/15 border border-sky-500/30 px-3.5 py-2 text-xs font-bold text-sky-300 hover:bg-sky-500/25 transition-colors"
               >
-                👑 مشاهده در رویال‌دیجی ↗
+                👑 رویال‌دیجی ↗
               </a>
             )}
             {product.torob_url && (
@@ -96,7 +119,7 @@ export default function ProductDetail() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-xl bg-red-500/10 border border-red-500/20 px-3.5 py-2 text-xs font-bold text-red-300 hover:bg-red-500/20 transition-colors"
               >
-                🧅 لینک اصلی ترب ↗
+                🧅 ترب اصلی ↗
               </a>
             )}
             {product.digikala_url && (
@@ -106,49 +129,52 @@ export default function ProductDetail() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-xl bg-pink-500/10 border border-pink-500/20 px-3.5 py-2 text-xs font-bold text-pink-300 hover:bg-pink-500/20 transition-colors"
               >
-                🔴 مشاهده در دیجی‌کالا ↗
+                🔴 دیجی‌کالا ↗
               </a>
             )}
           </div>
         </div>
 
-        {/* Pricing Comparison Grid */}
-        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 border-t border-white/5 pt-5">
-          <div className={`rounded-xl p-3.5 border ${isDiscrepant ? 'bg-red-950/30 border-red-500/30' : 'bg-slate-950/60 border-white/5'}`}>
+        {/* Pricing Comparison Grid (Royal + Torob 1, 2, 3 + Digikala) */}
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-5 border-t border-white/5 pt-5">
+          <div className={`rounded-xl p-3.5 border ${royalBoxClass}`}>
             <div className="text-[11px] text-gray-400">قیمت رویال‌دیجی</div>
-            <div className={`mt-1 font-mono text-base font-bold ${isDiscrepant ? 'text-red-300' : 'text-emerald-400'}`}>
+            <div className={`mt-1 font-mono text-base font-bold ${royalTextClass}`}>
               {formatPrice(royalPrice)}
             </div>
-            {isDiscrepant && <div className="text-[10px] text-red-400 mt-0.5">⚠️ مغایرت با بازار</div>}
+            {royalSubtitle}
           </div>
 
-          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
-            <div className="text-[11px] text-gray-400">قیمت ترب (لینک اصلی)</div>
-            <div className="mt-1 font-mono text-base font-semibold text-gray-200">
-              {formatPrice(torobPrice)}
+          <div className="rounded-xl bg-sky-950/20 border border-sky-500/20 p-3.5">
+            <div className="text-[11px] text-sky-300">ترب ۱ (فروشنده اول)</div>
+            <div className="mt-1 font-mono text-base font-bold text-sky-200">
+              {formatPrice(t1)}
             </div>
-            {product.torob_offers && product.torob_offers.length > 1 && (
-              <div className="text-[10px] text-gray-500 mt-0.5">{product.torob_offers.length} فروشنده</div>
-            )}
+            <div className="text-[10px] text-sky-400/80 mt-1">کف قیمت بازار</div>
           </div>
 
           <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
-            <div className="text-[11px] text-gray-400">قیمت دیجی‌کالا</div>
+            <div className="text-[11px] text-gray-400">ترب ۲ (فروشنده دوم)</div>
             <div className="mt-1 font-mono text-base font-semibold text-gray-200">
+              {formatPrice(t2)}
+            </div>
+            <div className="text-[10px] text-gray-500 mt-1">رتبه دوم</div>
+          </div>
+
+          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
+            <div className="text-[11px] text-gray-400">ترب ۳ (فروشنده سوم)</div>
+            <div className="mt-1 font-mono text-base font-semibold text-gray-200">
+              {formatPrice(t3)}
+            </div>
+            <div className="text-[10px] text-gray-500 mt-1">سقف رتبه ۳ ترب</div>
+          </div>
+
+          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
+            <div className="text-[11px] text-gray-400">دیجی‌کالا</div>
+            <div className="mt-1 font-mono text-base font-semibold text-pink-300">
               {formatPrice(dkPrice)}
             </div>
-          </div>
-
-          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
-            <div className="text-[11px] text-gray-400">میانگین بازار</div>
-            <div className="mt-1 font-mono text-base font-bold text-gray-300">
-              {formatPrice(marketAvg)}
-            </div>
-            {diffPercent !== null && diffPercent !== undefined && (
-              <div className={`text-[10px] font-bold mt-0.5 ${diffAmount > 0 ? 'text-red-400' : 'text-sky-300'}`}>
-                اختلاف: {diffPercent > 0 ? `+${diffPercent}% گران‌تر` : `${diffPercent}% ارزان‌تر`}
-              </div>
-            )}
+            <div className="text-[10px] text-gray-500 mt-1">قیمت دیجی‌کالا</div>
           </div>
         </div>
       </div>
@@ -159,9 +185,9 @@ export default function ProductDetail() {
         <PriceChart history={history} />
       </div>
 
-      {/* Seller Breakdown */}
+      {/* Platform Price Table */}
       <div className="rounded-2xl border border-white/10 bg-slate-900/80 p-6 shadow-xl backdrop-blur space-y-4">
-        <h3 className="text-base font-semibold text-white">مقایسه قیمت با پلتفرم‌ها</h3>
+        <h3 className="text-base font-semibold text-white">فروشگاه‌های رصد شده</h3>
         <div className="overflow-hidden rounded-xl border border-white/10">
           <table className="w-full text-right text-xs">
             <thead>
@@ -178,9 +204,15 @@ export default function ProductDetail() {
                   <td className="px-4 py-3 font-medium text-gray-200">{s.shop_name}</td>
                   <td className="px-4 py-3 text-left font-mono font-semibold text-white">{formatPrice(s.price)}</td>
                   <td className="px-4 py-3 text-center">
-                    <span className="inline-flex rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs text-emerald-400">
-                      موجود
-                    </span>
+                    {s.is_available ? (
+                      <span className="inline-flex rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs text-emerald-400">
+                        موجود
+                      </span>
+                    ) : (
+                      <span className="inline-flex rounded-full bg-slate-800 px-2 py-0.5 text-xs text-gray-500">
+                        ناموجود
+                      </span>
+                    )}
                   </td>
                   <td className="px-4 py-3 text-center">
                     {s.url ? (
@@ -188,7 +220,7 @@ export default function ProductDetail() {
                         مشاهده ↗
                       </a>
                     ) : (
-                      "—"
+                      <span className="text-gray-600">—</span>
                     )}
                   </td>
                 </tr>

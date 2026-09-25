@@ -51,8 +51,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ frontend/public/data/ گزارش_انبار_قیمت_به_روز.xlsx || true
-          git diff --staged --quiet || git commit -m "chore(prices): auto-update prices and excel report [skip ci]"
+          git add data/ frontend/public/data/ dashboard.html frontend/public/dashboard.html گزارش_انبار_قیمت_به_روز.xlsx || true
+          git diff --staged --quiet || git commit -m "chore(prices): auto-update prices, dashboard and excel report [skip ci]"
           git push origin main || true
 
       - name: Set up Node.js

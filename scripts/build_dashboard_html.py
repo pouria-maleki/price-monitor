@@ -1,4 +1,5 @@
 import json
+import shutil
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,7 +12,7 @@ dashboard_template = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سامانه مانیتورینگ قیمت رویال‌دیجی · ترب · دیجی‌کالا</title>
+  <title>سامانه مانیتورینگ قیمت رویال‌دیجی · پایش ۳ فروشنده اول ترب · دیجی‌کالا</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -47,10 +48,10 @@ dashboard_template = r"""<!DOCTYPE html>
           <div class="flex items-center gap-2">
             <h1 class="text-base sm:text-lg font-bold text-white">سامانه هوشمند مانیتورینگ قیمت رویال‌دیجی</h1>
             <span class="rounded-full bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 text-[10px] font-bold text-emerald-400 hidden sm:inline-block">
-              ● آنلاین
+              ● استراتژی رقابت ۳ رتبه اول ترب
             </span>
           </div>
-          <p class="text-xs text-gray-400">مقایسه قیمت‌های رویال‌دیجی با ترب (لینک اصلی) و دیجی‌کالا | زمان‌بندی: روزانه ساعت ۱۰:۰۰ صبح</p>
+          <p class="text-xs text-gray-400">مقایسه لحظه‌ای قیمت رویال با ۳ فروشنده اول ترب و دیجی‌کالا | زمان‌بندی: روزانه ساعت ۱۰:۰۰ صبح</p>
         </div>
       </div>
       <div class="flex items-center gap-2.5">
@@ -67,7 +68,7 @@ dashboard_template = r"""<!DOCTYPE html>
   <!-- Main Container -->
   <main class="mx-auto max-w-7xl px-4 py-6 sm:px-6 space-y-6">
 
-    <!-- KPI Statistics -->
+    <!-- KPI Statistics (Top-3 Strategy Focused) -->
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
       <div class="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
         <span class="text-xs font-medium text-gray-400">تعداد کل محصولات</span>
@@ -81,10 +82,22 @@ dashboard_template = r"""<!DOCTYPE html>
         <span class="text-[11px] text-gray-500">عدد در انبار</span>
       </div>
 
+      <div class="rounded-2xl border border-emerald-500/25 bg-emerald-950/20 p-4 shadow-sm backdrop-blur">
+        <span class="text-xs font-medium text-emerald-300">در ۳ تای اول ترب (ایده‌آل)</span>
+        <div class="text-xl font-bold text-emerald-400 mt-1" id="kpi-in-top-3">۷۷</div>
+        <span class="text-[11px] text-emerald-400/80">کالای کاملاً رقابتی</span>
+      </div>
+
       <div class="rounded-2xl border border-red-500/25 bg-red-950/20 p-4 shadow-sm backdrop-blur">
-        <span class="text-xs font-medium text-red-300">مغایرت با بازار (قرمز)</span>
-        <div class="text-xl font-bold text-red-400 mt-1" id="kpi-discrepant">۱۱۷</div>
-        <span class="text-[11px] text-red-400/80">کالای نیازمند بررسی</span>
+        <span class="text-xs font-medium text-red-300">❌ گران‌تر از ۳ تای اول</span>
+        <div class="text-xl font-bold text-red-400 mt-1" id="kpi-higher-top-3">۳۸</div>
+        <span class="text-[11px] text-red-400/80">خارج از دید خریدار ترب</span>
+      </div>
+
+      <div class="rounded-2xl border border-amber-500/25 bg-amber-950/20 p-4 shadow-sm backdrop-blur">
+        <span class="text-xs font-medium text-amber-300">⚠️ ارزان‌تر از رتبه ۱</span>
+        <div class="text-xl font-bold text-amber-400 mt-1" id="kpi-lower-top-1">۴</div>
+        <span class="text-[11px] text-amber-400/80">ارزان‌فروشی غیرضروری</span>
       </div>
 
       <div class="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
@@ -96,18 +109,6 @@ dashboard_template = r"""<!DOCTYPE html>
         </div>
         <span class="text-[11px] text-gray-500">تفکیک وضعیت کالا</span>
       </div>
-
-      <div class="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
-        <span class="text-xs font-medium text-gray-400">ارزش کل رویال‌دیجی</span>
-        <div class="text-xs sm:text-sm font-bold text-white mt-1.5 font-mono" id="kpi-val-royal">۶.۱۴ میلیارد تومان</div>
-        <span class="text-[11px] text-gray-500">موجودی انبار</span>
-      </div>
-
-      <div class="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
-        <span class="text-xs font-medium text-gray-400">ارزش کل بازار</span>
-        <div class="text-xs sm:text-sm font-bold text-emerald-400 mt-1.5 font-mono" id="kpi-val-market">۶.۱۶ میلیارد تومان</div>
-        <span class="text-[11px] text-gray-500">میانگین ترب و دیجی‌کالا</span>
-      </div>
     </div>
 
     <!-- Filters, Search & Sort -->
@@ -118,18 +119,33 @@ dashboard_template = r"""<!DOCTYPE html>
           همه محصولات (۱۶۶)
         </button>
 
-        <button onclick="setTab('discrepant')" id="tab-discrepant" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-red-500/10 text-red-300 border border-red-500/20 hover:bg-red-500/20 flex items-center gap-1.5">
-          <span>⚠️ فقط مغایرت‌های بازار (قرمز)</span>
-          <span class="bg-red-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-discrepant">۱۱۷</span>
+        <button onclick="setTab('alerts')" id="tab-alerts" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-red-500/10 text-red-300 border border-red-500/20 hover:bg-red-500/20 flex items-center gap-1.5">
+          <span>⚠️ کلیه اخطارها</span>
+          <span class="bg-red-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-alerts">۴۲</span>
         </button>
 
-        <button onclick="setTab('new')" id="tab-new" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 hover:bg-emerald-500/20 flex items-center gap-1.5">
-          <span>🟢 کالاهای نو</span>
-          <span class="bg-emerald-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-new">۸۹</span>
+        <button onclick="setTab('higher_than_top_3')" id="tab-higher_than_top_3" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-rose-500/10 text-rose-300 border border-rose-500/20 hover:bg-rose-500/20 flex items-center gap-1.5">
+          <span>❌ گران‌تر از ۳ تای اول</span>
+          <span class="bg-rose-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-higher">۳۸</span>
+        </button>
+
+        <button onclick="setTab('lower_than_top_1')" id="tab-lower_than_top_1" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-amber-500/10 text-amber-300 border border-amber-500/20 hover:bg-amber-500/20 flex items-center gap-1.5">
+          <span>⚠️ ارزان‌تر از کف</span>
+          <span class="bg-amber-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-lower">۴</span>
+        </button>
+
+        <button onclick="setTab('in_top_3')" id="tab-in_top_3" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 hover:bg-emerald-500/20 flex items-center gap-1.5">
+          <span>✓ در ۳ تای اول ترب</span>
+          <span class="bg-emerald-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-in-top-3">۷۷</span>
+        </button>
+
+        <button onclick="setTab('new')" id="tab-new" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-teal-500/10 text-teal-300 border border-teal-500/20 hover:bg-teal-500/20 flex items-center gap-1.5">
+          <span>🟢 نو</span>
+          <span class="bg-teal-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-new">۸۹</span>
         </button>
 
         <button onclick="setTab('stock')" id="tab-stock" class="tab-btn rounded-xl px-3.5 py-1.5 text-xs font-bold transition bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20 flex items-center gap-1.5">
-          <span>🟣 کالاهای استوک</span>
+          <span>🟣 استوک</span>
           <span class="bg-purple-950/60 px-1.5 py-0.5 rounded text-[10px]" id="badge-stock">۷۷</span>
         </button>
       </div>
@@ -154,7 +170,7 @@ dashboard_template = r"""<!DOCTYPE html>
           <option value="file_order">ترتیب فایل اکسل (پیش‌فرض)</option>
           <option value="quantity_desc">بیشترین موجودی انبار</option>
           <option value="quantity_asc">کمترین موجودی انبار</option>
-          <option value="diff_desc">بیشترین اختلاف با بازار</option>
+          <option value="diff_desc">بیشترین اختلاف (گران‌ترین نسبت به رتبه ۳)</option>
           <option value="royal_desc">گران‌ترین قیمت رویال</option>
           <option value="royal_asc">ارزان‌ترین قیمت رویال</option>
         </select>
@@ -166,19 +182,20 @@ dashboard_template = r"""<!DOCTYPE html>
       <div class="overflow-x-auto">
         <table class="w-full text-right text-xs">
           <thead>
-            <tr class="border-b border-white/10 bg-slate-950/70 text-gray-400 font-semibold select-none">
+            <tr class="border-b border-white/10 bg-slate-950/80 text-gray-300 font-semibold select-none">
               <th class="px-3 py-3.5 text-center w-12">ردیف</th>
-              <th class="px-3 py-3.5 text-center w-24">نوع</th>
-              <th class="px-4 py-3.5">نام محصول و مشخصات</th>
+              <th class="px-3 py-3.5 text-center w-20">نوع</th>
+              <th class="px-4 py-3.5 min-w-[220px]">نام محصول و مشخصات</th>
               <th class="px-3 py-3.5 text-center w-20">موجودی</th>
-              <th class="px-4 py-3.5 text-center w-36 bg-red-950/30 text-red-300 border-x border-red-500/20">
-                قیمت رویال‌دیجی (تومان)
+              <th class="px-3 py-3.5 text-center w-36 bg-amber-500/10 text-amber-200 border-x border-white/10">
+                قیمت رویال‌دیجی
               </th>
-              <th class="px-4 py-3.5 text-center w-36">قیمت ترب (تومان)</th>
-              <th class="px-4 py-3.5 text-center w-36">قیمت دیجی‌کالا (تومان)</th>
-              <th class="px-4 py-3.5 text-center w-36">میانگین بازار</th>
-              <th class="px-3 py-3.5 text-center w-28">وضعیت مغایرت</th>
-              <th class="px-3 py-3.5 text-center w-28">روند</th>
+              <th class="px-3 py-3.5 text-center w-32 bg-sky-950/20 text-sky-300">ترب ۱ (اول)</th>
+              <th class="px-3 py-3.5 text-center w-32 bg-sky-950/10 text-sky-200">ترب ۲ (دوم)</th>
+              <th class="px-3 py-3.5 text-center w-32 text-gray-300">ترب ۳ (سوم)</th>
+              <th class="px-3 py-3.5 text-center w-32 text-pink-300">دیجی‌کالا</th>
+              <th class="px-4 py-3.5 text-center w-48">وضعیت رقابت در ترب</th>
+              <th class="px-3 py-3.5 text-center w-24">روند</th>
               <th class="px-3 py-3.5 text-center w-24">لینک‌ها</th>
             </tr>
           </thead>
@@ -202,8 +219,12 @@ dashboard_template = r"""<!DOCTYPE html>
         <div class="space-y-3 text-xs text-gray-300 leading-relaxed">
           <div class="rounded-xl bg-slate-950/60 p-3.5 border border-white/5 space-y-2">
             <div class="flex justify-between items-center">
+              <span class="text-gray-400">استراتژی ترب:</span>
+              <span class="text-emerald-400 font-bold">پایش ۳ فروشنده اول ترب (دید اصلی خریدار)</span>
+            </div>
+            <div class="flex justify-between items-center">
               <span class="text-gray-400">زمان‌بندی خودکار:</span>
-              <span class="text-emerald-400 font-bold">هر روز ساعت ۱۰:۰۰ صبح (تهران)</span>
+              <span class="text-white font-bold">هر روز ساعت ۱۰:۰۰ صبح (تهران)</span>
             </div>
             <div class="flex justify-between items-center">
               <span class="text-gray-400">تکنیک ضد بن:</span>
@@ -211,7 +232,7 @@ dashboard_template = r"""<!DOCTYPE html>
             </div>
             <div class="flex justify-between items-center">
               <span class="text-gray-400">دامنه استخراج:</span>
-              <span class="text-white">رویال‌دیجی · ترب (لینک اصلی) · دیجی‌کالا</span>
+              <span class="text-white">رویال‌دیجی · ۳ فروشنده اول ترب (لینک اصلی) · دیجی‌کالا</span>
             </div>
           </div>
 
@@ -254,12 +275,14 @@ __EMBEDDED_DATA__
     let searchQuery = '';
 
     function formatNumber(num) {
-      if (num === null || num === undefined) return '—';
+      if (num === null || num === undefined) return 'ناموجود';
       return Number(num).toLocaleString('fa-IR');
     }
 
     function formatPrice(num) {
-      if (num === null || num === undefined) return '—';
+      if (num === null || num === undefined || num === 0) {
+        return '<span class="text-gray-500 font-medium">ناموجود</span>';
+      }
       return Number(num).toLocaleString('fa-IR') + ' ت';
     }
 
@@ -276,8 +299,8 @@ __EMBEDDED_DATA__
       const min = Math.min(...points);
       const max = Math.max(...points);
       const range = (max - min) || 1;
-      const w = 75;
-      const h = 24;
+      const w = 70;
+      const h = 22;
       const pad = 2;
       const strokeColor = isDiscrepant ? '#ef4444' : '#10b981';
 
@@ -299,9 +322,15 @@ __EMBEDDED_DATA__
       const tbody = document.getElementById('table-body');
       let filtered = [...allItems];
 
-      // Tab filter
-      if (currentTab === 'discrepant') {
-        filtered = filtered.filter(x => x.is_discrepant);
+      // Tab filters
+      if (currentTab === 'alerts') {
+        filtered = filtered.filter(x => x.is_alert);
+      } else if (currentTab === 'higher_than_top_3') {
+        filtered = filtered.filter(x => x.top3_status === 'higher_than_top_3');
+      } else if (currentTab === 'lower_than_top_1') {
+        filtered = filtered.filter(x => x.top3_status === 'lower_than_top_1');
+      } else if (currentTab === 'in_top_3') {
+        filtered = filtered.filter(x => x.top3_status === 'in_top_3');
       } else if (currentTab === 'new') {
         filtered = filtered.filter(x => x.item_type === 'New');
       } else if (currentTab === 'stock') {
@@ -319,7 +348,7 @@ __EMBEDDED_DATA__
         );
       }
 
-      // Sorting - Default is file_order
+      // Sorting - Default is exact file_order (1 to 166)
       if (currentSort === 'file_order') {
         filtered.sort((a, b) => (a.file_order || 0) - (b.file_order || 0));
       } else if (currentSort === 'quantity_desc') {
@@ -327,7 +356,7 @@ __EMBEDDED_DATA__
       } else if (currentSort === 'quantity_asc') {
         filtered.sort((a, b) => (a.quantity || 0) - (b.quantity || 0) || (a.file_order - b.file_order));
       } else if (currentSort === 'diff_desc') {
-        filtered.sort((a, b) => Math.abs(b.diff_amount || 0) - Math.abs(a.diff_amount || 0));
+        filtered.sort((a, b) => (b.diff_from_target || 0) - (a.diff_from_target || 0));
       } else if (currentSort === 'royal_desc') {
         filtered.sort((a, b) => (b.royaldigi_price || 0) - (a.royaldigi_price || 0));
       } else if (currentSort === 'royal_asc') {
@@ -337,7 +366,7 @@ __EMBEDDED_DATA__
       if (filtered.length === 0) {
         tbody.innerHTML = `
           <tr>
-            <td colspan="11" class="py-12 text-center text-gray-400">
+            <td colspan="12" class="py-12 text-center text-gray-400">
               هیچ کالایی با فیلترهای انتخابی یافت نشد.
             </td>
           </tr>
@@ -351,33 +380,56 @@ __EMBEDDED_DATA__
           ? `<span class="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 text-[11px] font-bold text-emerald-300">🟢 نو</span>`
           : `<span class="inline-flex items-center gap-1 rounded-full bg-purple-500/15 border border-purple-500/30 px-2 py-0.5 text-[11px] font-bold text-purple-300">🟣 استوک</span>`;
 
-        let diffBadge = `<span class="text-gray-500 text-[10px]">بدون قیمت بازار</span>`;
-        if (item.market_avg_price && item.royaldigi_price) {
-          if (!item.is_discrepant) {
-            diffBadge = `<span class="inline-flex items-center gap-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 text-[11px] font-semibold text-emerald-400">✓ هم‌قیمت</span>`;
-          } else {
-            const isHigher = item.diff_amount > 0;
-            const badgeColor = isHigher ? 'bg-red-500/15 border-red-500/30 text-red-300' : 'bg-sky-500/15 border-sky-500/30 text-sky-300';
-            const sign = isHigher ? '▲ +' : '▼ ';
-            diffBadge = `
-              <div class="flex flex-col items-center gap-0.5">
-                <span class="inline-flex items-center gap-1 rounded-md border px-1.5 py-0.5 text-[11px] font-bold ${badgeColor}">
-                  ${sign}${Math.abs(item.diff_percent || 0).toFixed(1)}%
-                </span>
-                <span class="text-[10px] text-gray-400 font-mono">${formatNumber(Math.abs(item.diff_amount || 0))} ت</span>
-              </div>
-            `;
-          }
+        // Top 3 Status Badge
+        let statusBadge = '';
+        let royalCellClass = 'border-white/5 text-gray-200 border-x';
+        let royalSubtitle = '';
+
+        if (item.top3_status === 'higher_than_top_3') {
+          royalCellClass = 'bg-red-500/15 border-red-500/30 text-red-300 font-bold border-x';
+          royalSubtitle = `<div class="text-[10px] text-red-400 font-semibold flex items-center justify-center gap-1 mt-0.5"><span>❌ گران‌تر از ۳ تای اول</span></div>`;
+          statusBadge = `
+            <div class="flex flex-col items-center gap-0.5">
+              <span class="inline-flex items-center gap-1 rounded-lg border border-red-500/30 bg-red-500/15 px-2 py-0.5 text-[11px] font-bold text-red-300">
+                ❌ گران‌تر از ۳ تای اول
+              </span>
+              <span class="text-[10px] text-red-400/90 font-mono text-center leading-tight">
+                ${item.top3_rank_label || ''}
+              </span>
+            </div>
+          `;
+        } else if (item.top3_status === 'lower_than_top_1') {
+          royalCellClass = 'bg-amber-500/15 border-amber-500/30 text-amber-300 font-bold border-x';
+          royalSubtitle = `<div class="text-[10px] text-amber-400 font-semibold flex items-center justify-center gap-1 mt-0.5"><span>⚠️ ارزان‌تر از رتبه ۱</span></div>`;
+          statusBadge = `
+            <div class="flex flex-col items-center gap-0.5">
+              <span class="inline-flex items-center gap-1 rounded-lg border border-amber-500/30 bg-amber-500/15 px-2 py-0.5 text-[11px] font-bold text-amber-300">
+                ⚠️ ارزان‌تر از رتبه ۱
+              </span>
+              <span class="text-[10px] text-amber-400/90 font-mono text-center leading-tight">
+                ${item.top3_rank_label || ''}
+              </span>
+            </div>
+          `;
+        } else if (item.top3_status === 'in_top_3') {
+          royalCellClass = 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300 font-bold border-x';
+          royalSubtitle = `<div class="text-[10px] text-emerald-400 font-semibold mt-0.5">✓ در ۳ تای اول ترب</div>`;
+          statusBadge = `
+            <div class="flex flex-col items-center gap-0.5">
+              <span class="inline-flex items-center gap-1 rounded-lg border border-emerald-500/30 bg-emerald-500/15 px-2.5 py-0.5 text-[11px] font-bold text-emerald-300">
+                ${item.top3_badge || '✓ در ۳ تای اول'}
+              </span>
+              <span class="text-[10px] text-emerald-400/80">رقابتی و فعال</span>
+            </div>
+          `;
+        } else if (item.top3_status === 'no_royal') {
+          royalSubtitle = `<div class="text-[10px] text-gray-500 mt-0.5">ناموجود در سایت</div>`;
+          statusBadge = `<span class="text-gray-500 text-[11px]">ناموجود در رویال</span>`;
+        } else if (item.top3_status === 'no_torob') {
+          statusBadge = `<span class="text-gray-500 text-[11px]">ناموجود در ترب</span>`;
+        } else {
+          statusBadge = `<span class="text-gray-500 text-[11px]">—</span>`;
         }
-
-        // Royal price styling - RED IF DISCREPANT
-        const royalPriceCellClass = item.is_discrepant
-          ? 'bg-red-500/15 border-red-500/30 text-red-300 font-bold border-x'
-          : 'border-white/5 text-emerald-400 font-bold border-x';
-
-        const royalIndicator = item.is_discrepant
-          ? `<div class="text-[10px] text-red-400 flex items-center justify-center gap-1 mt-0.5"><span>⚠️</span><span>مغایرت با بازار</span></div>`
-          : (item.market_avg_price ? `<div class="text-[10px] text-emerald-500 mt-0.5">✓ هم‌قیمت بازار</div>` : '');
 
         return `
           <tr class="hover:bg-white/[0.02] transition-colors">
@@ -393,27 +445,45 @@ __EMBEDDED_DATA__
             </td>
             <td class="px-3 py-3 text-center">
               <span class="inline-flex rounded-lg bg-slate-800 px-2 py-1 font-mono font-bold text-gray-200">
-                ${item.quantity} عدد
+                ${item.quantity !== null && item.quantity !== undefined ? item.quantity + ' عدد' : 'ناموجود'}
               </span>
             </td>
-            <td class="px-4 py-3 text-center font-mono ${royalPriceCellClass}">
+
+            <!-- RoyalDigi Price Column (Alert colored) -->
+            <td class="px-3 py-3 text-center font-mono ${royalCellClass}">
               <div class="text-xs sm:text-sm">${formatPrice(item.royaldigi_price)}</div>
-              ${royalIndicator}
+              ${royalSubtitle}
             </td>
-            <td class="px-4 py-3 text-center font-mono text-gray-200">
-              <div class="text-xs">${formatPrice(item.torob_price)}</div>
-              ${item.torob_offers && item.torob_offers.length > 1 ? `<span class="text-[10px] text-gray-500">${item.torob_offers.length} فروشنده</span>` : ''}
+
+            <!-- Torob 1 (Rank 1) -->
+            <td class="px-3 py-3 text-center font-mono text-sky-200 bg-sky-950/10">
+              <div class="text-xs font-semibold">${formatPrice(item.torob_1)}</div>
             </td>
-            <td class="px-4 py-3 text-center font-mono text-gray-200">
+
+            <!-- Torob 2 (Rank 2) -->
+            <td class="px-3 py-3 text-center font-mono text-gray-300">
+              <div class="text-xs">${formatPrice(item.torob_2)}</div>
+            </td>
+
+            <!-- Torob 3 (Rank 3) -->
+            <td class="px-3 py-3 text-center font-mono text-gray-400">
+              <div class="text-xs">${formatPrice(item.torob_3)}</div>
+            </td>
+
+            <!-- Digikala Price -->
+            <td class="px-3 py-3 text-center font-mono text-pink-300">
               <div class="text-xs">${formatPrice(item.digikala_price)}</div>
             </td>
-            <td class="px-4 py-3 text-center font-mono font-bold text-gray-300 bg-white/[0.01]">
-              <div class="text-xs">${formatPrice(item.market_avg_price)}</div>
-            </td>
-            <td class="px-3 py-3 text-center">${diffBadge}</td>
+
+            <!-- Torob Competitive Status -->
+            <td class="px-4 py-3 text-center">${statusBadge}</td>
+
+            <!-- Sparkline Trend -->
             <td class="px-3 py-3 text-center">
-              <div class="w-20 mx-auto">${createSparklineSvg(item.sparkline, item.is_discrepant)}</div>
+              <div class="w-20 mx-auto">${createSparklineSvg(item.sparkline, item.is_alert)}</div>
             </td>
+
+            <!-- External Links -->
             <td class="px-3 py-3 text-center">
               <div class="flex items-center justify-center gap-1.5">
                 ${item.royaldigi_url ? `<a href="${item.royaldigi_url}" target="_blank" rel="noopener" title="سایت رویال‌دیجی" class="p-1 rounded bg-sky-500/10 hover:bg-sky-500/20 text-sky-400">👑</a>` : ''}
@@ -436,11 +506,15 @@ __EMBEDDED_DATA__
       });
       const activeBtn = document.getElementById(`tab-${tab}`);
       if (activeBtn) {
-        activeBtn.classList.remove('bg-white/5', 'text-gray-300', 'bg-red-500/10', 'bg-emerald-500/10', 'bg-purple-500/10');
-        if (tab === 'discrepant') {
+        activeBtn.classList.remove('bg-white/5', 'text-gray-300', 'bg-red-500/10', 'bg-rose-500/10', 'bg-amber-500/10', 'bg-emerald-500/10', 'bg-teal-500/10', 'bg-purple-500/10');
+        if (tab === 'alerts' || tab === 'higher_than_top_3') {
           activeBtn.classList.add('bg-red-500', 'text-white');
-        } else if (tab === 'new') {
+        } else if (tab === 'lower_than_top_1') {
+          activeBtn.classList.add('bg-amber-500', 'text-white');
+        } else if (tab === 'in_top_3') {
           activeBtn.classList.add('bg-emerald-500', 'text-white');
+        } else if (tab === 'new') {
+          activeBtn.classList.add('bg-teal-500', 'text-white');
         } else if (tab === 'stock') {
           activeBtn.classList.add('bg-purple-500', 'text-white');
         } else {
@@ -494,12 +568,16 @@ __EMBEDDED_DATA__
 
         document.getElementById('kpi-total-prods').textContent = formatNumber(meta.total_products || allItems.length);
         document.getElementById('kpi-total-qty').textContent = formatNumber(meta.total_inventory_quantity || 0);
-        document.getElementById('kpi-discrepant').textContent = formatNumber(meta.discrepant_count || 0);
-        document.getElementById('badge-discrepant').textContent = formatNumber(meta.discrepant_count || 0);
+        document.getElementById('kpi-in-top-3').textContent = formatNumber(meta.in_top_3_count || 0);
+        document.getElementById('kpi-higher-top-3').textContent = formatNumber(meta.higher_than_top_3_count || 0);
+        document.getElementById('kpi-lower-top-1').textContent = formatNumber(meta.lower_than_top_1_count || 0);
+
+        document.getElementById('badge-alerts').textContent = formatNumber(meta.alerts_total || 0);
+        document.getElementById('badge-higher').textContent = formatNumber(meta.higher_than_top_3_count || 0);
+        document.getElementById('badge-lower').textContent = formatNumber(meta.lower_than_top_1_count || 0);
+        document.getElementById('badge-in-top-3').textContent = formatNumber(meta.in_top_3_count || 0);
         document.getElementById('badge-new').textContent = formatNumber(meta.new_count || 0);
         document.getElementById('badge-stock').textContent = formatNumber(meta.stock_count || 0);
-        document.getElementById('kpi-val-royal').textContent = formatBillions(meta.total_inventory_royal_value);
-        document.getElementById('kpi-val-market').textContent = formatBillions(meta.total_inventory_market_value);
 
         renderTable();
       }
@@ -511,10 +589,27 @@ __EMBEDDED_DATA__
 </html>
 """
 
-dashboard_content = dashboard_template.replace("__EMBEDDED_DATA__", products_json_str)
+def generate_dashboard():
+    with open(data_path, "r", encoding="utf-8") as f:
+        p_str = f.read()
 
-output_file = BASE_DIR / "dashboard.html"
-with open(output_file, "w", encoding="utf-8") as f:
-    f.write(dashboard_content)
+    dashboard_content = dashboard_template.replace("__EMBEDDED_DATA__", p_str)
 
-print(f"Generated standalone dashboard.html ({len(dashboard_content):,} bytes) with all 166 products!")
+    output_file = BASE_DIR / "dashboard.html"
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(dashboard_content)
+    print(f"Generated standalone dashboard.html ({len(dashboard_content):,} bytes) with all 166 products!")
+
+    # Also copy to frontend/public/dashboard.html and frontend/dist/dashboard.html if exists
+    pub_dash = BASE_DIR / "frontend" / "public" / "dashboard.html"
+    pub_dash.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(output_file, pub_dash)
+    print(f"Copied dashboard.html to {pub_dash}")
+
+    dist_dash = BASE_DIR / "frontend" / "dist" / "dashboard.html"
+    if dist_dash.parent.exists():
+        shutil.copy2(output_file, dist_dash)
+        print(f"Copied dashboard.html to {dist_dash}")
+
+if __name__ == "__main__":
+    generate_dashboard()

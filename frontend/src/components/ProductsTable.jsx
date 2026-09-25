@@ -3,8 +3,10 @@ import { fetchProducts } from "../api";
 import Sparkline from "./Sparkline";
 
 function formatPrice(v) {
-  if (v === null || v === undefined) return "—";
-  return v.toLocaleString("fa-IR") + " تومان";
+  if (v === null || v === undefined || v === 0) {
+    return <span className="text-gray-500 font-medium">ناموجود</span>;
+  }
+  return <span>{v.toLocaleString("fa-IR")} ت</span>;
 }
 
 function formatBillions(num) {
@@ -20,44 +22,60 @@ function formatBillions(num) {
 function TypeBadge({ type }) {
   if (type === "New") {
     return (
-      <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 px-2.5 py-0.5 text-xs font-bold text-emerald-300">
+      <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 text-xs font-bold text-emerald-300">
         🟢 نو
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-purple-500/15 border border-purple-500/30 px-2.5 py-0.5 text-xs font-bold text-purple-300">
+    <span className="inline-flex items-center gap-1 rounded-full bg-purple-500/15 border border-purple-500/30 px-2 py-0.5 text-xs font-bold text-purple-300">
       🟣 استوک
     </span>
   );
 }
 
-function DiffBadge({ item }) {
-  if (!item.market_avg_price || !item.royaldigi_price) {
-    return <span className="text-gray-500 text-xs">بدون قیمت بازار</span>;
-  }
-  if (!item.is_discrepant) {
+function Top3StatusBadge({ item }) {
+  if (item.top3_status === "higher_than_top_3") {
     return (
-      <span className="inline-flex items-center gap-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 text-xs font-semibold text-emerald-400">
-        ✓ هم‌قیمت بازار
-      </span>
+      <div className="flex flex-col items-center gap-0.5">
+        <span className="inline-flex items-center gap-1 rounded-lg border border-red-500/30 bg-red-500/15 px-2 py-0.5 text-[11px] font-bold text-red-300">
+          ❌ گران‌تر از ۳ تای اول
+        </span>
+        <span className="text-[10px] text-red-400/90 font-mono text-center">
+          {item.top3_rank_label || ""}
+        </span>
+      </div>
     );
   }
-  const isHigher = item.diff_amount > 0;
-  const color = isHigher
-    ? "bg-red-500/15 border-red-500/30 text-red-300"
-    : "bg-sky-500/15 border-sky-500/30 text-sky-300";
-  const sign = isHigher ? "▲ +" : "▼ ";
-  return (
-    <div className="flex flex-col items-center gap-0.5">
-      <span className={`inline-flex items-center gap-1 rounded-lg border px-2 py-0.5 text-xs font-bold ${color}`}>
-        {sign}{Math.abs(item.diff_percent || 0).toFixed(1)}%
-      </span>
-      <span className="text-[10px] text-gray-400 font-mono">
-        {Math.abs(item.diff_amount || 0).toLocaleString("fa-IR")} ت
-      </span>
-    </div>
-  );
+  if (item.top3_status === "lower_than_top_1") {
+    return (
+      <div className="flex flex-col items-center gap-0.5">
+        <span className="inline-flex items-center gap-1 rounded-lg border border-amber-500/30 bg-amber-500/15 px-2 py-0.5 text-[11px] font-bold text-amber-300">
+          ⚠️ ارزان‌تر از رتبه ۱
+        </span>
+        <span className="text-[10px] text-amber-400/90 font-mono text-center">
+          {item.top3_rank_label || ""}
+        </span>
+      </div>
+    );
+  }
+  if (item.top3_status === "in_top_3") {
+    return (
+      <div className="flex flex-col items-center gap-0.5">
+        <span className="inline-flex items-center gap-1 rounded-lg border border-emerald-500/30 bg-emerald-500/15 px-2.5 py-0.5 text-[11px] font-bold text-emerald-300">
+          {item.top3_badge || "✓ در ۳ تای اول"}
+        </span>
+        <span className="text-[10px] text-emerald-400/80">رقابتی و فعال</span>
+      </div>
+    );
+  }
+  if (item.top3_status === "no_royal") {
+    return <span className="text-gray-500 text-[11px]">ناموجود در رویال</span>;
+  }
+  if (item.top3_status === "no_torob") {
+    return <span className="text-gray-500 text-[11px]">ناموجود در ترب</span>;
+  }
+  return <span className="text-gray-500 text-[11px]">—</span>;
 }
 
 export default function ProductsTable() {
@@ -91,10 +109,10 @@ export default function ProductsTable() {
         <div>
           <h2 className="text-xl font-bold text-white flex items-center gap-2">
             <span>👑 سامانه مانیتورینگ قیمت رویال‌دیجی</span>
-            <span className="text-xs bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2.5 py-0.5 rounded-full">نسخه هوشمند</span>
+            <span className="text-xs bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2.5 py-0.5 rounded-full">استراتژی ۳ رتبه اول ترب</span>
           </h2>
           <p className="text-xs text-gray-400 mt-1">
-            مقایسه لحظه‌ای قیمت رویال‌دیجی با ترب (لینک اصلی) و دیجی‌کالا | زمان‌بندی: {meta.schedule_info || "هر روز ساعت ۱۰:۰۰ صبح"}
+            مقایسه لحظه‌ای قیمت رویال‌دیجی با ۳ فروشنده اول ترب (لینک اصلی) و دیجی‌کالا | زمان‌بندی: {meta.schedule_info || "هر روز ساعت ۱۰:۰۰ صبح"}
           </p>
         </div>
         <div className="flex items-center gap-2.5">
@@ -107,21 +125,21 @@ export default function ProductsTable() {
           <a
             href="گزارش_انبار_قیمت_به_روز.xlsx"
             download
-            className="inline-flex items-center gap-2 rounded-xl bg-emerald-500/20 border border-emerald-500/30 px-3.5 py-2.5 text-xs font-bold text-emerald-300 hover:bg-emerald-500/30 transition"
+            className="inline-flex items-center gap-2 rounded-xl bg-emerald-500/20 border border-emerald-500/30 px-3.5 py-2.5 text-xs font-bold text-emerald-300 hover:bg-emerald-500/30 transition shadow-sm"
           >
             📥 دانلود اکسل مغایرت‌ها
           </a>
         </div>
       </div>
 
-      {/* KPI Cards */}
+      {/* KPI Cards (Top 3 Competitive Strategy) */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
         <div className="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
           <span className="text-xs font-medium text-gray-400">تعداد کل کالاها</span>
           <div className="text-xl font-bold text-white mt-1">
             {(meta.total_products || items.length).toLocaleString("fa-IR")}
           </div>
-          <span className="text-[11px] text-gray-500">کالای ثبت شده</span>
+          <span className="text-[11px] text-gray-500">کالای پایش‌شده</span>
         </div>
 
         <div className="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
@@ -132,12 +150,28 @@ export default function ProductsTable() {
           <span className="text-[11px] text-gray-500">عدد در انبار</span>
         </div>
 
-        <div className="rounded-2xl border border-red-500/20 bg-red-950/20 p-4 shadow-sm backdrop-blur">
-          <span className="text-xs font-medium text-red-300">مغایرت با بازار (قرمز)</span>
-          <div className="text-xl font-bold text-red-400 mt-1">
-            {(meta.discrepant_count || 0).toLocaleString("fa-IR")}
+        <div className="rounded-2xl border border-emerald-500/25 bg-emerald-950/20 p-4 shadow-sm backdrop-blur">
+          <span className="text-xs font-medium text-emerald-300">در ۳ تای اول ترب (ایده‌آل)</span>
+          <div className="text-xl font-bold text-emerald-400 mt-1">
+            {(meta.in_top_3_count || 0).toLocaleString("fa-IR")}
           </div>
-          <span className="text-[11px] text-red-400/70">کالای نیازمند بررسی</span>
+          <span className="text-[11px] text-emerald-400/80">کالای کاملاً رقابتی</span>
+        </div>
+
+        <div className="rounded-2xl border border-red-500/25 bg-red-950/20 p-4 shadow-sm backdrop-blur">
+          <span className="text-xs font-medium text-red-300">❌ گران‌تر از ۳ تای اول</span>
+          <div className="text-xl font-bold text-red-400 mt-1">
+            {(meta.higher_than_top_3_count || 0).toLocaleString("fa-IR")}
+          </div>
+          <span className="text-[11px] text-red-400/80">خارج از دید خریدار</span>
+        </div>
+
+        <div className="rounded-2xl border border-amber-500/25 bg-amber-950/20 p-4 shadow-sm backdrop-blur">
+          <span className="text-xs font-medium text-amber-300">⚠️ ارزان‌تر از رتبه ۱</span>
+          <div className="text-xl font-bold text-amber-400 mt-1">
+            {(meta.lower_than_top_1_count || 0).toLocaleString("fa-IR")}
+          </div>
+          <span className="text-[11px] text-amber-400/80">کاهش غیرضروری سود</span>
         </div>
 
         <div className="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
@@ -147,23 +181,7 @@ export default function ProductsTable() {
             <span className="text-gray-600">/</span>
             <span className="text-purple-400 text-base">{meta.stock_count || 0} استوک</span>
           </div>
-          <span className="text-[11px] text-gray-500">تفکیک نوع کالا</span>
-        </div>
-
-        <div className="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
-          <span className="text-xs font-medium text-gray-400">ارزش کل رویال‌دیجی</span>
-          <div className="text-sm sm:text-base font-bold text-white mt-1.5 font-mono">
-            {formatBillions(meta.total_inventory_royal_value)}
-          </div>
-          <span className="text-[11px] text-gray-500">موجودی انبار</span>
-        </div>
-
-        <div className="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
-          <span className="text-xs font-medium text-gray-400">ارزش کل بازار</span>
-          <div className="text-sm sm:text-base font-bold text-emerald-400 mt-1.5 font-mono">
-            {formatBillions(meta.total_inventory_market_value)}
-          </div>
-          <span className="text-[11px] text-gray-500">میانگین ترب و دیجی‌کالا</span>
+          <span className="text-[11px] text-gray-500">تفکیک وضعیت کالا</span>
         </div>
       </div>
 
@@ -183,27 +201,63 @@ export default function ProductsTable() {
           </button>
 
           <button
-            onClick={() => setFilterType(filterType === "discrepant" ? "all" : "discrepant")}
+            onClick={() => setFilterType(filterType === "alerts" ? "all" : "alerts")}
             className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
-              filterType === "discrepant"
+              filterType === "alerts"
                 ? "bg-red-500 text-white shadow-md shadow-red-500/20"
                 : "bg-red-500/10 text-red-300 border border-red-500/20 hover:bg-red-500/20"
             }`}
           >
-            <span>⚠️ فقط مغایرت‌های بازار (قرمز)</span>
-            <span className="bg-red-950/60 px-1.5 py-0.2 rounded text-[10px]">{meta.discrepant_count || 117}</span>
+            <span>⚠️ کلیه اخطارها</span>
+            <span className="bg-red-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.alerts_total || 42}</span>
+          </button>
+
+          <button
+            onClick={() => setFilterType(filterType === "higher_than_top_3" ? "all" : "higher_than_top_3")}
+            className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
+              filterType === "higher_than_top_3"
+                ? "bg-rose-500 text-white shadow-md shadow-rose-500/20"
+                : "bg-rose-500/10 text-rose-300 border border-rose-500/20 hover:bg-rose-500/20"
+            }`}
+          >
+            <span>❌ گران‌تر از ۳ تای اول</span>
+            <span className="bg-rose-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.higher_than_top_3_count || 38}</span>
+          </button>
+
+          <button
+            onClick={() => setFilterType(filterType === "lower_than_top_1" ? "all" : "lower_than_top_1")}
+            className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
+              filterType === "lower_than_top_1"
+                ? "bg-amber-500 text-white shadow-md shadow-amber-500/20"
+                : "bg-amber-500/10 text-amber-300 border border-amber-500/20 hover:bg-amber-500/20"
+            }`}
+          >
+            <span>⚠️ ارزان‌تر از کف</span>
+            <span className="bg-amber-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.lower_than_top_1_count || 4}</span>
+          </button>
+
+          <button
+            onClick={() => setFilterType(filterType === "in_top_3" ? "all" : "in_top_3")}
+            className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
+              filterType === "in_top_3"
+                ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+                : "bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 hover:bg-emerald-500/20"
+            }`}
+          >
+            <span>✓ در ۳ تای اول ترب</span>
+            <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.in_top_3_count || 77}</span>
           </button>
 
           <button
             onClick={() => setItemType(itemType === "New" ? "all" : "New")}
             className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
               itemType === "New"
-                ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
-                : "bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 hover:bg-emerald-500/20"
+                ? "bg-teal-500 text-white shadow-md shadow-teal-500/20"
+                : "bg-teal-500/10 text-teal-300 border border-teal-500/20 hover:bg-teal-500/20"
             }`}
           >
-            <span>🟢 کالاهای نو</span>
-            <span className="bg-emerald-950/60 px-1.5 py-0.2 rounded text-[10px]">{meta.new_count || 89}</span>
+            <span>🟢 نو</span>
+            <span className="bg-teal-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.new_count || 89}</span>
           </button>
 
           <button
@@ -214,8 +268,8 @@ export default function ProductsTable() {
                 : "bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-500/20"
             }`}
           >
-            <span>🟣 کالاهای استوک</span>
-            <span className="bg-purple-950/60 px-1.5 py-0.2 rounded text-[10px]">{meta.stock_count || 77}</span>
+            <span>🟣 استوک</span>
+            <span className="bg-purple-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.stock_count || 77}</span>
           </button>
         </div>
 
@@ -247,38 +301,39 @@ export default function ProductsTable() {
             <option value="file_order">ترتیب فایل اکسل (پیش‌فرض)</option>
             <option value="quantity_desc">بیشترین موجودی انبار</option>
             <option value="quantity_asc">کمترین موجودی انبار</option>
-            <option value="diff_desc">بیشترین اختلاف با بازار</option>
+            <option value="diff_desc">بیشترین اختلاف (گران‌ترین‌ها نسبت به رتبه ۳)</option>
             <option value="royal_price_desc">گران‌ترین قیمت رویال</option>
             <option value="royal_price_asc">ارزان‌ترین قیمت رویال</option>
           </select>
         </div>
       </div>
 
-      {/* Main Table */}
+      {/* Main Table with 3 Torob Columns */}
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 shadow-xl backdrop-blur">
         <div className="overflow-x-auto">
           <table className="w-full text-right text-xs">
             <thead>
-              <tr className="border-b border-white/10 bg-slate-950/70 text-gray-400 font-semibold select-none">
+              <tr className="border-b border-white/10 bg-slate-950/80 text-gray-300 font-semibold select-none">
                 <th className="px-3 py-3.5 text-center w-12">ردیف</th>
-                <th className="px-3 py-3.5 text-center w-24">نوع</th>
-                <th className="px-4 py-3.5">نام محصول و مشخصات</th>
+                <th className="px-3 py-3.5 text-center w-20">نوع</th>
+                <th className="px-4 py-3.5 min-w-[220px]">نام محصول و مشخصات</th>
                 <th className="px-3 py-3.5 text-center w-20">موجودی</th>
-                <th className="px-4 py-3.5 text-center w-36 bg-red-950/30 text-red-300 border-x border-red-500/20">
-                  قیمت رویال‌دیجی (تومان)
+                <th className="px-3 py-3.5 text-center w-36 bg-amber-500/10 text-amber-200 border-x border-white/10">
+                  قیمت رویال‌دیجی
                 </th>
-                <th className="px-4 py-3.5 text-center w-36">قیمت ترب (تومان)</th>
-                <th className="px-4 py-3.5 text-center w-36">قیمت دیجی‌کالا (تومان)</th>
-                <th className="px-4 py-3.5 text-center w-36">میانگین بازار</th>
-                <th className="px-3 py-3.5 text-center w-28">وضعیت مغایرت</th>
-                <th className="px-3 py-3.5 text-center w-28">روند</th>
+                <th className="px-3 py-3.5 text-center w-32 bg-sky-950/20 text-sky-300">ترب ۱ (اول)</th>
+                <th className="px-3 py-3.5 text-center w-32 bg-sky-950/10 text-sky-200">ترب ۲ (دوم)</th>
+                <th className="px-3 py-3.5 text-center w-32 text-gray-300">ترب ۳ (سوم)</th>
+                <th className="px-3 py-3.5 text-center w-32 text-pink-300">دیجی‌کالا</th>
+                <th className="px-4 py-3.5 text-center w-48">وضعیت رقابت در ترب</th>
+                <th className="px-3 py-3.5 text-center w-24">روند</th>
                 <th className="px-3 py-3.5 text-center w-24">لینک‌ها</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
               {loading ? (
                 <tr>
-                  <td colSpan="11" className="py-16 text-center text-gray-400">
+                  <td colSpan="12" className="py-16 text-center text-gray-400">
                     <div className="flex flex-col items-center gap-2">
                       <div className="h-6 w-6 animate-spin rounded-full border-2 border-sky-400 border-t-transparent" />
                       <span>در حال دریافت اطلاعات محصولات...</span>
@@ -287,172 +342,191 @@ export default function ProductsTable() {
                 </tr>
               ) : items.length === 0 ? (
                 <tr>
-                  <td colSpan="11" className="py-16 text-center text-gray-400">
+                  <td colSpan="12" className="py-16 text-center text-gray-400">
                     هیچ کالایی با فیلترهای انتخابی یافت نشد.
                   </td>
                 </tr>
               ) : (
-                items.map((item) => (
-                  <tr
-                    key={item.id}
-                    className="hover:bg-white/[0.02] transition-colors"
-                  >
-                    <td className="px-3 py-3.5 text-center font-mono text-gray-500">
-                      {item.file_order}
-                    </td>
+                items.map((item) => {
+                  let royalCellClass = "border-white/5 text-gray-200 border-x";
+                  let royalSubtitle = null;
 
-                    <td className="px-3 py-3.5 text-center">
-                      <TypeBadge type={item.item_type} />
-                    </td>
-
-                    <td className="px-4 py-3.5">
-                      <div className="font-semibold text-gray-100 max-w-sm sm:max-w-md line-clamp-2">
-                        {item.name}
+                  if (item.top3_status === "higher_than_top_3") {
+                    royalCellClass = "bg-red-500/15 border-red-500/30 text-red-300 font-bold border-x";
+                    royalSubtitle = (
+                      <div className="text-[10px] text-red-400 font-semibold flex items-center justify-center gap-1 mt-0.5">
+                        <span>❌ گران‌تر از ۳ تای اول</span>
                       </div>
-                      <div className="flex flex-wrap items-center gap-2 mt-1 text-[11px] text-gray-400">
-                        {item.woo_id && (
-                          <span className="font-mono bg-white/5 px-1.5 py-0.5 rounded text-gray-300">
-                            ID: {item.woo_id}
-                          </span>
-                        )}
-                        {item.warranty && (
-                          <span className="text-gray-500 line-clamp-1">
-                            {item.warranty}
-                          </span>
-                        )}
-                        {item.notes && (
-                          <span className="text-amber-400/80 bg-amber-500/10 px-1.5 py-0.5 rounded text-[10px]">
-                            {item.notes}
-                          </span>
-                        )}
+                    );
+                  } else if (item.top3_status === "lower_than_top_1") {
+                    royalCellClass = "bg-amber-500/15 border-amber-500/30 text-amber-300 font-bold border-x";
+                    royalSubtitle = (
+                      <div className="text-[10px] text-amber-400 font-semibold flex items-center justify-center gap-1 mt-0.5">
+                        <span>⚠️ ارزان‌تر از رتبه ۱</span>
                       </div>
-                    </td>
+                    );
+                  } else if (item.top3_status === "in_top_3") {
+                    royalCellClass = "bg-emerald-500/15 border-emerald-500/30 text-emerald-300 font-bold border-x";
+                    royalSubtitle = (
+                      <div className="text-[10px] text-emerald-400 font-semibold mt-0.5">
+                        ✓ در ۳ تای اول ترب
+                      </div>
+                    );
+                  } else if (item.top3_status === "no_royal") {
+                    royalSubtitle = (
+                      <div className="text-[10px] text-gray-500 mt-0.5">ناموجود در سایت</div>
+                    );
+                  }
 
-                    <td className="px-3 py-3.5 text-center">
-                      <span className="inline-flex rounded-lg bg-slate-800 px-2.5 py-1 font-mono font-bold text-gray-200">
-                        {item.quantity} عدد
-                      </span>
-                    </td>
-
-                    {/* RoyalDigi Price Column (Red when discrepant) */}
-                    <td
-                      className={`px-4 py-3.5 text-center font-mono font-bold border-x ${
-                        item.is_discrepant
-                          ? "bg-red-500/15 border-red-500/30 text-red-300"
-                          : "border-white/5 text-emerald-400"
-                      }`}
+                  return (
+                    <tr
+                      key={item.id}
+                      className="hover:bg-white/[0.02] transition-colors"
                     >
-                      <div className="text-sm">
-                        {formatPrice(item.royaldigi_price)}
-                      </div>
-                      {item.is_discrepant ? (
-                        <div className="text-[10px] text-red-400 flex items-center justify-center gap-1 mt-0.5">
-                          <span>⚠️</span>
-                          <span>مغایرت با بازار</span>
-                        </div>
-                      ) : (
-                        <div className="text-[10px] text-emerald-500 mt-0.5">
-                          ✓ برابر با بازار
-                        </div>
-                      )}
-                    </td>
+                      <td className="px-3 py-3.5 text-center font-mono text-gray-500">
+                        {item.file_order}
+                      </td>
 
-                    {/* Torob Price Column (from main link) */}
-                    <td className="px-4 py-3.5 text-center font-mono text-gray-200">
-                      <div className="text-xs">
-                        {formatPrice(item.torob_price)}
-                      </div>
-                      {item.torob_offers && item.torob_offers.length > 1 && (
-                        <span className="text-[10px] text-gray-500">
-                          {item.torob_offers.length} فروشنده
+                      <td className="px-3 py-3.5 text-center">
+                        <TypeBadge type={item.item_type} />
+                      </td>
+
+                      <td className="px-4 py-3.5">
+                        <div className="font-semibold text-gray-100 max-w-sm sm:max-w-md line-clamp-2">
+                          {item.name}
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 mt-1 text-[11px] text-gray-400">
+                          {item.woo_id && (
+                            <span className="font-mono bg-white/5 px-1.5 py-0.5 rounded text-gray-300">
+                              ID: {item.woo_id}
+                            </span>
+                          )}
+                          {item.warranty && (
+                            <span className="text-gray-500 line-clamp-1">
+                              {item.warranty}
+                            </span>
+                          )}
+                          {item.notes && (
+                            <span className="text-amber-400/80 bg-amber-500/10 px-1.5 py-0.5 rounded text-[10px]">
+                              {item.notes}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+
+                      <td className="px-3 py-3.5 text-center">
+                        <span className="inline-flex rounded-lg bg-slate-800 px-2.5 py-1 font-mono font-bold text-gray-200">
+                          {item.quantity !== null && item.quantity !== undefined ? `${item.quantity} عدد` : "ناموجود"}
                         </span>
-                      )}
-                    </td>
+                      </td>
 
-                    {/* Digikala Price Column */}
-                    <td className="px-4 py-3.5 text-center font-mono text-gray-200">
-                      <div className="text-xs">
-                        {formatPrice(item.digikala_price)}
-                      </div>
-                    </td>
+                      {/* RoyalDigi Price Column (Alert colored) */}
+                      <td className={`px-3 py-3.5 text-center font-mono ${royalCellClass}`}>
+                        <div className="text-xs sm:text-sm">
+                          {formatPrice(item.royaldigi_price)}
+                        </div>
+                        {royalSubtitle}
+                      </td>
 
-                    {/* Market Average Column */}
-                    <td className="px-4 py-3.5 text-center font-mono font-bold text-gray-300 bg-white/[0.01]">
-                      <div className="text-xs">
-                        {formatPrice(item.market_avg_price)}
-                      </div>
-                    </td>
+                      {/* Torob 1 (Rank 1) */}
+                      <td className="px-3 py-3.5 text-center font-mono text-sky-200 bg-sky-950/10">
+                        <div className="text-xs font-semibold">
+                          {formatPrice(item.torob_1)}
+                        </div>
+                      </td>
 
-                    {/* Discrepancy Status */}
-                    <td className="px-3 py-3.5 text-center">
-                      <DiffBadge item={item} />
-                    </td>
+                      {/* Torob 2 (Rank 2) */}
+                      <td className="px-3 py-3.5 text-center font-mono text-gray-300">
+                        <div className="text-xs">
+                          {formatPrice(item.torob_2)}
+                        </div>
+                      </td>
 
-                    {/* Sparkline chart */}
-                    <td className="px-3 py-3.5 text-center">
-                      <div className="w-20 mx-auto">
-                        <Sparkline
-                          points={item.sparkline || [1, 1, 1]}
-                          width={75}
-                          height={24}
-                          color={item.is_discrepant ? "#ef4444" : "#10b981"}
-                        />
-                      </div>
-                    </td>
+                      {/* Torob 3 (Rank 3) */}
+                      <td className="px-3 py-3.5 text-center font-mono text-gray-400">
+                        <div className="text-xs">
+                          {formatPrice(item.torob_3)}
+                        </div>
+                      </td>
 
-                    {/* External Links */}
-                    <td className="px-3 py-3.5 text-center">
-                      <div className="flex items-center justify-center gap-2">
-                        {item.royaldigi_url && (
-                          <a
-                            href={item.royaldigi_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="مشاهده در سایت رویال‌دیجی"
-                            className="p-1.5 rounded-lg bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 transition"
-                          >
-                            👑
-                          </a>
-                        )}
-                        {item.torob_url && (
-                          <a
-                            href={item.torob_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="مشاهده لینک اصلی ترب"
-                            className="p-1.5 rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 transition"
-                          >
-                            🧅
-                          </a>
-                        )}
-                        {item.digikala_url && (
-                          <a
-                            href={item.digikala_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="مشاهده در دیجی‌کالا"
-                            className="p-1.5 rounded-lg bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 transition"
-                          >
-                            🔴
-                          </a>
-                        )}
-                      </div>
-                    </td>
-                  </tr>
-                ))
+                      {/* Digikala Price Column */}
+                      <td className="px-3 py-3.5 text-center font-mono text-pink-300">
+                        <div className="text-xs">
+                          {formatPrice(item.digikala_price)}
+                        </div>
+                      </td>
+
+                      {/* Top 3 Competitive Status */}
+                      <td className="px-4 py-3.5 text-center">
+                        <Top3StatusBadge item={item} />
+                      </td>
+
+                      {/* Sparkline chart */}
+                      <td className="px-3 py-3.5 text-center">
+                        <div className="w-20 mx-auto">
+                          <Sparkline
+                            points={item.sparkline || [1, 1, 1]}
+                            width={75}
+                            height={24}
+                            color={item.is_alert ? "#ef4444" : "#10b981"}
+                          />
+                        </div>
+                      </td>
+
+                      {/* External Links */}
+                      <td className="px-3 py-3.5 text-center">
+                        <div className="flex items-center justify-center gap-1.5">
+                          {item.royaldigi_url && (
+                            <a
+                              href={item.royaldigi_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              title="مشاهده در سایت رویال‌دیجی"
+                              className="p-1.5 rounded-lg bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 transition"
+                            >
+                              👑
+                            </a>
+                          )}
+                          {item.torob_url && (
+                            <a
+                              href={item.torob_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              title="مشاهده لینک اصلی ترب"
+                              className="p-1.5 rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 transition"
+                            >
+                              🧅
+                            </a>
+                          )}
+                          {item.digikala_url && (
+                            <a
+                              href={item.digikala_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              title="مشاهده در دیجی‌کالا"
+                              className="p-1.5 rounded-lg bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 transition"
+                            >
+                              🔴
+                            </a>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })
               )}
             </tbody>
           </table>
         </div>
       </div>
 
-      {/* Update Modal */}
+      {/* Update Instructions Modal */}
       {showUpdateModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm">
           <div className="w-full max-w-lg rounded-2xl border border-white/10 bg-slate-900 p-6 shadow-2xl space-y-4">
             <div className="flex items-center justify-between border-b border-white/10 pb-3">
               <h3 className="text-base font-bold text-white flex items-center gap-2">
-                <span>🔄 وضعیت و اجرای به‌روزرسانی قیمت‌ها</span>
+                <span>🔄 شروع و مدیریت به‌روزرسانی قیمت‌ها</span>
               </h3>
               <button
                 onClick={() => setShowUpdateModal(false)}
@@ -463,25 +537,29 @@ export default function ProductsTable() {
             </div>
 
             <div className="space-y-3 text-xs text-gray-300 leading-relaxed">
-              <div className="rounded-xl bg-slate-950/60 p-3 border border-white/5 space-y-1.5">
-                <div className="flex justify-between">
-                  <span className="text-gray-400">آخرین زمان استخراج:</span>
-                  <span className="text-white font-mono">{meta.last_updated_fa || "ثبت نشده"}</span>
+              <div className="rounded-xl bg-slate-950/60 p-3.5 border border-white/5 space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-400">استراتژی ترب:</span>
+                  <span className="text-emerald-400 font-bold">پایش ۳ فروشنده اول ترب (دید اصلی خریدار)</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                   <span className="text-gray-400">زمان‌بندی خودکار:</span>
-                  <span className="text-emerald-400 font-bold">هر روز ساعت ۱۰:۰۰ صبح (تهران)</span>
+                  <span className="text-white font-bold">{meta.schedule_info || "هر روز ساعت ۱۰:۰۰ صبح (تهران)"}</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                   <span className="text-gray-400">تکنیک ضد بن:</span>
-                  <span className="text-sky-300">تاخیر تصادفی انسانی (۲.۵ تا ۴.۵ ثانیه)</span>
+                  <span className="text-sky-300">تاخیر تصادفی انسانی (۲.۵ الی ۴.۵ ثانیه)</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-400">دامنه استخراج:</span>
+                  <span className="text-white">رویال‌دیجی · ۳ رتبه اول ترب (لینک اصلی) · دیجی‌کالا</span>
                 </div>
               </div>
 
-              <div className="rounded-xl bg-sky-950/20 border border-sky-500/20 p-3">
-                <p className="font-semibold text-sky-200">🚀 نحوه اجرای دستی و آنی در گیت‌هاب:</p>
-                <p className="text-gray-400 mt-1">
-                  می‌توانید همین حالا بدون صبر کردن برای ساعت ۱۰ صبح، با یک کلیک در گیت‌هاب، ورک‌فلو را اجرا کنید تا قیمت‌های جدید در سایت اعمال شوند.
+              <div className="rounded-xl bg-sky-950/25 border border-sky-500/25 p-3.5 space-y-1.5">
+                <p className="font-bold text-sky-200">🚀 نحوه اجرای دستی و آنی در گیت‌هاب اکشنز:</p>
+                <p className="text-gray-400 text-[11px]">
+                  با کلیک روی دکمه زیر وارد بخش Actions در گیت‌هاب می‌شوید و کافیست دکمه <span className="text-white font-mono bg-white/10 px-1 py-0.5 rounded">Run workflow</span> را بزنید تا کل سیستم با شرایط ضد بن به‌روزرسانی شده و سایت منتشر شود.
                 </p>
               </div>
             </div>
@@ -497,9 +575,9 @@ export default function ProductsTable() {
                 href="https://github.com/pouria-maleki/price-monitor/actions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-4 py-2 text-xs font-bold text-white hover:bg-sky-400 transition shadow-lg shadow-sky-500/20"
+                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-4 py-2 text-xs font-bold text-white hover:from-sky-400 hover:to-blue-500 transition shadow-lg shadow-sky-500/20"
               >
-                <span>ورود به تب Actions گیت‌هاب و Run Workflow</span>
+                <span>ورود به تب Actions گیت‌هاب و اجرای آنی</span>
                 <span>↗</span>
               </a>
             </div>

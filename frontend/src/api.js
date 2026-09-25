@@ -42,16 +42,24 @@ export async function fetchProducts({ q, itemType = "all", filterType = "all", s
       items = items.filter((p) => p.item_type === itemType);
     }
 
-    // Filter by discrepancy / status
+    // Filter by top-3 status / alerts
     if (filterType && filterType !== "all") {
-      if (filterType === "discrepant") {
-        items = items.filter((p) => p.is_discrepant);
+      if (filterType === "alerts") {
+        items = items.filter((p) => p.is_alert);
+      } else if (filterType === "higher_than_top_3") {
+        items = items.filter((p) => p.top3_status === "higher_than_top_3");
+      } else if (filterType === "lower_than_top_1") {
+        items = items.filter((p) => p.top3_status === "lower_than_top_1");
+      } else if (filterType === "in_top_3") {
+        items = items.filter((p) => p.top3_status === "in_top_3");
+      } else if (filterType === "discrepant") {
+        items = items.filter((p) => p.is_discrepant || p.is_alert);
       } else if (filterType === "matching") {
-        items = items.filter((p) => !p.is_discrepant && p.market_avg_price);
+        items = items.filter((p) => p.top3_status === "in_top_3");
       } else if (filterType === "royal_higher") {
-        items = items.filter((p) => p.diff_amount && p.diff_amount > 0);
+        items = items.filter((p) => p.top3_status === "higher_than_top_3");
       } else if (filterType === "royal_lower") {
-        items = items.filter((p) => p.diff_amount && p.diff_amount < 0);
+        items = items.filter((p) => p.top3_status === "lower_than_top_1");
       }
     }
 
@@ -67,7 +75,7 @@ export async function fetchProducts({ q, itemType = "all", filterType = "all", s
       );
     }
 
-    // Sorting - Default is exact file order
+    // Sorting - Default is exact file order (1 to 166)
     if (sortBy === "file_order") {
       items.sort((a, b) => (a.file_order || 0) - (b.file_order || 0));
     } else if (sortBy === "quantity_desc") {
@@ -75,7 +83,7 @@ export async function fetchProducts({ q, itemType = "all", filterType = "all", s
     } else if (sortBy === "quantity_asc") {
       items.sort((a, b) => (a.quantity || 0) - (b.quantity || 0) || (a.file_order - b.file_order));
     } else if (sortBy === "diff_desc") {
-      items.sort((a, b) => Math.abs(b.diff_amount || 0) - Math.abs(a.diff_amount || 0));
+      items.sort((a, b) => (b.diff_from_target || 0) - (a.diff_from_target || 0));
     } else if (sortBy === "royal_price_desc") {
       items.sort((a, b) => (b.royaldigi_price || 0) - (a.royaldigi_price || 0));
     } else if (sortBy === "royal_price_asc") {
@@ -134,15 +142,36 @@ export async function fetchShops(id) {
   const p = await fetchProduct(id);
   if (p) {
     const shops = [];
-    if (p.royaldigi_price) {
-      shops.push({ shop_name: "رویال‌دیجی (سایت ما)", price: p.royaldigi_price, url: p.royaldigi_url, is_available: true });
-    }
-    if (p.torob_price) {
-      shops.push({ shop_name: "کف قیمت ترب (لینک اصلی)", price: p.torob_price, url: p.torob_url, is_available: true });
-    }
-    if (p.digikala_price) {
-      shops.push({ shop_name: "دیجی‌کالا", price: p.digikala_price, url: p.digikala_url, is_available: true });
-    }
+    shops.push({
+      shop_name: "رویال‌دیجی (سایت ما)",
+      price: p.royaldigi_price,
+      url: p.royaldigi_url,
+      is_available: !!p.royaldigi_price,
+    });
+    shops.push({
+      shop_name: "ترب · رتبه ۱ (فروشنده اول)",
+      price: p.torob_1,
+      url: p.torob_url,
+      is_available: !!p.torob_1,
+    });
+    shops.push({
+      shop_name: "ترب · رتبه ۲ (فروشنده دوم)",
+      price: p.torob_2,
+      url: p.torob_url,
+      is_available: !!p.torob_2,
+    });
+    shops.push({
+      shop_name: "ترب · رتبه ۳ (فروشنده سوم)",
+      price: p.torob_3,
+      url: p.torob_url,
+      is_available: !!p.torob_3,
+    });
+    shops.push({
+      shop_name: "دیجی‌کالا",
+      price: p.digikala_price,
+      url: p.digikala_url,
+      is_available: !!p.digikala_price,
+    });
     return shops;
   }
   return [];

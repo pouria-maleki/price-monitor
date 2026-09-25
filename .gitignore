@@ -24,3 +24,6 @@ frontend/.env
 
 # Logs
 *.log
+
+# Scratch
+scratch/
