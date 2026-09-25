@@ -6,11 +6,11 @@ function formatDate(iso) {
 
 export default function PriceChart({ history }) {
   const data = history
-    .filter((h) => h.new_price !== null && h.new_price !== undefined)
+    .filter((h) => (h.new_price ?? h.price) !== null && (h.new_price ?? h.price) !== undefined)
     .map((h) => ({
       date: formatDate(h.created_at),
       timestamp: h.created_at,
-      price: h.new_price,
+      price: h.new_price ?? h.price,
     }));
 
   if (data.length === 0) {

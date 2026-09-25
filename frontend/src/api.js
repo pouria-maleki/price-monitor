@@ -7,13 +7,12 @@ let cachedData = null;
 
 async function loadStaticData() {
   if (cachedData) return cachedData;
-  
-  // Try candidate URLs for products_data.json
+
   const candidates = [
     "./data/products_data.json",
     "data/products_data.json",
     "/data/products_data.json",
-    "/price-monitor/data/products_data.json", // Common for GitHub Pages repo name
+    "/price-monitor/data/products_data.json",
   ];
 
   for (const url of candidates) {
@@ -33,22 +32,26 @@ async function loadStaticData() {
   return null;
 }
 
-export async function fetchProducts({ q, category, status, sortBy = "default" } = {}) {
+export async function fetchProducts({ q, itemType = "all", filterType = "all", sortBy = "file_order" } = {}) {
   const staticData = await loadStaticData();
   if (staticData && staticData.items) {
     let items = [...staticData.items];
 
-    // Filter by category (new / stock)
-    if (category && category !== "all") {
-      items = items.filter((p) => p.category === category);
+    // Filter by itemType: all, New, Stock
+    if (itemType && itemType !== "all") {
+      items = items.filter((p) => p.item_type === itemType);
     }
 
-    // Filter by status (increased, decreased, unchanged, out_of_stock)
-    if (status && status !== "all") {
-      if (status === "changed") {
-        items = items.filter((p) => p.status === "increased" || p.status === "decreased");
-      } else {
-        items = items.filter((p) => p.status === status);
+    // Filter by discrepancy / status
+    if (filterType && filterType !== "all") {
+      if (filterType === "discrepant") {
+        items = items.filter((p) => p.is_discrepant);
+      } else if (filterType === "matching") {
+        items = items.filter((p) => !p.is_discrepant && p.market_avg_price);
+      } else if (filterType === "royal_higher") {
+        items = items.filter((p) => p.diff_amount && p.diff_amount > 0);
+      } else if (filterType === "royal_lower") {
+        items = items.filter((p) => p.diff_amount && p.diff_amount < 0);
       }
     }
 
@@ -57,30 +60,26 @@ export async function fetchProducts({ q, category, status, sortBy = "default" } 
       const query = q.trim().toLowerCase();
       items = items.filter((p) =>
         (p.name && p.name.toLowerCase().includes(query)) ||
-        (p.warehouse_title && p.warehouse_title.toLowerCase().includes(query)) ||
-        (p.category_fa && p.category_fa.toLowerCase().includes(query))
+        (p.woo_id && String(p.woo_id).includes(query)) ||
+        (p.notes && p.notes.toLowerCase().includes(query)) ||
+        (p.warranty && p.warranty.toLowerCase().includes(query)) ||
+        (p.grade && p.grade.toLowerCase().includes(query))
       );
     }
 
-    // Sorting
-    if (sortBy === "quantity_desc" || sortBy === "default") {
-      items.sort((a, b) => (b.quantity || 0) - (a.quantity || 0) || (a.row_index - b.row_index));
+    // Sorting - Default is exact file order
+    if (sortBy === "file_order") {
+      items.sort((a, b) => (a.file_order || 0) - (b.file_order || 0));
+    } else if (sortBy === "quantity_desc") {
+      items.sort((a, b) => (b.quantity || 0) - (a.quantity || 0) || (a.file_order - b.file_order));
     } else if (sortBy === "quantity_asc") {
-      items.sort((a, b) => (a.quantity || 0) - (b.quantity || 0) || (a.row_index - b.row_index));
-    } else if (sortBy === "profit_desc") {
-      items.sort((a, b) => (b.inventory_profit_loss || 0) - (a.inventory_profit_loss || 0));
-    } else if (sortBy === "profit_asc") {
-      items.sort((a, b) => (a.inventory_profit_loss || 0) - (b.inventory_profit_loss || 0));
-    } else if (sortBy === "change_desc") {
-      items.sort((a, b) => (b.price_change_percent || 0) - (a.price_change_percent || 0));
-    } else if (sortBy === "change_asc") {
-      items.sort((a, b) => (a.price_change_percent || 0) - (b.price_change_percent || 0));
-    } else if (sortBy === "price_desc") {
-      items.sort((a, b) => (b.best_current_price || 0) - (a.best_current_price || 0));
-    } else if (sortBy === "price_asc") {
-      items.sort((a, b) => (a.best_current_price || 999999999) - (b.best_current_price || 999999999));
-    } else if (sortBy === "row_index") {
-      items.sort((a, b) => (a.category === "new" ? 0 : 1) - (b.category === "new" ? 0 : 1) || (a.row_index - b.row_index));
+      items.sort((a, b) => (a.quantity || 0) - (b.quantity || 0) || (a.file_order - b.file_order));
+    } else if (sortBy === "diff_desc") {
+      items.sort((a, b) => Math.abs(b.diff_amount || 0) - Math.abs(a.diff_amount || 0));
+    } else if (sortBy === "royal_price_desc") {
+      items.sort((a, b) => (b.royaldigi_price || 0) - (a.royaldigi_price || 0));
+    } else if (sortBy === "royal_price_asc") {
+      items.sort((a, b) => (a.royaldigi_price || 0) - (b.royaldigi_price || 0));
     }
 
     return {
@@ -90,110 +89,61 @@ export async function fetchProducts({ q, category, status, sortBy = "default" } 
     };
   }
 
-  // Fallback to FastAPI backend if static data is not present
+  // Fallback to API if backend server is ever running
   try {
-    const { data } = await client.get("/products", { params: { q, category } });
-    return data;
+    const params = {};
+    if (q) params.q = q;
+    const res = await client.get("/api/products", { params });
+    return res.data;
   } catch (err) {
-    throw new Error("داده‌های محصولات یافت نشد.");
+    return { items: [], total: 0, metadata: {} };
   }
+}
+
+export async function fetchStats() {
+  const staticData = await loadStaticData();
+  if (staticData && staticData.metadata) {
+    return staticData.metadata;
+  }
+  return {};
 }
 
 export async function fetchProduct(id) {
   const staticData = await loadStaticData();
   if (staticData && staticData.items) {
-    const found = staticData.items.find(
-      (p) => String(p.id) === String(id) || String(p.row_index) === String(id)
+    const item = staticData.items.find(
+      (p) => String(p.id) === String(id) || String(p.woo_id) === String(id) || String(p.file_order) === String(id)
     );
-    if (found) return found;
+    if (item) return item;
   }
-
-  const { data } = await client.get(`/products/${id}`);
-  return data;
+  return null;
 }
 
 export async function fetchHistory(id) {
-  const staticData = await loadStaticData();
-  if (staticData && staticData.items) {
-    const found = staticData.items.find(
-      (p) => String(p.id) === String(id) || String(p.row_index) === String(id)
-    );
-    if (found && found.history) {
-      return found.history.map((h, idx) => ({
-        id: idx,
-        created_at: h.timestamp,
-        price: h.digikala_price || h.torob_price || 0,
-        store: { name: h.digikala_price ? "دیجی‌کالا" : "ترب" },
-      }));
-    }
-    return [];
+  const p = await fetchProduct(id);
+  if (p && p.sparkline) {
+    return p.sparkline.map((val, idx) => ({
+      price: val,
+      created_at: new Date(Date.now() - (4 - idx) * 86400000).toISOString(),
+    }));
   }
-
-  const { data } = await client.get(`/history/${id}`);
-  return data;
+  return [];
 }
 
 export async function fetchShops(id) {
-  const staticData = await loadStaticData();
-  if (staticData && staticData.items) {
-    const found = staticData.items.find(
-      (p) => String(p.id) === String(id) || String(p.row_index) === String(id)
-    );
-    if (found) {
-      const shops = [];
-      let sId = 1;
-      if (found.current_digikala_price) {
-        shops.push({
-          id: sId++,
-          store: { name: found.digikala_seller || "دیجی‌کالا" },
-          price: found.current_digikala_price,
-          is_available: found.digikala_available,
-          url: found.digikala_url,
-          checked_at: found.last_checked,
-        });
-      }
-      if (found.digikala_offers) {
-        found.digikala_offers.forEach((o) => {
-          if (o.seller !== found.digikala_seller) {
-            shops.push({
-              id: sId++,
-              store: { name: `دیجی‌کالا: ${o.seller}` },
-              price: o.price,
-              is_available: true,
-              url: found.digikala_url,
-              checked_at: found.last_checked,
-            });
-          }
-        });
-      }
-      if (found.current_torob_price) {
-        shops.push({
-          id: sId++,
-          store: { name: "ترب (ارزان‌ترین)" },
-          price: found.current_torob_price,
-          is_available: found.torob_available,
-          url: found.torob_url,
-          checked_at: found.last_checked,
-        });
-      }
-      if (found.torob_offers) {
-        found.torob_offers.forEach((o) => {
-          shops.push({
-            id: sId++,
-            store: { name: `ترب: ${o.seller}` },
-            price: o.price,
-            is_available: true,
-            url: o.url || found.torob_url,
-            checked_at: found.last_checked,
-          });
-        });
-      }
-      return shops;
+  const p = await fetchProduct(id);
+  if (p) {
+    const shops = [];
+    if (p.royaldigi_price) {
+      shops.push({ shop_name: "رویال‌دیجی (سایت ما)", price: p.royaldigi_price, url: p.royaldigi_url, is_available: true });
     }
+    if (p.torob_price) {
+      shops.push({ shop_name: "کف قیمت ترب (لینک اصلی)", price: p.torob_price, url: p.torob_url, is_available: true });
+    }
+    if (p.digikala_price) {
+      shops.push({ shop_name: "دیجی‌کالا", price: p.digikala_price, url: p.digikala_url, is_available: true });
+    }
+    return shops;
   }
-
-  const { data } = await client.get(`/shops/${id}`);
-  return data;
+  return [];
 }
-
-export default client;
