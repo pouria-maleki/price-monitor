@@ -47,24 +47,29 @@ export default function ProductDetail() {
   const t1 = product.torob_1;
   const t2 = product.torob_2;
   const t3 = product.torob_3;
+  const t4 = product.torob_4;
+  const t5 = product.torob_5;
   const dkPrice = product.digikala_price;
 
   let royalBoxClass = "bg-slate-950/60 border-white/5";
   let royalTextClass = "text-gray-200";
   let royalSubtitle = null;
+  const st = product.top5_status || product.top3_status;
 
-  if (product.top3_status === "higher_than_top_3") {
+  if (st === "higher_than_top_5" || st === "higher_than_top_3") {
     royalBoxClass = "bg-red-950/30 border-red-500/30";
     royalTextClass = "text-red-300";
-    royalSubtitle = <div className="text-[11px] text-red-400 mt-1 font-bold">❌ گران‌تر از ۳ تای اول ترب ({product.top3_rank_label})</div>;
-  } else if (product.top3_status === "lower_than_top_1") {
+    royalSubtitle = <div className="text-[11px] text-red-400 mt-1 font-bold">❌ گران‌تر از ۵ تای اول ترب ({product.top5_rank_label || product.top3_rank_label})</div>;
+  } else if (st === "lower_than_top_1") {
     royalBoxClass = "bg-amber-950/30 border-amber-500/30";
     royalTextClass = "text-amber-300";
-    royalSubtitle = <div className="text-[11px] text-amber-400 mt-1 font-bold">⚠️ ارزان‌تر از رتبه ۱ ترب ({product.top3_rank_label})</div>;
-  } else if (product.top3_status === "in_top_3") {
+    royalSubtitle = <div className="text-[11px] text-amber-400 mt-1 font-bold">⚠️ ارزان‌تر از رتبه ۱ ترب ({product.top5_rank_label || product.top3_rank_label})</div>;
+  } else if (st === "in_top_5" || st === "in_top_3") {
     royalBoxClass = "bg-emerald-950/30 border-emerald-500/30";
     royalTextClass = "text-emerald-300";
-    royalSubtitle = <div className="text-[11px] text-emerald-400 mt-1 font-bold">✓ رقابتی: {product.top3_badge}</div>;
+    royalSubtitle = <div className="text-[11px] text-emerald-400 mt-1 font-bold">✓ رقابتی: {product.top5_badge || product.top3_badge}</div>;
+  } else if (st === "no_royal" || !royalPrice) {
+    royalSubtitle = <div className="text-[11px] text-gray-500 mt-1">⚪ ناموجود در سایت ما</div>;
   }
 
   return (
@@ -94,9 +99,9 @@ export default function ProductDetail() {
             <h2 className="text-xl font-bold text-white leading-relaxed">{product.name}</h2>
             {product.warranty && <p className="text-xs text-gray-400">گارانتی: {product.warranty}</p>}
             {product.notes && <p className="text-xs text-amber-300/80 bg-amber-500/10 p-2 rounded-lg inline-block">{product.notes}</p>}
-            {product.top3_explanation && (
+            {(product.top5_explanation || product.top3_explanation) && (
               <p className="text-xs text-sky-300 bg-sky-950/40 border border-sky-500/20 p-2.5 rounded-xl">
-                💡 وضعیت رقابت ترب: {product.top3_explanation}
+                💡 وضعیت رقابت در ۵ رتبه ترب: {product.top5_explanation || product.top3_explanation}
               </p>
             )}
           </div>
@@ -135,46 +140,62 @@ export default function ProductDetail() {
           </div>
         </div>
 
-        {/* Pricing Comparison Grid (Royal + Torob 1, 2, 3 + Digikala) */}
-        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-5 border-t border-white/5 pt-5">
-          <div className={`rounded-xl p-3.5 border ${royalBoxClass}`}>
+        {/* Pricing Comparison Grid (Royal + Torob 1, 2, 3, 4, 5 + Digikala) */}
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7 border-t border-white/5 pt-5">
+          <div className={`rounded-xl p-3 border ${royalBoxClass}`}>
             <div className="text-[11px] text-gray-400">قیمت رویال‌دیجی</div>
-            <div className={`mt-1 font-mono text-base font-bold ${royalTextClass}`}>
+            <div className={`mt-1 font-mono text-sm sm:text-base font-bold ${royalTextClass}`}>
               {formatPrice(royalPrice)}
             </div>
             {royalSubtitle}
           </div>
 
-          <div className="rounded-xl bg-sky-950/20 border border-sky-500/20 p-3.5">
-            <div className="text-[11px] text-sky-300">ترب ۱ (فروشنده اول)</div>
-            <div className="mt-1 font-mono text-base font-bold text-sky-200">
+          <div className="rounded-xl bg-sky-950/20 border border-sky-500/20 p-3">
+            <div className="text-[11px] text-sky-300">ترب ۱ (رتبه اول)</div>
+            <div className="mt-1 font-mono text-sm font-bold text-sky-200">
               {formatPrice(t1)}
             </div>
             <div className="text-[10px] text-sky-400/80 mt-1">کف قیمت بازار</div>
           </div>
 
-          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
-            <div className="text-[11px] text-gray-400">ترب ۲ (فروشنده دوم)</div>
-            <div className="mt-1 font-mono text-base font-semibold text-gray-200">
+          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3">
+            <div className="text-[11px] text-gray-400">ترب ۲ (رتبه دوم)</div>
+            <div className="mt-1 font-mono text-sm font-semibold text-gray-200">
               {formatPrice(t2)}
             </div>
             <div className="text-[10px] text-gray-500 mt-1">رتبه دوم</div>
           </div>
 
-          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
-            <div className="text-[11px] text-gray-400">ترب ۳ (فروشنده سوم)</div>
-            <div className="mt-1 font-mono text-base font-semibold text-gray-200">
+          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3">
+            <div className="text-[11px] text-gray-400">ترب ۳ (رتبه سوم)</div>
+            <div className="mt-1 font-mono text-sm font-semibold text-gray-200">
               {formatPrice(t3)}
             </div>
-            <div className="text-[10px] text-gray-500 mt-1">سقف رتبه ۳ ترب</div>
+            <div className="text-[10px] text-gray-500 mt-1">رتبه سوم</div>
           </div>
 
-          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3.5">
+          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3">
+            <div className="text-[11px] text-gray-400">ترب ۴ (رتبه چهارم)</div>
+            <div className="mt-1 font-mono text-sm font-semibold text-gray-200">
+              {formatPrice(t4)}
+            </div>
+            <div className="text-[10px] text-gray-500 mt-1">رتبه چهارم</div>
+          </div>
+
+          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3">
+            <div className="text-[11px] text-gray-400">ترب ۵ (رتبه پنجم)</div>
+            <div className="mt-1 font-mono text-sm font-semibold text-gray-200">
+              {formatPrice(t5)}
+            </div>
+            <div className="text-[10px] text-gray-500 mt-1">سقف ۵ رتبه اول</div>
+          </div>
+
+          <div className="rounded-xl bg-slate-950/60 border border-white/5 p-3">
             <div className="text-[11px] text-gray-400">دیجی‌کالا</div>
-            <div className="mt-1 font-mono text-base font-semibold text-pink-300">
+            <div className="mt-1 font-mono text-sm font-semibold text-pink-300">
               {formatPrice(dkPrice)}
             </div>
-            <div className="text-[10px] text-gray-500 mt-1">قیمت دیجی‌کالا</div>
+            <div className="text-[10px] text-gray-500 mt-1">دیجی‌کالا</div>
           </div>
         </div>
       </div>

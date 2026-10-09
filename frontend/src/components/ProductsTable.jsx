@@ -34,45 +34,46 @@ function TypeBadge({ type }) {
   );
 }
 
-function Top3StatusBadge({ item }) {
-  if (item.top3_status === "higher_than_top_3") {
+function Top5StatusBadge({ item }) {
+  const st = item.top5_status || item.top3_status;
+  if (st === "higher_than_top_5" || st === "higher_than_top_3") {
     return (
       <div className="flex flex-col items-center gap-0.5">
         <span className="inline-flex items-center gap-1 rounded-lg border border-red-500/30 bg-red-500/15 px-2 py-0.5 text-[11px] font-bold text-red-300">
-          ❌ گران‌تر از ۳ تای اول
+          ❌ گران‌تر از ۵ تای اول
         </span>
         <span className="text-[10px] text-red-400/90 font-mono text-center">
-          {item.top3_rank_label || ""}
+          {item.top5_rank_label || item.top3_rank_label || ""}
         </span>
       </div>
     );
   }
-  if (item.top3_status === "lower_than_top_1") {
+  if (st === "lower_than_top_1") {
     return (
       <div className="flex flex-col items-center gap-0.5">
         <span className="inline-flex items-center gap-1 rounded-lg border border-amber-500/30 bg-amber-500/15 px-2 py-0.5 text-[11px] font-bold text-amber-300">
           ⚠️ ارزان‌تر از رتبه ۱
         </span>
         <span className="text-[10px] text-amber-400/90 font-mono text-center">
-          {item.top3_rank_label || ""}
+          {item.top5_rank_label || item.top3_rank_label || ""}
         </span>
       </div>
     );
   }
-  if (item.top3_status === "in_top_3") {
+  if (st === "in_top_5" || st === "in_top_3") {
     return (
       <div className="flex flex-col items-center gap-0.5">
         <span className="inline-flex items-center gap-1 rounded-lg border border-emerald-500/30 bg-emerald-500/15 px-2.5 py-0.5 text-[11px] font-bold text-emerald-300">
-          {item.top3_badge || "✓ در ۳ تای اول"}
+          {item.top5_badge || item.top3_badge || "✓ در ۵ تای اول"}
         </span>
         <span className="text-[10px] text-emerald-400/80">رقابتی و فعال</span>
       </div>
     );
   }
-  if (item.top3_status === "no_royal") {
+  if (st === "no_royal" || !item.royaldigi_price) {
     return <span className="text-gray-500 text-[11px]">ناموجود در رویال</span>;
   }
-  if (item.top3_status === "no_torob") {
+  if (st === "no_torob") {
     return <span className="text-gray-500 text-[11px]">ناموجود در ترب</span>;
   }
   return <span className="text-gray-500 text-[11px]">—</span>;
@@ -109,10 +110,10 @@ export default function ProductsTable() {
         <div>
           <h2 className="text-xl font-bold text-white flex items-center gap-2">
             <span>👑 سامانه مانیتورینگ قیمت رویال‌دیجی</span>
-            <span className="text-xs bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2.5 py-0.5 rounded-full">استراتژی ۳ رتبه اول ترب</span>
+            <span className="text-xs bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2.5 py-0.5 rounded-full">استراتژی ۵ رتبه اول ترب</span>
           </h2>
           <p className="text-xs text-gray-400 mt-1">
-            مقایسه لحظه‌ای قیمت رویال‌دیجی با ۳ فروشنده اول ترب (لینک اصلی) و دیجی‌کالا | زمان‌بندی: {meta.schedule_info || "هر روز ساعت ۱۰:۰۰ صبح"}
+            مقایسه لحظه‌ای قیمت رویال‌دیجی با ۵ فروشنده اول ترب (لینک اصلی) و دیجی‌کالا | زمان‌بندی: {meta.schedule_info || "هر روز ساعت ۱۰:۰۰ صبح"}
           </p>
         </div>
         <div className="flex items-center gap-2.5">
@@ -132,7 +133,7 @@ export default function ProductsTable() {
         </div>
       </div>
 
-      {/* KPI Cards (Top 3 Competitive Strategy) */}
+      {/* KPI Cards (Top 5 Competitive Strategy) */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
         <div className="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
           <span className="text-xs font-medium text-gray-400">تعداد کل کالاها</span>
@@ -151,17 +152,17 @@ export default function ProductsTable() {
         </div>
 
         <div className="rounded-2xl border border-emerald-500/25 bg-emerald-950/20 p-4 shadow-sm backdrop-blur">
-          <span className="text-xs font-medium text-emerald-300">در ۳ تای اول ترب (ایده‌آل)</span>
+          <span className="text-xs font-medium text-emerald-300">در ۵ تای اول ترب (ایده‌آل)</span>
           <div className="text-xl font-bold text-emerald-400 mt-1">
-            {(meta.in_top_3_count || 0).toLocaleString("fa-IR")}
+            {(meta.in_top_5_count ?? meta.in_top_3_count ?? 0).toLocaleString("fa-IR")}
           </div>
           <span className="text-[11px] text-emerald-400/80">کالای کاملاً رقابتی</span>
         </div>
 
         <div className="rounded-2xl border border-red-500/25 bg-red-950/20 p-4 shadow-sm backdrop-blur">
-          <span className="text-xs font-medium text-red-300">❌ گران‌تر از ۳ تای اول</span>
+          <span className="text-xs font-medium text-red-300">❌ گران‌تر از ۵ تای اول</span>
           <div className="text-xl font-bold text-red-400 mt-1">
-            {(meta.higher_than_top_3_count || 0).toLocaleString("fa-IR")}
+            {(meta.higher_than_top_5_count ?? meta.higher_than_top_3_count ?? 0).toLocaleString("fa-IR")}
           </div>
           <span className="text-[11px] text-red-400/80">خارج از دید خریدار</span>
         </div>
@@ -175,13 +176,11 @@ export default function ProductsTable() {
         </div>
 
         <div className="rounded-2xl border border-white/5 bg-slate-900/60 p-4 shadow-sm backdrop-blur">
-          <span className="text-xs font-medium text-gray-400">نو / استوک</span>
-          <div className="text-xl font-bold text-white mt-1 flex items-center gap-1.5">
-            <span className="text-emerald-400 text-base">{meta.new_count || 0} نو</span>
-            <span className="text-gray-600">/</span>
-            <span className="text-purple-400 text-base">{meta.stock_count || 0} استوک</span>
+          <span className="text-xs font-medium text-gray-400">ناموجود در سایت ما</span>
+          <div className="text-xl font-bold text-gray-400 mt-1">
+            {(meta.no_royal_count || 0).toLocaleString("fa-IR")}
           </div>
-          <span className="text-[11px] text-gray-500">تفکیک وضعیت کالا</span>
+          <span className="text-[11px] text-gray-500">عدم موجودی یا قیمت رویال</span>
         </div>
       </div>
 
@@ -209,19 +208,19 @@ export default function ProductsTable() {
             }`}
           >
             <span>⚠️ کلیه اخطارها</span>
-            <span className="bg-red-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.alerts_total || 42}</span>
+            <span className="bg-red-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.alerts_total || 0}</span>
           </button>
 
           <button
-            onClick={() => setFilterType(filterType === "higher_than_top_3" ? "all" : "higher_than_top_3")}
+            onClick={() => setFilterType(filterType === "higher_than_top_5" ? "all" : "higher_than_top_5")}
             className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
-              filterType === "higher_than_top_3"
+              filterType === "higher_than_top_5"
                 ? "bg-rose-500 text-white shadow-md shadow-rose-500/20"
                 : "bg-rose-500/10 text-rose-300 border border-rose-500/20 hover:bg-rose-500/20"
             }`}
           >
-            <span>❌ گران‌تر از ۳ تای اول</span>
-            <span className="bg-rose-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.higher_than_top_3_count || 38}</span>
+            <span>❌ گران‌تر از ۵ تای اول</span>
+            <span className="bg-rose-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.higher_than_top_5_count ?? meta.higher_than_top_3_count ?? 0}</span>
           </button>
 
           <button
@@ -233,19 +232,31 @@ export default function ProductsTable() {
             }`}
           >
             <span>⚠️ ارزان‌تر از کف</span>
-            <span className="bg-amber-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.lower_than_top_1_count || 4}</span>
+            <span className="bg-amber-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.lower_than_top_1_count || 0}</span>
           </button>
 
           <button
-            onClick={() => setFilterType(filterType === "in_top_3" ? "all" : "in_top_3")}
+            onClick={() => setFilterType(filterType === "in_top_5" ? "all" : "in_top_5")}
             className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
-              filterType === "in_top_3"
+              filterType === "in_top_5"
                 ? "bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
                 : "bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 hover:bg-emerald-500/20"
             }`}
           >
-            <span>✓ در ۳ تای اول ترب</span>
-            <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.in_top_3_count || 77}</span>
+            <span>✓ در ۵ تای اول ترب</span>
+            <span className="bg-emerald-950/60 px-1.5 py-0.5 rounded text-[10px]">{meta.in_top_5_count ?? meta.in_top_3_count ?? 0}</span>
+          </button>
+
+          <button
+            onClick={() => setFilterType(filterType === "no_royal" ? "all" : "no_royal")}
+            className={`rounded-xl px-3.5 py-1.5 text-xs font-bold transition flex items-center gap-1.5 ${
+              filterType === "no_royal"
+                ? "bg-slate-600 text-white shadow-md"
+                : "bg-slate-700/30 text-gray-400 border border-white/5 hover:bg-white/10"
+            }`}
+          >
+            <span>⚪ ناموجود در رویال</span>
+            <span className="bg-slate-800 px-1.5 py-0.5 rounded text-[10px]">{meta.no_royal_count || 0}</span>
           </button>
 
           <button
@@ -301,14 +312,14 @@ export default function ProductsTable() {
             <option value="file_order">ترتیب فایل اکسل (پیش‌فرض)</option>
             <option value="quantity_desc">بیشترین موجودی انبار</option>
             <option value="quantity_asc">کمترین موجودی انبار</option>
-            <option value="diff_desc">بیشترین اختلاف (گران‌ترین‌ها نسبت به رتبه ۳)</option>
+            <option value="diff_desc">بیشترین اختلاف (گران‌ترین‌ها نسبت به ترب)</option>
             <option value="royal_price_desc">گران‌ترین قیمت رویال</option>
             <option value="royal_price_asc">ارزان‌ترین قیمت رویال</option>
           </select>
         </div>
       </div>
 
-      {/* Main Table with 3 Torob Columns */}
+      {/* Main Table with 5 Torob Columns */}
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 shadow-xl backdrop-blur">
         <div className="overflow-x-auto">
           <table className="w-full text-right text-xs">
@@ -316,16 +327,18 @@ export default function ProductsTable() {
               <tr className="border-b border-white/10 bg-slate-950/80 text-gray-300 font-semibold select-none">
                 <th className="px-3 py-3.5 text-center w-12">ردیف</th>
                 <th className="px-3 py-3.5 text-center w-20">نوع</th>
-                <th className="px-4 py-3.5 min-w-[220px]">نام محصول و مشخصات</th>
+                <th className="px-4 py-3.5 min-w-[200px]">نام محصول و مشخصات</th>
                 <th className="px-3 py-3.5 text-center w-20">موجودی</th>
                 <th className="px-3 py-3.5 text-center w-36 bg-amber-500/10 text-amber-200 border-x border-white/10">
                   قیمت رویال‌دیجی
                 </th>
-                <th className="px-3 py-3.5 text-center w-32 bg-sky-950/20 text-sky-300">ترب ۱ (اول)</th>
-                <th className="px-3 py-3.5 text-center w-32 bg-sky-950/10 text-sky-200">ترب ۲ (دوم)</th>
-                <th className="px-3 py-3.5 text-center w-32 text-gray-300">ترب ۳ (سوم)</th>
+                <th className="px-2.5 py-3.5 text-center w-28 bg-sky-950/25 text-sky-300">ترب ۱ (اول)</th>
+                <th className="px-2.5 py-3.5 text-center w-28 bg-sky-950/15 text-sky-200">ترب ۲ (دوم)</th>
+                <th className="px-2.5 py-3.5 text-center w-28 text-gray-300">ترب ۳ (سوم)</th>
+                <th className="px-2.5 py-3.5 text-center w-28 text-gray-400">ترب ۴ (چهارم)</th>
+                <th className="px-2.5 py-3.5 text-center w-28 text-gray-400">ترب ۵ (پنجم)</th>
                 <th className="px-3 py-3.5 text-center w-32 text-pink-300">دیجی‌کالا</th>
-                <th className="px-4 py-3.5 text-center w-48">وضعیت رقابت در ترب</th>
+                <th className="px-4 py-3.5 text-center w-48">وضعیت ۵ رتبه ترب</th>
                 <th className="px-3 py-3.5 text-center w-24">روند</th>
                 <th className="px-3 py-3.5 text-center w-24">لینک‌ها</th>
               </tr>
@@ -333,7 +346,7 @@ export default function ProductsTable() {
             <tbody className="divide-y divide-white/5">
               {loading ? (
                 <tr>
-                  <td colSpan="12" className="py-16 text-center text-gray-400">
+                  <td colSpan="14" className="py-16 text-center text-gray-400">
                     <div className="flex flex-col items-center gap-2">
                       <div className="h-6 w-6 animate-spin rounded-full border-2 border-sky-400 border-t-transparent" />
                       <span>در حال دریافت اطلاعات محصولات...</span>
@@ -342,7 +355,7 @@ export default function ProductsTable() {
                 </tr>
               ) : items.length === 0 ? (
                 <tr>
-                  <td colSpan="12" className="py-16 text-center text-gray-400">
+                  <td colSpan="14" className="py-16 text-center text-gray-400">
                     هیچ کالایی با فیلترهای انتخابی یافت نشد.
                   </td>
                 </tr>
@@ -350,31 +363,32 @@ export default function ProductsTable() {
                 items.map((item) => {
                   let royalCellClass = "border-white/5 text-gray-200 border-x";
                   let royalSubtitle = null;
+                  const st = item.top5_status || item.top3_status;
 
-                  if (item.top3_status === "higher_than_top_3") {
+                  if (st === "higher_than_top_5" || st === "higher_than_top_3") {
                     royalCellClass = "bg-red-500/15 border-red-500/30 text-red-300 font-bold border-x";
                     royalSubtitle = (
                       <div className="text-[10px] text-red-400 font-semibold flex items-center justify-center gap-1 mt-0.5">
-                        <span>❌ گران‌تر از ۳ تای اول</span>
+                        <span>❌ گران‌تر از ۵ تای اول</span>
                       </div>
                     );
-                  } else if (item.top3_status === "lower_than_top_1") {
+                  } else if (st === "lower_than_top_1") {
                     royalCellClass = "bg-amber-500/15 border-amber-500/30 text-amber-300 font-bold border-x";
                     royalSubtitle = (
                       <div className="text-[10px] text-amber-400 font-semibold flex items-center justify-center gap-1 mt-0.5">
                         <span>⚠️ ارزان‌تر از رتبه ۱</span>
                       </div>
                     );
-                  } else if (item.top3_status === "in_top_3") {
+                  } else if (st === "in_top_5" || st === "in_top_3") {
                     royalCellClass = "bg-emerald-500/15 border-emerald-500/30 text-emerald-300 font-bold border-x";
                     royalSubtitle = (
                       <div className="text-[10px] text-emerald-400 font-semibold mt-0.5">
-                        ✓ در ۳ تای اول ترب
+                        ✓ در ۵ تای اول ترب
                       </div>
                     );
-                  } else if (item.top3_status === "no_royal") {
+                  } else if (st === "no_royal" || !item.royaldigi_price) {
                     royalSubtitle = (
-                      <div className="text-[10px] text-gray-500 mt-0.5">ناموجود در سایت</div>
+                      <div className="text-[10px] text-gray-500 mt-0.5">ناموجود در سایت ما</div>
                     );
                   }
 
@@ -420,7 +434,7 @@ export default function ProductsTable() {
                         </span>
                       </td>
 
-                      {/* RoyalDigi Price Column (Alert colored) */}
+                      {/* RoyalDigi Price Column (Alert colored or explicit ناموجود) */}
                       <td className={`px-3 py-3.5 text-center font-mono ${royalCellClass}`}>
                         <div className="text-xs sm:text-sm">
                           {formatPrice(item.royaldigi_price)}
@@ -429,23 +443,37 @@ export default function ProductsTable() {
                       </td>
 
                       {/* Torob 1 (Rank 1) */}
-                      <td className="px-3 py-3.5 text-center font-mono text-sky-200 bg-sky-950/10">
+                      <td className="px-2.5 py-3.5 text-center font-mono text-sky-200 bg-sky-950/15">
                         <div className="text-xs font-semibold">
                           {formatPrice(item.torob_1)}
                         </div>
                       </td>
 
                       {/* Torob 2 (Rank 2) */}
-                      <td className="px-3 py-3.5 text-center font-mono text-gray-300">
+                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-300">
                         <div className="text-xs">
                           {formatPrice(item.torob_2)}
                         </div>
                       </td>
 
                       {/* Torob 3 (Rank 3) */}
-                      <td className="px-3 py-3.5 text-center font-mono text-gray-400">
+                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-400">
                         <div className="text-xs">
                           {formatPrice(item.torob_3)}
+                        </div>
+                      </td>
+
+                      {/* Torob 4 (Rank 4) */}
+                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-400">
+                        <div className="text-xs">
+                          {formatPrice(item.torob_4)}
+                        </div>
+                      </td>
+
+                      {/* Torob 5 (Rank 5) */}
+                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-400">
+                        <div className="text-xs">
+                          {formatPrice(item.torob_5)}
                         </div>
                       </td>
 
@@ -456,9 +484,9 @@ export default function ProductsTable() {
                         </div>
                       </td>
 
-                      {/* Top 3 Competitive Status */}
+                      {/* Top 5 Competitive Status */}
                       <td className="px-4 py-3.5 text-center">
-                        <Top3StatusBadge item={item} />
+                        <Top5StatusBadge item={item} />
                       </td>
 
                       {/* Sparkline chart */}
@@ -540,7 +568,11 @@ export default function ProductsTable() {
               <div className="rounded-xl bg-slate-950/60 p-3.5 border border-white/5 space-y-2">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">استراتژی ترب:</span>
-                  <span className="text-emerald-400 font-bold">پایش ۳ فروشنده اول ترب (دید اصلی خریدار)</span>
+                  <span className="text-emerald-400 font-bold">پایش ۵ فروشنده اول ترب (دید کامل خریدار)</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-400">منبع قیمت‌های سایت ما:</span>
+                  <span className="text-sky-300 font-semibold">خروجی ووکامرس (wc-product-export)</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">زمان‌بندی خودکار:</span>
@@ -549,10 +581,6 @@ export default function ProductsTable() {
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">تکنیک ضد بن:</span>
                   <span className="text-sky-300">تاخیر تصادفی انسانی (۲.۵ الی ۴.۵ ثانیه)</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-400">دامنه استخراج:</span>
-                  <span className="text-white">رویال‌دیجی · ۳ رتبه اول ترب (لینک اصلی) · دیجی‌کالا</span>
                 </div>
               </div>
 
@@ -575,7 +603,7 @@ export default function ProductsTable() {
                 href="https://github.com/pouria-maleki/price-monitor/actions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-4 py-2 text-xs font-bold text-white hover:from-sky-400 hover:to-blue-500 transition shadow-lg shadow-sky-500/20"
+                class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 px-4 py-2 text-xs font-bold text-white hover:from-sky-400 hover:to-blue-500 transition shadow-lg shadow-sky-500/20"
               >
                 <span>ورود به تب Actions گیت‌هاب و اجرای آنی</span>
                 <span>↗</span>

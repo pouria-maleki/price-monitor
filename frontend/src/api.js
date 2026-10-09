@@ -42,24 +42,28 @@ export async function fetchProducts({ q, itemType = "all", filterType = "all", s
       items = items.filter((p) => p.item_type === itemType);
     }
 
-    // Filter by top-3 status / alerts
+    // Filter by top-5 status / alerts
     if (filterType && filterType !== "all") {
       if (filterType === "alerts") {
         items = items.filter((p) => p.is_alert);
-      } else if (filterType === "higher_than_top_3") {
-        items = items.filter((p) => p.top3_status === "higher_than_top_3");
+      } else if (filterType === "higher_than_top_5" || filterType === "higher_than_top_3") {
+        items = items.filter((p) => {
+          const st = p.top5_status || p.top3_status;
+          return st === "higher_than_top_5" || st === "higher_than_top_3";
+        });
       } else if (filterType === "lower_than_top_1") {
-        items = items.filter((p) => p.top3_status === "lower_than_top_1");
-      } else if (filterType === "in_top_3") {
-        items = items.filter((p) => p.top3_status === "in_top_3");
+        items = items.filter((p) => (p.top5_status || p.top3_status) === "lower_than_top_1");
+      } else if (filterType === "in_top_5" || filterType === "in_top_3") {
+        items = items.filter((p) => {
+          const st = p.top5_status || p.top3_status;
+          return st === "in_top_5" || st === "in_top_3";
+        });
+      } else if (filterType === "no_royal") {
+        items = items.filter((p) => (p.top5_status || p.top3_status) === "no_royal" || !p.royaldigi_price);
       } else if (filterType === "discrepant") {
         items = items.filter((p) => p.is_discrepant || p.is_alert);
       } else if (filterType === "matching") {
-        items = items.filter((p) => p.top3_status === "in_top_3");
-      } else if (filterType === "royal_higher") {
-        items = items.filter((p) => p.top3_status === "higher_than_top_3");
-      } else if (filterType === "royal_lower") {
-        items = items.filter((p) => p.top3_status === "lower_than_top_1");
+        items = items.filter((p) => (p.top5_status || p.top3_status) === "in_top_5");
       }
     }
 
@@ -165,6 +169,18 @@ export async function fetchShops(id) {
       price: p.torob_3,
       url: p.torob_url,
       is_available: !!p.torob_3,
+    });
+    shops.push({
+      shop_name: "ترب · رتبه ۴ (فروشنده چهارم)",
+      price: p.torob_4,
+      url: p.torob_url,
+      is_available: !!p.torob_4,
+    });
+    shops.push({
+      shop_name: "ترب · رتبه ۵ (فروشنده پنجم)",
+      price: p.torob_5,
+      url: p.torob_url,
+      is_available: !!p.torob_5,
     });
     shops.push({
       shop_name: "دیجی‌کالا",

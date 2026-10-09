@@ -1,13 +1,16 @@
 """
-سیستم مانیتورینگ استراتژیک قیمت رویال‌دیجی با ۳ فروشنده اول ترب و دیجی‌کالا
-مطابق با فایل: sources/links_torob_and_Digikala.xlsx و sources/royaldigi-products-urls.csv
+سیستم مانیتورینگ استراتژیک قیمت رویال‌دیجی با ۵ فروشنده اول ترب و دیجی‌کالا
+مطابق با فایل‌های منابع:
+- sources/links_torob_and_Digikala.xlsx (شیت Royal_Selected)
+- sources/wc-product-export-*.csv (خروجی مستقیم ووکامرس سایت royaldigi.ir)
+- sources/royaldigi-products-urls.csv (نگاشت آدرس‌های محصولات رویال‌دیجی)
 
-قوانین استراتژی قیمت‌گذاری رویال‌دیجی:
-۱. ترب ۳ قیمت اول و ارزان‌ترین فروشندگان را در صدر نتایج نشان می‌دهد.
-۲. رویال‌دیجی باید حتماً در بین ۳ فروشنده اول ترب باشد (رتبه ۱ یا ۲ یا ۳).
-۳. اگر قیمت رویال‌دیجی از هر ۳ فروشنده اول بیشتر باشد: اخطار خروج از رقابت (قرمز).
-۴. اگر قیمت رویال‌دیجی از رتبه ۱ ترب ارزان‌تر باشد: اخطار قیمت‌شکنی بیهوده و سود از دست رفته (هشدار).
-۵. در صورت ناموجود بودن هر کالا، کلمه صریح «ناموجود» درج می‌شود.
+قوانین استراتژی رقابت در ۵ رتبه اول ترب:
+۱. ترب فروشندگان را به ترتیب قیمت نشان می‌دهد. هدف رویال‌دیجی حضور در بین ۵ فروشنده اول است (رتبه‌های ۱ تا ۵).
+۲. اگر قیمت رویال‌دیجی از رتبه ۵ ترب هم گران‌تر باشد: ❌ اخطار خروج از ۵ تای اول (قرمز).
+۳. اگر قیمت رویال‌دیجی از رتبه ۱ ترب ارزان‌تر باشد: ⚠️ اخطار ارزان‌فروشی بیهوده و سود سوخته (نارنجی).
+۴. اگر بین رتبه‌های ۱ تا ۵ ترب باشد: ✓ موقعیت رقابتی و ایده‌آل (سبز).
+۵. اگر کالایی در سایت رویال‌دیجی ناموجود باشد یا قیمتی نداشته باشد: صریحاً عبارت «ناموجود» درج می‌شود (بدون اخطار).
 """
 from __future__ import annotations
 
@@ -46,7 +49,7 @@ _FA_MONTHS = [
 ]
 
 
-def gregorian_to_jalali(gy: int, gm: int, gd: int):
+def gregorian_to_jalali(gy: int, gm: int, gd: int) -> tuple[int, int, int]:
     """Accurate Gregorian to Jalali date converter."""
     g_d_m = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
     gy2 = gy if gm > 2 else gy - 1
@@ -91,17 +94,95 @@ def load_csv_urls(csv_path: str | Path) -> dict[str, str]:
     return mapping
 
 
-def evaluate_torob_top3_status(
+def find_latest_woocommerce_export(sources_dir: Path) -> Path | None:
+    """Find the newest WooCommerce product export CSV file in sources/."""
+    candidates = list(sources_dir.glob("*wc-product-export*.csv"))
+    if not candidates:
+        return None
+    # Sort by modification time descending
+    candidates.sort(key=lambda x: x.stat().st_mtime, reverse=True)
+    return candidates[0]
+
+
+def load_woocommerce_export(wc_csv_path: str | Path | None = None) -> dict[str, dict]:
+    """
+    Parses WooCommerce product export CSV.
+    Returns mapping of woo_id and product name to:
+    {
+        'woo_id': str,
+        'name': str,
+        'price': int | None, # None if out of stock
+        'in_stock': bool,
+        'stock_qty': int | None,
+        'url': str
+    }
+    """
+    if not wc_csv_path:
+        return {}
+    p = Path(wc_csv_path)
+    if not p.exists():
+        logger.warning("WooCommerce export file not found: %s", p)
+        return {}
+
+    wc_map = {}
+    try:
+        with open(p, "r", encoding="utf-8-sig", errors="ignore") as f:
+            reader = csv.DictReader(f)
+            for r in reader:
+                pid = str(r.get("شناسه", "") or r.get("ID", "")).strip()
+                name = str(r.get("نام", "") or r.get("Name", "")).strip()
+                reg_p = str(r.get("قیمت عادی", "") or r.get("Regular price", "")).strip()
+                sale_p = str(r.get("قیمت فروش ویژه", "") or r.get("Sale price", "")).strip()
+
+                eff_p = None
+                if sale_p.isdigit() and int(sale_p) > 0:
+                    eff_p = int(sale_p)
+                elif reg_p.isdigit() and int(reg_p) > 0:
+                    eff_p = int(reg_p)
+
+                in_stock_val = str(r.get("در انبار؟", "") or r.get("In stock?", "")).strip()
+                in_stock = in_stock_val in ("1", "yes", "true", "instock")
+
+                raw_qty = str(r.get("انبار", "") or r.get("Stock", "")).strip()
+                stock_qty = int(raw_qty) if raw_qty.isdigit() else None
+
+                # Out of stock criteria
+                is_available = in_stock and (stock_qty is None or stock_qty > 0) and (eff_p is not None and eff_p > 0)
+                final_price = eff_p if is_available else None
+                url = f"https://royaldigi.ir/?p={pid}" if pid else None
+
+                item_info = {
+                    "woo_id": pid,
+                    "name": name,
+                    "price": final_price,
+                    "in_stock": is_available,
+                    "stock_qty": stock_qty,
+                    "url": url,
+                }
+                if pid:
+                    wc_map[pid] = item_info
+                if name:
+                    wc_map[name] = item_info
+
+        logger.info("Loaded WooCommerce export from %s: %d items parsed.", p.name, len(wc_map))
+    except Exception as e:
+        logger.warning("Error reading WooCommerce export: %s", e)
+    return wc_map
+
+
+def evaluate_torob_top5_status(
     royal_p: int | None,
     t1: int | None,
     t2: int | None,
     t3: int | None,
+    t4: int | None = None,
+    t5: int | None = None,
 ) -> dict:
     """
-    Evaluates whether RoyalDigi's price is within the top 3 Torob sellers.
+    Evaluates whether RoyalDigi's price is within the top 5 Torob sellers.
     """
-    torob_prices = [p for p in (t1, t2, t3) if isinstance(p, (int, float)) and p > 0]
-    
+    torob_prices = [p for p in (t1, t2, t3, t4, t5) if isinstance(p, (int, float)) and p > 0]
+
     if not royal_p:
         return {
             "status_code": "no_royal",
@@ -110,7 +191,7 @@ def evaluate_torob_top3_status(
             "is_alert": False,
             "diff_from_target": None,
             "rank_label": "ناموجود در رویال",
-            "explanation": "قیمتی برای این کالا در سایت رویال‌دیجی تعریف نشده است.",
+            "explanation": "این محصول در سایت رویال‌دیجی ناموجود است یا قیمت ندارد.",
         }
 
     if not torob_prices:
@@ -121,25 +202,26 @@ def evaluate_torob_top3_status(
             "is_alert": False,
             "diff_from_target": None,
             "rank_label": "ناموجود در ترب",
-            "explanation": "این محصول در ۳ فروشگاه اول ترب موجود نیست.",
+            "explanation": "این محصول در فروشگاه‌های ترب موجود نیست.",
         }
 
     torob_prices.sort()
     t_min = torob_prices[0]
     t_max = torob_prices[-1]
+    top_limit = min(len(torob_prices), 5)
 
-    # Case 1: Royal is higher than all top 3 sellers (Out of competition!)
+    # Case 1: Royal is higher than top 5 sellers (Out of competition!)
     if royal_p > t_max:
         diff = royal_p - t_max
         diff_pct = round((diff / t_max) * 100, 1)
         return {
-            "status_code": "higher_than_top_3",
+            "status_code": "higher_than_top_5",
             "alert_level": "danger", # Red Alert
-            "badge_text": "❌ اخطار: گران‌تر از ۳ رتبه اول",
+            "badge_text": "❌ اخطار: گران‌تر از ۵ رتبه اول",
             "is_alert": True,
             "diff_from_target": diff,
-            "rank_label": f"+{diff:,} ت از رتبه ۳ ترب (+{diff_pct}%)",
-            "explanation": f"قیمت رویال {diff:,} تومان از رتبه ۳ ترب بیشتر است و در ۳ نتیجه اول دیده نمی‌شوید.",
+            "rank_label": f"+{diff:,} ت از رتبه {top_limit} ترب (+{diff_pct}%)",
+            "explanation": f"قیمت رویال {diff:,} تومان از رتبه {top_limit} ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
         }
 
     # Case 2: Royal is lower than seller 1 (Leaving money on the table!)
@@ -156,27 +238,35 @@ def evaluate_torob_top3_status(
             "explanation": f"قیمت رویال {diff:,} تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
         }
 
-    # Case 3: Royal is WITHIN the top 3 (Target achieved!)
+    # Case 3: Royal is WITHIN the top 5 (Target achieved!)
     else:
         if royal_p <= torob_prices[0]:
             rank = "رتبه ۱ ترب (کف قیمت)"
         elif len(torob_prices) > 1 and royal_p <= torob_prices[1]:
             rank = "رتبه ۲ ترب (ایده‌آل)"
+        elif len(torob_prices) > 2 and royal_p <= torob_prices[2]:
+            rank = "رتبه ۳ ترب (رقابتی)"
+        elif len(torob_prices) > 3 and royal_p <= torob_prices[3]:
+            rank = "رتبه ۴ ترب (رقابتی)"
         else:
-            rank = "رتبه ۳ ترب (مجاز)"
+            rank = "رتبه ۵ ترب (مجاز)"
 
         return {
-            "status_code": "in_top_3",
+            "status_code": "in_top_5",
             "alert_level": "success", # Green
             "badge_text": f"✓ {rank}",
             "is_alert": False,
             "diff_from_target": 0,
             "rank_label": rank,
-            "explanation": f"قیمت رویال‌دیجی بین ۳ فروشنده اول ترب قرار دارد ({rank}).",
+            "explanation": f"قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد ({rank}).",
         }
 
 
-def parse_excel_products(excel_path: str | Path, csv_map: dict[str, str] | None = None) -> list[dict]:
+def parse_excel_products(
+    excel_path: str | Path,
+    csv_map: dict[str, str] | None = None,
+    wc_data: dict[str, dict] | None = None,
+) -> list[dict]:
     """Parse products from links_torob_and_Digikala.xlsx (sheet: Royal_Selected)."""
     try:
         import openpyxl
@@ -189,27 +279,48 @@ def parse_excel_products(excel_path: str | Path, csv_map: dict[str, str] | None 
 
     if csv_map is None:
         csv_map = {}
+    if wc_data is None:
+        wc_data = {}
 
     products = []
     for idx, r in enumerate(rows[1:], 1):
         if not r or len(r) < 3 or not r[2]:
             continue
         p_name = str(r[2]).strip()
-        woo_id = r[1]
+        woo_id = str(r[1]).strip() if r[1] is not None else ""
         center_id = r[0]
         raw_qty = r[4] or 0
         quantity = int(raw_qty) if isinstance(raw_qty, (int, float)) else 0
         item_type = str(r[6] or "").strip()
         is_new = item_type.lower() == "new"
 
-        final_price = r[12] if isinstance(r[12], (int, float)) and r[12] > 0 else None
+        # Check WooCommerce export for live price, stock status, and URL
+        wc_item = None
+        if woo_id and woo_id in wc_data:
+            wc_item = wc_data[woo_id]
+        elif p_name in wc_data:
+            wc_item = wc_data[p_name]
+
+        if wc_item is not None:
+            final_price = wc_item["price"] # None if out of stock in WC
+            is_in_stock = wc_item["in_stock"]
+            royaldigi_url = wc_item.get("url")
+        else:
+            raw_excel_p = r[12] if isinstance(r[12], (int, float)) and r[12] > 0 else None
+            final_price = raw_excel_p
+            is_in_stock = bool(final_price)
+            royaldigi_url = None
+
         suggested_price = r[13] if isinstance(r[13], (int, float)) and r[13] > 0 else None
 
-        # Torob 1, 2, 3 columns
+        # Torob 1, 2, 3, 4, 5 columns
         t1 = r[14] if isinstance(r[14], (int, float)) and r[14] > 0 else None
         t2 = r[15] if isinstance(r[15], (int, float)) and r[15] > 0 else None
         t3 = r[16] if isinstance(r[16], (int, float)) and r[16] > 0 else None
-        torob_prices = [p for p in (t1, t2, t3) if p]
+        t4 = None
+        t5 = None
+
+        torob_prices = [p for p in (t1, t2, t3, t4, t5) if p]
         torob_initial_price = min(torob_prices) if torob_prices else None
 
         dk_initial_price = r[17] if isinstance(r[17], (int, float)) and r[17] > 0 else None
@@ -218,14 +329,14 @@ def parse_excel_products(excel_path: str | Path, csv_map: dict[str, str] | None 
         torob_url = r[21] if len(r) > 21 and r[21] else None
         digikala_url = r[23] if len(r) > 23 and r[23] else None
 
-        royaldigi_url = None
+        # Use pretty slug URL from CSV map if available
         if p_name in csv_map:
             royaldigi_url = csv_map[p_name]
-        elif woo_id:
+        elif not royaldigi_url and woo_id:
             royaldigi_url = f"https://royaldigi.ir/?p={woo_id}"
 
-        # Evaluate Top 3 position
-        top3_eval = evaluate_torob_top3_status(final_price, t1, t2, t3)
+        # Evaluate Top 5 position
+        top5_eval = evaluate_torob_top5_status(final_price, t1, t2, t3, t4, t5)
 
         market_comps = []
         if torob_initial_price:
@@ -256,6 +367,8 @@ def parse_excel_products(excel_path: str | Path, csv_map: dict[str, str] | None 
             "torob_1": t1,
             "torob_2": t2,
             "torob_3": t3,
+            "torob_4": t4,
+            "torob_5": t5,
             "torob_price": torob_initial_price,
             "initial_torob_price": torob_initial_price,
             "current_torob_price": torob_initial_price,
@@ -263,13 +376,17 @@ def parse_excel_products(excel_path: str | Path, csv_map: dict[str, str] | None 
             "initial_digikala_price": dk_initial_price,
             "current_digikala_price": dk_initial_price,
             "market_avg_price": market_avg,
-            "top3_status": top3_eval["status_code"],
-            "top3_badge": top3_eval["badge_text"],
-            "top3_rank_label": top3_eval["rank_label"],
-            "top3_explanation": top3_eval["explanation"],
-            "is_alert": top3_eval["is_alert"],
-            "alert_level": top3_eval["alert_level"],
-            "diff_from_target": top3_eval["diff_from_target"],
+            "top5_status": top5_eval["status_code"],
+            "top3_status": top5_eval["status_code"], # Backwards compatibility
+            "top5_badge": top5_eval["badge_text"],
+            "top3_badge": top5_eval["badge_text"],
+            "top5_rank_label": top5_eval["rank_label"],
+            "top3_rank_label": top5_eval["rank_label"],
+            "top5_explanation": top5_eval["explanation"],
+            "top3_explanation": top5_eval["explanation"],
+            "is_alert": top5_eval["is_alert"],
+            "alert_level": top5_eval["alert_level"],
+            "diff_from_target": top5_eval["diff_from_target"],
             "royaldigi_url": royaldigi_url,
             "torob_url": torob_url,
             "digikala_url": digikala_url,
@@ -296,7 +413,7 @@ def scrape_product_live(product: dict, previous_item: dict | None = None, scrape
     now_iso = datetime.now(timezone.utc).isoformat()
     item["last_checked"] = now_iso
 
-    # 1. Scrape RoyalDigi live
+    # 1. Scrape RoyalDigi live if online scraper is active
     if item.get("woo_id") or item.get("royaldigi_url"):
         try:
             rd_res = scrape_royaldigi(item.get("woo_id") or item.get("royaldigi_url"))
@@ -306,7 +423,7 @@ def scrape_product_live(product: dict, previous_item: dict | None = None, scrape
                 if rd_res.url and not item.get("royaldigi_url"):
                     item["royaldigi_url"] = rd_res.url
         except Exception as e:
-            logger.debug("RoyalDigi error for %s: %s", item["name"], e)
+            logger.debug("RoyalDigi live scrape error for %s: %s", item["name"], e)
 
     # 2. Scrape Digikala live
     if item.get("digikala_url"):
@@ -320,7 +437,7 @@ def scrape_product_live(product: dict, previous_item: dict | None = None, scrape
         except Exception as e:
             logger.debug("Digikala error for %s: %s", item["name"], e)
 
-    # 3. Scrape Torob live (from main link)
+    # 3. Scrape Torob live (from main link) - up to 5 sellers
     if scrape_torob_flag and item.get("torob_url"):
         try:
             tr_res = scrape_torob(item["torob_url"])
@@ -334,6 +451,10 @@ def scrape_product_live(product: dict, previous_item: dict | None = None, scrape
                     item["torob_2"] = offers[1].price
                 if len(offers) >= 3:
                     item["torob_3"] = offers[2].price
+                if len(offers) >= 4:
+                    item["torob_4"] = offers[3].price
+                if len(offers) >= 5:
+                    item["torob_5"] = offers[4].price
             elif tr_res and tr_res.price is not None:
                 item["torob_1"] = tr_res.price
                 item["current_torob_price"] = tr_res.price
@@ -341,20 +462,26 @@ def scrape_product_live(product: dict, previous_item: dict | None = None, scrape
         except Exception as e:
             logger.debug("Torob error for %s: %s", item["name"], e)
 
-    # Re-evaluate Top 3 Position
+    # Re-evaluate Top 5 Position
     royal_p = item.get("current_royaldigi_price") or item.get("royaldigi_price")
     t1 = item.get("torob_1")
     t2 = item.get("torob_2")
     t3 = item.get("torob_3")
+    t4 = item.get("torob_4")
+    t5 = item.get("torob_5")
 
-    top3_eval = evaluate_torob_top3_status(royal_p, t1, t2, t3)
-    item["top3_status"] = top3_eval["status_code"]
-    item["top3_badge"] = top3_eval["badge_text"]
-    item["top3_rank_label"] = top3_eval["rank_label"]
-    item["top3_explanation"] = top3_eval["explanation"]
-    item["is_alert"] = top3_eval["is_alert"]
-    item["alert_level"] = top3_eval["alert_level"]
-    item["diff_from_target"] = top3_eval["diff_from_target"]
+    top5_eval = evaluate_torob_top5_status(royal_p, t1, t2, t3, t4, t5)
+    item["top5_status"] = top5_eval["status_code"]
+    item["top3_status"] = top5_eval["status_code"]
+    item["top5_badge"] = top5_eval["badge_text"]
+    item["top3_badge"] = top5_eval["badge_text"]
+    item["top5_rank_label"] = top5_eval["rank_label"]
+    item["top3_rank_label"] = top5_eval["rank_label"]
+    item["top5_explanation"] = top5_eval["explanation"]
+    item["top3_explanation"] = top5_eval["explanation"]
+    item["is_alert"] = top5_eval["is_alert"]
+    item["alert_level"] = top5_eval["alert_level"]
+    item["diff_from_target"] = top5_eval["diff_from_target"]
 
     # Market Average
     market_comps = [p for p in (t1, item.get("current_digikala_price") or item.get("digikala_price")) if p]
@@ -383,36 +510,51 @@ def scrape_product_live(product: dict, previous_item: dict | None = None, scrape
 
 
 def export_updated_excel(items: list[dict], output_path: str | Path):
-    """Exports styled Persian Excel report with 3 Torob columns and alert fills."""
-    try:
-        from openpyxl import Workbook
-        from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
-        from openpyxl.utils import get_column_letter
-    except ImportError:
-        logger.warning("openpyxl not installed; cannot export Excel.")
-        return
+    """
+    Exports clean Excel report with:
+    - 5 Torob seller columns
+    - Explicit 'ناموجود' for missing prices
+    - Color highlights (Red for higher than top 5, Orange for lower than top 1, Green for in top 5)
+    """
+    import openpyxl
+    from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
+    from openpyxl.utils import get_column_letter
 
-    wb = Workbook()
+    wb = openpyxl.Workbook()
     ws = wb.active
-    ws.title = "مانیتورینگ ۳ فروشنده ترب"
+    ws.title = "مانیتورینگ ۵ فروشنده ترب"
     ws.views.sheetView[0].rightToLeft = True
 
     headers = [
-        "ردیف", "کد کالا", "نوع کالا", "نام محصول", "موجودی انبار",
-        "قیمت رویال‌دیجی (تومان)", "ترب ۱ (فروشنده اول)", "ترب ۲ (فروشنده دوم)", "ترب ۳ (فروشنده سوم)",
-        "قیمت دیجی‌کالا (تومان)", "وضعیت در ۳ رتبه اول ترب", "اختلاف با محدوده مجاز",
-        "ارزش کل موجودی رویال (تومان)", "لینک رویال‌دیجی", "لینک اصلی ترب", "لینک دیجی‌کالا"
+        "ردیف",
+        "شناسه Woo",
+        "نوع کالا",
+        "نام محصول",
+        "موجودی انبار",
+        "قیمت رویال‌دیجی (تومان)",
+        "ترب ۱ (اول)",
+        "ترب ۲ (دوم)",
+        "ترب ۳ (سوم)",
+        "ترب ۴ (چهارم)",
+        "ترب ۵ (پنجم)",
+        "دیجی‌کالا (تومان)",
+        "وضعیت در ۵ رتبه ترب",
+        "رتبه / تفاضل",
+        "ارزش کل موجودی رویال",
+        "لینک رویال‌دیجی",
+        "لینک ترب",
+        "لینک دیجی‌کالا",
     ]
 
     header_font = Font(name="Tahoma", size=10, bold=True, color="FFFFFF")
-    header_fill = PatternFill(start_color="0F172A", end_color="0F172A", fill_type="solid")
+    header_fill = PatternFill(start_color="1E293B", end_color="1E293B", fill_type="solid")
     regular_font = Font(name="Tahoma", size=9)
     center_align = Alignment(horizontal="center", vertical="center")
     right_align = Alignment(horizontal="right", vertical="center")
-    
-    red_alert_fill = PatternFill(start_color="FEE2E2", end_color="FEE2E2", fill_type="solid") # Red for higher than top 3
-    orange_alert_fill = PatternFill(start_color="FFEDD5", end_color="FFEDD5", fill_type="solid") # Orange for lower than top 1
-    green_top3_fill = PatternFill(start_color="DCFCE7", end_color="DCFCE7", fill_type="solid") # Green for in top 3
+
+    red_alert_fill = PatternFill(start_color="FEE2E2", end_color="FEE2E2", fill_type="solid") # Higher than top 5
+    orange_alert_fill = PatternFill(start_color="FFEDD5", end_color="FFEDD5", fill_type="solid") # Lower than top 1
+    green_top5_fill = PatternFill(start_color="DCFCE7", end_color="DCFCE7", fill_type="solid") # In top 5
     new_tag_fill = PatternFill(start_color="E0F2FE", end_color="E0F2FE", fill_type="solid")
     stock_tag_fill = PatternFill(start_color="F3E8FF", end_color="F3E8FF", fill_type="solid")
 
@@ -434,9 +576,11 @@ def export_updated_excel(items: list[dict], output_path: str | Path):
             item.get("torob_1") if item.get("torob_1") else "ناموجود",
             item.get("torob_2") if item.get("torob_2") else "ناموجود",
             item.get("torob_3") if item.get("torob_3") else "ناموجود",
+            item.get("torob_4") if item.get("torob_4") else "ناموجود",
+            item.get("torob_5") if item.get("torob_5") else "ناموجود",
             item.get("digikala_price") if item.get("digikala_price") else "ناموجود",
-            item.get("top3_badge") or "ناموجود",
-            item.get("top3_rank_label") or "—",
+            item.get("top5_badge") or item.get("top3_badge") or "ناموجود",
+            item.get("top5_rank_label") or item.get("top3_rank_label") or "—",
             item.get("item_val_royal") or 0,
             item.get("royaldigi_url") or "",
             item.get("torob_url") or "",
@@ -450,7 +594,7 @@ def export_updated_excel(items: list[dict], output_path: str | Path):
             c.alignment = right_align if c_idx == 4 else center_align
 
             # Number format for prices
-            if c_idx in (6, 7, 8, 9, 10, 13) and isinstance(c.value, (int, float)):
+            if c_idx in (6, 7, 8, 9, 10, 11, 12, 15) and isinstance(c.value, (int, float)):
                 c.number_format = "#,##0"
 
             # Tag colors (New vs Stock)
@@ -460,23 +604,25 @@ def export_updated_excel(items: list[dict], output_path: str | Path):
                 else:
                     c.fill = stock_tag_fill
 
-            # Royal price highlighting
+            # Royal price cell color
             if c_idx == 6:
-                if item.get("top3_status") == "higher_than_top_3":
+                status = item.get("top5_status") or item.get("top3_status")
+                if status == "higher_than_top_5":
                     c.fill = red_alert_fill
-                elif item.get("top3_status") == "lower_than_top_1":
+                elif status == "lower_than_top_1":
                     c.fill = orange_alert_fill
-                elif item.get("top3_status") == "in_top_3":
-                    c.fill = green_top3_fill
+                elif status == "in_top_5":
+                    c.fill = green_top5_fill
 
-            # Status column
-            if c_idx == 11:
-                if item.get("top3_status") == "higher_than_top_3":
+            # Status column color
+            if c_idx == 13:
+                status = item.get("top5_status") or item.get("top3_status")
+                if status == "higher_than_top_5":
                     c.fill = red_alert_fill
-                elif item.get("top3_status") == "lower_than_top_1":
+                elif status == "lower_than_top_1":
                     c.fill = orange_alert_fill
-                elif item.get("top3_status") == "in_top_3":
-                    c.fill = green_top3_fill
+                elif status == "in_top_5":
+                    c.fill = green_top5_fill
 
     for col in ws.columns:
         max_len = max(len(str(cell.value or "")) for cell in col)
@@ -493,6 +639,7 @@ def run_update(
     excel_path: str | Path,
     csv_path: str | Path,
     output_dirs: list[Path],
+    wc_export_path: str | Path | None = None,
     concurrency: int = 1,
     delay_min: float = 2.5,
     delay_max: float = 4.5,
@@ -502,11 +649,21 @@ def run_update(
 ):
     excel_path = Path(excel_path)
     csv_path = Path(csv_path)
+
+    # 1. Load WooCommerce Export if available
+    wc_data = {}
+    if wc_export_path:
+        wc_data = load_woocommerce_export(wc_export_path)
+    else:
+        latest_wc = find_latest_woocommerce_export(BASE_DIR / "sources")
+        if latest_wc:
+            wc_data = load_woocommerce_export(latest_wc)
+
     logger.info("Reading CSV URLs from %s ...", csv_path)
     csv_map = load_csv_urls(csv_path)
 
     logger.info("Reading Excel products from %s ...", excel_path)
-    products = parse_excel_products(excel_path, csv_map=csv_map)
+    products = parse_excel_products(excel_path, csv_map=csv_map, wc_data=wc_data)
     logger.info("Parsed %d products total.", len(products))
 
     # Load previous data if exists
@@ -540,14 +697,16 @@ def run_update(
             res = scrape_product_live(p, prev_p)
             updated_dict[res["id"]] = res
             logger.info(
-                "[%d/%d] %s: Royal=%s, Torob=[%s, %s, %s], DK=%s -> %s",
+                "[%d/%d] %s: Royal=%s, Torob=[%s, %s, %s, %s, %s], DK=%s -> %s",
                 idx, len(items_to_scrape), res["name"][:25],
                 f"{res.get('royaldigi_price'):,}" if res.get('royaldigi_price') else "ناموجود",
                 f"{res.get('torob_1'):,}" if res.get('torob_1') else "ناموجود",
                 f"{res.get('torob_2'):,}" if res.get('torob_2') else "ناموجود",
                 f"{res.get('torob_3'):,}" if res.get('torob_3') else "ناموجود",
+                f"{res.get('torob_4'):,}" if res.get('torob_4') else "ناموجود",
+                f"{res.get('torob_5'):,}" if res.get('torob_5') else "ناموجود",
                 f"{res.get('digikala_price'):,}" if res.get('digikala_price') else "ناموجود",
-                res.get("top3_badge")
+                res.get("top5_badge") or res.get("top3_badge")
             )
         except Exception as exc:
             logger.error("Error scraping %s: %s", p["name"], exc)
@@ -565,21 +724,28 @@ def run_update(
             item_to_add = updated_dict[p["id"]]
         elif p["id"] in previous_map:
             prev = previous_map[p["id"]]
-            for k in ("current_royaldigi_price", "current_digikala_price", "current_torob_price", "sparkline", "last_checked", "digikala_seller"):
+            for k in ("current_digikala_price", "current_torob_price", "sparkline", "last_checked", "digikala_seller", "torob_4", "torob_5"):
                 if prev.get(k) is not None:
                     item_to_add[k] = prev[k]
             royal_p = item_to_add.get("current_royaldigi_price") or item_to_add.get("royaldigi_price")
             t1 = item_to_add.get("torob_1")
             t2 = item_to_add.get("torob_2")
             t3 = item_to_add.get("torob_3")
-            top3_eval = evaluate_torob_top3_status(royal_p, t1, t2, t3)
-            item_to_add["top3_status"] = top3_eval["status_code"]
-            item_to_add["top3_badge"] = top3_eval["badge_text"]
-            item_to_add["top3_rank_label"] = top3_eval["rank_label"]
-            item_to_add["top3_explanation"] = top3_eval["explanation"]
-            item_to_add["is_alert"] = top3_eval["is_alert"]
-            item_to_add["alert_level"] = top3_eval["alert_level"]
-            item_to_add["diff_from_target"] = top3_eval["diff_from_target"]
+            t4 = item_to_add.get("torob_4")
+            t5 = item_to_add.get("torob_5")
+
+            top5_eval = evaluate_torob_top5_status(royal_p, t1, t2, t3, t4, t5)
+            item_to_add["top5_status"] = top5_eval["status_code"]
+            item_to_add["top3_status"] = top5_eval["status_code"]
+            item_to_add["top5_badge"] = top5_eval["badge_text"]
+            item_to_add["top3_badge"] = top5_eval["badge_text"]
+            item_to_add["top5_rank_label"] = top5_eval["rank_label"]
+            item_to_add["top3_rank_label"] = top5_eval["rank_label"]
+            item_to_add["top5_explanation"] = top5_eval["explanation"]
+            item_to_add["top3_explanation"] = top5_eval["explanation"]
+            item_to_add["is_alert"] = top5_eval["is_alert"]
+            item_to_add["alert_level"] = top5_eval["alert_level"]
+            item_to_add["diff_from_target"] = top5_eval["diff_from_target"]
         final_items.append(item_to_add)
 
     # Guarantee exact file order: 1 to 166
@@ -590,9 +756,11 @@ def run_update(
 
     # Statistics
     total_products = len(final_items)
-    in_top_3_count = sum(1 for x in final_items if x.get("top3_status") == "in_top_3")
-    higher_count = sum(1 for x in final_items if x.get("top3_status") == "higher_than_top_3")
-    lower_count = sum(1 for x in final_items if x.get("top3_status") == "lower_than_top_1")
+    in_top_5_count = sum(1 for x in final_items if x.get("top5_status") == "in_top_5")
+    higher_count = sum(1 for x in final_items if x.get("top5_status") == "higher_than_top_5")
+    lower_count = sum(1 for x in final_items if x.get("top5_status") == "lower_than_top_1")
+    no_royal_count = sum(1 for x in final_items if x.get("top5_status") == "no_royal")
+    no_torob_count = sum(1 for x in final_items if x.get("top5_status") == "no_torob")
     alerts_total = higher_count + lower_count
     new_count = sum(1 for x in final_items if x.get("item_type") == "New")
     stock_count = sum(1 for x in final_items if x.get("item_type") == "Stock")
@@ -606,9 +774,13 @@ def run_update(
             "last_updated_fa": get_persian_now_str(),
             "schedule_info": "آپدیت خودکار روزانه ساعت ۱۰:۰۰ صبح (تهران)",
             "total_products": total_products,
-            "in_top_3_count": in_top_3_count,
-            "higher_than_top_3_count": higher_count,
+            "in_top_5_count": in_top_5_count,
+            "in_top_3_count": in_top_5_count, # Backwards compatibility
+            "higher_than_top_5_count": higher_count,
+            "higher_than_top_3_count": higher_count, # Backwards compatibility
             "lower_than_top_1_count": lower_count,
+            "no_royal_count": no_royal_count,
+            "no_torob_count": no_torob_count,
             "alerts_total": alerts_total,
             "new_count": new_count,
             "stock_count": stock_count,
@@ -657,9 +829,10 @@ def run_update(
 
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
-    parser = argparse.ArgumentParser(description="RoyalDigi vs Torob Top 3 Monitor")
+    parser = argparse.ArgumentParser(description="RoyalDigi vs Torob Top 5 Monitor")
     parser.add_argument("--excel", default=str(BASE_DIR / "sources" / "links_torob_and_Digikala.xlsx"), help="Path to Excel")
     parser.add_argument("--csv", default=str(BASE_DIR / "sources" / "royaldigi-products-urls.csv"), help="Path to CSV")
+    parser.add_argument("--wc-export", default=None, help="Path to WooCommerce Export CSV (wc-product-export-*.csv)")
     parser.add_argument("--concurrency", type=int, default=1, help="Thread count (1 for gentle sequential)")
     parser.add_argument("--delay-min", type=float, default=2.5, help="Min delay between requests")
     parser.add_argument("--delay-max", type=float, default=4.5, help="Max delay between requests")
@@ -680,6 +853,7 @@ def main():
         excel_path=args.excel,
         csv_path=args.csv,
         output_dirs=output_dirs,
+        wc_export_path=args.wc_export,
         concurrency=args.concurrency,
         delay_min=args.delay_min,
         delay_max=args.delay_max,
