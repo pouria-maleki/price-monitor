@@ -170,6 +170,78 @@ def load_woocommerce_export(wc_csv_path: str | Path | None = None) -> dict[str, 
     return wc_map
 
 
+def load_royal_url_excel(excel_path: str | Path | None = None) -> dict[str, dict]:
+    """
+    Parses sources/mahsolat_royal_ba_url.xlsx containing RoyalDigi products with URLs.
+    Extracts canonical product URL, live price, stock quantity, and instock/outofstock flag.
+    Returns mapping of woo_id and product name to:
+    {
+        'woo_id': str,
+        'name': str,
+        'price': int | None, # None if out of stock
+        'in_stock': bool,
+        'stock_qty': int | None,
+        'url': str | None
+    }
+    """
+    if not excel_path:
+        return {}
+    p = Path(excel_path)
+    if not p.exists():
+        return {}
+
+    def _parse_num(v):
+        if v is None:
+            return None
+        v_str = str(v).strip().replace(",", "")
+        try:
+            n = int(float(v_str))
+            return n if n > 0 else None
+        except Exception:
+            return None
+
+    royal_map = {}
+    try:
+        import openpyxl
+        wb = openpyxl.load_workbook(str(p), data_only=True)
+        ws = wb.active
+        for row in ws.iter_rows(min_row=2, values_only=True):
+            if not row or row[0] is None:
+                continue
+            pid = str(row[0]).strip()
+            name = str(row[1]).strip() if len(row) > 1 and row[1] is not None else ""
+            url = str(row[5]).strip() if len(row) > 5 and row[5] else None
+            cur_p = _parse_num(row[6]) if len(row) > 6 else None
+            reg_p = _parse_num(row[7]) if len(row) > 7 else None
+            sale_p = _parse_num(row[8]) if len(row) > 8 else None
+            eff_p = sale_p or cur_p or reg_p
+
+            raw_qty = str(row[10]).strip() if len(row) > 10 and row[10] is not None else ""
+            qty = _parse_num(raw_qty) if raw_qty.isdigit() else None
+
+            stock_status = str(row[11]).strip().lower() if len(row) > 11 and row[11] else ""
+            is_instock = stock_status == "instock" and (qty is None or qty > 0) and (eff_p is not None and eff_p > 0)
+            final_p = eff_p if is_instock else None
+
+            item_info = {
+                "woo_id": pid,
+                "name": name,
+                "url": url,
+                "price": final_p,
+                "in_stock": is_instock,
+                "stock_qty": qty,
+            }
+            if pid:
+                royal_map[pid] = item_info
+            if name:
+                royal_map[name] = item_info
+
+        logger.info("Loaded Royal URL Excel from %s: %d items parsed.", p.name, len(royal_map))
+    except Exception as e:
+        logger.warning("Error reading Royal URL Excel: %s", e)
+    return royal_map
+
+
 def evaluate_torob_top5_status(
     royal_p: int | None,
     t1: int | None,
@@ -302,9 +374,11 @@ def parse_excel_products(
             wc_item = wc_data[p_name]
 
         if wc_item is not None:
-            final_price = wc_item["price"] # None if out of stock in WC
+            final_price = wc_item["price"]  # None if out of stock in WC / Royal Excel
             is_in_stock = wc_item["in_stock"]
             royaldigi_url = wc_item.get("url")
+            if wc_item.get("stock_qty") is not None and wc_item["stock_qty"] > 0:
+                quantity = wc_item["stock_qty"]
         else:
             raw_excel_p = r[12] if isinstance(r[12], (int, float)) and r[12] > 0 else None
             final_price = raw_excel_p
@@ -659,6 +733,17 @@ def run_update(
         if latest_wc:
             wc_data = load_woocommerce_export(latest_wc)
 
+    # 1.1 Load Royal Products with URLs Excel (sources/mahsolat_royal_ba_url.xlsx)
+    royal_url_excel = BASE_DIR / "sources" / "mahsolat_royal_ba_url.xlsx"
+    if royal_url_excel.exists():
+        royal_excel_map = load_royal_url_excel(royal_url_excel)
+        for k, v in royal_excel_map.items():
+            if k in wc_data:
+                wc_data[k].update({k2: v2 for k2, v2 in v.items() if v2 is not None})
+            else:
+                wc_data[k] = v
+        logger.info("Integrated %d items from %s", len(royal_excel_map), royal_url_excel.name)
+
     logger.info("Reading CSV URLs from %s ...", csv_path)
     csv_map = load_csv_urls(csv_path)
 
@@ -727,7 +812,8 @@ def run_update(
             for k in ("current_digikala_price", "current_torob_price", "sparkline", "last_checked", "digikala_seller", "torob_4", "torob_5"):
                 if prev.get(k) is not None:
                     item_to_add[k] = prev[k]
-            royal_p = item_to_add.get("current_royaldigi_price") or item_to_add.get("royaldigi_price")
+            royal_p = item_to_add.get("royaldigi_price")
+            item_to_add["current_royaldigi_price"] = royal_p
             t1 = item_to_add.get("torob_1")
             t2 = item_to_add.get("torob_2")
             t3 = item_to_add.get("torob_3")

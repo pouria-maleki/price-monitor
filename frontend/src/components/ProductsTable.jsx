@@ -22,14 +22,14 @@ function formatBillions(num) {
 function TypeBadge({ type }) {
   if (type === "New") {
     return (
-      <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 text-xs font-bold text-emerald-300">
-        🟢 نو
+      <span className="inline-block rounded bg-emerald-500/15 border border-emerald-500/30 px-1 py-0.5 text-[9px] font-bold text-emerald-300">
+        نو
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-purple-500/15 border border-purple-500/30 px-2 py-0.5 text-xs font-bold text-purple-300">
-      🟣 استوک
+    <span className="inline-block rounded bg-purple-500/15 border border-purple-500/30 px-1 py-0.5 text-[9px] font-bold text-purple-300">
+      استوک
     </span>
   );
 }
@@ -39,10 +39,10 @@ function Top5StatusBadge({ item }) {
   if (st === "higher_than_top_5" || st === "higher_than_top_3") {
     return (
       <div className="flex flex-col items-center gap-0.5">
-        <span className="inline-flex items-center gap-1 rounded-lg border border-red-500/30 bg-red-500/15 px-2 py-0.5 text-[11px] font-bold text-red-300">
-          ❌ گران‌تر از ۵ تای اول
+        <span className="inline-block rounded border border-red-500/30 bg-red-500/15 px-1.5 py-0.5 text-[9px] font-bold text-red-300">
+          ❌ بالای ۵
         </span>
-        <span className="text-[10px] text-red-400/90 font-mono text-center">
+        <span className="text-[8px] text-red-400/90 font-mono text-center">
           {item.top5_rank_label || item.top3_rank_label || ""}
         </span>
       </div>
@@ -51,10 +51,10 @@ function Top5StatusBadge({ item }) {
   if (st === "lower_than_top_1") {
     return (
       <div className="flex flex-col items-center gap-0.5">
-        <span className="inline-flex items-center gap-1 rounded-lg border border-amber-500/30 bg-amber-500/15 px-2 py-0.5 text-[11px] font-bold text-amber-300">
-          ⚠️ ارزان‌تر از رتبه ۱
+        <span className="inline-block rounded border border-amber-500/30 bg-amber-500/15 px-1.5 py-0.5 text-[9px] font-bold text-amber-300">
+          ⚠️ زیر ۱
         </span>
-        <span className="text-[10px] text-amber-400/90 font-mono text-center">
+        <span className="text-[8px] text-amber-400/90 font-mono text-center">
           {item.top5_rank_label || item.top3_rank_label || ""}
         </span>
       </div>
@@ -63,20 +63,19 @@ function Top5StatusBadge({ item }) {
   if (st === "in_top_5" || st === "in_top_3") {
     return (
       <div className="flex flex-col items-center gap-0.5">
-        <span className="inline-flex items-center gap-1 rounded-lg border border-emerald-500/30 bg-emerald-500/15 px-2.5 py-0.5 text-[11px] font-bold text-emerald-300">
-          {item.top5_badge || item.top3_badge || "✓ در ۵ تای اول"}
+        <span className="inline-block rounded border border-emerald-500/30 bg-emerald-500/15 px-1.5 py-0.5 text-[9px] font-bold text-emerald-300">
+          {item.top5_badge || item.top3_badge || "✓ در ۵ اول"}
         </span>
-        <span className="text-[10px] text-emerald-400/80">رقابتی و فعال</span>
       </div>
     );
   }
   if (st === "no_royal" || !item.royaldigi_price) {
-    return <span className="text-gray-500 text-[11px]">ناموجود در رویال</span>;
+    return <span className="text-gray-500 text-[9px]">ناموجود رویال</span>;
   }
   if (st === "no_torob") {
-    return <span className="text-gray-500 text-[11px]">ناموجود در ترب</span>;
+    return <span className="text-gray-500 text-[9px]">ناموجود ترب</span>;
   }
-  return <span className="text-gray-500 text-[11px]">—</span>;
+  return <span className="text-gray-500 text-[9px]">—</span>;
 }
 
 export default function ProductsTable() {
@@ -322,25 +321,25 @@ export default function ProductsTable() {
       {/* Main Table with 5 Torob Columns */}
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 shadow-xl backdrop-blur">
         <div className="overflow-x-auto">
-          <table className="w-full text-right text-xs">
+          <table className="w-full text-right text-[11px] leading-tight">
             <thead>
-              <tr className="border-b border-white/10 bg-slate-950/80 text-gray-300 font-semibold select-none">
-                <th className="px-3 py-3.5 text-center w-12">ردیف</th>
-                <th className="px-3 py-3.5 text-center w-20">نوع</th>
-                <th className="px-4 py-3.5 min-w-[200px]">نام محصول و مشخصات</th>
-                <th className="px-3 py-3.5 text-center w-20">موجودی</th>
-                <th className="px-3 py-3.5 text-center w-36 bg-amber-500/10 text-amber-200 border-x border-white/10">
-                  قیمت رویال‌دیجی
+              <tr className="border-b border-white/10 bg-slate-950/80 text-gray-300 font-semibold select-none text-[10px]">
+                <th className="px-1 py-2 text-center w-7">#</th>
+                <th className="px-1 py-2 text-center w-11">نوع</th>
+                <th className="px-2 py-2 min-w-[160px] max-w-[220px]">نام محصول و مشخصات</th>
+                <th className="px-1 py-2 text-center w-14">موجودی</th>
+                <th className="px-1.5 py-2 text-center w-24 bg-amber-500/10 text-amber-200 border-x border-white/10">
+                  رویال‌دیجی
                 </th>
-                <th className="px-2.5 py-3.5 text-center w-28 bg-sky-950/25 text-sky-300">ترب ۱ (اول)</th>
-                <th className="px-2.5 py-3.5 text-center w-28 bg-sky-950/15 text-sky-200">ترب ۲ (دوم)</th>
-                <th className="px-2.5 py-3.5 text-center w-28 text-gray-300">ترب ۳ (سوم)</th>
-                <th className="px-2.5 py-3.5 text-center w-28 text-gray-400">ترب ۴ (چهارم)</th>
-                <th className="px-2.5 py-3.5 text-center w-28 text-gray-400">ترب ۵ (پنجم)</th>
-                <th className="px-3 py-3.5 text-center w-32 text-pink-300">دیجی‌کالا</th>
-                <th className="px-4 py-3.5 text-center w-48">وضعیت ۵ رتبه ترب</th>
-                <th className="px-3 py-3.5 text-center w-24">روند</th>
-                <th className="px-3 py-3.5 text-center w-24">لینک‌ها</th>
+                <th className="px-1 py-2 text-center w-20 bg-sky-950/25 text-sky-300">ترب ۱</th>
+                <th className="px-1 py-2 text-center w-20 bg-sky-950/15 text-sky-200">ترب ۲</th>
+                <th className="px-1 py-2 text-center w-20 text-gray-300">ترب ۳</th>
+                <th className="px-1 py-2 text-center w-20 text-gray-400">ترب ۴</th>
+                <th className="px-1 py-2 text-center w-20 text-gray-400">ترب ۵</th>
+                <th className="px-1 py-2 text-center w-20 text-pink-300">دیجی‌کالا</th>
+                <th className="px-1.5 py-2 text-center w-28">وضعیت ترب</th>
+                <th className="px-1 py-2 text-center w-14">روند</th>
+                <th className="px-1 py-2 text-center w-14">لینک</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5">
@@ -368,149 +367,135 @@ export default function ProductsTable() {
                   if (st === "higher_than_top_5" || st === "higher_than_top_3") {
                     royalCellClass = "bg-red-500/15 border-red-500/30 text-red-300 font-bold border-x";
                     royalSubtitle = (
-                      <div className="text-[10px] text-red-400 font-semibold flex items-center justify-center gap-1 mt-0.5">
-                        <span>❌ گران‌تر از ۵ تای اول</span>
+                      <div className="text-[9px] text-red-400 font-semibold mt-0.5">
+                        ❌ بالای ۵
                       </div>
                     );
                   } else if (st === "lower_than_top_1") {
                     royalCellClass = "bg-amber-500/15 border-amber-500/30 text-amber-300 font-bold border-x";
                     royalSubtitle = (
-                      <div className="text-[10px] text-amber-400 font-semibold flex items-center justify-center gap-1 mt-0.5">
-                        <span>⚠️ ارزان‌تر از رتبه ۱</span>
+                      <div className="text-[9px] text-amber-400 font-semibold mt-0.5">
+                        ⚠️ زیر ۱
                       </div>
                     );
                   } else if (st === "in_top_5" || st === "in_top_3") {
                     royalCellClass = "bg-emerald-500/15 border-emerald-500/30 text-emerald-300 font-bold border-x";
                     royalSubtitle = (
-                      <div className="text-[10px] text-emerald-400 font-semibold mt-0.5">
-                        ✓ در ۵ تای اول ترب
+                      <div className="text-[9px] text-emerald-400 font-semibold mt-0.5">
+                        ✓ در ۵ اول
                       </div>
                     );
                   } else if (st === "no_royal" || !item.royaldigi_price) {
                     royalSubtitle = (
-                      <div className="text-[10px] text-gray-500 mt-0.5">ناموجود در سایت ما</div>
+                      <div className="text-[9px] text-gray-500 mt-0.5">ناموجود رویال</div>
                     );
                   }
 
                   return (
                     <tr
                       key={item.id}
-                      className="hover:bg-white/[0.02] transition-colors"
+                      className="hover:bg-white/[0.02] transition-colors border-b border-white/5"
                     >
-                      <td className="px-3 py-3.5 text-center font-mono text-gray-500">
+                      <td className="px-1 py-1 text-center font-mono text-gray-500 text-[10px]">
                         {item.file_order}
                       </td>
 
-                      <td className="px-3 py-3.5 text-center">
+                      <td className="px-1 py-1 text-center">
                         <TypeBadge type={item.item_type} />
                       </td>
 
-                      <td className="px-4 py-3.5">
-                        <div className="font-semibold text-gray-100 max-w-sm sm:max-w-md line-clamp-2">
+                      <td className="px-2 py-1 min-w-[160px] max-w-[220px]">
+                        <div className="font-semibold text-gray-100 line-clamp-2 text-[11px] leading-snug" title={item.name}>
                           {item.name}
                         </div>
-                        <div className="flex flex-wrap items-center gap-2 mt-1 text-[11px] text-gray-400">
+                        <div className="flex flex-wrap items-center gap-1.5 mt-0.5 text-[9px] text-gray-400">
                           {item.woo_id && (
-                            <span className="font-mono bg-white/5 px-1.5 py-0.5 rounded text-gray-300">
+                            <span className="font-mono bg-white/5 px-1 py-0.2 rounded text-gray-300">
                               ID: {item.woo_id}
                             </span>
                           )}
                           {item.warranty && (
-                            <span className="text-gray-500 line-clamp-1">
+                            <span className="text-gray-500 truncate max-w-[100px]">
                               {item.warranty}
                             </span>
                           )}
                           {item.notes && (
-                            <span className="text-amber-400/80 bg-amber-500/10 px-1.5 py-0.5 rounded text-[10px]">
+                            <span className="text-amber-400/80 bg-amber-500/10 px-1 py-0.2 rounded text-[8px]">
                               {item.notes}
                             </span>
                           )}
                         </div>
                       </td>
 
-                      <td className="px-3 py-3.5 text-center">
-                        <span className="inline-flex rounded-lg bg-slate-800 px-2.5 py-1 font-mono font-bold text-gray-200">
-                          {item.quantity !== null && item.quantity !== undefined ? `${item.quantity} عدد` : "ناموجود"}
-                        </span>
+                      <td className="px-1 py-1 text-center font-mono text-[10px] text-gray-300">
+                        {item.quantity !== null && item.quantity !== undefined ? `${item.quantity} عدد` : <span className="text-gray-500">ناموجود</span>}
                       </td>
 
                       {/* RoyalDigi Price Column (Alert colored or explicit ناموجود) */}
-                      <td className={`px-3 py-3.5 text-center font-mono ${royalCellClass}`}>
-                        <div className="text-xs sm:text-sm">
+                      <td className={`px-1.5 py-1 text-center font-mono ${royalCellClass}`}>
+                        <div className="text-[11px] font-bold">
                           {formatPrice(item.royaldigi_price)}
                         </div>
                         {royalSubtitle}
                       </td>
 
                       {/* Torob 1 (Rank 1) */}
-                      <td className="px-2.5 py-3.5 text-center font-mono text-sky-200 bg-sky-950/15">
-                        <div className="text-xs font-semibold">
-                          {formatPrice(item.torob_1)}
-                        </div>
+                      <td className="px-1 py-1 text-center font-mono text-[11px] text-sky-200 bg-sky-950/15 font-semibold">
+                        {formatPrice(item.torob_1)}
                       </td>
 
                       {/* Torob 2 (Rank 2) */}
-                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-300">
-                        <div className="text-xs">
-                          {formatPrice(item.torob_2)}
-                        </div>
+                      <td className="px-1 py-1 text-center font-mono text-[11px] text-gray-300">
+                        {formatPrice(item.torob_2)}
                       </td>
 
                       {/* Torob 3 (Rank 3) */}
-                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-400">
-                        <div className="text-xs">
-                          {formatPrice(item.torob_3)}
-                        </div>
+                      <td className="px-1 py-1 text-center font-mono text-[11px] text-gray-400">
+                        {formatPrice(item.torob_3)}
                       </td>
 
                       {/* Torob 4 (Rank 4) */}
-                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-400">
-                        <div className="text-xs">
-                          {formatPrice(item.torob_4)}
-                        </div>
+                      <td className="px-1 py-1 text-center font-mono text-[11px] text-gray-400">
+                        {formatPrice(item.torob_4)}
                       </td>
 
                       {/* Torob 5 (Rank 5) */}
-                      <td className="px-2.5 py-3.5 text-center font-mono text-gray-400">
-                        <div className="text-xs">
-                          {formatPrice(item.torob_5)}
-                        </div>
+                      <td className="px-1 py-1 text-center font-mono text-[11px] text-gray-400">
+                        {formatPrice(item.torob_5)}
                       </td>
 
                       {/* Digikala Price Column */}
-                      <td className="px-3 py-3.5 text-center font-mono text-pink-300">
-                        <div className="text-xs">
-                          {formatPrice(item.digikala_price)}
-                        </div>
+                      <td className="px-1 py-1 text-center font-mono text-[11px] text-pink-300">
+                        {formatPrice(item.digikala_price)}
                       </td>
 
                       {/* Top 5 Competitive Status */}
-                      <td className="px-4 py-3.5 text-center">
+                      <td className="px-1.5 py-1 text-center">
                         <Top5StatusBadge item={item} />
                       </td>
 
                       {/* Sparkline chart */}
-                      <td className="px-3 py-3.5 text-center">
-                        <div className="w-20 mx-auto">
+                      <td className="px-1 py-1 text-center">
+                        <div className="w-12 mx-auto">
                           <Sparkline
                             points={item.sparkline || [1, 1, 1]}
-                            width={75}
-                            height={24}
+                            width={46}
+                            height={16}
                             color={item.is_alert ? "#ef4444" : "#10b981"}
                           />
                         </div>
                       </td>
 
                       {/* External Links */}
-                      <td className="px-3 py-3.5 text-center">
-                        <div className="flex items-center justify-center gap-1.5">
+                      <td className="px-1 py-1 text-center">
+                        <div className="flex items-center justify-center gap-1">
                           {item.royaldigi_url && (
                             <a
                               href={item.royaldigi_url}
                               target="_blank"
                               rel="noopener noreferrer"
                               title="مشاهده در سایت رویال‌دیجی"
-                              className="p-1.5 rounded-lg bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 transition"
+                              className="p-0.5 rounded bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 transition text-xs"
                             >
                               👑
                             </a>
@@ -521,7 +506,7 @@ export default function ProductsTable() {
                               target="_blank"
                               rel="noopener noreferrer"
                               title="مشاهده لینک اصلی ترب"
-                              className="p-1.5 rounded-lg bg-red-500/10 hover:bg-red-500/20 text-red-400 transition"
+                              className="p-0.5 rounded bg-red-500/10 hover:bg-red-500/20 text-red-400 transition text-xs"
                             >
                               🧅
                             </a>
@@ -532,7 +517,7 @@ export default function ProductsTable() {
                               target="_blank"
                               rel="noopener noreferrer"
                               title="مشاهده در دیجی‌کالا"
-                              className="p-1.5 rounded-lg bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 transition"
+                              className="p-0.5 rounded bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 transition text-xs"
                             >
                               🔴
                             </a>

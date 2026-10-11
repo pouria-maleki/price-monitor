@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-bg">
       <header className="sticky top-0 z-20 border-b border-white/5 bg-slate-950/80 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+        <div className="w-full flex items-center justify-between px-3 py-2 sm:px-5">
           <Link to="/" className="flex items-center gap-2.5">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 via-sky-500 to-indigo-600 text-lg font-bold shadow-md shadow-sky-500/20">
               👑
@@ -23,7 +23,7 @@ export default function Layout({ children }) {
           </div>
         </div>
       </header>
-      <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6">{children}</main>
+      <main className="w-full px-2 sm:px-4 py-4">{children}</main>
     </div>
   );
 }
