@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "last_updated_iso": "2026-10-19T14:21:42.760676+00:00",
-    "last_updated_fa": "27 مهر 1405 - 14:21",
+    "last_updated_iso": "2026-10-20T12:30:15.086378+00:00",
+    "last_updated_fa": "28 مهر 1405 - 12:30",
     "schedule_info": "آپدیت خودکار روزانه ساعت ۱۰:۰۰ صبح (تهران)",
     "total_products": 166,
-    "in_top_5_count": 19,
-    "in_top_3_count": 19,
-    "higher_than_top_5_count": 52,
-    "higher_than_top_3_count": 52,
-    "lower_than_top_1_count": 7,
+    "in_top_5_count": 16,
+    "in_top_3_count": 16,
+    "higher_than_top_5_count": 54,
+    "higher_than_top_3_count": 54,
+    "lower_than_top_1_count": 8,
     "no_royal_count": 86,
     "no_torob_count": 2,
-    "alerts_total": 59,
+    "alerts_total": 62,
     "new_count": 89,
     "stock_count": 77,
     "total_inventory_quantity": 670,
-    "total_inventory_royal_value": 6624163125,
-    "total_inventory_market_value": 6797430650,
-    "duration_seconds": 1894.5
+    "total_inventory_royal_value": 6619815000,
+    "total_inventory_market_value": 6780474600,
+    "duration_seconds": 1884.7
   },
   "items": [
     {
@@ -36,43 +36,43 @@
       "initial_royaldigi_price": 11390000,
       "current_royaldigi_price": 13410000,
       "suggested_price": 9250000,
-      "torob_1": 10000000,
+      "torob_1": 10200000,
       "torob_2": 10200000,
-      "torob_3": 10200000,
-      "torob_4": 10200000,
-      "torob_5": 10500000,
-      "torob_price": 10000000,
+      "torob_3": 10500000,
+      "torob_4": 10500000,
+      "torob_5": 10800000,
+      "torob_price": 10200000,
       "initial_torob_price": 9200000,
-      "current_torob_price": 10000000,
+      "current_torob_price": 10200000,
       "digikala_price": 12100000,
       "initial_digikala_price": 10280000,
       "current_digikala_price": 12100000,
-      "market_avg_price": 11050000,
+      "market_avg_price": 11150000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+2,910,000 ت از رتبه 5 ترب (+27.7%)",
-      "top3_rank_label": "+2,910,000 ت از رتبه 5 ترب (+27.7%)",
-      "top5_explanation": "قیمت رویال 2,910,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 2,910,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+2,610,000 ت از رتبه 5 ترب (+24.2%)",
+      "top3_rank_label": "+2,610,000 ت از رتبه 5 ترب (+24.2%)",
+      "top5_explanation": "قیمت رویال 2,610,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 2,610,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 2910000,
+      "diff_from_target": 2610000,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-tf-i120-b1/",
       "torob_url": "https://torob.com/p/eb3ff6b1-01dd-472b-99fb-c6c748f1ad98/",
       "digikala_url": "https://www.digikala.com/product/dkp-19222783/",
       "notes": "همه پلمپ و با گارانتی ، بعضی ها ثبت شده",
       "item_val_royal": 2521080000,
-      "item_val_market": 2077400000,
+      "item_val_market": 2096200000,
       "sparkline": [
         10860000,
-        10860000,
+        13410000,
         13410000,
         13410000,
         13410000
       ],
-      "last_checked": "2026-10-19T13:50:08.213447+00:00",
+      "last_checked": "2026-10-20T11:58:50.412844+00:00",
       "digikala_seller": "فروشگاه سیمونت"
     },
     {
@@ -87,15 +87,15 @@
       "grade": "موبو اديشن",
       "warranty": "فول",
       "status_text": "نو",
-      "royaldigi_price": 20020000,
+      "royaldigi_price": 20060000,
       "initial_royaldigi_price": 20430000,
-      "current_royaldigi_price": 20020000,
+      "current_royaldigi_price": 20060000,
       "suggested_price": 15240000,
       "torob_1": 18490000,
-      "torob_2": 19784300,
-      "torob_3": 19990000,
-      "torob_4": 20020000,
-      "torob_5": 20131000,
+      "torob_2": 19990000,
+      "torob_3": 20060000,
+      "torob_4": 20131000,
+      "torob_5": 20290000,
       "torob_price": 18490000,
       "initial_torob_price": 14590000,
       "current_torob_price": 18490000,
@@ -105,12 +105,12 @@
       "market_avg_price": 18490000,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۴ ترب (رقابتی)",
-      "top3_badge": "✓ رتبه ۴ ترب (رقابتی)",
-      "top5_rank_label": "رتبه ۴ ترب (رقابتی)",
-      "top3_rank_label": "رتبه ۴ ترب (رقابتی)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
       "is_alert": false,
       "alert_level": "success",
       "diff_from_target": 0,
@@ -118,16 +118,16 @@
       "torob_url": "https://torob.com/p/7fe65d08-aa4d-4d44-8d04-3d140bc231f1/",
       "digikala_url": "https://www.digikala.com/product/dkp-14812728/",
       "notes": "دوتا کارتن 24 تایی یه کارتن 12 تایی",
-      "item_val_royal": 1261260000,
+      "item_val_royal": 1263780000,
       "item_val_market": 1164870000,
       "sparkline": [
         19640000,
-        19640000,
         19997000,
         19997000,
-        20020000
+        20020000,
+        20060000
       ],
-      "last_checked": "2026-10-19T13:50:21.090010+00:00",
+      "last_checked": "2026-10-20T11:59:00.413113+00:00",
       "digikala_seller": "نتومی"
     },
     {
@@ -142,47 +142,47 @@
       "grade": "فول",
       "warranty": "گارانتي 12 ماهه شرکت سازنده",
       "status_text": "نو",
-      "royaldigi_price": 16650000,
+      "royaldigi_price": 16830000,
       "initial_royaldigi_price": 16750000,
-      "current_royaldigi_price": 16650000,
+      "current_royaldigi_price": 16830000,
       "suggested_price": 13500000,
-      "torob_1": 14990000,
-      "torob_2": 15191000,
-      "torob_3": 15360000,
-      "torob_4": 15700000,
-      "torob_5": 15790000,
-      "torob_price": 14990000,
+      "torob_1": 13620000,
+      "torob_2": 14990000,
+      "torob_3": 15191000,
+      "torob_4": 15360000,
+      "torob_5": 15390000,
+      "torob_price": 13620000,
       "initial_torob_price": 12899000,
-      "current_torob_price": 14990000,
+      "current_torob_price": 13620000,
       "digikala_price": 17190000,
       "initial_digikala_price": 12990000,
       "current_digikala_price": 17190000,
-      "market_avg_price": 16090000,
+      "market_avg_price": 15405000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+860,000 ت از رتبه 5 ترب (+5.4%)",
-      "top3_rank_label": "+860,000 ت از رتبه 5 ترب (+5.4%)",
-      "top5_explanation": "قیمت رویال 860,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 860,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+1,440,000 ت از رتبه 5 ترب (+9.4%)",
+      "top3_rank_label": "+1,440,000 ت از رتبه 5 ترب (+9.4%)",
+      "top5_explanation": "قیمت رویال 1,440,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 1,440,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 860000,
+      "diff_from_target": 1440000,
       "royaldigi_url": "https://royaldigi.ir/product/netbox-shine-s/",
       "torob_url": "https://torob.com/p/fb69686b-6788-4506-8f5b-a0b471c1a74e/",
       "digikala_url": "https://www.digikala.com/product/dkp-12443084/",
       "notes": "همه دارای گارانتی 12 ماهه ولی پلمپ باز شده | درون کارتن ولی اکثریت پلمپ باز شده گفتن مشکلی نداره برای مشتری باز شده",
-      "item_val_royal": 499500000,
-      "item_val_market": 482700000,
+      "item_val_royal": 504900000,
+      "item_val_market": 462150000,
       "sparkline": [
         16260000,
-        16260000,
         17050000,
         17050000,
-        16650000
+        16650000,
+        16830000
       ],
-      "last_checked": "2026-10-19T13:50:32.483851+00:00",
+      "last_checked": "2026-10-20T11:59:13.934949+00:00",
       "digikala_seller": "نت باکس"
     },
     {
@@ -197,48 +197,48 @@
       "grade": "فول",
       "warranty": "پلمپ",
       "status_text": "نو",
-      "royaldigi_price": 6210000,
+      "royaldigi_price": 6900000,
       "initial_royaldigi_price": 6150000,
-      "current_royaldigi_price": 6210000,
+      "current_royaldigi_price": 6900000,
       "suggested_price": 4900000,
       "torob_1": 5679000,
       "torob_2": 5690000,
-      "torob_3": 5700000,
-      "torob_4": 5700000,
-      "torob_5": 5800000,
+      "torob_3": 5800000,
+      "torob_4": 6000000,
+      "torob_5": 6000000,
       "torob_price": 5679000,
       "initial_torob_price": 4500000,
       "current_torob_price": 5679000,
-      "digikala_price": 6850000,
+      "digikala_price": 6950000,
       "initial_digikala_price": 5790000,
-      "current_digikala_price": 6850000,
-      "market_avg_price": 6264500,
+      "current_digikala_price": 6950000,
+      "market_avg_price": 6314500,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+410,000 ت از رتبه 5 ترب (+7.1%)",
-      "top3_rank_label": "+410,000 ت از رتبه 5 ترب (+7.1%)",
-      "top5_explanation": "قیمت رویال 410,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 410,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+900,000 ت از رتبه 5 ترب (+15.0%)",
+      "top3_rank_label": "+900,000 ت از رتبه 5 ترب (+15.0%)",
+      "top5_explanation": "قیمت رویال 900,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 900,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 410000,
+      "diff_from_target": 900000,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-fd-i40-e2/",
       "torob_url": "https://torob.com/p/7dd0d153-e8be-4fff-9bab-d146a7b29955/",
       "digikala_url": "https://www.digikala.com/product/dkp-9519081/",
       "notes": "همه پلمپ  و ثبتی ندارد",
-      "item_val_royal": 105570000,
-      "item_val_market": 106496500,
+      "item_val_royal": 117300000,
+      "item_val_market": 107346500,
       "sparkline": [
         6150000,
-        6150000,
         6030000,
         6030000,
-        6210000
+        6210000,
+        6900000
       ],
-      "last_checked": "2026-10-19T13:50:44.929829+00:00",
-      "digikala_seller": "اقای رند"
+      "last_checked": "2026-10-20T11:59:23.709853+00:00",
+      "digikala_seller": "فروشگاه سیمونت"
     },
     {
       "id": "royal_7",
@@ -258,8 +258,8 @@
       "suggested_price": 6470000,
       "torob_1": 7350000,
       "torob_2": 8000000,
-      "torob_3": 8500000,
-      "torob_4": null,
+      "torob_3": 8000000,
+      "torob_4": 8500000,
       "torob_5": null,
       "torob_price": 7350000,
       "initial_torob_price": 6400000,
@@ -289,10 +289,10 @@
         7990000,
         7990000,
         7990000,
-        7990000,
+        7999000,
         7999000
       ],
-      "last_checked": "2026-10-19T13:50:55.568918+00:00",
+      "last_checked": "2026-10-20T11:59:33.561844+00:00",
       "digikala_seller": "های نو"
     },
     {
@@ -307,15 +307,15 @@
       "grade": "پلمپ",
       "warranty": "فول",
       "status_text": "نو",
-      "royaldigi_price": 4960000,
+      "royaldigi_price": 4760000,
       "initial_royaldigi_price": 4640000,
-      "current_royaldigi_price": 4960000,
+      "current_royaldigi_price": 4760000,
       "suggested_price": 3970000,
       "torob_1": 1890000,
       "torob_2": 4200000,
       "torob_3": 4599936,
-      "torob_4": 4695000,
-      "torob_5": 4700000,
+      "torob_4": 4690000,
+      "torob_5": 4695000,
       "torob_price": 1890000,
       "initial_torob_price": 3900000,
       "current_torob_price": 1890000,
@@ -327,27 +327,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+260,000 ت از رتبه 5 ترب (+5.5%)",
-      "top3_rank_label": "+260,000 ت از رتبه 5 ترب (+5.5%)",
-      "top5_explanation": "قیمت رویال 260,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 260,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+65,000 ت از رتبه 5 ترب (+1.4%)",
+      "top3_rank_label": "+65,000 ت از رتبه 5 ترب (+1.4%)",
+      "top5_explanation": "قیمت رویال 65,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 65,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 260000,
+      "diff_from_target": 65000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dsl-124-stock/",
       "torob_url": "https://torob.com/p/601c1bf7-868c-4efe-afd1-f4b867c16624/",
       "digikala_url": "https://www.digikala.com/product/dkp-2550885/",
       "notes": "دوتا باز شده یکی در حد نو یکی نو بقیه همه پلمپ بدون گارانتی  و ده تا اضافه شد که یکی باز شده ولی نو هست بقیه همه نو و پلمپ",
-      "item_val_royal": 74400000,
+      "item_val_royal": 71400000,
       "item_val_market": 46050000,
       "sparkline": [
         4910000,
-        4910000,
         5070000,
         5070000,
-        4960000
+        4960000,
+        4760000
       ],
-      "last_checked": "2026-10-19T13:51:04.147098+00:00"
+      "last_checked": "2026-10-20T11:59:42.059917+00:00"
     },
     {
       "id": "royal_10",
@@ -401,7 +401,7 @@
         1760000,
         1760000
       ],
-      "last_checked": "2026-10-19T13:51:14.406854+00:00"
+      "last_checked": "2026-10-20T11:59:52.263836+00:00"
     },
     {
       "id": "royal_12",
@@ -422,8 +422,8 @@
       "torob_1": 97000,
       "torob_2": 100000,
       "torob_3": 101200,
-      "torob_4": 116379,
-      "torob_5": 129600,
+      "torob_4": 108300,
+      "torob_5": 116379,
       "torob_price": 97000,
       "initial_torob_price": null,
       "current_torob_price": 97000,
@@ -455,7 +455,7 @@
         100000,
         100000
       ],
-      "last_checked": "2026-10-19T13:51:26.286550+00:00",
+      "last_checked": "2026-10-20T12:00:02.296250+00:00",
       "digikala_seller": "میکرولی"
     },
     {
@@ -482,10 +482,10 @@
       "torob_price": 9200000,
       "initial_torob_price": 8900000,
       "current_torob_price": 9200000,
-      "digikala_price": 10200000,
+      "digikala_price": 10000000,
       "initial_digikala_price": 8800000,
-      "current_digikala_price": 10200000,
-      "market_avg_price": 9700000,
+      "current_digikala_price": 10000000,
+      "market_avg_price": 9600000,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
       "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
@@ -502,16 +502,16 @@
       "digikala_url": "https://www.digikala.com/product/dkp-6221928/",
       "notes": "همه پلمپ | همه باز هست و باید تست بشه",
       "item_val_royal": 98900000,
-      "item_val_market": 97000000,
+      "item_val_market": 96000000,
       "sparkline": [
         9480000,
-        9480000,
         9680000,
         9680000,
+        9890000,
         9890000
       ],
-      "last_checked": "2026-10-19T13:51:30.750686+00:00",
-      "digikala_seller": "استور نتینو"
+      "last_checked": "2026-10-20T12:00:07.945415+00:00",
+      "digikala_seller": "استور هاب"
     },
     {
       "id": "royal_11",
@@ -560,12 +560,12 @@
       "item_val_market": 20312760,
       "sparkline": [
         10120000,
-        10120000,
         7710000,
         7710000,
+        7890000,
         7890000
       ],
-      "last_checked": "2026-10-19T13:51:40.522735+00:00",
+      "last_checked": "2026-10-20T12:00:20.025674+00:00",
       "digikala_seller": "فناوران تک"
     },
     {
@@ -587,15 +587,15 @@
       "torob_1": 5149000,
       "torob_2": 5150000,
       "torob_3": 5200000,
-      "torob_4": 5600000,
+      "torob_4": 5300000,
       "torob_5": 5600000,
       "torob_price": 5149000,
       "initial_torob_price": 7265700,
       "current_torob_price": 5149000,
-      "digikala_price": 5600000,
+      "digikala_price": 5700000,
       "initial_digikala_price": null,
-      "current_digikala_price": 5600000,
-      "market_avg_price": 5374500,
+      "current_digikala_price": 5700000,
+      "market_avg_price": 5424500,
       "top5_status": "lower_than_top_1",
       "top3_status": "lower_than_top_1",
       "top5_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
@@ -612,7 +612,7 @@
       "digikala_url": "https://www.digikala.com/product/dkp-14549673/%D9%85%D9%88%D8%AF%D9%85-%D9%82%D8%A7%D8%A8%D9%84-%D8%AD%D9%85%D9%84-%D8%A2%D9%84%DA%A9%D8%A7%D8%AA%D9%84-%D9%85%D8%AF%D9%84-bt70-%D8%A8%D8%A7-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C-%D8%A7%D8%B2-45g-cat7-%D8%B3%D8%B1%D8%B9%D8%AA-%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D8%AA%D8%A7-300mbps-%D9%88-%D8%A2%D9%BE%D9%84%D9%88%D8%AF-%D8%AA%D8%A7-100mbps-%D9%88%D8%A7%DB%8C%D9%81%D8%A7%DB%8C-%D8%AF%D9%88-%D8%A8%D8%A7%D9%86%D8%AF%D9%87-24ghz-%D9%88-5ghz-%D8%A8%D8%A7-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF-80211abgnac-%D8%B4%D8%A7%D8%B1%DA%98%D8%AF%D9%87%DB%8C-%D8%A8%D8%A7%D8%AA%D8%B1%DB%8C-%D8%AA%D8%A7-8-%D8%B3%D8%A7%D8%B9%D8%AA-%D9%88-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D9%87%D9%85%D8%B2%D9%85%D8%A7%D9%86-20-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1/",
       "notes": "همه کار کرده سالم بدون گارانتی",
       "item_val_royal": 49500000,
-      "item_val_market": 53745000,
+      "item_val_market": 54245000,
       "sparkline": [
         4950000,
         4950000,
@@ -620,8 +620,8 @@
         4950000,
         4950000
       ],
-      "last_checked": "2026-10-19T13:51:51.157519+00:00",
-      "digikala_seller": "بوشهر لند جانبی"
+      "last_checked": "2026-10-20T12:00:29.125631+00:00",
+      "digikala_seller": "همراه مودم"
     },
     {
       "id": "royal_19",
@@ -675,7 +675,7 @@
         10200000,
         10200000
       ],
-      "last_checked": "2026-10-19T13:52:00.973011+00:00"
+      "last_checked": "2026-10-20T12:00:39.768607+00:00"
     },
     {
       "id": "royal_18",
@@ -693,35 +693,35 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": 19850000,
       "suggested_price": 12880000,
-      "torob_1": 13310000,
-      "torob_2": 13490000,
-      "torob_3": 13490000,
-      "torob_4": 13500000,
-      "torob_5": 13700000,
-      "torob_price": 13310000,
+      "torob_1": 12000000,
+      "torob_2": 13310000,
+      "torob_3": 13340000,
+      "torob_4": 13340000,
+      "torob_5": 13400000,
+      "torob_price": 12000000,
       "initial_torob_price": 11480000,
-      "current_torob_price": 13310000,
-      "digikala_price": 22450000,
+      "current_torob_price": 12000000,
+      "digikala_price": 21900000,
       "initial_digikala_price": 19000000,
-      "current_digikala_price": 22450000,
-      "market_avg_price": 17880000,
+      "current_digikala_price": 21900000,
+      "market_avg_price": 16950000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+6,150,000 ت از رتبه 5 ترب (+44.9%)",
-      "top3_rank_label": "+6,150,000 ت از رتبه 5 ترب (+44.9%)",
-      "top5_explanation": "قیمت رویال 6,150,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 6,150,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+6,450,000 ت از رتبه 5 ترب (+48.1%)",
+      "top3_rank_label": "+6,450,000 ت از رتبه 5 ترب (+48.1%)",
+      "top5_explanation": "قیمت رویال 6,450,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 6,450,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 6150000,
+      "diff_from_target": 6450000,
       "royaldigi_url": "https://royaldigi.ir/product/zlt-x28/",
       "torob_url": "https://torob.com/p/3c30f058-1029-4340-b649-1cec495a6371/%D9%85%D9%88%D8%AF%D9%85-%D8%AF%D9%88-%D8%B2%D8%AF-%D8%A7%D9%84-%D8%AA%DB%8C-%D9%85%D8%AF%D9%84-x28-%D8%A7%D8%B3%D8%AA%D9%88%DA%A9/",
       "digikala_url": "https://www.digikala.com/product/dkp-14876965/%D9%85%D9%88%D8%AF%D9%85-5g-%D8%B1%D9%88%D9%85%DB%8C%D8%B2%DB%8C-zlt-x28-%D8%A8%D8%A7-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C-%D8%A7%D8%B2-%D9%87%D9%85%D9%87-%D8%B3%DB%8C%D9%85%DA%A9%D8%A7%D8%B1%D8%AA%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%88%D8%A7%DB%8C%D9%81%D8%A7%DB%8C-6-%D8%B3%D8%B1%D8%B9%D8%AA-%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-4-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%DB%8C%D8%AA-%D8%A8%D8%B1-%D8%AB%D8%A7%D9%86%DB%8C%D9%87-%D9%82%D8%A7%D8%A8%D9%84%DB%8C%D8%AA-%D8%AA%D8%AC%D9%85%DB%8C%D8%B9-%D8%A8%D8%A7%D9%86%D8%AF-%D9%BE%D9%86%D9%84-%D8%B3%D9%88%D9%BE%D8%B1-%D8%A7%D8%AF%D9%85%DB%8C%D9%86-%D8%AF%D8%A7%D8%A6%D9%85%DB%8C-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-usb-type-c-%D9%88-lan/",
       "notes": "همه سالم کابل شارژر و اینا ندارن ، توی فاکتور 11 تا بود باید 3 تاشو حذف کنن",
       "item_val_royal": 158800000,
-      "item_val_market": 143040000,
+      "item_val_market": 135600000,
       "sparkline": [
         19850000,
         19850000,
@@ -729,8 +729,8 @@
         19850000,
         19850000
       ],
-      "last_checked": "2026-10-19T13:52:05.839466+00:00",
-      "digikala_seller": "فروشگاه سیمونت"
+      "last_checked": "2026-10-20T12:00:43.411550+00:00",
+      "digikala_seller": "فرا دیجیتال"
     },
     {
       "id": "royal_23",
@@ -744,47 +744,47 @@
       "grade": "New",
       "warranty": "دارد - 36 ماه پارس ارتباط و 5 تا گارانتی پانا 36 ماهه که در تاریخ",
       "status_text": "New",
-      "royaldigi_price": 7700000,
+      "royaldigi_price": 7440000,
       "initial_royaldigi_price": 7930000,
-      "current_royaldigi_price": 7700000,
+      "current_royaldigi_price": 7440000,
       "suggested_price": 6297000,
-      "torob_1": 7273000,
-      "torob_2": 7280000,
+      "torob_1": 7270000,
+      "torob_2": 7273000,
       "torob_3": 7399000,
       "torob_4": 7400000,
       "torob_5": 7400000,
-      "torob_price": 7273000,
+      "torob_price": 7270000,
       "initial_torob_price": 6200000,
-      "current_torob_price": 7273000,
-      "digikala_price": 9070000,
+      "current_torob_price": 7270000,
+      "digikala_price": 8460000,
       "initial_digikala_price": 7860000,
-      "current_digikala_price": 9070000,
-      "market_avg_price": 8171500,
+      "current_digikala_price": 8460000,
+      "market_avg_price": 7865000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+300,000 ت از رتبه 5 ترب (+4.1%)",
-      "top3_rank_label": "+300,000 ت از رتبه 5 ترب (+4.1%)",
-      "top5_explanation": "قیمت رویال 300,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 300,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+40,000 ت از رتبه 5 ترب (+0.5%)",
+      "top3_rank_label": "+40,000 ت از رتبه 5 ترب (+0.5%)",
+      "top5_explanation": "قیمت رویال 40,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 40,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 300000,
+      "diff_from_target": 40000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-archer-c60/",
       "torob_url": "https://torob.com/p/5d00374d-afa7-42ac-9f67-3ccba7601c8f/",
       "digikala_url": "https://www.digikala.com/product/dkp-5965292/",
       "notes": "2تا گارانتی  36 ماه پارس ارتباط و 5 تا گارانتی  پانا 36 ماهه که در تاریخ های (دوتا)1403/12/19 و (دوتا)1404/06/19 و1403/08/29",
-      "item_val_royal": 38500000,
-      "item_val_market": 40857500,
+      "item_val_royal": 37200000,
+      "item_val_market": 39325000,
       "sparkline": [
         7299500,
-        7299500,
         7700000,
         7700000,
-        7700000
+        7700000,
+        7440000
       ],
-      "last_checked": "2026-10-19T13:52:15.817577+00:00",
+      "last_checked": "2026-10-20T12:00:55.560072+00:00",
       "digikala_seller": "رایان دیجی ایرانیان"
     },
     {
@@ -811,10 +811,10 @@
       "torob_price": 5199000,
       "initial_torob_price": 4195000,
       "current_torob_price": 5199000,
-      "digikala_price": 5790000,
+      "digikala_price": 5800000,
       "initial_digikala_price": 4900000,
-      "current_digikala_price": 5790000,
-      "market_avg_price": 5494500,
+      "current_digikala_price": 5800000,
+      "market_avg_price": 5499500,
       "top5_status": "lower_than_top_1",
       "top3_status": "lower_than_top_1",
       "top5_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
@@ -831,7 +831,7 @@
       "digikala_url": "https://www.digikala.com/product/dkp-7659320/",
       "notes": "همه باز شده کار کرده",
       "item_val_royal": 32340000,
-      "item_val_market": 38461500,
+      "item_val_market": 38496500,
       "sparkline": [
         4620000,
         4620000,
@@ -839,8 +839,8 @@
         4620000,
         4620000
       ],
-      "last_checked": "2026-10-19T13:52:25.575091+00:00",
-      "digikala_seller": "بوشهر لند جانبی"
+      "last_checked": "2026-10-20T12:01:04.432904+00:00",
+      "digikala_seller": "همراه مودم"
     },
     {
       "id": "royal_16",
@@ -889,12 +889,12 @@
       "item_val_market": 78000000,
       "sparkline": [
         12060000,
-        12060000,
+        13070000,
         13070000,
         13070000,
         13070000
       ],
-      "last_checked": "2026-10-19T13:52:34.996780+00:00"
+      "last_checked": "2026-10-20T12:01:13.450473+00:00"
     },
     {
       "id": "royal_30",
@@ -912,26 +912,26 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": 9620000,
       "suggested_price": 11000000,
-      "torob_1": 9500000,
-      "torob_2": 9800000,
+      "torob_1": 9450000,
+      "torob_2": 9500000,
       "torob_3": 10000000,
       "torob_4": 14500000,
       "torob_5": 18000000,
-      "torob_price": 9500000,
+      "torob_price": 9450000,
       "initial_torob_price": 9250000,
-      "current_torob_price": 9500000,
+      "current_torob_price": 9450000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 9500000,
+      "market_avg_price": 9450000,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top3_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top5_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top3_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
+      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
       "is_alert": false,
       "alert_level": "success",
       "diff_from_target": 0,
@@ -940,7 +940,7 @@
       "digikala_url": "https://www.digikala.com/product/dkp-1496655",
       "notes": "همه باز هستن باید تست شوند",
       "item_val_royal": 57720000,
-      "item_val_market": 57000000,
+      "item_val_market": 56700000,
       "sparkline": [
         9620000,
         9620000,
@@ -948,7 +948,7 @@
         9620000,
         9620000
       ],
-      "last_checked": "2026-10-19T13:52:44.919389+00:00"
+      "last_checked": "2026-10-20T12:01:23.259242+00:00"
     },
     {
       "id": "royal_9",
@@ -974,10 +974,10 @@
       "torob_price": 9200000,
       "initial_torob_price": 8900000,
       "current_torob_price": 9200000,
-      "digikala_price": 10200000,
+      "digikala_price": 10000000,
       "initial_digikala_price": 8800000,
-      "current_digikala_price": 10200000,
-      "market_avg_price": 9700000,
+      "current_digikala_price": 10000000,
+      "market_avg_price": 9600000,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
       "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
@@ -994,16 +994,16 @@
       "digikala_url": "https://www.digikala.com/product/dkp-6221928/",
       "notes": "همه پلمپ | همه باز هست و باید تست بشه // این یعنی چی ؟",
       "item_val_royal": 98900000,
-      "item_val_market": 97000000,
+      "item_val_market": 96000000,
       "sparkline": [
         9480000,
-        9480000,
         9680000,
         9680000,
+        9890000,
         9890000
       ],
-      "last_checked": "2026-10-19T13:52:55.530281+00:00",
-      "digikala_seller": "استور نتینو"
+      "last_checked": "2026-10-20T12:01:31.666564+00:00",
+      "digikala_seller": "استور هاب"
     },
     {
       "id": "royal_27",
@@ -1057,7 +1057,7 @@
         3866000,
         3866000
       ],
-      "last_checked": "2026-10-19T13:53:05.620097+00:00"
+      "last_checked": "2026-10-20T12:01:40.879950+00:00"
     },
     {
       "id": "royal_24",
@@ -1108,10 +1108,10 @@
         7640000,
         7640000,
         7640000,
-        7640000,
+        7450000,
         7450000
       ],
-      "last_checked": "2026-10-19T13:53:19.650489+00:00",
+      "last_checked": "2026-10-20T12:01:51.832886+00:00",
       "digikala_seller": "فناوران تک"
     },
     {
@@ -1163,10 +1163,10 @@
         18590000,
         18590000,
         18590000,
-        18590000,
+        14690000,
         14690000
       ],
-      "last_checked": "2026-10-19T13:53:29.011349+00:00",
+      "last_checked": "2026-10-20T12:02:01.413870+00:00",
       "digikala_seller": "مودمم"
     },
     {
@@ -1181,30 +1181,30 @@
       "grade": "فول",
       "warranty": "گارانتي هجده ماهه هايپرسل",
       "status_text": "نو",
-      "royaldigi_price": 11350000,
+      "royaldigi_price": 7539000,
       "initial_royaldigi_price": 21750000,
-      "current_royaldigi_price": 11350000,
+      "current_royaldigi_price": 7539000,
       "suggested_price": 16200000,
-      "torob_1": 7490000,
-      "torob_2": 7500000,
+      "torob_1": 7480000,
+      "torob_2": 7490000,
       "torob_3": 7500000,
       "torob_4": 9400000,
       "torob_5": 13300000,
-      "torob_price": 7490000,
+      "torob_price": 7480000,
       "initial_torob_price": 7800000,
-      "current_torob_price": 7490000,
+      "current_torob_price": 7480000,
       "digikala_price": 7600000,
       "initial_digikala_price": 6902400,
       "current_digikala_price": 7600000,
-      "market_avg_price": 7545000,
+      "market_avg_price": 7540000,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۵ ترب (مجاز)",
-      "top3_badge": "✓ رتبه ۵ ترب (مجاز)",
-      "top5_rank_label": "رتبه ۵ ترب (مجاز)",
-      "top3_rank_label": "رتبه ۵ ترب (مجاز)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۵ ترب (مجاز)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۵ ترب (مجاز)).",
+      "top5_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
       "is_alert": false,
       "alert_level": "success",
       "diff_from_target": 0,
@@ -1212,16 +1212,16 @@
       "torob_url": "https://torob.com/p/599a406e-90a5-49c4-9103-7379179e25c0/",
       "digikala_url": "https://www.digikala.com/product/dkp-21326057/",
       "notes": "میگن نزتک خودش گارانتی 18 ماهه هایپرسل داره  حتی اونی که بازه",
-      "item_val_royal": 56750000,
-      "item_val_market": 37725000,
+      "item_val_royal": 37695000,
+      "item_val_market": 37700000,
       "sparkline": [
         21750000,
         21750000,
         21750000,
-        21750000,
-        11350000
+        11350000,
+        7539000
       ],
-      "last_checked": "2026-10-19T13:53:37.974540+00:00",
+      "last_checked": "2026-10-20T12:02:12.307467+00:00",
       "digikala_seller": "آیرا پرو"
     },
     {
@@ -1244,39 +1244,39 @@
       "torob_2": 6900000,
       "torob_3": 7100000,
       "torob_4": 7100000,
-      "torob_5": 7100000,
+      "torob_5": 7150000,
       "torob_price": 6790000,
       "initial_torob_price": 5616000,
       "current_torob_price": 6790000,
-      "digikala_price": 9211000,
+      "digikala_price": 9157000,
       "initial_digikala_price": 7069000,
-      "current_digikala_price": 9211000,
-      "market_avg_price": 8000500,
+      "current_digikala_price": 9157000,
+      "market_avg_price": 7973500,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+220,000 ت از رتبه 5 ترب (+3.1%)",
-      "top3_rank_label": "+220,000 ت از رتبه 5 ترب (+3.1%)",
-      "top5_explanation": "قیمت رویال 220,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 220,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+170,000 ت از رتبه 5 ترب (+2.4%)",
+      "top3_rank_label": "+170,000 ت از رتبه 5 ترب (+2.4%)",
+      "top5_explanation": "قیمت رویال 170,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 170,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 220000,
+      "diff_from_target": 170000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-archer-c50/",
       "torob_url": "https://torob.com/p/3ecfc90f-9000-4222-8ac8-f3e4b1798404/",
       "digikala_url": "https://www.digikala.com/product/dkp-2433607/",
       "notes": "دوتا پلمپ سلفونی با گارانتی پارس ارتباطات و 4 تا بدون سلفون با گارانتی پانا شروع از 1404/08/12 36 ماهه و یکی بدون سلفون و بدون گارانتی",
       "item_val_royal": 36600000,
-      "item_val_market": 40002500,
+      "item_val_market": 39867500,
       "sparkline": [
         6920000,
-        6920000,
         6994000,
         6994000,
+        7320000,
         7320000
       ],
-      "last_checked": "2026-10-19T13:53:46.256162+00:00",
+      "last_checked": "2026-10-20T12:02:21.860319+00:00",
       "digikala_seller": "آبان آی تی"
     },
     {
@@ -1299,14 +1299,14 @@
       "torob_2": 6980000,
       "torob_3": 7500000,
       "torob_4": 8200000,
-      "torob_5": 8800000,
+      "torob_5": 8600000,
       "torob_price": 6500000,
       "initial_torob_price": 6500000,
       "current_torob_price": 6500000,
-      "digikala_price": 17000000,
+      "digikala_price": 16000000,
       "initial_digikala_price": 12590000,
-      "current_digikala_price": 17000000,
-      "market_avg_price": 11750000,
+      "current_digikala_price": 16000000,
+      "market_avg_price": 11250000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -1323,16 +1323,16 @@
       "digikala_url": "https://www.digikala.com/product/dkp-12548169",
       "notes": "همه سالم",
       "item_val_royal": 0,
-      "item_val_market": 58750000,
+      "item_val_market": 56250000,
       "sparkline": [
-        10750000,
         11750000,
         11750000,
         11750000,
-        11750000
+        11750000,
+        11250000
       ],
-      "last_checked": "2026-10-19T13:53:56.132207+00:00",
-      "digikala_seller": "فرا دیجیتال"
+      "last_checked": "2026-10-20T12:02:30.942365+00:00",
+      "digikala_seller": "فروشگاه البرزیان"
     },
     {
       "id": "royal_42",
@@ -1383,10 +1383,10 @@
         6900000,
         6900000,
         6900000,
-        6900000,
+        6895000,
         6895000
       ],
-      "last_checked": "2026-10-19T13:54:04.708269+00:00"
+      "last_checked": "2026-10-20T12:02:41.367119+00:00"
     },
     {
       "id": "royal_14",
@@ -1437,10 +1437,10 @@
         15910000,
         15910000,
         15910000,
-        15910000,
+        15150000,
         15150000
       ],
-      "last_checked": "2026-10-19T13:54:13.753821+00:00"
+      "last_checked": "2026-10-20T12:02:52.215641+00:00"
     },
     {
       "id": "royal_39",
@@ -1494,7 +1494,7 @@
         7600000,
         7600000
       ],
-      "last_checked": "2026-10-19T13:54:22.621094+00:00"
+      "last_checked": "2026-10-20T12:02:59.249936+00:00"
     },
     {
       "id": "royal_25",
@@ -1508,15 +1508,15 @@
       "grade": "فول",
       "warranty": "پلمپ",
       "status_text": "نو",
-      "royaldigi_price": 5410000,
+      "royaldigi_price": 5400000,
       "initial_royaldigi_price": 5380000,
-      "current_royaldigi_price": 5410000,
+      "current_royaldigi_price": 5400000,
       "suggested_price": 4990000,
       "torob_1": 5200000,
       "torob_2": 5220000,
       "torob_3": 5282000,
       "torob_4": 5340000,
-      "torob_5": 5410000,
+      "torob_5": 5400000,
       "torob_price": 5200000,
       "initial_torob_price": 4950000,
       "current_torob_price": 5200000,
@@ -1539,16 +1539,16 @@
       "torob_url": "https://torob.com/p/a348a5ed-09a0-4cab-a972-63338b4fc348/%D9%85%D9%88%D8%AF%D9%85-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84-%D9%85%D8%AF%D9%84-fd-i40-b2/",
       "digikala_url": "https://www.digikala.com/product/dkp-17614226/",
       "notes": "یکی کارتنش خرابه یکی سلفون نداره ولی نو هست 4 تا پلمپ سلفون دار هست",
-      "item_val_royal": 21640000,
+      "item_val_royal": 21600000,
       "item_val_market": 23698000,
       "sparkline": [
         5260000,
-        5260000,
         5380000,
         5380000,
-        5410000
+        5410000,
+        5400000
       ],
-      "last_checked": "2026-10-19T13:54:31.070124+00:00",
+      "last_checked": "2026-10-20T12:03:07.566559+00:00",
       "digikala_seller": "آذران تکنو"
     },
     {
@@ -1603,7 +1603,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T13:54:40.607876+00:00"
+      "last_checked": "2026-10-20T12:03:17.955572+00:00"
     },
     {
       "id": "royal_43",
@@ -1654,10 +1654,10 @@
         20549500,
         20549500,
         20549500,
-        20549500,
+        20145000,
         20145000
       ],
-      "last_checked": "2026-10-19T13:54:49.304357+00:00",
+      "last_checked": "2026-10-20T12:03:25.168963+00:00",
       "digikala_seller": "پرایم نت کالا"
     },
     {
@@ -1708,11 +1708,11 @@
       "sparkline": [
         15400000,
         15400000,
-        15400000,
         15395000,
+        15295000,
         15295000
       ],
-      "last_checked": "2026-10-19T13:54:59.098553+00:00",
+      "last_checked": "2026-10-20T12:03:33.948797+00:00",
       "digikala_seller": "نوین نت کمپانی"
     },
     {
@@ -1762,12 +1762,12 @@
       "item_val_market": 18000000,
       "sparkline": [
         7140000,
-        7140000,
         7020000,
         7020000,
+        7550000,
         7550000
       ],
-      "last_checked": "2026-10-19T13:55:07.818863+00:00"
+      "last_checked": "2026-10-20T12:03:42.983614+00:00"
     },
     {
       "id": "royal_60",
@@ -1821,7 +1821,7 @@
         7900000,
         7900000
       ],
-      "last_checked": "2026-10-19T13:55:18.916849+00:00"
+      "last_checked": "2026-10-20T12:03:51.538243+00:00"
     },
     {
       "id": "royal_67",
@@ -1875,7 +1875,7 @@
         2500000,
         2500000
       ],
-      "last_checked": "2026-10-19T13:55:27.960934+00:00"
+      "last_checked": "2026-10-20T12:04:00.758169+00:00"
     },
     {
       "id": "royal_49",
@@ -1889,15 +1889,15 @@
       "grade": "C",
       "warranty": "ندارد",
       "status_text": "Stock",
-      "royaldigi_price": 7491000,
+      "royaldigi_price": 8500000,
       "initial_royaldigi_price": 10100000,
-      "current_royaldigi_price": 7491000,
+      "current_royaldigi_price": 8500000,
       "suggested_price": 6970000,
       "torob_1": 6900000,
-      "torob_2": 7491000,
+      "torob_2": 7500000,
       "torob_3": 7500000,
       "torob_4": 7500000,
-      "torob_5": 7500000,
+      "torob_5": 7580000,
       "torob_price": 6900000,
       "initial_torob_price": 6500000,
       "current_torob_price": 6900000,
@@ -1905,31 +1905,31 @@
       "initial_digikala_price": 7150000,
       "current_digikala_price": 7400000,
       "market_avg_price": 7150000,
-      "top5_status": "in_top_5",
-      "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top3_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top5_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top3_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
-      "is_alert": false,
-      "alert_level": "success",
-      "diff_from_target": 0,
+      "top5_status": "higher_than_top_5",
+      "top3_status": "higher_than_top_5",
+      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
+      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
+      "top5_rank_label": "+920,000 ت از رتبه 5 ترب (+12.1%)",
+      "top3_rank_label": "+920,000 ت از رتبه 5 ترب (+12.1%)",
+      "top5_explanation": "قیمت رویال 920,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 920,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "is_alert": true,
+      "alert_level": "danger",
+      "diff_from_target": 920000,
       "royaldigi_url": "https://royaldigi.ir/product/utel-l443/",
       "torob_url": "https://torob.com/p/b89e0089-8f3b-43b9-9cb0-2ce1353a37a2/",
       "digikala_url": "https://www.digikala.com/product/dkp-5189961/",
       "notes": "همراه اول خسته !",
-      "item_val_royal": 14982000,
+      "item_val_royal": 17000000,
       "item_val_market": 14300000,
       "sparkline": [
         10100000,
-        10100000,
         7491000,
         7491000,
-        7491000
+        7491000,
+        8500000
       ],
-      "last_checked": "2026-10-19T13:55:31.368405+00:00",
+      "last_checked": "2026-10-20T12:04:03.579121+00:00",
       "digikala_seller": "سرزمین زیبایی بهار"
     },
     {
@@ -1944,15 +1944,15 @@
       "grade": "B",
       "warranty": "ندارد",
       "status_text": "Stock",
-      "royaldigi_price": 7491000,
+      "royaldigi_price": 8500000,
       "initial_royaldigi_price": 10100000,
-      "current_royaldigi_price": 7491000,
+      "current_royaldigi_price": 8500000,
       "suggested_price": 6970000,
       "torob_1": 6900000,
-      "torob_2": 7491000,
+      "torob_2": 7500000,
       "torob_3": 7500000,
       "torob_4": 7500000,
-      "torob_5": 7500000,
+      "torob_5": 7580000,
       "torob_price": 6900000,
       "initial_torob_price": 6500000,
       "current_torob_price": 6900000,
@@ -1960,31 +1960,31 @@
       "initial_digikala_price": 7150000,
       "current_digikala_price": 7400000,
       "market_avg_price": 7150000,
-      "top5_status": "in_top_5",
-      "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top3_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top5_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top3_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
-      "is_alert": false,
-      "alert_level": "success",
-      "diff_from_target": 0,
+      "top5_status": "higher_than_top_5",
+      "top3_status": "higher_than_top_5",
+      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
+      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
+      "top5_rank_label": "+920,000 ت از رتبه 5 ترب (+12.1%)",
+      "top3_rank_label": "+920,000 ت از رتبه 5 ترب (+12.1%)",
+      "top5_explanation": "قیمت رویال 920,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 920,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "is_alert": true,
+      "alert_level": "danger",
+      "diff_from_target": 920000,
       "royaldigi_url": "https://royaldigi.ir/product/utel-l443/",
       "torob_url": "https://torob.com/p/b89e0089-8f3b-43b9-9cb0-2ce1353a37a2/",
       "digikala_url": "https://www.digikala.com/product/dkp-5189961/",
       "notes": "پلمپ سه سال گارانتی افزار ارتباط بهین یدونه هم تست شده سالم | دوتا سالم ولی کارتن هو آنتن و اینا هیچی نداره",
-      "item_val_royal": 14982000,
+      "item_val_royal": 17000000,
       "item_val_market": 14300000,
       "sparkline": [
         10100000,
-        10100000,
         7491000,
         7491000,
-        7491000
+        7491000,
+        8500000
       ],
-      "last_checked": "2026-10-19T13:55:40.697193+00:00",
+      "last_checked": "2026-10-20T12:04:12.891732+00:00",
       "digikala_seller": "سرزمین زیبایی بهار"
     },
     {
@@ -1999,15 +1999,15 @@
       "grade": "B",
       "warranty": "ندارد",
       "status_text": "Stock",
-      "royaldigi_price": 20250000,
+      "royaldigi_price": 22000000,
       "initial_royaldigi_price": 17730000,
-      "current_royaldigi_price": 20250000,
+      "current_royaldigi_price": 22000000,
       "suggested_price": 12540000,
       "torob_1": 18498000,
       "torob_2": 18500000,
       "torob_3": 19000000,
       "torob_4": 19500000,
-      "torob_5": 19650000,
+      "torob_5": 21900000,
       "torob_price": 18498000,
       "initial_torob_price": 11880000,
       "current_torob_price": 18498000,
@@ -2019,27 +2019,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+600,000 ت از رتبه 5 ترب (+3.1%)",
-      "top3_rank_label": "+600,000 ت از رتبه 5 ترب (+3.1%)",
-      "top5_explanation": "قیمت رویال 600,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 600,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+100,000 ت از رتبه 5 ترب (+0.5%)",
+      "top3_rank_label": "+100,000 ت از رتبه 5 ترب (+0.5%)",
+      "top5_explanation": "قیمت رویال 100,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 100,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 600000,
+      "diff_from_target": 100000,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-tf-i60-g1/",
       "torob_url": "https://torob.com/p/2d337c2d-ba7b-456f-b5e3-963b1f3101e8/",
       "digikala_url": "https://www.digikala.com/product/dkp-7902235/",
       "notes": "باید تست شوند ، جعبه سفید | یکی اوکیه برای فروش گذاشته شده بوده اونی که پلمپ نیست",
-      "item_val_royal": 40500000,
+      "item_val_royal": 44000000,
       "item_val_market": 36288000,
       "sparkline": [
         17999875,
-        17999875,
         18370000,
         18370000,
-        20250000
+        20250000,
+        22000000
       ],
-      "last_checked": "2026-10-19T13:55:51.223195+00:00",
+      "last_checked": "2026-10-20T12:04:21.675465+00:00",
       "digikala_seller": "فروشگاه سیمونت"
     },
     {
@@ -2054,15 +2054,15 @@
       "grade": "A",
       "warranty": "درحد نو",
       "status_text": "استوک",
-      "royaldigi_price": 4960000,
+      "royaldigi_price": 4760000,
       "initial_royaldigi_price": 4640000,
-      "current_royaldigi_price": 4960000,
+      "current_royaldigi_price": 4760000,
       "suggested_price": 3970000,
       "torob_1": 1890000,
       "torob_2": 4200000,
       "torob_3": 4599936,
-      "torob_4": 4695000,
-      "torob_5": 4700000,
+      "torob_4": 4690000,
+      "torob_5": 4695000,
       "torob_price": 1890000,
       "initial_torob_price": 3900000,
       "current_torob_price": 1890000,
@@ -2074,27 +2074,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+260,000 ت از رتبه 5 ترب (+5.5%)",
-      "top3_rank_label": "+260,000 ت از رتبه 5 ترب (+5.5%)",
-      "top5_explanation": "قیمت رویال 260,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 260,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+65,000 ت از رتبه 5 ترب (+1.4%)",
+      "top3_rank_label": "+65,000 ت از رتبه 5 ترب (+1.4%)",
+      "top5_explanation": "قیمت رویال 65,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 65,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 260000,
+      "diff_from_target": 65000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dsl-124/",
       "torob_url": "https://torob.com/p/601c1bf7-868c-4efe-afd1-f4b867c16624/",
       "digikala_url": "https://www.digikala.com/product/dkp-2550885/",
       "notes": "دوتا باز شده یکی در حد نو یکی نو بقیه همه پلمپ بدون گارانتی  و ده تا اضافه شد که یکی باز شده ولی نو هست بقیه همه نو و پلمپ",
-      "item_val_royal": 74400000,
+      "item_val_royal": 71400000,
       "item_val_market": 46050000,
       "sparkline": [
         4910000,
-        4910000,
         5070000,
         5070000,
-        4960000
+        4960000,
+        4760000
       ],
-      "last_checked": "2026-10-19T13:56:00.045528+00:00"
+      "last_checked": "2026-10-20T12:04:34.288962+00:00"
     },
     {
       "id": "royal_15",
@@ -2145,10 +2145,10 @@
         12320000,
         12320000,
         12320000,
-        12320000,
+        10800000,
         10800000
       ],
-      "last_checked": "2026-10-19T13:56:10.962613+00:00"
+      "last_checked": "2026-10-20T12:04:42.970549+00:00"
     },
     {
       "id": "royal_64",
@@ -2202,7 +2202,7 @@
         12000000,
         12000000
       ],
-      "last_checked": "2026-10-19T13:56:19.287589+00:00"
+      "last_checked": "2026-10-20T12:04:51.010874+00:00"
     },
     {
       "id": "royal_61",
@@ -2220,18 +2220,18 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": null,
       "suggested_price": 3170000,
-      "torob_1": 4150000,
+      "torob_1": 3150000,
       "torob_2": null,
       "torob_3": null,
       "torob_4": null,
       "torob_5": null,
-      "torob_price": 4150000,
+      "torob_price": 3150000,
       "initial_torob_price": 3150000,
-      "current_torob_price": 4150000,
+      "current_torob_price": 3150000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 4150000,
+      "market_avg_price": 3150000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -2248,15 +2248,15 @@
       "digikala_url": null,
       "notes": "کارکرده وضعیت افتضاح",
       "item_val_royal": 0,
-      "item_val_market": 12450000,
+      "item_val_market": 9450000,
       "sparkline": [
-        4150000,
         3150000,
         4150000,
         4150000,
-        4150000
+        4150000,
+        3150000
       ],
-      "last_checked": "2026-10-19T13:56:30.140691+00:00"
+      "last_checked": "2026-10-20T12:05:03.397169+00:00"
     },
     {
       "id": "royal_59",
@@ -2275,10 +2275,10 @@
       "current_royaldigi_price": null,
       "suggested_price": 7140000,
       "torob_1": 6980000,
-      "torob_2": 8000000,
-      "torob_3": 8064550,
-      "torob_4": 8489000,
-      "torob_5": 8500000,
+      "torob_2": 7000000,
+      "torob_3": 7289000,
+      "torob_4": null,
+      "torob_5": null,
       "torob_price": 6980000,
       "initial_torob_price": 6980000,
       "current_torob_price": 6980000,
@@ -2310,7 +2310,7 @@
         6980000,
         6980000
       ],
-      "last_checked": "2026-10-19T13:56:39.122231+00:00"
+      "last_checked": "2026-10-20T12:05:18.168192+00:00"
     },
     {
       "id": "royal_56",
@@ -2364,7 +2364,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T13:56:48.746340+00:00"
+      "last_checked": "2026-10-20T12:05:31.118659+00:00"
     },
     {
       "id": "royal_77",
@@ -2378,47 +2378,47 @@
       "grade": "New",
       "warranty": "دارد - 2 ساله EASY",
       "status_text": "New",
-      "royaldigi_price": 7750000,
+      "royaldigi_price": 7615000,
       "initial_royaldigi_price": 7615000,
-      "current_royaldigi_price": 7750000,
+      "current_royaldigi_price": 7615000,
       "suggested_price": 7560000,
-      "torob_1": 7600000,
-      "torob_2": 7750000,
-      "torob_3": 7893100,
+      "torob_1": 7000000,
+      "torob_2": 7517200,
+      "torob_3": 7607000,
       "torob_4": null,
       "torob_5": null,
-      "torob_price": 7600000,
+      "torob_price": 7000000,
       "initial_torob_price": 7000000,
-      "current_torob_price": 7600000,
+      "current_torob_price": 7000000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 7600000,
-      "top5_status": "in_top_5",
-      "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top3_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
-      "top5_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top3_rank_label": "رتبه ۲ ترب (ایده‌آل)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
-      "is_alert": false,
-      "alert_level": "success",
-      "diff_from_target": 0,
+      "market_avg_price": 7000000,
+      "top5_status": "higher_than_top_5",
+      "top3_status": "higher_than_top_5",
+      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
+      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
+      "top5_rank_label": "+8,000 ت از رتبه 3 ترب (+0.1%)",
+      "top3_rank_label": "+8,000 ت از رتبه 3 ترب (+0.1%)",
+      "top5_explanation": "قیمت رویال 8,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 8,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "is_alert": true,
+      "alert_level": "danger",
+      "diff_from_target": 8000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dap-1360/",
       "torob_url": "https://torob.com/p/aa4d7dba-8aa1-4c94-9968-0589d8854cf2/",
       "digikala_url": "https://www.digikala.com/product/dkp-5164/",
       "notes": "هردو پلمپ دارای گارانتی 2 ساله EASY",
-      "item_val_royal": 15500000,
-      "item_val_market": 15200000,
+      "item_val_royal": 15230000,
+      "item_val_market": 14000000,
       "sparkline": [
         7615000,
         7615000,
         7615000,
-        7615000,
-        7750000
+        7750000,
+        7615000
       ],
-      "last_checked": "2026-10-19T13:56:58.731520+00:00"
+      "last_checked": "2026-10-20T12:05:45.496306+00:00"
     },
     {
       "id": "royal_32",
@@ -2436,35 +2436,35 @@
       "initial_royaldigi_price": 4800000,
       "current_royaldigi_price": 4800000,
       "suggested_price": 4790000,
-      "torob_1": 2839550,
-      "torob_2": 4140000,
-      "torob_3": 4300000,
-      "torob_4": 4350000,
-      "torob_5": 4500000,
-      "torob_price": 2839550,
+      "torob_1": 4400000,
+      "torob_2": 4600000,
+      "torob_3": 4800000,
+      "torob_4": null,
+      "torob_5": null,
+      "torob_price": 4400000,
       "initial_torob_price": 4400000,
-      "current_torob_price": 2839550,
+      "current_torob_price": 4400000,
       "digikala_price": 4630000,
       "initial_digikala_price": 4630000,
       "current_digikala_price": 4630000,
-      "market_avg_price": 3734775,
-      "top5_status": "higher_than_top_5",
-      "top3_status": "higher_than_top_5",
-      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+300,000 ت از رتبه 5 ترب (+6.7%)",
-      "top3_rank_label": "+300,000 ت از رتبه 5 ترب (+6.7%)",
-      "top5_explanation": "قیمت رویال 300,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 300,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "is_alert": true,
-      "alert_level": "danger",
-      "diff_from_target": 300000,
+      "market_avg_price": 4515000,
+      "top5_status": "in_top_5",
+      "top3_status": "in_top_5",
+      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "is_alert": false,
+      "alert_level": "success",
+      "diff_from_target": 0,
       "royaldigi_url": null,
       "torob_url": "https://torob.com/search/?query=TL-WR941HP&_search_landing=header",
       "digikala_url": "https://www.digikala.com/product/dkp-168793/",
       "notes": "یدونه گارانتی داره یکی نداره | اصلاح شود | نو هست گارانتی درسا  باید  این تغییر کنه hex lite mikrotik عکس گرفته شده",
       "item_val_royal": 9600000,
-      "item_val_market": 7469550,
+      "item_val_market": 9030000,
       "sparkline": [
         4800000,
         4800000,
@@ -2472,7 +2472,7 @@
         4800000,
         4800000
       ],
-      "last_checked": "2026-10-19T13:57:07.521534+00:00"
+      "last_checked": "2026-10-20T12:05:57.247434+00:00"
     },
     {
       "id": "royal_21",
@@ -2498,10 +2498,10 @@
       "torob_price": 5616000,
       "initial_torob_price": 5616000,
       "current_torob_price": 5616000,
-      "digikala_price": 9211000,
+      "digikala_price": 9157000,
       "initial_digikala_price": 7069000,
-      "current_digikala_price": 9211000,
-      "market_avg_price": 7413500,
+      "current_digikala_price": 9157000,
+      "market_avg_price": 7386500,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
@@ -2518,15 +2518,15 @@
       "digikala_url": "https://www.digikala.com/product/dkp-2433607/",
       "notes": "دوتا پلمپ سلفونی با گارانتی پارس ارتباطات و 4 تا بدون سلفون با گارانتی پانا شروع از 1404/08/12 36 ماهه و یکی بدون سلفون و بدون گارانتی",
       "item_val_royal": 14640000,
-      "item_val_market": 14827000,
+      "item_val_market": 14773000,
       "sparkline": [
         6920000,
-        6920000,
         6994000,
         6994000,
+        7320000,
         7320000
       ],
-      "last_checked": "2026-10-19T13:57:12.090512+00:00",
+      "last_checked": "2026-10-20T12:06:03.439241+00:00",
       "digikala_seller": "آبان آی تی"
     },
     {
@@ -2541,9 +2541,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 12600000,
+      "royaldigi_price": 12699000,
       "initial_royaldigi_price": 12700000,
-      "current_royaldigi_price": 12600000,
+      "current_royaldigi_price": 12699000,
       "suggested_price": 8700000,
       "torob_1": 8700000,
       "torob_2": 8900000,
@@ -2561,27 +2561,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+3,500,000 ت از رتبه 3 ترب (+38.5%)",
-      "top3_rank_label": "+3,500,000 ت از رتبه 3 ترب (+38.5%)",
-      "top5_explanation": "قیمت رویال 3,500,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 3,500,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+3,599,000 ت از رتبه 3 ترب (+39.5%)",
+      "top3_rank_label": "+3,599,000 ت از رتبه 3 ترب (+39.5%)",
+      "top5_explanation": "قیمت رویال 3,599,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 3,599,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 3500000,
+      "diff_from_target": 3599000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-archer-c80/",
       "torob_url": "https://torob.com/p/d5a70b1b-de84-4c0e-8a97-7704d1e30812/روتر-بی-سیم-دو-بانده-تی-پی-لینک-archer-c80-ac1900/",
       "digikala_url": "https://www.digikala.com/product/dkp-11292148/",
       "notes": "هردو پلمپ یکی گارانتی 3 ساله metem.ir و یکی بدون گارانتی",
-      "item_val_royal": 25200000,
+      "item_val_royal": 25398000,
       "item_val_market": 24500000,
       "sparkline": [
         12480000,
-        12480000,
         12494000,
         12494000,
-        12600000
+        12600000,
+        12699000
       ],
-      "last_checked": "2026-10-19T13:57:25.605915+00:00",
+      "last_checked": "2026-10-20T12:06:16.394014+00:00",
       "digikala_seller": "هایپرآی تی"
     },
     {
@@ -2631,12 +2631,12 @@
       "item_val_market": 3855000,
       "sparkline": [
         4395000,
-        4395000,
         3499500,
         3499500,
+        3500000,
         3500000
       ],
-      "last_checked": "2026-10-19T13:57:38.615151+00:00",
+      "last_checked": "2026-10-20T12:06:28.264709+00:00",
       "digikala_seller": "بازارسو"
     },
     {
@@ -2686,12 +2686,12 @@
       "item_val_market": 13380000,
       "sparkline": [
         9420000,
-        9420000,
         9405000,
         9405000,
+        9402000,
         9402000
       ],
-      "last_checked": "2026-10-19T13:57:50.099766+00:00"
+      "last_checked": "2026-10-20T12:06:41.253661+00:00"
     },
     {
       "id": "royal_40",
@@ -2705,9 +2705,9 @@
       "grade": "New",
       "warranty": "",
       "status_text": "New",
-      "royaldigi_price": 20250000,
+      "royaldigi_price": 22000000,
       "initial_royaldigi_price": 17730000,
-      "current_royaldigi_price": 20250000,
+      "current_royaldigi_price": 22000000,
       "suggested_price": 12400000,
       "torob_1": 11890000,
       "torob_2": 11900000,
@@ -2725,27 +2725,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+7,350,000 ت از رتبه 3 ترب (+57.0%)",
-      "top3_rank_label": "+7,350,000 ت از رتبه 3 ترب (+57.0%)",
-      "top5_explanation": "قیمت رویال 7,350,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 7,350,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+9,100,000 ت از رتبه 3 ترب (+70.5%)",
+      "top3_rank_label": "+9,100,000 ت از رتبه 3 ترب (+70.5%)",
+      "top5_explanation": "قیمت رویال 9,100,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 9,100,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 7350000,
+      "diff_from_target": 9100000,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-tf-i60-g1-stock/",
       "torob_url": "https://torob.com/p/2d337c2d-ba7b-456f-b5e3-963b1f3101e8/",
       "digikala_url": "https://www.digikala.com/product/dkp-10850492/",
       "notes": "باید تست شوند ، جعبه سفید | یکی اوکیه برای فروش گذاشته شده بوده اونی که پلمپ نیست",
-      "item_val_royal": 40500000,
+      "item_val_royal": 44000000,
       "item_val_market": 29640000,
       "sparkline": [
         17999875,
-        17999875,
         18370000,
         18370000,
-        20250000
+        20250000,
+        22000000
       ],
-      "last_checked": "2026-10-19T13:58:03.173803+00:00",
+      "last_checked": "2026-10-20T12:06:53.350686+00:00",
       "digikala_seller": "فروشگاه سیمونت"
     },
     {
@@ -2760,9 +2760,9 @@
       "grade": "New",
       "warranty": "دارد - ایرانسل",
       "status_text": "New",
-      "royaldigi_price": 18370000,
+      "royaldigi_price": 16710000,
       "initial_royaldigi_price": 12350000,
-      "current_royaldigi_price": 18370000,
+      "current_royaldigi_price": 16710000,
       "suggested_price": 11450000,
       "torob_1": 11000000,
       "torob_2": 11400000,
@@ -2780,27 +2780,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+6,870,000 ت از رتبه 3 ترب (+59.7%)",
-      "top3_rank_label": "+6,870,000 ت از رتبه 3 ترب (+59.7%)",
-      "top5_explanation": "قیمت رویال 6,870,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 6,870,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+5,210,000 ت از رتبه 3 ترب (+45.3%)",
+      "top3_rank_label": "+5,210,000 ت از رتبه 3 ترب (+45.3%)",
+      "top5_explanation": "قیمت رویال 5,210,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 5,210,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 6870000,
+      "diff_from_target": 5210000,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-tf-i60-e1/",
       "torob_url": "https://torob.com/p/25b12b35-275b-47fa-b248-69204f0de52f/",
       "digikala_url": "https://www.digikala.com/product/dkp-14966967/",
       "notes": "همه پلمپ و گارانتی ایرانسل",
-      "item_val_royal": 36740000,
+      "item_val_royal": 33420000,
       "item_val_market": 22000000,
       "sparkline": [
         12350000,
-        12350000,
         16710000,
         16710000,
-        18370000
+        18370000,
+        16710000
       ],
-      "last_checked": "2026-10-19T13:58:15.031563+00:00"
+      "last_checked": "2026-10-20T12:07:06.054606+00:00"
     },
     {
       "id": "royal_62",
@@ -2814,9 +2814,9 @@
       "grade": "New",
       "warranty": "",
       "status_text": "New",
-      "royaldigi_price": 8120000,
+      "royaldigi_price": 10000000,
       "initial_royaldigi_price": 11250000,
-      "current_royaldigi_price": 8120000,
+      "current_royaldigi_price": 10000000,
       "suggested_price": 7240000,
       "torob_1": 6750000,
       "torob_2": 7000000,
@@ -2834,27 +2834,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+631,000 ت از رتبه 3 ترب (+8.4%)",
-      "top3_rank_label": "+631,000 ت از رتبه 3 ترب (+8.4%)",
-      "top5_explanation": "قیمت رویال 631,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 631,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+2,511,000 ت از رتبه 3 ترب (+33.5%)",
+      "top3_rank_label": "+2,511,000 ت از رتبه 3 ترب (+33.5%)",
+      "top5_explanation": "قیمت رویال 2,511,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 2,511,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 631000,
+      "diff_from_target": 2511000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dwr-m921/",
       "torob_url": "https://torob.com/p/ed50f1e4-14bb-4a4d-9f1d-2fbe950c1326/",
       "digikala_url": "https://www.digikala.com/product/dkp-3637226/",
       "notes": "استوک دبی هست ولی خودشون پلمپ کردن | سالم کابل و اینا داره ولی یکم کند هست",
-      "item_val_royal": 16240000,
+      "item_val_royal": 20000000,
       "item_val_market": 29750000,
       "sparkline": [
         10070000,
-        10070000,
         8510000,
         8510000,
-        8120000
+        8120000,
+        10000000
       ],
-      "last_checked": "2026-10-19T13:58:27.964562+00:00",
+      "last_checked": "2026-10-20T12:07:18.441302+00:00",
       "digikala_seller": "گستران سازان اینده"
     },
     {
@@ -2909,7 +2909,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T13:58:39.331753+00:00"
+      "last_checked": "2026-10-20T12:07:30.589042+00:00"
     },
     {
       "id": "royal_46",
@@ -2958,12 +2958,12 @@
       "item_val_market": 25935000,
       "sparkline": [
         11000000,
-        11000000,
         15040000,
         15040000,
+        14500000,
         14500000
       ],
-      "last_checked": "2026-10-19T13:58:50.578398+00:00"
+      "last_checked": "2026-10-20T12:07:45.458094+00:00"
     },
     {
       "id": "royal_87",
@@ -2977,9 +2977,9 @@
       "grade": "New",
       "warranty": "",
       "status_text": "New",
-      "royaldigi_price": 10330000,
+      "royaldigi_price": 9890000,
       "initial_royaldigi_price": 10390000,
-      "current_royaldigi_price": 10330000,
+      "current_royaldigi_price": 9890000,
       "suggested_price": 5920000,
       "torob_1": 5800000,
       "torob_2": 5900000,
@@ -2997,27 +2997,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+4,380,000 ت از رتبه 3 ترب (+73.6%)",
-      "top3_rank_label": "+4,380,000 ت از رتبه 3 ترب (+73.6%)",
-      "top5_explanation": "قیمت رویال 4,380,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 4,380,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+3,940,000 ت از رتبه 3 ترب (+66.2%)",
+      "top3_rank_label": "+3,940,000 ت از رتبه 3 ترب (+66.2%)",
+      "top5_explanation": "قیمت رویال 3,940,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 3,940,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 4380000,
+      "diff_from_target": 3940000,
       "royaldigi_url": "https://royaldigi.ir/product/tenda-4g180/",
       "torob_url": "https://torob.com/p/37bd2b7e-1fbf-4abf-9ed9-a45cf46aa70c/مودم-4g-قابل-حمل-تندا-مدل-4g180/",
       "digikala_url": "https://www.digikala.com/product/dkp-1826404/",
       "notes": "دوتا آکبند سفارش همراه اول مال 9 سال پیش هست",
-      "item_val_royal": 20660000,
+      "item_val_royal": 19780000,
       "item_val_market": 11600000,
       "sparkline": [
         10590000,
-        10590000,
         10690000,
         10690000,
-        10330000
+        10330000,
+        9890000
       ],
-      "last_checked": "2026-10-19T13:59:00.608716+00:00"
+      "last_checked": "2026-10-20T12:07:55.067127+00:00"
     },
     {
       "id": "royal_80",
@@ -3071,7 +3071,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T13:59:11.924740+00:00"
+      "last_checked": "2026-10-20T12:08:08.786966+00:00"
     },
     {
       "id": "royal_81",
@@ -3125,7 +3125,7 @@
         4500000,
         4500000
       ],
-      "last_checked": "2026-10-19T13:59:16.017590+00:00",
+      "last_checked": "2026-10-20T12:08:12.567352+00:00",
       "digikala_seller": "استور هاب"
     },
     {
@@ -3180,7 +3180,7 @@
         7800000,
         7800000
       ],
-      "last_checked": "2026-10-19T13:59:23.110859+00:00",
+      "last_checked": "2026-10-20T12:08:20.600839+00:00",
       "digikala_seller": "تجهیزات شبکه معینی"
     },
     {
@@ -3229,13 +3229,13 @@
       "item_val_royal": 0,
       "item_val_market": 13760000,
       "sparkline": [
-        6844995,
         6980000,
         6905000,
         6905000,
+        6880000,
         6880000
       ],
-      "last_checked": "2026-10-19T13:59:34.835879+00:00",
+      "last_checked": "2026-10-20T12:08:32.490726+00:00",
       "digikala_seller": "سامان تجار"
     },
     {
@@ -3290,7 +3290,7 @@
         8500000,
         8500000
       ],
-      "last_checked": "2026-10-19T13:59:46.493384+00:00"
+      "last_checked": "2026-10-20T12:08:44.762618+00:00"
     },
     {
       "id": "royal_55",
@@ -3339,12 +3339,12 @@
       "item_val_market": 10000000,
       "sparkline": [
         4999500,
-        4999500,
+        5200000,
         5200000,
         5200000,
         5200000
       ],
-      "last_checked": "2026-10-19T13:59:57.585622+00:00",
+      "last_checked": "2026-10-20T12:08:56.063092+00:00",
       "digikala_seller": "رایان دیجی ایرانیان"
     },
     {
@@ -3371,10 +3371,10 @@
       "torob_price": 21500000,
       "initial_torob_price": 21500000,
       "current_torob_price": 21500000,
-      "digikala_price": 19000000,
+      "digikala_price": 19300000,
       "initial_digikala_price": 8075000,
-      "current_digikala_price": 19000000,
-      "market_avg_price": 20250000,
+      "current_digikala_price": 19300000,
+      "market_avg_price": 20400000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -3391,15 +3391,15 @@
       "digikala_url": "https://www.digikala.com/product/dkp-4632832",
       "notes": "دوتاش سالمه خسته هستن یکیش کابل و شارژ ر و اینا نداره",
       "item_val_royal": 0,
-      "item_val_market": 40500000,
+      "item_val_market": 40800000,
       "sparkline": [
         20750000,
         20750000,
         20750000,
-        20750000,
-        20250000
+        20250000,
+        20400000
       ],
-      "last_checked": "2026-10-19T14:00:10.166419+00:00",
+      "last_checked": "2026-10-20T12:09:07.709383+00:00",
       "digikala_seller": "تجهیزات شبکه معینی"
     },
     {
@@ -3414,9 +3414,9 @@
       "grade": "C",
       "warranty": "پارگي کارتن",
       "status_text": "استوک",
-      "royaldigi_price": 5410000,
+      "royaldigi_price": 5400000,
       "initial_royaldigi_price": 5380000,
-      "current_royaldigi_price": 5410000,
+      "current_royaldigi_price": 5400000,
       "suggested_price": 4870000,
       "torob_1": 4600000,
       "torob_2": 4800000,
@@ -3434,27 +3434,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+460,000 ت از رتبه 3 ترب (+9.3%)",
-      "top3_rank_label": "+460,000 ت از رتبه 3 ترب (+9.3%)",
-      "top5_explanation": "قیمت رویال 460,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 460,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+450,000 ت از رتبه 3 ترب (+9.1%)",
+      "top3_rank_label": "+450,000 ت از رتبه 3 ترب (+9.1%)",
+      "top5_explanation": "قیمت رویال 450,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 450,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 460000,
+      "diff_from_target": 450000,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-fd-i40-b2/",
       "torob_url": "https://torob.com/p/a348a5ed-09a0-4cab-a972-63338b4fc348/%D9%85%D9%88%D8%AF%D9%85-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84-%D9%85%D8%AF%D9%84-fd-i40-b2/",
       "digikala_url": "https://www.digikala.com/product/dkp-17614226/",
       "notes": "یکی کارتنش خرابه یکی سلفون نداره ولی نو هست 4 تا پلمپ سلفون دار هست",
-      "item_val_royal": 21640000,
+      "item_val_royal": 21600000,
       "item_val_market": 22498000,
       "sparkline": [
         5260000,
-        5260000,
         5380000,
         5380000,
-        5410000
+        5410000,
+        5400000
       ],
-      "last_checked": "2026-10-19T14:00:26.227260+00:00",
+      "last_checked": "2026-10-20T12:09:22.505819+00:00",
       "digikala_seller": "آذران تکنو"
     },
     {
@@ -3509,7 +3509,7 @@
         2300000,
         2300000
       ],
-      "last_checked": "2026-10-19T14:00:38.925886+00:00"
+      "last_checked": "2026-10-20T12:09:35.696283+00:00"
     },
     {
       "id": "royal_37",
@@ -3563,7 +3563,7 @@
         15259500,
         15259500
       ],
-      "last_checked": "2026-10-19T14:00:50.468027+00:00"
+      "last_checked": "2026-10-20T12:09:48.529962+00:00"
     },
     {
       "id": "royal_74",
@@ -3617,7 +3617,7 @@
         3980000,
         3980000
       ],
-      "last_checked": "2026-10-19T14:00:58.721878+00:00"
+      "last_checked": "2026-10-20T12:09:56.493645+00:00"
     },
     {
       "id": "royal_79",
@@ -3668,10 +3668,10 @@
         3898435,
         3898435,
         3898435,
-        3898435,
+        3885000,
         3885000
       ],
-      "last_checked": "2026-10-19T14:01:11.492249+00:00",
+      "last_checked": "2026-10-20T12:10:08.587756+00:00",
       "digikala_seller": "بانی نو"
     },
     {
@@ -3726,7 +3726,7 @@
         10000000,
         10000000
       ],
-      "last_checked": "2026-10-19T14:01:27.660670+00:00"
+      "last_checked": "2026-10-20T12:10:20.997520+00:00"
     },
     {
       "id": "royal_58",
@@ -3777,10 +3777,10 @@
         9550000,
         9550000,
         9550000,
-        9550000,
+        11550000,
         11550000
       ],
-      "last_checked": "2026-10-19T14:01:39.507605+00:00",
+      "last_checked": "2026-10-20T12:10:33.935141+00:00",
       "digikala_seller": "پخش آی تی"
     },
     {
@@ -3835,7 +3835,7 @@
         8050000,
         8050000
       ],
-      "last_checked": "2026-10-19T14:01:50.887655+00:00",
+      "last_checked": "2026-10-20T12:10:46.520593+00:00",
       "digikala_seller": "همراه مودم"
     },
     {
@@ -3890,7 +3890,7 @@
         11000000,
         11000000
       ],
-      "last_checked": "2026-10-19T14:02:03.525255+00:00"
+      "last_checked": "2026-10-20T12:11:00.037956+00:00"
     },
     {
       "id": "royal_66",
@@ -3904,9 +3904,9 @@
       "grade": "",
       "warranty": "ندارد",
       "status_text": "Stock",
-      "royaldigi_price": 4475000,
+      "royaldigi_price": 4489000,
       "initial_royaldigi_price": 4475000,
-      "current_royaldigi_price": 4475000,
+      "current_royaldigi_price": 4489000,
       "suggested_price": 3790000,
       "torob_1": 3290000,
       "torob_2": 3700000,
@@ -3924,27 +3924,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+585,000 ت از رتبه 3 ترب (+15.0%)",
-      "top3_rank_label": "+585,000 ت از رتبه 3 ترب (+15.0%)",
-      "top5_explanation": "قیمت رویال 585,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 585,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+599,000 ت از رتبه 3 ترب (+15.4%)",
+      "top3_rank_label": "+599,000 ت از رتبه 3 ترب (+15.4%)",
+      "top5_explanation": "قیمت رویال 599,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 599,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 585000,
+      "diff_from_target": 599000,
       "royaldigi_url": "https://royaldigi.ir/product/vodafone-r228t/",
       "torob_url": "https://torob.com/p/e7d8dadb-e333-4654-ae7e-9276c19f3cf6/",
       "digikala_url": "https://www.digikala.com/product/dkp-22124134/",
       "notes": "گارانتی هم ندارن",
-      "item_val_royal": 4475000,
+      "item_val_royal": 4489000,
       "item_val_market": 3996835,
       "sparkline": [
         4489000,
-        4489000,
         4460000,
         4460000,
-        4475000
+        4475000,
+        4489000
       ],
-      "last_checked": "2026-10-19T14:02:18.987400+00:00",
+      "last_checked": "2026-10-20T12:11:12.606631+00:00",
       "digikala_seller": "های نو"
     },
     {
@@ -3959,9 +3959,9 @@
       "grade": "New",
       "warranty": "دارد - 36 ماهه پارس ارتباطا",
       "status_text": "New",
-      "royaldigi_price": 11100000,
+      "royaldigi_price": 12005000,
       "initial_royaldigi_price": 12005000,
-      "current_royaldigi_price": 11100000,
+      "current_royaldigi_price": 12005000,
       "suggested_price": 9200000,
       "torob_1": 8999000,
       "torob_2": 9000000,
@@ -3979,27 +3979,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+1,900,000 ت از رتبه 3 ترب (+20.7%)",
-      "top3_rank_label": "+1,900,000 ت از رتبه 3 ترب (+20.7%)",
-      "top5_explanation": "قیمت رویال 1,900,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 1,900,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+2,805,000 ت از رتبه 3 ترب (+30.5%)",
+      "top3_rank_label": "+2,805,000 ت از رتبه 3 ترب (+30.5%)",
+      "top5_explanation": "قیمت رویال 2,805,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 2,805,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 1900000,
+      "diff_from_target": 2805000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-tl-wa901n/",
       "torob_url": "https://torob.com/p/125dcaee-86af-45ac-99ed-1665301726a7/",
       "digikala_url": "https://www.digikala.com/product/dkp-6896907/",
       "notes": "پلمپ با گارانتی 36 ماهه پارس ارتباطا",
-      "item_val_royal": 11100000,
+      "item_val_royal": 12005000,
       "item_val_market": 13499500,
       "sparkline": [
         12005000,
         12005000,
         12005000,
-        12005000,
-        11100000
+        11100000,
+        12005000
       ],
-      "last_checked": "2026-10-19T14:02:31.473052+00:00",
+      "last_checked": "2026-10-20T12:11:26.253073+00:00",
       "digikala_seller": "یورو فابریک"
     },
     {
@@ -4014,9 +4014,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 23470000,
+      "royaldigi_price": 23000000,
       "initial_royaldigi_price": 21740000,
-      "current_royaldigi_price": 23470000,
+      "current_royaldigi_price": 23000000,
       "suggested_price": 17500000,
       "torob_1": 2350000,
       "torob_2": 2400000,
@@ -4034,27 +4034,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+21,025,000 ت از رتبه 3 ترب (+859.9%)",
-      "top3_rank_label": "+21,025,000 ت از رتبه 3 ترب (+859.9%)",
-      "top5_explanation": "قیمت رویال 21,025,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 21,025,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+20,555,000 ت از رتبه 3 ترب (+840.7%)",
+      "top3_rank_label": "+20,555,000 ت از رتبه 3 ترب (+840.7%)",
+      "top5_explanation": "قیمت رویال 20,555,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 20,555,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 21025000,
+      "diff_from_target": 20555000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-eap225-v3/",
       "torob_url": "https://torob.com/p/eca24e15-0a65-4da6-8652-791835d63d43/%D8%B3%D9%88%DB%8C%DB%8C%DA%86-5-%D9%BE%D9%88%D8%B1%D8%AA-%D8%AF%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-dgs-1005a/",
       "digikala_url": null,
       "notes": "بدون گارانتی (از ردیف 245 DCL جدا شده)",
-      "item_val_royal": 23470000,
+      "item_val_royal": 23000000,
       "item_val_market": 13125000,
       "sparkline": [
         21720000,
-        21720000,
         22240000,
         22240000,
-        23470000
+        23470000,
+        23000000
       ],
-      "last_checked": "2026-10-19T14:02:44.271122+00:00"
+      "last_checked": "2026-10-20T12:11:38.510625+00:00"
     },
     {
       "id": "royal_90",
@@ -4068,9 +4068,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 27370000,
+      "royaldigi_price": 27970000,
       "initial_royaldigi_price": 27370000,
-      "current_royaldigi_price": 27370000,
+      "current_royaldigi_price": 27970000,
       "suggested_price": 24000000,
       "torob_1": 10000000,
       "torob_2": 10989000,
@@ -4088,27 +4088,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+11,770,000 ت از رتبه 3 ترب (+75.4%)",
-      "top3_rank_label": "+11,770,000 ت از رتبه 3 ترب (+75.4%)",
-      "top5_explanation": "قیمت رویال 11,770,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 11,770,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+12,370,000 ت از رتبه 3 ترب (+79.3%)",
+      "top3_rank_label": "+12,370,000 ت از رتبه 3 ترب (+79.3%)",
+      "top5_explanation": "قیمت رویال 12,370,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 12,370,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 11770000,
+      "diff_from_target": 12370000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-omada-eap245-v3/",
       "torob_url": "https://torob.com/p/11d3e064-7819-4dbe-b188-73c546f84ea7/%D9%85%D9%88%D8%AF%D9%85-%D9%81%D8%B6%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84-%D9%85%D8%AF%D9%84-zw101/",
       "digikala_url": null,
       "notes": "بدون گارانتی (از ردیف 245 DCL جدا شده)",
-      "item_val_royal": 27370000,
+      "item_val_royal": 27970000,
       "item_val_market": 23200000,
       "sparkline": [
         27970000,
         27970000,
         27970000,
-        27970000,
-        27370000
+        27370000,
+        27970000
       ],
-      "last_checked": "2026-10-19T14:02:54.751180+00:00"
+      "last_checked": "2026-10-20T12:11:49.986675+00:00"
     },
     {
       "id": "royal_124",
@@ -4122,9 +4122,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 10540000,
+      "royaldigi_price": 11050000,
       "initial_royaldigi_price": 10740000,
-      "current_royaldigi_price": 10540000,
+      "current_royaldigi_price": 11050000,
       "suggested_price": 9300000,
       "torob_1": 8999000,
       "torob_2": 9000000,
@@ -4142,27 +4142,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+1,340,000 ت از رتبه 3 ترب (+14.6%)",
-      "top3_rank_label": "+1,340,000 ت از رتبه 3 ترب (+14.6%)",
-      "top5_explanation": "قیمت رویال 1,340,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 1,340,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+1,850,000 ت از رتبه 3 ترب (+20.1%)",
+      "top3_rank_label": "+1,850,000 ت از رتبه 3 ترب (+20.1%)",
+      "top5_explanation": "قیمت رویال 1,850,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 1,850,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 1340000,
+      "diff_from_target": 1850000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-eap110-outdoor/",
       "torob_url": "https://torob.com/p/125dcaee-86af-45ac-99ed-1665301726a7/",
       "digikala_url": "https://www.digikala.com/product/dkp-6896907/",
       "notes": "یدونه پلمپ بدون گارانتی",
-      "item_val_royal": 10540000,
+      "item_val_royal": 11050000,
       "item_val_market": 13499500,
       "sparkline": [
         10750000,
-        10750000,
         11750000,
         11750000,
-        10540000
+        10540000,
+        11050000
       ],
-      "last_checked": "2026-10-19T14:03:06.600666+00:00",
+      "last_checked": "2026-10-20T12:12:02.816750+00:00",
       "digikala_seller": "یورو فابریک"
     },
     {
@@ -4177,9 +4177,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 12004000,
+      "royaldigi_price": 12009000,
       "initial_royaldigi_price": 12010000,
-      "current_royaldigi_price": 12004000,
+      "current_royaldigi_price": 12009000,
       "suggested_price": 9200000,
       "torob_1": 8999000,
       "torob_2": 9000000,
@@ -4197,27 +4197,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+2,804,000 ت از رتبه 3 ترب (+30.5%)",
-      "top3_rank_label": "+2,804,000 ت از رتبه 3 ترب (+30.5%)",
-      "top5_explanation": "قیمت رویال 2,804,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 2,804,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+2,809,000 ت از رتبه 3 ترب (+30.5%)",
+      "top3_rank_label": "+2,809,000 ت از رتبه 3 ترب (+30.5%)",
+      "top5_explanation": "قیمت رویال 2,809,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 2,809,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 2804000,
+      "diff_from_target": 2809000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-tl-wa1201/",
       "torob_url": "https://torob.com/p/125dcaee-86af-45ac-99ed-1665301726a7/",
       "digikala_url": "https://www.digikala.com/product/dkp-6896907/",
       "notes": "بدون گارانتی و سلفونش آسیب دیده و پارگی داره",
-      "item_val_royal": 12004000,
+      "item_val_royal": 12009000,
       "item_val_market": 13499500,
       "sparkline": [
         12005000,
-        12005000,
         12008000,
         12008000,
-        12004000
+        12004000,
+        12009000
       ],
-      "last_checked": "2026-10-19T14:03:18.313718+00:00",
+      "last_checked": "2026-10-20T12:12:16.286307+00:00",
       "digikala_seller": "یورو فابریک"
     },
     {
@@ -4232,9 +4232,9 @@
       "grade": "New",
       "warranty": "دارد - پانا برای اونی که پلمپه 36 ماهه شروع 1403/04/16",
       "status_text": "New",
-      "royaldigi_price": 4750000,
+      "royaldigi_price": 5200000,
       "initial_royaldigi_price": 4540000,
-      "current_royaldigi_price": 4750000,
+      "current_royaldigi_price": 5200000,
       "suggested_price": 3820000,
       "torob_1": 3750000,
       "torob_2": 3800000,
@@ -4244,36 +4244,36 @@
       "torob_price": 3750000,
       "initial_torob_price": 3750000,
       "current_torob_price": 3750000,
-      "digikala_price": 5700000,
+      "digikala_price": 5600000,
       "initial_digikala_price": 4630000,
-      "current_digikala_price": 5700000,
-      "market_avg_price": 4725000,
+      "current_digikala_price": 5600000,
+      "market_avg_price": 4675000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+895,000 ت از رتبه 3 ترب (+23.2%)",
-      "top3_rank_label": "+895,000 ت از رتبه 3 ترب (+23.2%)",
-      "top5_explanation": "قیمت رویال 895,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 895,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+1,345,000 ت از رتبه 3 ترب (+34.9%)",
+      "top3_rank_label": "+1,345,000 ت از رتبه 3 ترب (+34.9%)",
+      "top5_explanation": "قیمت رویال 1,345,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 1,345,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 895000,
+      "diff_from_target": 1345000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-tl-wr840n/",
       "torob_url": "https://torob.com/p/59f3d4e6-2cd7-430d-a270-63638ebbb54f/%D8%AA%DB%8C-%D9%BE%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-tl-wr840n/",
       "digikala_url": "https://www.digikala.com/product/dkp-1099699/%D8%B1%D9%88%D8%AA%D8%B1-%D8%A8%DB%8C%D8%B3%DB%8C%D9%85-300mbps-%D8%AA%DB%8C-%D9%BE%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-tl-wr840n/",
       "notes": "گارانتی پانا برای اونی که پلمپه 36 ماهه شروع 1403/04/16",
-      "item_val_royal": 4750000,
-      "item_val_market": 4725000,
+      "item_val_royal": 5200000,
+      "item_val_market": 4675000,
       "sparkline": [
         4540000,
         4540000,
         4540000,
-        4540000,
-        4750000
+        4750000,
+        5200000
       ],
-      "last_checked": "2026-10-19T14:03:29.604615+00:00",
-      "digikala_seller": "رهنما"
+      "last_checked": "2026-10-20T12:12:28.772655+00:00",
+      "digikala_seller": "ایران لینک"
     },
     {
       "id": "royal_102",
@@ -4287,9 +4287,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 15860000,
+      "royaldigi_price": 15780000,
       "initial_royaldigi_price": 15498000,
-      "current_royaldigi_price": 15860000,
+      "current_royaldigi_price": 15780000,
       "suggested_price": 14999000,
       "torob_1": 14700000,
       "torob_2": 14989000,
@@ -4307,27 +4307,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+870,000 ت از رتبه 3 ترب (+5.8%)",
-      "top3_rank_label": "+870,000 ت از رتبه 3 ترب (+5.8%)",
-      "top5_explanation": "قیمت رویال 870,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 870,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+790,000 ت از رتبه 3 ترب (+5.3%)",
+      "top3_rank_label": "+790,000 ت از رتبه 3 ترب (+5.3%)",
+      "top5_explanation": "قیمت رویال 790,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 790,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 870000,
+      "diff_from_target": 790000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-archer-ax23/",
       "torob_url": "https://torob.com/p/4c64139e-00c7-4ce3-bc05-3f214c7162b9/",
       "digikala_url": "https://www.digikala.com/product/dkp-10503643/",
       "notes": "بدون گارانتی  پلمپ",
-      "item_val_royal": 15860000,
+      "item_val_royal": 15780000,
       "item_val_market": 18450000,
       "sparkline": [
         15500000,
-        15500000,
         15550000,
         15550000,
-        15860000
+        15860000,
+        15780000
       ],
-      "last_checked": "2026-10-19T14:03:41.355057+00:00",
+      "last_checked": "2026-10-20T12:12:41.324053+00:00",
       "digikala_seller": "گستران سازان اینده"
     },
     {
@@ -4354,10 +4354,10 @@
       "torob_price": 6190000,
       "initial_torob_price": 6190000,
       "current_torob_price": 6190000,
-      "digikala_price": 9070000,
+      "digikala_price": 8460000,
       "initial_digikala_price": 7660000,
-      "current_digikala_price": 9070000,
-      "market_avg_price": 7630000,
+      "current_digikala_price": 8460000,
+      "market_avg_price": 7325000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
@@ -4374,15 +4374,15 @@
       "digikala_url": "https://www.digikala.com/product/dkp-5965292/",
       "notes": "یکدونه پلمپ گارانتی 3 ساله متم اف",
       "item_val_royal": 7950000,
-      "item_val_market": 7630000,
+      "item_val_market": 7325000,
       "sparkline": [
         7950000,
+        7590000,
+        7590000,
         7950000,
-        7590000,
-        7590000,
         7950000
       ],
-      "last_checked": "2026-10-19T14:03:57.937695+00:00",
+      "last_checked": "2026-10-20T12:12:54.681562+00:00",
       "digikala_seller": "رایان دیجی ایرانیان"
     },
     {
@@ -4397,9 +4397,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 6190000,
+      "royaldigi_price": 6250000,
       "initial_royaldigi_price": 5980000,
-      "current_royaldigi_price": 6190000,
+      "current_royaldigi_price": 6250000,
       "suggested_price": 5980000,
       "torob_1": 4800000,
       "torob_2": 5950000,
@@ -4417,27 +4417,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+240,000 ت از رتبه 2 ترب (+4.0%)",
-      "top3_rank_label": "+240,000 ت از رتبه 2 ترب (+4.0%)",
-      "top5_explanation": "قیمت رویال 240,000 تومان از رتبه 2 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 240,000 تومان از رتبه 2 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+300,000 ت از رتبه 2 ترب (+5.0%)",
+      "top3_rank_label": "+300,000 ت از رتبه 2 ترب (+5.0%)",
+      "top5_explanation": "قیمت رویال 300,000 تومان از رتبه 2 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 300,000 تومان از رتبه 2 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 240000,
+      "diff_from_target": 300000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dir-853/",
       "torob_url": "https://torob.com/p/2bf178ac-bb8c-4c9c-852d-89e43f65ad24/",
       "digikala_url": "https://www.digikala.com/product/dkp-6896907/",
       "notes": "پلمپ بدون گارانتی",
-      "item_val_royal": 6190000,
+      "item_val_royal": 6250000,
       "item_val_market": 11400000,
       "sparkline": [
         6070000,
-        6070000,
         6130000,
         6130000,
-        6190000
+        6190000,
+        6250000
       ],
-      "last_checked": "2026-10-19T14:04:10.496320+00:00",
+      "last_checked": "2026-10-20T12:13:08.506045+00:00",
       "digikala_seller": "یورو فابریک"
     },
     {
@@ -4452,9 +4452,9 @@
       "grade": "New",
       "warranty": "",
       "status_text": "New",
-      "royaldigi_price": 22500000,
+      "royaldigi_price": 22870000,
       "initial_royaldigi_price": 22200000,
-      "current_royaldigi_price": 22500000,
+      "current_royaldigi_price": 22870000,
       "suggested_price": 11350000,
       "torob_1": 10000000,
       "torob_2": 10900000,
@@ -4472,27 +4472,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+10,700,000 ت از رتبه 3 ترب (+90.7%)",
-      "top3_rank_label": "+10,700,000 ت از رتبه 3 ترب (+90.7%)",
-      "top5_explanation": "قیمت رویال 10,700,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 10,700,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+11,070,000 ت از رتبه 3 ترب (+93.8%)",
+      "top3_rank_label": "+11,070,000 ت از رتبه 3 ترب (+93.8%)",
+      "top5_explanation": "قیمت رویال 11,070,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 11,070,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 10700000,
+      "diff_from_target": 11070000,
       "royaldigi_url": "https://royaldigi.ir/product/dlink-dir-x3000z-vodafone/",
       "torob_url": "https://torob.com/p/8f345da0-1567-48d1-a012-a7c119276a51/%D8%B1%D9%88%D8%AA%D8%B1-%D8%A8%DB%8C-%D8%B3%DB%8C%D9%85-%D8%AF%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-dir-x3000z-ax3000/",
       "digikala_url": "https://www.digikala.com/product/dkp-17838823/%D8%B1%D9%88%D8%AA%D8%B1-%D8%AF%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-dir-x3000z/",
       "notes": "پلمپ",
-      "item_val_royal": 22500000,
+      "item_val_royal": 22870000,
       "item_val_market": 24000000,
       "sparkline": [
         24850000,
-        24850000,
         23920000,
         23920000,
-        22500000
+        22500000,
+        22870000
       ],
-      "last_checked": "2026-10-19T14:04:21.982199+00:00",
+      "last_checked": "2026-10-20T12:13:20.319212+00:00",
       "digikala_seller": "یورو فابریک"
     },
     {
@@ -4507,9 +4507,9 @@
       "grade": "New",
       "warranty": "دارد - آونگ سه ساله",
       "status_text": "New",
-      "royaldigi_price": 2640125,
+      "royaldigi_price": 2730000,
       "initial_royaldigi_price": 2652000,
-      "current_royaldigi_price": 2640125,
+      "current_royaldigi_price": 2730000,
       "suggested_price": 2700000,
       "torob_1": 2350000,
       "torob_2": 2400000,
@@ -4527,27 +4527,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+195,125 ت از رتبه 3 ترب (+8.0%)",
-      "top3_rank_label": "+195,125 ت از رتبه 3 ترب (+8.0%)",
-      "top5_explanation": "قیمت رویال 195,125 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 195,125 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+285,000 ت از رتبه 3 ترب (+11.7%)",
+      "top3_rank_label": "+285,000 ت از رتبه 3 ترب (+11.7%)",
+      "top5_explanation": "قیمت رویال 285,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 285,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 195125,
+      "diff_from_target": 285000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dgs-1005a/",
       "torob_url": "https://torob.com/p/eca24e15-0a65-4da6-8652-791835d63d43/%D8%B3%D9%88%DB%8C%DB%8C%DA%86-5-%D9%BE%D9%88%D8%B1%D8%AA-%D8%AF%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-dgs-1005a/",
       "digikala_url": null,
       "notes": "دی لینک پلمپ گارانتی آونگ سه ساله",
-      "item_val_royal": 2640125,
+      "item_val_royal": 2730000,
       "item_val_market": 3072500,
       "sparkline": [
         2641000,
-        2641000,
         2640500,
         2640500,
-        2640125
+        2640125,
+        2730000
       ],
-      "last_checked": "2026-10-19T14:04:33.935946+00:00"
+      "last_checked": "2026-10-20T12:13:34.184325+00:00"
     },
     {
       "id": "royal_125",
@@ -4561,9 +4561,9 @@
       "grade": "New",
       "warranty": "دارد - پانا تاریخ شروع 1403/11/11 سی و شیش ماهه",
       "status_text": "New",
-      "royaldigi_price": 7650000,
+      "royaldigi_price": 7270000,
       "initial_royaldigi_price": 12630000,
-      "current_royaldigi_price": 7650000,
+      "current_royaldigi_price": 7270000,
       "suggested_price": 9100000,
       "torob_1": 8999000,
       "torob_2": 9000000,
@@ -4581,27 +4581,27 @@
       "top3_status": "lower_than_top_1",
       "top5_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
       "top3_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
-      "top5_rank_label": "-1,349,000 ت از کف ترب (-15.0%)",
-      "top3_rank_label": "-1,349,000 ت از کف ترب (-15.0%)",
-      "top5_explanation": "قیمت رویال 1,349,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
-      "top3_explanation": "قیمت رویال 1,349,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "top5_rank_label": "-1,729,000 ت از کف ترب (-19.2%)",
+      "top3_rank_label": "-1,729,000 ت از کف ترب (-19.2%)",
+      "top5_explanation": "قیمت رویال 1,729,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "top3_explanation": "قیمت رویال 1,729,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
       "is_alert": true,
       "alert_level": "warning",
-      "diff_from_target": -1349000,
+      "diff_from_target": -1729000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-re200/",
       "torob_url": "https://torob.com/p/125dcaee-86af-45ac-99ed-1665301726a7/",
       "digikala_url": "https://www.digikala.com/product/dkp-6896907/",
       "notes": "یدونه پلمپ با گارانتی پانا تاریخ شروع 1403/11/11 سی و شیش ماهه",
-      "item_val_royal": 7650000,
+      "item_val_royal": 7270000,
       "item_val_market": 13499500,
       "sparkline": [
         7340000,
         7340000,
         7340000,
-        7340000,
-        7650000
+        7650000,
+        7270000
       ],
-      "last_checked": "2026-10-19T14:04:45.492315+00:00",
+      "last_checked": "2026-10-20T12:13:45.914775+00:00",
       "digikala_seller": "یورو فابریک"
     },
     {
@@ -4656,7 +4656,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:04:57.059699+00:00"
+      "last_checked": "2026-10-20T12:13:59.982601+00:00"
     },
     {
       "id": "royal_113",
@@ -4705,12 +4705,12 @@
       "item_val_market": 4200000,
       "sparkline": [
         7990000,
-        7990000,
         8300000,
         8300000,
+        6150000,
         6150000
       ],
-      "last_checked": "2026-10-19T14:05:09.707523+00:00"
+      "last_checked": "2026-10-20T12:14:13.336101+00:00"
     },
     {
       "id": "royal_126",
@@ -4764,7 +4764,7 @@
         7840000,
         7840000
       ],
-      "last_checked": "2026-10-19T14:05:24.830372+00:00"
+      "last_checked": "2026-10-20T12:14:26.550033+00:00"
     },
     {
       "id": "royal_48",
@@ -4778,9 +4778,9 @@
       "grade": "New",
       "warranty": "",
       "status_text": "New",
-      "royaldigi_price": 7491000,
+      "royaldigi_price": 8500000,
       "initial_royaldigi_price": 10100000,
-      "current_royaldigi_price": 7491000,
+      "current_royaldigi_price": 8500000,
       "suggested_price": 7000000,
       "torob_1": 6400000,
       "torob_2": 6590000,
@@ -4798,27 +4798,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+541,000 ت از رتبه 3 ترب (+7.8%)",
-      "top3_rank_label": "+541,000 ت از رتبه 3 ترب (+7.8%)",
-      "top5_explanation": "قیمت رویال 541,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 541,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+1,550,000 ت از رتبه 3 ترب (+22.3%)",
+      "top3_rank_label": "+1,550,000 ت از رتبه 3 ترب (+22.3%)",
+      "top5_explanation": "قیمت رویال 1,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 1,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 541000,
+      "diff_from_target": 1550000,
       "royaldigi_url": "https://royaldigi.ir/product/utel-l443/",
       "torob_url": "https://torob.com/p/b89e0089-8f3b-43b9-9cb0-2ce1353a37a2/",
       "digikala_url": "https://www.digikala.com/product/dkp-5189961/",
       "notes": "همراه اول خسته !",
-      "item_val_royal": 14982000,
+      "item_val_royal": 17000000,
       "item_val_market": 13800000,
       "sparkline": [
         10100000,
-        10100000,
         7491000,
         7491000,
-        7491000
+        7491000,
+        8500000
       ],
-      "last_checked": "2026-10-19T14:05:37.840835+00:00",
+      "last_checked": "2026-10-20T12:14:37.425304+00:00",
       "digikala_seller": "سرزمین زیبایی بهار"
     },
     {
@@ -4833,9 +4833,9 @@
       "grade": "New",
       "warranty": "دارد - افزار ارتباط بهین یدونه هم تست شده سالم",
       "status_text": "New",
-      "royaldigi_price": 7491000,
+      "royaldigi_price": 8500000,
       "initial_royaldigi_price": 10100000,
-      "current_royaldigi_price": 7491000,
+      "current_royaldigi_price": 8500000,
       "suggested_price": 7000000,
       "torob_1": 6400000,
       "torob_2": 6590000,
@@ -4853,27 +4853,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+541,000 ت از رتبه 3 ترب (+7.8%)",
-      "top3_rank_label": "+541,000 ت از رتبه 3 ترب (+7.8%)",
-      "top5_explanation": "قیمت رویال 541,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 541,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+1,550,000 ت از رتبه 3 ترب (+22.3%)",
+      "top3_rank_label": "+1,550,000 ت از رتبه 3 ترب (+22.3%)",
+      "top5_explanation": "قیمت رویال 1,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 1,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 541000,
+      "diff_from_target": 1550000,
       "royaldigi_url": "https://royaldigi.ir/product/utel-l443/",
       "torob_url": "https://torob.com/p/b89e0089-8f3b-43b9-9cb0-2ce1353a37a2/",
       "digikala_url": "https://www.digikala.com/product/dkp-5189961/",
       "notes": "پلمپ سه سال گارانتی افزار ارتباط بهین یدونه هم تست شده سالم | دوتا سالم ولی کارتن هو آنتن و اینا هیچی نداره",
-      "item_val_royal": 14982000,
+      "item_val_royal": 17000000,
       "item_val_market": 13800000,
       "sparkline": [
         10100000,
-        10100000,
         7491000,
         7491000,
-        7491000
+        7491000,
+        8500000
       ],
-      "last_checked": "2026-10-19T14:05:48.696768+00:00",
+      "last_checked": "2026-10-20T12:14:50.655953+00:00",
       "digikala_seller": "سرزمین زیبایی بهار"
     },
     {
@@ -4923,12 +4923,12 @@
       "item_val_market": 5000000,
       "sparkline": [
         4999500,
-        4999500,
+        5200000,
         5200000,
         5200000,
         5200000
       ],
-      "last_checked": "2026-10-19T14:06:02.458048+00:00",
+      "last_checked": "2026-10-20T12:15:02.055356+00:00",
       "digikala_seller": "رایان دیجی ایرانیان"
     },
     {
@@ -4943,9 +4943,9 @@
       "grade": "New",
       "warranty": "دارد - آونگ داره و پلمپ هست ولی اون یکی هیچی",
       "status_text": "New",
-      "royaldigi_price": 3795000,
+      "royaldigi_price": 3782000,
       "initial_royaldigi_price": 3501000,
-      "current_royaldigi_price": 3795000,
+      "current_royaldigi_price": 3782000,
       "suggested_price": 2960000,
       "torob_1": 2900000,
       "torob_2": 2950000,
@@ -4963,27 +4963,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+807,000 ت از رتبه 3 ترب (+27.0%)",
-      "top3_rank_label": "+807,000 ت از رتبه 3 ترب (+27.0%)",
-      "top5_explanation": "قیمت رویال 807,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 807,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+794,000 ت از رتبه 3 ترب (+26.6%)",
+      "top3_rank_label": "+794,000 ت از رتبه 3 ترب (+26.6%)",
+      "top5_explanation": "قیمت رویال 794,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 794,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 807000,
+      "diff_from_target": 794000,
       "royaldigi_url": "https://royaldigi.ir/product/neterbit-nsl-122/",
       "torob_url": "https://torob.com/p/a9e2568b-382b-400b-81bc-09d1e66ce319/",
       "digikala_url": "https://www.digikala.com/product/dkp-17989604/",
       "notes": "یکی گارانتی آونگ داره و پلمپ هست ولی اون یکی هیچی",
-      "item_val_royal": 3795000,
+      "item_val_royal": 3782000,
       "item_val_market": 3610000,
       "sparkline": [
         3710000,
-        3710000,
         3740000,
         3740000,
-        3795000
+        3795000,
+        3782000
       ],
-      "last_checked": "2026-10-19T14:06:15.637728+00:00",
+      "last_checked": "2026-10-20T12:15:15.047967+00:00",
       "digikala_seller": "کارما آی تی شاپ"
     },
     {
@@ -5033,12 +5033,12 @@
       "item_val_market": 7661225,
       "sparkline": [
         7885000,
-        7885000,
         7930000,
         7930000,
+        7990000,
         7990000
       ],
-      "last_checked": "2026-10-19T14:06:28.007195+00:00",
+      "last_checked": "2026-10-20T12:15:27.507247+00:00",
       "digikala_seller": "های نو"
     },
     {
@@ -5088,12 +5088,12 @@
       "item_val_market": 3580000,
       "sparkline": [
         5889000,
+        5800000,
+        5800000,
         5889000,
-        5800000,
-        5800000,
         5889000
       ],
-      "last_checked": "2026-10-19T14:06:40.378033+00:00"
+      "last_checked": "2026-10-20T12:15:41.155998+00:00"
     },
     {
       "id": "royal_109",
@@ -5142,12 +5142,12 @@
       "item_val_market": 23700000,
       "sparkline": [
         24900000,
-        24900000,
         26670000,
         26670000,
+        26699000,
         26699000
       ],
-      "last_checked": "2026-10-19T14:06:57.182976+00:00",
+      "last_checked": "2026-10-20T12:15:52.255436+00:00",
       "digikala_seller": "اقای رند"
     },
     {
@@ -5162,9 +5162,9 @@
       "grade": "New",
       "warranty": "دارد - ایرانسل",
       "status_text": "New",
-      "royaldigi_price": 5280000,
+      "royaldigi_price": 5340000,
       "initial_royaldigi_price": 5040000,
-      "current_royaldigi_price": 5280000,
+      "current_royaldigi_price": 5340000,
       "suggested_price": 4520000,
       "torob_1": 4500000,
       "torob_2": null,
@@ -5182,27 +5182,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+780,000 ت از رتبه 1 ترب (+17.3%)",
-      "top3_rank_label": "+780,000 ت از رتبه 1 ترب (+17.3%)",
-      "top5_explanation": "قیمت رویال 780,000 تومان از رتبه 1 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 780,000 تومان از رتبه 1 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+840,000 ت از رتبه 1 ترب (+18.7%)",
+      "top3_rank_label": "+840,000 ت از رتبه 1 ترب (+18.7%)",
+      "top5_explanation": "قیمت رویال 840,000 تومان از رتبه 1 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 840,000 تومان از رتبه 1 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 780000,
+      "diff_from_target": 840000,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-mf810/",
       "torob_url": "https://torob.com/p/2823150d-5529-4dbc-9007-0724a0b24cf0/",
       "digikala_url": "https://www.digikala.com/product/dkp-461025/",
       "notes": "گارانتی ایرانسل",
-      "item_val_royal": 5280000,
+      "item_val_royal": 5340000,
       "item_val_market": 4500000,
       "sparkline": [
         5160000,
-        5160000,
         5220000,
         5220000,
-        5280000
+        5280000,
+        5340000
       ],
-      "last_checked": "2026-10-19T14:07:11.818505+00:00"
+      "last_checked": "2026-10-20T12:16:03.832896+00:00"
     },
     {
       "id": "royal_57",
@@ -5253,10 +5253,10 @@
         9550000,
         9550000,
         9550000,
-        9550000,
+        11550000,
         11550000
       ],
-      "last_checked": "2026-10-19T14:07:23.516385+00:00"
+      "last_checked": "2026-10-20T12:16:16.901159+00:00"
     },
     {
       "id": "royal_45",
@@ -5305,12 +5305,12 @@
       "item_val_market": 25935000,
       "sparkline": [
         11000000,
-        11000000,
         15040000,
         15040000,
+        14500000,
         14500000
       ],
-      "last_checked": "2026-10-19T14:07:36.622092+00:00"
+      "last_checked": "2026-10-20T12:16:29.120266+00:00"
     },
     {
       "id": "royal_65",
@@ -5324,9 +5324,9 @@
       "grade": "New",
       "warranty": "ندارد",
       "status_text": "New",
-      "royaldigi_price": 4475000,
+      "royaldigi_price": 4489000,
       "initial_royaldigi_price": 4475000,
-      "current_royaldigi_price": 4475000,
+      "current_royaldigi_price": 4489000,
       "suggested_price": 3790000,
       "torob_1": 3290000,
       "torob_2": 3700000,
@@ -5344,27 +5344,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+585,000 ت از رتبه 3 ترب (+15.0%)",
-      "top3_rank_label": "+585,000 ت از رتبه 3 ترب (+15.0%)",
-      "top5_explanation": "قیمت رویال 585,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 585,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+599,000 ت از رتبه 3 ترب (+15.4%)",
+      "top3_rank_label": "+599,000 ت از رتبه 3 ترب (+15.4%)",
+      "top5_explanation": "قیمت رویال 599,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 599,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 585000,
+      "diff_from_target": 599000,
       "royaldigi_url": "https://royaldigi.ir/product/vodafone-r228t/",
       "torob_url": "https://torob.com/p/e7d8dadb-e333-4654-ae7e-9276c19f3cf6/",
       "digikala_url": "https://www.digikala.com/product/dkp-22124134/",
       "notes": "گارانتی هم ندارن",
-      "item_val_royal": 4475000,
+      "item_val_royal": 4489000,
       "item_val_market": 3996835,
       "sparkline": [
         4489000,
-        4489000,
         4460000,
         4460000,
-        4475000
+        4475000,
+        4489000
       ],
-      "last_checked": "2026-10-19T14:07:48.471846+00:00",
+      "last_checked": "2026-10-20T12:16:45.497127+00:00",
       "digikala_seller": "های نو"
     },
     {
@@ -5419,7 +5419,7 @@
         3580000,
         3580000
       ],
-      "last_checked": "2026-10-19T14:08:00.746636+00:00"
+      "last_checked": "2026-10-20T12:16:56.872002+00:00"
     },
     {
       "id": "royal_33",
@@ -5473,7 +5473,7 @@
         3050000,
         3050000
       ],
-      "last_checked": "2026-10-19T14:08:14.147601+00:00"
+      "last_checked": "2026-10-20T12:17:12.548667+00:00"
     },
     {
       "id": "royal_133",
@@ -5487,9 +5487,9 @@
       "grade": "",
       "warranty": "",
       "status_text": "Stock",
-      "royaldigi_price": 27370000,
+      "royaldigi_price": 27970000,
       "initial_royaldigi_price": 27370000,
-      "current_royaldigi_price": 27370000,
+      "current_royaldigi_price": 27970000,
       "suggested_price": 36520000,
       "torob_1": 25757000,
       "torob_2": 36336000,
@@ -5518,16 +5518,16 @@
       "torob_url": "https://torob.com/p/9207040a-f0f8-40af-b983-93881477740e/",
       "digikala_url": null,
       "notes": "پلمپ نیست ولی خیلی خیلی نو هست اصلا آکه باید پلمپ شه",
-      "item_val_royal": 27370000,
+      "item_val_royal": 27970000,
       "item_val_market": 20128500,
       "sparkline": [
         27970000,
         27970000,
         27970000,
-        27970000,
-        27370000
+        27370000,
+        27970000
       ],
-      "last_checked": "2026-10-19T14:08:26.358604+00:00"
+      "last_checked": "2026-10-20T12:17:24.581213+00:00"
     },
     {
       "id": "royal_17",
@@ -5576,12 +5576,12 @@
       "item_val_market": 78420000,
       "sparkline": [
         12060000,
-        12060000,
+        13070000,
         13070000,
         13070000,
         13070000
       ],
-      "last_checked": "2026-10-19T14:08:37.665700+00:00"
+      "last_checked": "2026-10-20T12:17:35.328453+00:00"
     },
     {
       "id": "royal_70",
@@ -5595,9 +5595,9 @@
       "grade": "",
       "warranty": "ندارد",
       "status_text": "Stock",
-      "royaldigi_price": 4750000,
+      "royaldigi_price": 5200000,
       "initial_royaldigi_price": 4540000,
-      "current_royaldigi_price": 4750000,
+      "current_royaldigi_price": 5200000,
       "suggested_price": 3820000,
       "torob_1": 3750000,
       "torob_2": 3800000,
@@ -5607,36 +5607,36 @@
       "torob_price": 3750000,
       "initial_torob_price": 3750000,
       "current_torob_price": 3750000,
-      "digikala_price": 5700000,
+      "digikala_price": 5600000,
       "initial_digikala_price": 4630000,
-      "current_digikala_price": 5700000,
-      "market_avg_price": 4725000,
+      "current_digikala_price": 5600000,
+      "market_avg_price": 4675000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+895,000 ت از رتبه 3 ترب (+23.2%)",
-      "top3_rank_label": "+895,000 ت از رتبه 3 ترب (+23.2%)",
-      "top5_explanation": "قیمت رویال 895,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 895,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+1,345,000 ت از رتبه 3 ترب (+34.9%)",
+      "top3_rank_label": "+1,345,000 ت از رتبه 3 ترب (+34.9%)",
+      "top5_explanation": "قیمت رویال 1,345,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 1,345,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 895000,
+      "diff_from_target": 1345000,
       "royaldigi_url": "https://royaldigi.ir/product/tp-link-tl-wr840n/",
       "torob_url": "https://torob.com/p/59f3d4e6-2cd7-430d-a270-63638ebbb54f/%D8%AA%DB%8C-%D9%BE%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-tl-wr840n/",
       "digikala_url": "https://www.digikala.com/product/dkp-1099699/%D8%B1%D9%88%D8%AA%D8%B1-%D8%A8%DB%8C%D8%B3%DB%8C%D9%85-300mbps-%D8%AA%DB%8C-%D9%BE%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-tl-wr840n/",
       "notes": "گارانتی پانا برای اونی که پلمپه 36 ماهه شروع 1403/04/16",
-      "item_val_royal": 4750000,
-      "item_val_market": 4725000,
+      "item_val_royal": 5200000,
+      "item_val_market": 4675000,
       "sparkline": [
         4540000,
         4540000,
         4540000,
-        4540000,
-        4750000
+        4750000,
+        5200000
       ],
-      "last_checked": "2026-10-19T14:08:52.565640+00:00",
-      "digikala_seller": "رهنما"
+      "last_checked": "2026-10-20T12:17:47.468939+00:00",
+      "digikala_seller": "ایران لینک"
     },
     {
       "id": "royal_93",
@@ -5662,10 +5662,10 @@
       "torob_price": 4000000,
       "initial_torob_price": 4000000,
       "current_torob_price": 4000000,
-      "digikala_price": 8080000,
+      "digikala_price": 8100000,
       "initial_digikala_price": 5300000,
-      "current_digikala_price": 8080000,
-      "market_avg_price": 6040000,
+      "current_digikala_price": 8100000,
+      "market_avg_price": 6050000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -5682,16 +5682,16 @@
       "digikala_url": "https://www.digikala.com/product/dkp-5269/%D8%B3%D9%88%DB%8C%DB%8C%DA%86-8-%D9%BE%D9%88%D8%B1%D8%AA-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%DB%8C%D8%AA%DB%8C-%D9%88-%D8%AF%D8%B3%DA%A9%D8%AA%D8%A7%D9%BE-%D8%AF%DB%8C-%D9%84%DB%8C%D9%86%DA%A9-%D9%85%D8%AF%D9%84-dgs-1008a/?product_id=5269&variant_id=80579005",
       "notes": "آکبند و نو هست ولی پلمپ نیست",
       "item_val_royal": 0,
-      "item_val_market": 6040000,
+      "item_val_market": 6050000,
       "sparkline": [
         6050000,
         6050000,
         6050000,
-        6050000,
-        6040000
+        6040000,
+        6050000
       ],
-      "last_checked": "2026-10-19T14:09:05.336358+00:00",
-      "digikala_seller": "نوین نت کمپانی"
+      "last_checked": "2026-10-20T12:18:04.098748+00:00",
+      "digikala_seller": "یورو فابریک"
     },
     {
       "id": "royal_100",
@@ -5745,7 +5745,7 @@
         9200000,
         9200000
       ],
-      "last_checked": "2026-10-19T14:09:16.298465+00:00"
+      "last_checked": "2026-10-20T12:18:16.701557+00:00"
     },
     {
       "id": "royal_114",
@@ -5799,7 +5799,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:09:28.678650+00:00"
+      "last_checked": "2026-10-20T12:18:29.274117+00:00"
     },
     {
       "id": "royal_120",
@@ -5853,7 +5853,7 @@
         11055000,
         11055000
       ],
-      "last_checked": "2026-10-19T14:09:43.132965+00:00",
+      "last_checked": "2026-10-20T12:18:42.261423+00:00",
       "digikala_seller": "بوشهر لند جانبی"
     },
     {
@@ -5908,7 +5908,7 @@
         2250000,
         2250000
       ],
-      "last_checked": "2026-10-19T14:09:54.693906+00:00"
+      "last_checked": "2026-10-20T12:18:54.290678+00:00"
     },
     {
       "id": "royal_95",
@@ -5962,7 +5962,7 @@
         3580000,
         3580000
       ],
-      "last_checked": "2026-10-19T14:10:03.644989+00:00"
+      "last_checked": "2026-10-20T12:19:02.801465+00:00"
     },
     {
       "id": "royal_101",
@@ -6016,7 +6016,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:10:15.264474+00:00"
+      "last_checked": "2026-10-20T12:19:14.234645+00:00"
     },
     {
       "id": "royal_127",
@@ -6070,7 +6070,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:10:30.601574+00:00"
+      "last_checked": "2026-10-20T12:19:26.669500+00:00"
     },
     {
       "id": "royal_110",
@@ -6124,7 +6124,7 @@
         6900000,
         6900000
       ],
-      "last_checked": "2026-10-19T14:10:42.086238+00:00",
+      "last_checked": "2026-10-20T12:19:40.018634+00:00",
       "digikala_seller": "فرا دیجیتال"
     },
     {
@@ -6173,13 +6173,13 @@
       "item_val_royal": 0,
       "item_val_market": 10195860,
       "sparkline": [
-        10266575,
         10420955,
         10420955,
         10195860,
+        10195860,
         10195860
       ],
-      "last_checked": "2026-10-19T14:10:53.721593+00:00",
+      "last_checked": "2026-10-20T12:19:51.596191+00:00",
       "digikala_seller": "های نو"
     },
     {
@@ -6234,7 +6234,7 @@
         8900000,
         8900000
       ],
-      "last_checked": "2026-10-19T14:11:07.001518+00:00"
+      "last_checked": "2026-10-20T12:20:05.053773+00:00"
     },
     {
       "id": "royal_84",
@@ -6248,9 +6248,9 @@
       "grade": "",
       "warranty": "ندارد",
       "status_text": "Stock",
-      "royaldigi_price": 3795000,
+      "royaldigi_price": 3782000,
       "initial_royaldigi_price": 3501000,
-      "current_royaldigi_price": 3795000,
+      "current_royaldigi_price": 3782000,
       "suggested_price": 2960000,
       "torob_1": 2900000,
       "torob_2": 2950000,
@@ -6268,27 +6268,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+807,000 ت از رتبه 3 ترب (+27.0%)",
-      "top3_rank_label": "+807,000 ت از رتبه 3 ترب (+27.0%)",
-      "top5_explanation": "قیمت رویال 807,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 807,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+794,000 ت از رتبه 3 ترب (+26.6%)",
+      "top3_rank_label": "+794,000 ت از رتبه 3 ترب (+26.6%)",
+      "top5_explanation": "قیمت رویال 794,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 794,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 807000,
+      "diff_from_target": 794000,
       "royaldigi_url": "https://royaldigi.ir/product/neterbit-nsl-122/",
       "torob_url": "https://torob.com/p/a9e2568b-382b-400b-81bc-09d1e66ce319/",
       "digikala_url": "https://www.digikala.com/product/dkp-17989604/",
       "notes": "یکی گارانتی آونگ داره و پلمپ هست ولی اون یکی هیچی",
-      "item_val_royal": 3795000,
+      "item_val_royal": 3782000,
       "item_val_market": 3610000,
       "sparkline": [
         3710000,
-        3710000,
         3740000,
         3740000,
-        3795000
+        3795000,
+        3782000
       ],
-      "last_checked": "2026-10-19T14:11:18.797632+00:00",
+      "last_checked": "2026-10-20T12:20:16.945009+00:00",
       "digikala_seller": "کارما آی تی شاپ"
     },
     {
@@ -6343,7 +6343,7 @@
         4400000,
         4400000
       ],
-      "last_checked": "2026-10-19T14:11:31.327188+00:00"
+      "last_checked": "2026-10-20T12:20:30.739202+00:00"
     },
     {
       "id": "royal_106",
@@ -6397,7 +6397,7 @@
         5248000,
         5248000
       ],
-      "last_checked": "2026-10-19T14:11:42.916402+00:00"
+      "last_checked": "2026-10-20T12:20:44.353087+00:00"
     },
     {
       "id": "royal_63",
@@ -6411,9 +6411,9 @@
       "grade": "B",
       "warranty": "ندارد",
       "status_text": "Stock",
-      "royaldigi_price": 8120000,
+      "royaldigi_price": 10000000,
       "initial_royaldigi_price": 11250000,
-      "current_royaldigi_price": 8120000,
+      "current_royaldigi_price": 10000000,
       "suggested_price": 7240000,
       "torob_1": 6750000,
       "torob_2": 7000000,
@@ -6431,27 +6431,27 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+631,000 ت از رتبه 3 ترب (+8.4%)",
-      "top3_rank_label": "+631,000 ت از رتبه 3 ترب (+8.4%)",
-      "top5_explanation": "قیمت رویال 631,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 631,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+2,511,000 ت از رتبه 3 ترب (+33.5%)",
+      "top3_rank_label": "+2,511,000 ت از رتبه 3 ترب (+33.5%)",
+      "top5_explanation": "قیمت رویال 2,511,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 2,511,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 631000,
+      "diff_from_target": 2511000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dwr-m921/",
       "torob_url": "https://torob.com/p/ed50f1e4-14bb-4a4d-9f1d-2fbe950c1326/",
       "digikala_url": "https://www.digikala.com/product/dkp-3637226/",
       "notes": "استوک دبی هست ولی خودشون پلمپ کردن | سالم کابل و اینا داره ولی یکم کند هست",
-      "item_val_royal": 16240000,
+      "item_val_royal": 20000000,
       "item_val_market": 29750000,
       "sparkline": [
         10070000,
-        10070000,
         8510000,
         8510000,
-        8120000
+        8120000,
+        10000000
       ],
-      "last_checked": "2026-10-19T14:11:54.825895+00:00",
+      "last_checked": "2026-10-20T12:20:57.023219+00:00",
       "digikala_seller": "گستران سازان اینده"
     },
     {
@@ -6506,7 +6506,7 @@
         5950000,
         5950000
       ],
-      "last_checked": "2026-10-19T14:12:06.937205+00:00"
+      "last_checked": "2026-10-20T12:21:08.894106+00:00"
     },
     {
       "id": "royal_116",
@@ -6560,7 +6560,7 @@
         8350000,
         8350000
       ],
-      "last_checked": "2026-10-19T14:12:20.197627+00:00"
+      "last_checked": "2026-10-20T12:21:21.642549+00:00"
     },
     {
       "id": "royal_35",
@@ -6610,11 +6610,11 @@
       "sparkline": [
         15150000,
         15150000,
-        15150000,
         15145000,
+        15045000,
         15045000
       ],
-      "last_checked": "2026-10-19T14:12:33.458543+00:00",
+      "last_checked": "2026-10-20T12:21:32.314458+00:00",
       "digikala_seller": "نوین نت کمپانی"
     },
     {
@@ -6669,7 +6669,7 @@
         13850000,
         13850000
       ],
-      "last_checked": "2026-10-19T14:12:46.484513+00:00"
+      "last_checked": "2026-10-20T12:21:45.272633+00:00"
     },
     {
       "id": "royal_53",
@@ -6718,12 +6718,12 @@
       "item_val_market": 28800000,
       "sparkline": [
         7140000,
-        7140000,
         7020000,
         7020000,
+        7550000,
         7550000
       ],
-      "last_checked": "2026-10-19T14:12:57.933435+00:00"
+      "last_checked": "2026-10-20T12:21:57.956598+00:00"
     },
     {
       "id": "royal_123",
@@ -6777,7 +6777,7 @@
         14500000,
         14500000
       ],
-      "last_checked": "2026-10-19T14:13:12.465215+00:00",
+      "last_checked": "2026-10-20T12:22:10.065850+00:00",
       "digikala_seller": "تجهیزات معینی"
     },
     {
@@ -6828,11 +6828,11 @@
       "sparkline": [
         15150000,
         15150000,
-        15150000,
         15145000,
+        15045000,
         15045000
       ],
-      "last_checked": "2026-10-19T14:13:26.179634+00:00",
+      "last_checked": "2026-10-20T12:22:21.517720+00:00",
       "digikala_seller": "نوین نت کمپانی"
     },
     {
@@ -6887,7 +6887,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:13:39.898603+00:00"
+      "last_checked": "2026-10-20T12:22:34.004119+00:00"
     },
     {
       "id": "royal_47",
@@ -6936,12 +6936,12 @@
       "item_val_market": 25935000,
       "sparkline": [
         11000000,
-        11000000,
         15040000,
         15040000,
+        14500000,
         14500000
       ],
-      "last_checked": "2026-10-19T14:13:51.677471+00:00"
+      "last_checked": "2026-10-20T12:22:47.952318+00:00"
     },
     {
       "id": "royal_108",
@@ -6995,7 +6995,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:14:04.750047+00:00"
+      "last_checked": "2026-10-20T12:22:59.529215+00:00"
     },
     {
       "id": "royal_118",
@@ -7021,10 +7021,10 @@
       "torob_price": 6690000,
       "initial_torob_price": 6690000,
       "current_torob_price": 6690000,
-      "digikala_price": null,
+      "digikala_price": 6950000,
       "initial_digikala_price": null,
-      "current_digikala_price": null,
-      "market_avg_price": 6690000,
+      "current_digikala_price": 6950000,
+      "market_avg_price": 6820000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -7041,15 +7041,16 @@
       "digikala_url": "https://www.digikala.com/product/dkp-2751309/",
       "notes": "باز کار کرده",
       "item_val_royal": 0,
-      "item_val_market": 6690000,
+      "item_val_market": 6820000,
       "sparkline": [
         6690000,
         6690000,
         6690000,
         6690000,
-        6690000
+        6820000
       ],
-      "last_checked": "2026-10-19T14:14:26.975124+00:00"
+      "last_checked": "2026-10-20T12:23:13.838932+00:00",
+      "digikala_seller": "استور نتینو"
     },
     {
       "id": "royal_119",
@@ -7103,7 +7104,7 @@
         9000000,
         9000000
       ],
-      "last_checked": "2026-10-19T14:14:41.259113+00:00"
+      "last_checked": "2026-10-20T12:23:25.669163+00:00"
     },
     {
       "id": "royal_99",
@@ -7157,7 +7158,7 @@
         9945000,
         9945000
       ],
-      "last_checked": "2026-10-19T14:14:58.449954+00:00"
+      "last_checked": "2026-10-20T12:23:37.796427+00:00"
     },
     {
       "id": "royal_29",
@@ -7171,9 +7172,9 @@
       "grade": "در حد نو",
       "warranty": "داراي گارانتي 18 ماهه",
       "status_text": "اوپن باکس",
-      "royaldigi_price": 11350000,
+      "royaldigi_price": 7539000,
       "initial_royaldigi_price": 21750000,
-      "current_royaldigi_price": 11350000,
+      "current_royaldigi_price": 7539000,
       "suggested_price": 12220000,
       "torob_1": 7800000,
       "torob_2": 8240000,
@@ -7187,31 +7188,31 @@
       "initial_digikala_price": 6902400,
       "current_digikala_price": 7600000,
       "market_avg_price": 7700000,
-      "top5_status": "in_top_5",
-      "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
-      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
-      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
-      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
-      "is_alert": false,
-      "alert_level": "success",
-      "diff_from_target": 0,
+      "top5_status": "lower_than_top_1",
+      "top3_status": "lower_than_top_1",
+      "top5_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
+      "top3_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
+      "top5_rank_label": "-261,000 ت از کف ترب (-3.3%)",
+      "top3_rank_label": "-261,000 ت از کف ترب (-3.3%)",
+      "top5_explanation": "قیمت رویال 261,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "top3_explanation": "قیمت رویال 261,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "is_alert": true,
+      "alert_level": "warning",
+      "diff_from_target": -261000,
       "royaldigi_url": "https://royaldigi.ir/product/naztech-hope/",
       "torob_url": "https://torob.com/p/599a406e-90a5-49c4-9103-7379179e25c0/",
       "digikala_url": "https://www.digikala.com/product/dkp-21326057/",
       "notes": "میگن نزتک خودش گارانتی 18 ماهه هایپرسل داره  حتی اونی که بازه",
-      "item_val_royal": 56750000,
+      "item_val_royal": 37695000,
       "item_val_market": 38500000,
       "sparkline": [
         21750000,
         21750000,
         21750000,
-        21750000,
-        11350000
+        11350000,
+        7539000
       ],
-      "last_checked": "2026-10-19T14:15:15.243194+00:00",
+      "last_checked": "2026-10-20T12:23:50.228509+00:00",
       "digikala_seller": "آیرا پرو"
     },
     {
@@ -7266,7 +7267,7 @@
         19000000,
         19000000
       ],
-      "last_checked": "2026-10-19T14:15:27.693538+00:00"
+      "last_checked": "2026-10-20T12:24:02.247940+00:00"
     },
     {
       "id": "royal_134",
@@ -7320,7 +7321,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:15:39.749278+00:00"
+      "last_checked": "2026-10-20T12:24:15.700075+00:00"
     },
     {
       "id": "royal_135",
@@ -7374,7 +7375,7 @@
         5280800,
         5280800
       ],
-      "last_checked": "2026-10-19T14:15:51.947340+00:00"
+      "last_checked": "2026-10-20T12:24:29.953284+00:00"
     },
     {
       "id": "royal_136",
@@ -7428,7 +7429,7 @@
         6500000,
         6500000
       ],
-      "last_checked": "2026-10-19T14:16:03.877854+00:00"
+      "last_checked": "2026-10-20T12:24:42.467952+00:00"
     },
     {
       "id": "royal_137",
@@ -7482,7 +7483,7 @@
         9250000,
         9250000
       ],
-      "last_checked": "2026-10-19T14:16:15.964109+00:00"
+      "last_checked": "2026-10-20T12:24:53.467052+00:00"
     },
     {
       "id": "royal_138",
@@ -7536,7 +7537,7 @@
         12000000,
         12000000
       ],
-      "last_checked": "2026-10-19T14:16:29.477710+00:00"
+      "last_checked": "2026-10-20T12:25:05.488547+00:00"
     },
     {
       "id": "royal_139",
@@ -7590,7 +7591,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:16:40.519507+00:00"
+      "last_checked": "2026-10-20T12:25:16.134819+00:00"
     },
     {
       "id": "royal_140",
@@ -7644,7 +7645,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:16:43.713083+00:00"
+      "last_checked": "2026-10-20T12:25:18.820438+00:00"
     },
     {
       "id": "royal_141",
@@ -7698,7 +7699,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:16:57.700320+00:00"
+      "last_checked": "2026-10-20T12:25:30.378762+00:00"
     },
     {
       "id": "royal_142",
@@ -7752,7 +7753,7 @@
         3000000,
         3000000
       ],
-      "last_checked": "2026-10-19T14:17:09.358710+00:00"
+      "last_checked": "2026-10-20T12:25:42.392017+00:00"
     },
     {
       "id": "royal_143",
@@ -7806,7 +7807,7 @@
         3050000,
         3050000
       ],
-      "last_checked": "2026-10-19T14:17:20.350055+00:00"
+      "last_checked": "2026-10-20T12:25:53.434095+00:00"
     },
     {
       "id": "royal_144",
@@ -7860,7 +7861,7 @@
         9350000,
         9350000
       ],
-      "last_checked": "2026-10-19T14:17:32.851829+00:00"
+      "last_checked": "2026-10-20T12:26:04.529900+00:00"
     },
     {
       "id": "royal_145",
@@ -7914,7 +7915,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:17:40.150134+00:00"
+      "last_checked": "2026-10-20T12:26:10.744050+00:00"
     },
     {
       "id": "royal_146",
@@ -7968,7 +7969,7 @@
         1344500,
         1344500
       ],
-      "last_checked": "2026-10-19T14:17:49.682746+00:00"
+      "last_checked": "2026-10-20T12:26:17.754554+00:00"
     },
     {
       "id": "royal_147",
@@ -8022,7 +8023,7 @@
         2350000,
         2350000
       ],
-      "last_checked": "2026-10-19T14:18:01.525627+00:00"
+      "last_checked": "2026-10-20T12:26:29.295906+00:00"
     },
     {
       "id": "royal_148",
@@ -8076,7 +8077,7 @@
         5708500,
         5708500
       ],
-      "last_checked": "2026-10-19T14:18:07.745271+00:00"
+      "last_checked": "2026-10-20T12:26:37.260122+00:00"
     },
     {
       "id": "royal_149",
@@ -8130,7 +8131,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:18:18.886019+00:00"
+      "last_checked": "2026-10-20T12:26:48.202633+00:00"
     },
     {
       "id": "royal_150",
@@ -8184,7 +8185,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:18:27.726859+00:00"
+      "last_checked": "2026-10-20T12:26:57.232487+00:00"
     },
     {
       "id": "royal_151",
@@ -8238,7 +8239,7 @@
         5950000,
         5950000
       ],
-      "last_checked": "2026-10-19T14:18:38.412749+00:00"
+      "last_checked": "2026-10-20T12:27:10.176658+00:00"
     },
     {
       "id": "royal_152",
@@ -8292,7 +8293,7 @@
         6312500,
         6312500
       ],
-      "last_checked": "2026-10-19T14:18:50.942192+00:00"
+      "last_checked": "2026-10-20T12:27:20.900948+00:00"
     },
     {
       "id": "royal_153",
@@ -8346,7 +8347,7 @@
         28493600,
         28493600
       ],
-      "last_checked": "2026-10-19T14:19:00.982969+00:00"
+      "last_checked": "2026-10-20T12:27:35.193749+00:00"
     },
     {
       "id": "royal_157",
@@ -8400,7 +8401,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:19:11.916058+00:00"
+      "last_checked": "2026-10-20T12:27:47.448124+00:00"
     },
     {
       "id": "royal_167",
@@ -8454,7 +8455,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:19:23.390145+00:00"
+      "last_checked": "2026-10-20T12:27:58.555582+00:00"
     },
     {
       "id": "royal_210",
@@ -8508,7 +8509,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:19:37.564824+00:00"
+      "last_checked": "2026-10-20T12:28:09.512399+00:00"
     },
     {
       "id": "royal_185",
@@ -8562,7 +8563,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:19:48.628816+00:00"
+      "last_checked": "2026-10-20T12:28:21.428567+00:00"
     },
     {
       "id": "royal_211",
@@ -8616,7 +8617,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:19:59.323357+00:00"
+      "last_checked": "2026-10-20T12:28:33.569719+00:00"
     },
     {
       "id": "royal_155",
@@ -8670,7 +8671,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:20:10.861597+00:00"
+      "last_checked": "2026-10-20T12:28:45.633808+00:00"
     },
     {
       "id": "royal_183",
@@ -8724,7 +8725,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:20:24.804205+00:00"
+      "last_checked": "2026-10-20T12:28:57.488489+00:00"
     },
     {
       "id": "royal_198",
@@ -8778,7 +8779,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:20:36.299000+00:00"
+      "last_checked": "2026-10-20T12:29:07.882664+00:00"
     },
     {
       "id": "royal_175",
@@ -8832,7 +8833,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:20:48.208168+00:00"
+      "last_checked": "2026-10-20T12:29:18.706073+00:00"
     },
     {
       "id": "royal_204",
@@ -8886,7 +8887,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:21:02.487602+00:00"
+      "last_checked": "2026-10-20T12:29:30.203150+00:00"
     },
     {
       "id": "royal_186",
@@ -8940,7 +8941,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:21:11.246376+00:00"
+      "last_checked": "2026-10-20T12:29:38.671398+00:00"
     },
     {
       "id": "royal_201",
@@ -8994,7 +8995,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:21:23.599431+00:00"
+      "last_checked": "2026-10-20T12:29:51.889705+00:00"
     },
     {
       "id": "royal_195",
@@ -9048,7 +9049,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-10-19T14:21:34.761887+00:00"
+      "last_checked": "2026-10-20T12:30:07.038614+00:00"
     }
   ]
 }
