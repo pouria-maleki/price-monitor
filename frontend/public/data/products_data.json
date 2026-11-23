@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "last_updated_iso": "2026-11-22T15:43:50.218026+00:00",
-    "last_updated_fa": "1 آذر 1405 - 15:43",
+    "last_updated_iso": "2026-11-23T19:29:21.146766+00:00",
+    "last_updated_fa": "2 آذر 1405 - 19:29",
     "schedule_info": "آپدیت خودکار روزانه ساعت ۱۰:۰۰ صبح (تهران)",
     "total_products": 166,
-    "in_top_5_count": 24,
-    "in_top_3_count": 24,
-    "higher_than_top_5_count": 44,
-    "higher_than_top_3_count": 44,
+    "in_top_5_count": 28,
+    "in_top_3_count": 28,
+    "higher_than_top_5_count": 40,
+    "higher_than_top_3_count": 40,
     "lower_than_top_1_count": 10,
     "no_royal_count": 86,
     "no_torob_count": 2,
-    "alerts_total": 54,
+    "alerts_total": 50,
     "new_count": 89,
     "stock_count": 77,
     "total_inventory_quantity": 670,
     "total_inventory_royal_value": 6259820500,
-    "total_inventory_market_value": 6353306265,
-    "duration_seconds": 3279.4
+    "total_inventory_market_value": 6358309765,
+    "duration_seconds": 2944.7
   },
   "items": [
     {
@@ -40,7 +40,7 @@
       "torob_2": 11300000,
       "torob_3": 11700000,
       "torob_4": 11700000,
-      "torob_5": 12290000,
+      "torob_5": 11820000,
       "torob_price": 11210000,
       "initial_torob_price": 9200000,
       "current_torob_price": 11210000,
@@ -72,7 +72,7 @@
         11210000,
         11210000
       ],
-      "last_checked": "2026-11-22T14:49:10.842178+00:00"
+      "last_checked": "2026-11-23T18:40:16.433100+00:00"
     },
     {
       "id": "royal_2",
@@ -90,35 +90,35 @@
       "initial_royaldigi_price": 20430000,
       "current_royaldigi_price": 20260000,
       "suggested_price": 15240000,
-      "torob_1": 17990000,
+      "torob_1": 17972000,
       "torob_2": 17990000,
       "torob_3": 17990000,
-      "torob_4": 18260000,
-      "torob_5": 18490000,
-      "torob_price": 17990000,
+      "torob_4": 17990000,
+      "torob_5": 20000000,
+      "torob_price": 17972000,
       "initial_torob_price": 14590000,
-      "current_torob_price": 17990000,
+      "current_torob_price": 17972000,
       "digikala_price": 14990000,
       "initial_digikala_price": 14990000,
       "current_digikala_price": 14990000,
-      "market_avg_price": 16490000,
+      "market_avg_price": 16481000,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+1,770,000 ت از رتبه 5 ترب (+9.6%)",
-      "top3_rank_label": "+1,770,000 ت از رتبه 5 ترب (+9.6%)",
-      "top5_explanation": "قیمت رویال 1,770,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 1,770,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+260,000 ت از رتبه 5 ترب (+1.3%)",
+      "top3_rank_label": "+260,000 ت از رتبه 5 ترب (+1.3%)",
+      "top5_explanation": "قیمت رویال 260,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 260,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 1770000,
+      "diff_from_target": 260000,
       "royaldigi_url": "https://royaldigi.ir/product/netbox-mobo-edition/",
       "torob_url": "https://torob.com/p/7fe65d08-aa4d-4d44-8d04-3d140bc231f1/",
       "digikala_url": "https://www.digikala.com/product/dkp-14812728/",
       "notes": "دوتا کارتن 24 تایی یه کارتن 12 تایی",
       "item_val_royal": 1276380000,
-      "item_val_market": 1038870000,
+      "item_val_market": 1038303000,
       "sparkline": [
         20260000,
         20260000,
@@ -126,7 +126,7 @@
         20260000,
         20260000
       ],
-      "last_checked": "2026-11-22T14:49:34.548539+00:00"
+      "last_checked": "2026-11-23T18:40:36.554724+00:00"
     },
     {
       "id": "royal_3",
@@ -145,10 +145,10 @@
       "current_royaldigi_price": 16440000,
       "suggested_price": 13500000,
       "torob_1": 12990000,
-      "torob_2": 13990000,
+      "torob_2": 12990000,
       "torob_3": 13990000,
-      "torob_4": 14080000,
-      "torob_5": 14800000,
+      "torob_4": 13990000,
+      "torob_5": 13990000,
       "torob_price": 12990000,
       "initial_torob_price": 12899000,
       "current_torob_price": 12990000,
@@ -160,13 +160,13 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+1,640,000 ت از رتبه 5 ترب (+11.1%)",
-      "top3_rank_label": "+1,640,000 ت از رتبه 5 ترب (+11.1%)",
-      "top5_explanation": "قیمت رویال 1,640,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 1,640,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+2,450,000 ت از رتبه 5 ترب (+17.5%)",
+      "top3_rank_label": "+2,450,000 ت از رتبه 5 ترب (+17.5%)",
+      "top5_explanation": "قیمت رویال 2,450,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 2,450,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 1640000,
+      "diff_from_target": 2450000,
       "royaldigi_url": "https://royaldigi.ir/product/netbox-shine-s/",
       "torob_url": "https://torob.com/p/fb69686b-6788-4506-8f5b-a0b471c1a74e/",
       "digikala_url": "https://www.digikala.com/product/dkp-12443084/",
@@ -177,10 +177,10 @@
         15090000,
         15090000,
         15090000,
-        15090000,
+        16440000,
         16440000
       ],
-      "last_checked": "2026-11-22T14:49:53.118298+00:00"
+      "last_checked": "2026-11-23T18:40:53.241450+00:00"
     },
     {
       "id": "royal_6",
@@ -199,9 +199,9 @@
       "current_royaldigi_price": 6499000,
       "suggested_price": 4900000,
       "torob_1": 5690000,
-      "torob_2": 5990000,
+      "torob_2": 5980000,
       "torob_3": 6300000,
-      "torob_4": 6300000,
+      "torob_4": 6450000,
       "torob_5": 6499000,
       "torob_price": 5690000,
       "initial_torob_price": 4500000,
@@ -234,7 +234,7 @@
         6499000,
         6499000
       ],
-      "last_checked": "2026-11-22T14:50:17.351106+00:00"
+      "last_checked": "2026-11-23T18:41:09.710470+00:00"
     },
     {
       "id": "royal_7",
@@ -254,9 +254,9 @@
       "suggested_price": 6470000,
       "torob_1": 7950000,
       "torob_2": 8590000,
-      "torob_3": 9500000,
-      "torob_4": 11200000,
-      "torob_5": null,
+      "torob_3": 8590000,
+      "torob_4": 9500000,
+      "torob_5": 11200000,
       "torob_price": 7950000,
       "initial_torob_price": 6400000,
       "current_torob_price": 7950000,
@@ -288,7 +288,7 @@
         7990000,
         7990000
       ],
-      "last_checked": "2026-11-22T14:50:39.436159+00:00"
+      "last_checked": "2026-11-23T18:41:32.900070+00:00"
     },
     {
       "id": "royal_4",
@@ -307,10 +307,10 @@
       "current_royaldigi_price": 6500000,
       "suggested_price": 3970000,
       "torob_1": 4599936,
-      "torob_2": 4800000,
-      "torob_3": 5472000,
-      "torob_4": 5690000,
-      "torob_5": 5699000,
+      "torob_2": 5472000,
+      "torob_3": 5690000,
+      "torob_4": 5699000,
+      "torob_5": 5800000,
       "torob_price": 4599936,
       "initial_torob_price": 3900000,
       "current_torob_price": 4599936,
@@ -322,13 +322,13 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+801,000 ت از رتبه 5 ترب (+14.1%)",
-      "top3_rank_label": "+801,000 ت از رتبه 5 ترب (+14.1%)",
-      "top5_explanation": "قیمت رویال 801,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 801,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+700,000 ت از رتبه 5 ترب (+12.1%)",
+      "top3_rank_label": "+700,000 ت از رتبه 5 ترب (+12.1%)",
+      "top5_explanation": "قیمت رویال 700,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 700,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 801000,
+      "diff_from_target": 700000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dsl-124-stock/",
       "torob_url": "https://torob.com/p/601c1bf7-868c-4efe-afd1-f4b867c16624/",
       "digikala_url": "https://www.digikala.com/product/dkp-2550885/",
@@ -342,7 +342,7 @@
         6500000,
         6500000
       ],
-      "last_checked": "2026-11-22T14:51:00.049590+00:00"
+      "last_checked": "2026-11-23T18:41:56.241063+00:00"
     },
     {
       "id": "royal_10",
@@ -396,7 +396,7 @@
         1760000,
         1760000
       ],
-      "last_checked": "2026-11-22T14:51:23.061050+00:00"
+      "last_checked": "2026-11-23T18:42:16.501578+00:00"
     },
     {
       "id": "royal_12",
@@ -416,9 +416,9 @@
       "suggested_price": null,
       "torob_1": 95000,
       "torob_2": 110300,
-      "torob_3": 118564,
-      "torob_4": 134000,
-      "torob_5": 134750,
+      "torob_3": 120289,
+      "torob_4": 134750,
+      "torob_5": 135900,
       "torob_price": 95000,
       "initial_torob_price": null,
       "current_torob_price": 95000,
@@ -450,7 +450,7 @@
         100000,
         100000
       ],
-      "last_checked": "2026-11-22T14:51:44.997644+00:00"
+      "last_checked": "2026-11-23T18:42:36.799674+00:00"
     },
     {
       "id": "royal_8",
@@ -470,9 +470,9 @@
       "suggested_price": 9200000,
       "torob_1": 8800000,
       "torob_2": 9570000,
-      "torob_3": 10090000,
+      "torob_3": 10487000,
       "torob_4": 10487000,
-      "torob_5": 10487000,
+      "torob_5": 10500000,
       "torob_price": 8800000,
       "initial_torob_price": 8900000,
       "current_torob_price": 8800000,
@@ -504,7 +504,7 @@
         9570000,
         9570000
       ],
-      "last_checked": "2026-11-22T14:52:01.021670+00:00"
+      "last_checked": "2026-11-23T18:42:50.470586+00:00"
     },
     {
       "id": "royal_11",
@@ -558,7 +558,7 @@
         8690000,
         8690000
       ],
-      "last_checked": "2026-11-22T14:52:23.729226+00:00"
+      "last_checked": "2026-11-23T18:43:11.682571+00:00"
     },
     {
       "id": "royal_13",
@@ -576,35 +576,35 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": 4950000,
       "suggested_price": 7310000,
-      "torob_1": 5050000,
-      "torob_2": 5080000,
-      "torob_3": 5135000,
+      "torob_1": 5040000,
+      "torob_2": 5049000,
+      "torob_3": 5080000,
       "torob_4": 5140000,
       "torob_5": 5145000,
-      "torob_price": 5050000,
+      "torob_price": 5040000,
       "initial_torob_price": 7265700,
-      "current_torob_price": 5050000,
+      "current_torob_price": 5040000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 5050000,
+      "market_avg_price": 5040000,
       "top5_status": "lower_than_top_1",
       "top3_status": "lower_than_top_1",
       "top5_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
       "top3_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
-      "top5_rank_label": "-100,000 ت از کف ترب (-2.0%)",
-      "top3_rank_label": "-100,000 ت از کف ترب (-2.0%)",
-      "top5_explanation": "قیمت رویال 100,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
-      "top3_explanation": "قیمت رویال 100,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "top5_rank_label": "-90,000 ت از کف ترب (-1.8%)",
+      "top3_rank_label": "-90,000 ت از کف ترب (-1.8%)",
+      "top5_explanation": "قیمت رویال 90,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "top3_explanation": "قیمت رویال 90,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
       "is_alert": true,
       "alert_level": "warning",
-      "diff_from_target": -100000,
+      "diff_from_target": -90000,
       "royaldigi_url": "https://royaldigi.ir/product/alcatel-bt70-ee70/",
       "torob_url": "https://torob.com/p/8136113b-02d9-4007-84f2-42cd20cd8f1c/%D9%85%D9%88%D8%AF%D9%85-45g-%D9%82%D8%A7%D8%A8%D9%84-%D8%AD%D9%85%D9%84-%D8%A7%D9%84%DA%A9%D8%A7%D8%AA%D9%84-%D9%85%D8%AF%D9%84-bt70/",
       "digikala_url": "https://www.digikala.com/product/dkp-14549673/%D9%85%D9%88%D8%AF%D9%85-%D9%82%D8%A7%D8%A8%D9%84-%D8%AD%D9%85%D9%84-%D8%A2%D9%84%DA%A9%D8%A7%D8%AA%D9%84-%D9%85%D8%AF%D9%84-bt70-%D8%A8%D8%A7-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C-%D8%A7%D8%B2-45g-cat7-%D8%B3%D8%B1%D8%B9%D8%AA-%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D8%AA%D8%A7-300mbps-%D9%88-%D8%A2%D9%BE%D9%84%D9%88%D8%AF-%D8%AA%D8%A7-100mbps-%D9%88%D8%A7%DB%8C%D9%81%D8%A7%DB%8C-%D8%AF%D9%88-%D8%A8%D8%A7%D9%86%D8%AF%D9%87-24ghz-%D9%88-5ghz-%D8%A8%D8%A7-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF-80211abgnac-%D8%B4%D8%A7%D8%B1%DA%98%D8%AF%D9%87%DB%8C-%D8%A8%D8%A7%D8%AA%D8%B1%DB%8C-%D8%AA%D8%A7-8-%D8%B3%D8%A7%D8%B9%D8%AA-%D9%88-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D9%87%D9%85%D8%B2%D9%85%D8%A7%D9%86-20-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1/",
       "notes": "همه کار کرده سالم بدون گارانتی",
       "item_val_royal": 49500000,
-      "item_val_market": 50500000,
+      "item_val_market": 50400000,
       "sparkline": [
         4950000,
         4950000,
@@ -612,7 +612,7 @@
         4950000,
         4950000
       ],
-      "last_checked": "2026-11-22T14:52:43.480456+00:00"
+      "last_checked": "2026-11-23T18:43:33.864678+00:00"
     },
     {
       "id": "royal_19",
@@ -666,7 +666,7 @@
         10200000,
         10200000
       ],
-      "last_checked": "2026-11-22T14:53:05.317392+00:00"
+      "last_checked": "2026-11-23T18:43:51.134928+00:00"
     },
     {
       "id": "royal_18",
@@ -684,35 +684,35 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": 19850000,
       "suggested_price": 12880000,
-      "torob_1": 5990000,
-      "torob_2": 5990000,
-      "torob_3": 5990000,
-      "torob_4": 6000000,
-      "torob_5": 6480000,
-      "torob_price": 5990000,
+      "torob_1": 5999000,
+      "torob_2": 6000000,
+      "torob_3": 6480000,
+      "torob_4": 6600000,
+      "torob_5": 6999000,
+      "torob_price": 5999000,
       "initial_torob_price": 11480000,
-      "current_torob_price": 5990000,
+      "current_torob_price": 5999000,
       "digikala_price": 19000000,
       "initial_digikala_price": 19000000,
       "current_digikala_price": 19000000,
-      "market_avg_price": 12495000,
+      "market_avg_price": 12499500,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+13,370,000 ت از رتبه 5 ترب (+206.3%)",
-      "top3_rank_label": "+13,370,000 ت از رتبه 5 ترب (+206.3%)",
-      "top5_explanation": "قیمت رویال 13,370,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 13,370,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+12,851,000 ت از رتبه 5 ترب (+183.6%)",
+      "top3_rank_label": "+12,851,000 ت از رتبه 5 ترب (+183.6%)",
+      "top5_explanation": "قیمت رویال 12,851,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 12,851,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 13370000,
+      "diff_from_target": 12851000,
       "royaldigi_url": "https://royaldigi.ir/product/zlt-x28/",
       "torob_url": "https://torob.com/p/3c30f058-1029-4340-b649-1cec495a6371/%D9%85%D9%88%D8%AF%D9%85-%D8%AF%D9%88-%D8%B2%D8%AF-%D8%A7%D9%84-%D8%AA%DB%8C-%D9%85%D8%AF%D9%84-x28-%D8%A7%D8%B3%D8%AA%D9%88%DA%A9/",
       "digikala_url": "https://www.digikala.com/product/dkp-14876965/%D9%85%D9%88%D8%AF%D9%85-5g-%D8%B1%D9%88%D9%85%DB%8C%D8%B2%DB%8C-zlt-x28-%D8%A8%D8%A7-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C-%D8%A7%D8%B2-%D9%87%D9%85%D9%87-%D8%B3%DB%8C%D9%85%DA%A9%D8%A7%D8%B1%D8%AA%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%88%D8%A7%DB%8C%D9%81%D8%A7%DB%8C-6-%D8%B3%D8%B1%D8%B9%D8%AA-%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-4-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%DB%8C%D8%AA-%D8%A8%D8%B1-%D8%AB%D8%A7%D9%86%DB%8C%D9%87-%D9%82%D8%A7%D8%A8%D9%84%DB%8C%D8%AA-%D8%AA%D8%AC%D9%85%DB%8C%D8%B9-%D8%A8%D8%A7%D9%86%D8%AF-%D9%BE%D9%86%D9%84-%D8%B3%D9%88%D9%BE%D8%B1-%D8%A7%D8%AF%D9%85%DB%8C%D9%86-%D8%AF%D8%A7%D8%A6%D9%85%DB%8C-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-usb-type-c-%D9%88-lan/",
       "notes": "همه سالم کابل شارژر و اینا ندارن ، توی فاکتور 11 تا بود باید 3 تاشو حذف کنن",
       "item_val_royal": 158800000,
-      "item_val_market": 99960000,
+      "item_val_market": 99996000,
       "sparkline": [
         19850000,
         19850000,
@@ -720,7 +720,7 @@
         19850000,
         19850000
       ],
-      "last_checked": "2026-11-22T14:53:09.524201+00:00"
+      "last_checked": "2026-11-23T18:43:55.647130+00:00"
     },
     {
       "id": "royal_23",
@@ -774,7 +774,7 @@
         7999000,
         7999000
       ],
-      "last_checked": "2026-11-22T14:53:30.493623+00:00"
+      "last_checked": "2026-11-23T18:44:16.727002+00:00"
     },
     {
       "id": "royal_20",
@@ -792,35 +792,35 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": 4620000,
       "suggested_price": 4240000,
-      "torob_1": 5140000,
-      "torob_2": 5149000,
+      "torob_1": 5130000,
+      "torob_2": 5139000,
       "torob_3": 5170000,
       "torob_4": 5200000,
       "torob_5": 5340000,
-      "torob_price": 5140000,
+      "torob_price": 5130000,
       "initial_torob_price": 4195000,
-      "current_torob_price": 5140000,
+      "current_torob_price": 5130000,
       "digikala_price": 4900000,
       "initial_digikala_price": 4900000,
       "current_digikala_price": 4900000,
-      "market_avg_price": 5020000,
+      "market_avg_price": 5015000,
       "top5_status": "lower_than_top_1",
       "top3_status": "lower_than_top_1",
       "top5_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
       "top3_badge": "⚠️ اخطار: ارزان‌تر از رتبه ۱ (سود سوخته)",
-      "top5_rank_label": "-520,000 ت از کف ترب (-10.1%)",
-      "top3_rank_label": "-520,000 ت از کف ترب (-10.1%)",
-      "top5_explanation": "قیمت رویال 520,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
-      "top3_explanation": "قیمت رویال 520,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "top5_rank_label": "-510,000 ت از کف ترب (-9.9%)",
+      "top3_rank_label": "-510,000 ت از کف ترب (-9.9%)",
+      "top5_explanation": "قیمت رویال 510,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
+      "top3_explanation": "قیمت رویال 510,000 تومان از کف ترب ارزان‌تر است (کاهش بی‌دلیل سود).",
       "is_alert": true,
       "alert_level": "warning",
-      "diff_from_target": -520000,
+      "diff_from_target": -510000,
       "royaldigi_url": "https://royaldigi.ir/product/alcatel-bt71/",
       "torob_url": "https://torob.com/p/5c35b492-e79e-4911-b23a-8db98fc52262/",
       "digikala_url": "https://www.digikala.com/product/dkp-7659320/",
       "notes": "همه باز شده کار کرده",
       "item_val_royal": 32340000,
-      "item_val_market": 35140000,
+      "item_val_market": 35105000,
       "sparkline": [
         4620000,
         4620000,
@@ -828,7 +828,7 @@
         4620000,
         4620000
       ],
-      "last_checked": "2026-11-22T14:53:51.218165+00:00"
+      "last_checked": "2026-11-23T18:44:35.006992+00:00"
     },
     {
       "id": "royal_16",
@@ -882,7 +882,7 @@
         13070000,
         13070000
       ],
-      "last_checked": "2026-11-22T14:54:11.604162+00:00"
+      "last_checked": "2026-11-23T18:44:55.137252+00:00"
     },
     {
       "id": "royal_30",
@@ -936,7 +936,7 @@
         9620000,
         9620000
       ],
-      "last_checked": "2026-11-22T14:54:32.037748+00:00"
+      "last_checked": "2026-11-23T18:45:13.154206+00:00"
     },
     {
       "id": "royal_9",
@@ -956,9 +956,9 @@
       "suggested_price": 9250000,
       "torob_1": 8800000,
       "torob_2": 9570000,
-      "torob_3": 10090000,
+      "torob_3": 10487000,
       "torob_4": 10487000,
-      "torob_5": 10487000,
+      "torob_5": 10500000,
       "torob_price": 8800000,
       "initial_torob_price": 8900000,
       "current_torob_price": 8800000,
@@ -990,7 +990,7 @@
         9570000,
         9570000
       ],
-      "last_checked": "2026-11-22T14:54:51.722445+00:00"
+      "last_checked": "2026-11-23T18:45:30.052452+00:00"
     },
     {
       "id": "royal_27",
@@ -1044,7 +1044,7 @@
         3866000,
         3866000
       ],
-      "last_checked": "2026-11-22T14:55:11.955397+00:00"
+      "last_checked": "2026-11-23T18:45:46.966348+00:00"
     },
     {
       "id": "royal_24",
@@ -1098,7 +1098,7 @@
         7450000,
         7450000
       ],
-      "last_checked": "2026-11-22T14:55:32.750553+00:00"
+      "last_checked": "2026-11-23T18:46:05.643939+00:00"
     },
     {
       "id": "royal_31",
@@ -1152,7 +1152,7 @@
         14690000,
         14690000
       ],
-      "last_checked": "2026-11-22T14:55:51.855863+00:00"
+      "last_checked": "2026-11-23T18:46:25.985896+00:00"
     },
     {
       "id": "royal_28",
@@ -1206,7 +1206,7 @@
         7539000,
         7539000
       ],
-      "last_checked": "2026-11-22T14:56:12.776825+00:00"
+      "last_checked": "2026-11-23T18:46:42.859234+00:00"
     },
     {
       "id": "royal_22",
@@ -1227,8 +1227,8 @@
       "torob_1": 4500000,
       "torob_2": 6300000,
       "torob_3": 6845000,
-      "torob_4": 7690000,
-      "torob_5": 7700000,
+      "torob_4": 7700000,
+      "torob_5": 7800000,
       "torob_price": 4500000,
       "initial_torob_price": 5616000,
       "current_torob_price": 4500000,
@@ -1257,10 +1257,10 @@
         7220000,
         7220000,
         7220000,
-        7220000,
+        7260000,
         7260000
       ],
-      "last_checked": "2026-11-22T14:56:31.755664+00:00"
+      "last_checked": "2026-11-23T18:46:59.931817+00:00"
     },
     {
       "id": "royal_38",
@@ -1314,7 +1314,7 @@
         9785000,
         9785000
       ],
-      "last_checked": "2026-11-22T14:56:50.526400+00:00"
+      "last_checked": "2026-11-23T18:47:20.026224+00:00"
     },
     {
       "id": "royal_42",
@@ -1332,18 +1332,18 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": null,
       "suggested_price": 7690000,
-      "torob_1": 7890000,
+      "torob_1": 8190000,
       "torob_2": 8200000,
       "torob_3": 8200000,
       "torob_4": 8300000,
       "torob_5": 8500000,
-      "torob_price": 7890000,
+      "torob_price": 8190000,
       "initial_torob_price": 6900000,
-      "current_torob_price": 7890000,
+      "current_torob_price": 8190000,
       "digikala_price": 5400000,
       "initial_digikala_price": 5400000,
       "current_digikala_price": 5400000,
-      "market_avg_price": 6645000,
+      "market_avg_price": 6795000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -1360,15 +1360,15 @@
       "digikala_url": null,
       "notes": "همه پنج تا هیچچی نداره شارژ نداره هیچی نداره ، فقط یکی یکی از lan  هاش سوخته",
       "item_val_royal": 0,
-      "item_val_market": 33225000,
+      "item_val_market": 33975000,
       "sparkline": [
         6800000,
-        6800000,
         6645000,
         6645000,
-        6645000
+        6645000,
+        6795000
       ],
-      "last_checked": "2026-11-22T14:57:09.808651+00:00"
+      "last_checked": "2026-11-23T18:47:39.216659+00:00"
     },
     {
       "id": "royal_14",
@@ -1386,18 +1386,18 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": null,
       "suggested_price": 9850000,
-      "torob_1": 13990000,
-      "torob_2": 14500000,
+      "torob_1": 13800000,
+      "torob_2": 13990000,
       "torob_3": 15000000,
       "torob_4": 15500000,
       "torob_5": 16000000,
-      "torob_price": 13990000,
+      "torob_price": 13800000,
       "initial_torob_price": 8300000,
-      "current_torob_price": 13990000,
+      "current_torob_price": 13800000,
       "digikala_price": 19500000,
       "initial_digikala_price": 19500000,
       "current_digikala_price": 19500000,
-      "market_avg_price": 16745000,
+      "market_avg_price": 16650000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -1414,15 +1414,15 @@
       "digikala_url": null,
       "notes": "اینا هواوی هستن همه سالم و باتری دارن و کابل برق | سالمن بدون کابل و بدون باتری ( دوتاش باتری داره سه تا نداره )",
       "item_val_royal": 0,
-      "item_val_market": 83725000,
+      "item_val_market": 83250000,
       "sparkline": [
         16745000,
         16745000,
         16745000,
         16745000,
-        16745000
+        16650000
       ],
-      "last_checked": "2026-11-22T14:57:18.799058+00:00"
+      "last_checked": "2026-11-23T18:47:48.701064+00:00"
     },
     {
       "id": "royal_39",
@@ -1476,7 +1476,7 @@
         9500000,
         9500000
       ],
-      "last_checked": "2026-11-22T14:57:28.512155+00:00"
+      "last_checked": "2026-11-23T18:47:57.604509+00:00"
     },
     {
       "id": "royal_25",
@@ -1495,10 +1495,10 @@
       "current_royaldigi_price": 5850000,
       "suggested_price": 4990000,
       "torob_1": 5500000,
-      "torob_2": 5720000,
-      "torob_3": 5800000,
-      "torob_4": 5850000,
-      "torob_5": 5900000,
+      "torob_2": 5850000,
+      "torob_3": 5900000,
+      "torob_4": 6200000,
+      "torob_5": 6200000,
       "torob_price": 5500000,
       "initial_torob_price": 4950000,
       "current_torob_price": 5500000,
@@ -1508,12 +1508,12 @@
       "market_avg_price": 5645000,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۴ ترب (رقابتی)",
-      "top3_badge": "✓ رتبه ۴ ترب (رقابتی)",
-      "top5_rank_label": "رتبه ۴ ترب (رقابتی)",
-      "top3_rank_label": "رتبه ۴ ترب (رقابتی)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "top5_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
+      "top3_badge": "✓ رتبه ۲ ترب (ایده‌آل)",
+      "top5_rank_label": "رتبه ۲ ترب (ایده‌آل)",
+      "top3_rank_label": "رتبه ۲ ترب (ایده‌آل)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۲ ترب (ایده‌آل)).",
       "is_alert": false,
       "alert_level": "success",
       "diff_from_target": 0,
@@ -1527,10 +1527,10 @@
         5820000,
         5820000,
         5820000,
-        5820000,
+        5850000,
         5850000
       ],
-      "last_checked": "2026-11-22T14:57:47.537381+00:00"
+      "last_checked": "2026-11-23T18:48:15.743442+00:00"
     },
     {
       "id": "royal_44",
@@ -1584,7 +1584,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T14:58:07.463379+00:00"
+      "last_checked": "2026-11-23T18:48:33.827052+00:00"
     },
     {
       "id": "royal_43",
@@ -1638,7 +1638,7 @@
         21200000,
         21200000
       ],
-      "last_checked": "2026-11-22T14:58:16.437404+00:00"
+      "last_checked": "2026-11-23T18:48:42.179457+00:00"
     },
     {
       "id": "royal_36",
@@ -1689,10 +1689,10 @@
         15400000,
         15400000,
         15400000,
-        15400000,
+        15995000,
         15995000
       ],
-      "last_checked": "2026-11-22T14:58:35.584251+00:00"
+      "last_checked": "2026-11-23T18:49:00.724668+00:00"
     },
     {
       "id": "royal_52",
@@ -1746,7 +1746,7 @@
         7550000,
         7550000
       ],
-      "last_checked": "2026-11-22T14:58:55.072601+00:00"
+      "last_checked": "2026-11-23T18:49:20.839908+00:00"
     },
     {
       "id": "royal_60",
@@ -1796,11 +1796,11 @@
       "sparkline": [
         8550000,
         8550000,
-        8550000,
+        8800000,
         8800000,
         8800000
       ],
-      "last_checked": "2026-11-22T14:59:12.675848+00:00"
+      "last_checked": "2026-11-23T18:49:40.939535+00:00"
     },
     {
       "id": "royal_67",
@@ -1854,7 +1854,7 @@
         2500000,
         2500000
       ],
-      "last_checked": "2026-11-22T14:59:22.755194+00:00"
+      "last_checked": "2026-11-23T18:49:49.765699+00:00"
     },
     {
       "id": "royal_49",
@@ -1874,8 +1874,8 @@
       "suggested_price": 6970000,
       "torob_1": 8249000,
       "torob_2": 8859000,
-      "torob_3": 8880000,
-      "torob_4": 8900000,
+      "torob_3": 8900000,
+      "torob_4": 9000000,
       "torob_5": 9000000,
       "torob_price": 8249000,
       "initial_torob_price": 6500000,
@@ -1886,12 +1886,12 @@
       "market_avg_price": 7699500,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۵ ترب (مجاز)",
-      "top3_badge": "✓ رتبه ۵ ترب (مجاز)",
-      "top5_rank_label": "رتبه ۵ ترب (مجاز)",
-      "top3_rank_label": "رتبه ۵ ترب (مجاز)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۵ ترب (مجاز)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۵ ترب (مجاز)).",
+      "top5_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
       "is_alert": false,
       "alert_level": "success",
       "diff_from_target": 0,
@@ -1908,7 +1908,7 @@
         9000000,
         9000000
       ],
-      "last_checked": "2026-11-22T14:59:25.863913+00:00"
+      "last_checked": "2026-11-23T18:49:54.075927+00:00"
     },
     {
       "id": "royal_51",
@@ -1928,8 +1928,8 @@
       "suggested_price": 6970000,
       "torob_1": 8249000,
       "torob_2": 8859000,
-      "torob_3": 8880000,
-      "torob_4": 8900000,
+      "torob_3": 8900000,
+      "torob_4": 9000000,
       "torob_5": 9000000,
       "torob_price": 8249000,
       "initial_torob_price": 6500000,
@@ -1940,12 +1940,12 @@
       "market_avg_price": 7699500,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۵ ترب (مجاز)",
-      "top3_badge": "✓ رتبه ۵ ترب (مجاز)",
-      "top5_rank_label": "رتبه ۵ ترب (مجاز)",
-      "top3_rank_label": "رتبه ۵ ترب (مجاز)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۵ ترب (مجاز)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۵ ترب (مجاز)).",
+      "top5_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
       "is_alert": false,
       "alert_level": "success",
       "diff_from_target": 0,
@@ -1962,7 +1962,7 @@
         9000000,
         9000000
       ],
-      "last_checked": "2026-11-22T14:59:47.855225+00:00"
+      "last_checked": "2026-11-23T18:50:11.977699+00:00"
     },
     {
       "id": "royal_41",
@@ -1980,26 +1980,26 @@
       "initial_royaldigi_price": 17730000,
       "current_royaldigi_price": 19450000,
       "suggested_price": 12540000,
-      "torob_1": 12987000,
-      "torob_2": 15000000,
-      "torob_3": 16900000,
-      "torob_4": 19450000,
-      "torob_5": 19500000,
-      "torob_price": 12987000,
+      "torob_1": 15000000,
+      "torob_2": 16900000,
+      "torob_3": 19450000,
+      "torob_4": 19500000,
+      "torob_5": 21900000,
+      "torob_price": 15000000,
       "initial_torob_price": 11880000,
-      "current_torob_price": 12987000,
+      "current_torob_price": 15000000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 12987000,
+      "market_avg_price": 15000000,
       "top5_status": "in_top_5",
       "top3_status": "in_top_5",
-      "top5_badge": "✓ رتبه ۴ ترب (رقابتی)",
-      "top3_badge": "✓ رتبه ۴ ترب (رقابتی)",
-      "top5_rank_label": "رتبه ۴ ترب (رقابتی)",
-      "top3_rank_label": "رتبه ۴ ترب (رقابتی)",
-      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
-      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
       "is_alert": false,
       "alert_level": "success",
       "diff_from_target": 0,
@@ -2008,15 +2008,15 @@
       "digikala_url": "https://www.digikala.com/product/dkp-7902235/",
       "notes": "باید تست شوند ، جعبه سفید | یکی اوکیه برای فروش گذاشته شده بوده اونی که پلمپ نیست",
       "item_val_royal": 38900000,
-      "item_val_market": 25974000,
+      "item_val_market": 30000000,
       "sparkline": [
         17050000,
         17050000,
         17050000,
-        17050000,
+        19450000,
         19450000
       ],
-      "last_checked": "2026-11-22T15:00:07.112781+00:00"
+      "last_checked": "2026-11-23T18:50:27.793181+00:00"
     },
     {
       "id": "royal_5",
@@ -2035,10 +2035,10 @@
       "current_royaldigi_price": 6500000,
       "suggested_price": 3970000,
       "torob_1": 4599936,
-      "torob_2": 4800000,
-      "torob_3": 5472000,
-      "torob_4": 5690000,
-      "torob_5": 5699000,
+      "torob_2": 5472000,
+      "torob_3": 5690000,
+      "torob_4": 5699000,
+      "torob_5": 5800000,
       "torob_price": 4599936,
       "initial_torob_price": 3900000,
       "current_torob_price": 4599936,
@@ -2050,13 +2050,13 @@
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+801,000 ت از رتبه 5 ترب (+14.1%)",
-      "top3_rank_label": "+801,000 ت از رتبه 5 ترب (+14.1%)",
-      "top5_explanation": "قیمت رویال 801,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 801,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+700,000 ت از رتبه 5 ترب (+12.1%)",
+      "top3_rank_label": "+700,000 ت از رتبه 5 ترب (+12.1%)",
+      "top5_explanation": "قیمت رویال 700,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 700,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 801000,
+      "diff_from_target": 700000,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dsl-124/",
       "torob_url": "https://torob.com/p/601c1bf7-868c-4efe-afd1-f4b867c16624/",
       "digikala_url": "https://www.digikala.com/product/dkp-2550885/",
@@ -2070,7 +2070,7 @@
         6500000,
         6500000
       ],
-      "last_checked": "2026-11-22T15:00:27.150928+00:00"
+      "last_checked": "2026-11-23T18:50:47.289999+00:00"
     },
     {
       "id": "royal_15",
@@ -2088,18 +2088,18 @@
       "initial_royaldigi_price": null,
       "current_royaldigi_price": null,
       "suggested_price": 18480000,
-      "torob_1": 13990000,
-      "torob_2": 14500000,
+      "torob_1": 13800000,
+      "torob_2": 13990000,
       "torob_3": 15000000,
       "torob_4": 15500000,
       "torob_5": 16000000,
-      "torob_price": 13990000,
+      "torob_price": 13800000,
       "initial_torob_price": 8300000,
-      "current_torob_price": 13990000,
+      "current_torob_price": 13800000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 13990000,
+      "market_avg_price": 13800000,
       "top5_status": "no_royal",
       "top3_status": "no_royal",
       "top5_badge": "ناموجود در رویال",
@@ -2116,15 +2116,15 @@
       "digikala_url": null,
       "notes": "اینا هواوی هستن همه سالم و باتری دارن و کابل برق | سالمن بدون کابل و بدون باتری ( دوتاش باتری داره سه تا نداره )",
       "item_val_royal": 0,
-      "item_val_market": 41970000,
+      "item_val_market": 41400000,
       "sparkline": [
         13990000,
         13990000,
         13990000,
         13990000,
-        13990000
+        13800000
       ],
-      "last_checked": "2026-11-22T15:00:47.526830+00:00"
+      "last_checked": "2026-11-23T18:51:09.448771+00:00"
     },
     {
       "id": "royal_64",
@@ -2178,7 +2178,7 @@
         10000000,
         10000000
       ],
-      "last_checked": "2026-11-22T15:00:57.488830+00:00"
+      "last_checked": "2026-11-23T18:51:17.159928+00:00"
     },
     {
       "id": "royal_61",
@@ -2232,7 +2232,7 @@
         5000000,
         5000000
       ],
-      "last_checked": "2026-11-22T15:01:16.179821+00:00"
+      "last_checked": "2026-11-23T18:51:35.329342+00:00"
     },
     {
       "id": "royal_59",
@@ -2280,13 +2280,13 @@
       "item_val_royal": 0,
       "item_val_market": 23700000,
       "sparkline": [
-        6980000,
+        7900000,
         7900000,
         7900000,
         7900000,
         7900000
       ],
-      "last_checked": "2026-11-22T15:01:27.351553+00:00"
+      "last_checked": "2026-11-23T18:51:44.117349+00:00"
     },
     {
       "id": "royal_56",
@@ -2340,7 +2340,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:01:48.183324+00:00"
+      "last_checked": "2026-11-23T18:52:04.199583+00:00"
     },
     {
       "id": "royal_77",
@@ -2391,10 +2391,10 @@
         8290000,
         8290000,
         8290000,
-        8290000,
+        7850000,
         7850000
       ],
-      "last_checked": "2026-11-22T15:02:12.046147+00:00"
+      "last_checked": "2026-11-23T18:52:25.269945+00:00"
     },
     {
       "id": "royal_32",
@@ -2448,7 +2448,7 @@
         4800000,
         4800000
       ],
-      "last_checked": "2026-11-22T15:02:33.240296+00:00"
+      "last_checked": "2026-11-23T18:52:43.818925+00:00"
     },
     {
       "id": "royal_21",
@@ -2469,8 +2469,8 @@
       "torob_1": 4500000,
       "torob_2": 6300000,
       "torob_3": 6845000,
-      "torob_4": 7690000,
-      "torob_5": 7700000,
+      "torob_4": 7700000,
+      "torob_5": 7800000,
       "torob_price": 4500000,
       "initial_torob_price": 5616000,
       "current_torob_price": 4500000,
@@ -2499,10 +2499,10 @@
         7220000,
         7220000,
         7220000,
-        7220000,
+        7260000,
         7260000
       ],
-      "last_checked": "2026-11-22T15:02:50.144440+00:00"
+      "last_checked": "2026-11-23T18:52:58.246893+00:00"
     },
     {
       "id": "royal_76",
@@ -2553,10 +2553,10 @@
         13440000,
         13440000,
         13440000,
-        13440000,
+        14620000,
         14620000
       ],
-      "last_checked": "2026-11-22T15:03:10.751188+00:00"
+      "last_checked": "2026-11-23T18:53:17.664931+00:00"
     },
     {
       "id": "royal_68",
@@ -2607,10 +2607,10 @@
         2940000,
         2940000,
         2940000,
-        2940000,
+        4650000,
         4650000
       ],
-      "last_checked": "2026-11-22T15:03:29.276458+00:00"
+      "last_checked": "2026-11-23T18:53:36.492829+00:00"
     },
     {
       "id": "royal_82",
@@ -2628,35 +2628,35 @@
       "initial_royaldigi_price": 9452000,
       "current_royaldigi_price": 8150000,
       "suggested_price": 6770000,
-      "torob_1": 6690000,
-      "torob_2": 6700000,
-      "torob_3": 6850000,
-      "torob_4": null,
-      "torob_5": null,
-      "torob_price": 6690000,
+      "torob_1": 7500000,
+      "torob_2": 7999000,
+      "torob_3": 8150000,
+      "torob_4": 8488000,
+      "torob_5": 8488000,
+      "torob_price": 7500000,
       "initial_torob_price": 6690000,
-      "current_torob_price": 6690000,
+      "current_torob_price": 7500000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 6690000,
-      "top5_status": "higher_than_top_5",
-      "top3_status": "higher_than_top_5",
-      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+1,300,000 ت از رتبه 3 ترب (+19.0%)",
-      "top3_rank_label": "+1,300,000 ت از رتبه 3 ترب (+19.0%)",
-      "top5_explanation": "قیمت رویال 1,300,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 1,300,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "is_alert": true,
-      "alert_level": "danger",
-      "diff_from_target": 1300000,
+      "market_avg_price": 7500000,
+      "top5_status": "in_top_5",
+      "top3_status": "in_top_5",
+      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "is_alert": false,
+      "alert_level": "success",
+      "diff_from_target": 0,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-fd-i40-b1/",
       "torob_url": "https://torob.com/p/d7b8686f-8d4b-4f88-879c-5b68a5e6a1e9/",
       "digikala_url": "https://www.digikala.com/product/dkp-4735717/",
       "notes": "نیست اشتباه بوده | پلمپ",
       "item_val_royal": 16300000,
-      "item_val_market": 13380000,
+      "item_val_market": 15000000,
       "sparkline": [
         8150000,
         8150000,
@@ -2664,7 +2664,7 @@
         8150000,
         8150000
       ],
-      "last_checked": "2026-11-22T15:03:51.083420+00:00"
+      "last_checked": "2026-11-23T18:53:55.857426+00:00"
     },
     {
       "id": "royal_40",
@@ -2682,43 +2682,43 @@
       "initial_royaldigi_price": 17730000,
       "current_royaldigi_price": 19450000,
       "suggested_price": 12400000,
-      "torob_1": 11890000,
-      "torob_2": 11900000,
-      "torob_3": 12900000,
-      "torob_4": null,
-      "torob_5": null,
-      "torob_price": 11890000,
+      "torob_1": 15000000,
+      "torob_2": 16900000,
+      "torob_3": 19450000,
+      "torob_4": 19500000,
+      "torob_5": 21900000,
+      "torob_price": 15000000,
       "initial_torob_price": 11890000,
-      "current_torob_price": 11890000,
+      "current_torob_price": 15000000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 11890000,
-      "top5_status": "higher_than_top_5",
-      "top3_status": "higher_than_top_5",
-      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+6,550,000 ت از رتبه 3 ترب (+50.8%)",
-      "top3_rank_label": "+6,550,000 ت از رتبه 3 ترب (+50.8%)",
-      "top5_explanation": "قیمت رویال 6,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 6,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "is_alert": true,
-      "alert_level": "danger",
-      "diff_from_target": 6550000,
+      "market_avg_price": 15000000,
+      "top5_status": "in_top_5",
+      "top3_status": "in_top_5",
+      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "is_alert": false,
+      "alert_level": "success",
+      "diff_from_target": 0,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-tf-i60-g1-stock/",
       "torob_url": "https://torob.com/p/2d337c2d-ba7b-456f-b5e3-963b1f3101e8/",
       "digikala_url": "https://www.digikala.com/product/dkp-10850492/",
       "notes": "باید تست شوند ، جعبه سفید | یکی اوکیه برای فروش گذاشته شده بوده اونی که پلمپ نیست",
       "item_val_royal": 38900000,
-      "item_val_market": 23780000,
+      "item_val_market": 30000000,
       "sparkline": [
         17050000,
         17050000,
         17050000,
-        17050000,
+        19450000,
         19450000
       ],
-      "last_checked": "2026-11-22T15:04:13.475908+00:00"
+      "last_checked": "2026-11-23T18:54:15.841276+00:00"
     },
     {
       "id": "royal_88",
@@ -2736,43 +2736,43 @@
       "initial_royaldigi_price": 12350000,
       "current_royaldigi_price": 18970000,
       "suggested_price": 11450000,
-      "torob_1": 11000000,
-      "torob_2": 11400000,
-      "torob_3": 11500000,
-      "torob_4": null,
-      "torob_5": null,
-      "torob_price": 11000000,
+      "torob_1": 12000000,
+      "torob_2": 12850000,
+      "torob_3": 18970000,
+      "torob_4": 19300000,
+      "torob_5": 27000000,
+      "torob_price": 12000000,
       "initial_torob_price": 11000000,
-      "current_torob_price": 11000000,
+      "current_torob_price": 12000000,
       "digikala_price": null,
       "initial_digikala_price": null,
       "current_digikala_price": null,
-      "market_avg_price": 11000000,
-      "top5_status": "higher_than_top_5",
-      "top3_status": "higher_than_top_5",
-      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+7,470,000 ت از رتبه 3 ترب (+65.0%)",
-      "top3_rank_label": "+7,470,000 ت از رتبه 3 ترب (+65.0%)",
-      "top5_explanation": "قیمت رویال 7,470,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 7,470,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "is_alert": true,
-      "alert_level": "danger",
-      "diff_from_target": 7470000,
+      "market_avg_price": 12000000,
+      "top5_status": "in_top_5",
+      "top3_status": "in_top_5",
+      "top5_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۳ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۳ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۳ ترب (رقابتی)).",
+      "is_alert": false,
+      "alert_level": "success",
+      "diff_from_target": 0,
       "royaldigi_url": "https://royaldigi.ir/product/irancell-tf-i60-e1/",
       "torob_url": "https://torob.com/p/25b12b35-275b-47fa-b248-69204f0de52f/",
       "digikala_url": "https://www.digikala.com/product/dkp-14966967/",
       "notes": "همه پلمپ و گارانتی ایرانسل",
       "item_val_royal": 37940000,
-      "item_val_market": 22000000,
+      "item_val_market": 24000000,
       "sparkline": [
         18640000,
         18640000,
         18640000,
-        18640000,
+        18970000,
         18970000
       ],
-      "last_checked": "2026-11-22T15:04:38.960131+00:00"
+      "last_checked": "2026-11-23T18:54:35.883956+00:00"
     },
     {
       "id": "royal_62",
@@ -2790,35 +2790,35 @@
       "initial_royaldigi_price": 11250000,
       "current_royaldigi_price": 7810000,
       "suggested_price": 7240000,
-      "torob_1": 6750000,
-      "torob_2": 7000000,
-      "torob_3": 7489000,
-      "torob_4": null,
-      "torob_5": null,
-      "torob_price": 6750000,
+      "torob_1": 4700000,
+      "torob_2": 7488000,
+      "torob_3": 7500000,
+      "torob_4": 14300000,
+      "torob_5": 15000000,
+      "torob_price": 4700000,
       "initial_torob_price": 6750000,
-      "current_torob_price": 6750000,
+      "current_torob_price": 4700000,
       "digikala_price": 13700000,
       "initial_digikala_price": 13700000,
       "current_digikala_price": 13700000,
-      "market_avg_price": 10225000,
-      "top5_status": "higher_than_top_5",
-      "top3_status": "higher_than_top_5",
-      "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+321,000 ت از رتبه 3 ترب (+4.3%)",
-      "top3_rank_label": "+321,000 ت از رتبه 3 ترب (+4.3%)",
-      "top5_explanation": "قیمت رویال 321,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 321,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "is_alert": true,
-      "alert_level": "danger",
-      "diff_from_target": 321000,
+      "market_avg_price": 9200000,
+      "top5_status": "in_top_5",
+      "top3_status": "in_top_5",
+      "top5_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top3_badge": "✓ رتبه ۴ ترب (رقابتی)",
+      "top5_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top3_rank_label": "رتبه ۴ ترب (رقابتی)",
+      "top5_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "top3_explanation": "قیمت رویال‌دیجی بین ۵ فروشنده اول ترب قرار دارد (رتبه ۴ ترب (رقابتی)).",
+      "is_alert": false,
+      "alert_level": "success",
+      "diff_from_target": 0,
       "royaldigi_url": "https://royaldigi.ir/product/d-link-dwr-m921/",
       "torob_url": "https://torob.com/p/ed50f1e4-14bb-4a4d-9f1d-2fbe950c1326/",
       "digikala_url": "https://www.digikala.com/product/dkp-3637226/",
       "notes": "استوک دبی هست ولی خودشون پلمپ کردن | سالم کابل و اینا داره ولی یکم کند هست",
       "item_val_royal": 15620000,
-      "item_val_market": 20450000,
+      "item_val_market": 18400000,
       "sparkline": [
         7810000,
         7810000,
@@ -2826,7 +2826,7 @@
         7810000,
         7810000
       ],
-      "last_checked": "2026-11-22T15:05:02.815870+00:00"
+      "last_checked": "2026-11-23T18:54:55.568541+00:00"
     },
     {
       "id": "royal_85",
@@ -2880,7 +2880,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:05:25.889400+00:00"
+      "last_checked": "2026-11-23T18:55:13.148671+00:00"
     },
     {
       "id": "royal_46",
@@ -2898,35 +2898,35 @@
       "initial_royaldigi_price": 11000000,
       "current_royaldigi_price": 14500000,
       "suggested_price": 10950000,
-      "torob_1": 7990000,
-      "torob_2": 9000000,
-      "torob_3": 10950000,
-      "torob_4": null,
-      "torob_5": null,
-      "torob_price": 7990000,
+      "torob_1": 4089000,
+      "torob_2": 4249000,
+      "torob_3": 4950000,
+      "torob_4": 5000000,
+      "torob_5": 5150000,
+      "torob_price": 4089000,
       "initial_torob_price": 7990000,
-      "current_torob_price": 7990000,
+      "current_torob_price": 4089000,
       "digikala_price": 9300000,
       "initial_digikala_price": 9300000,
       "current_digikala_price": 9300000,
-      "market_avg_price": 8645000,
+      "market_avg_price": 6694500,
       "top5_status": "higher_than_top_5",
       "top3_status": "higher_than_top_5",
       "top5_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
       "top3_badge": "❌ اخطار: گران‌تر از ۵ رتبه اول",
-      "top5_rank_label": "+3,550,000 ت از رتبه 3 ترب (+32.4%)",
-      "top3_rank_label": "+3,550,000 ت از رتبه 3 ترب (+32.4%)",
-      "top5_explanation": "قیمت رویال 3,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
-      "top3_explanation": "قیمت رویال 3,550,000 تومان از رتبه 3 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top5_rank_label": "+9,350,000 ت از رتبه 5 ترب (+181.6%)",
+      "top3_rank_label": "+9,350,000 ت از رتبه 5 ترب (+181.6%)",
+      "top5_explanation": "قیمت رویال 9,350,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
+      "top3_explanation": "قیمت رویال 9,350,000 تومان از رتبه 5 ترب بیشتر است و در ۵ نتیجه اول دیده نمی‌شوید.",
       "is_alert": true,
       "alert_level": "danger",
-      "diff_from_target": 3550000,
+      "diff_from_target": 9350000,
       "royaldigi_url": "https://royaldigi.ir/product/huawei-e5573-320/",
       "torob_url": "https://torob.com/search/?query=e5573%20%D9%85%D9%88%D8%AF%D9%85",
       "digikala_url": "https://www.digikala.com/product/dkp-18499582/",
       "notes": "اونی که باز شده mobile wifi هست و دوتا از آکبند ها mobile wifi هست و یکی همراه اول",
       "item_val_royal": 43500000,
-      "item_val_market": 25935000,
+      "item_val_market": 20083500,
       "sparkline": [
         14500000,
         14500000,
@@ -2934,7 +2934,7 @@
         14500000,
         14500000
       ],
-      "last_checked": "2026-11-22T15:05:48.427431+00:00"
+      "last_checked": "2026-11-23T18:55:33.021188+00:00"
     },
     {
       "id": "royal_87",
@@ -2988,7 +2988,7 @@
         9890000,
         9890000
       ],
-      "last_checked": "2026-11-22T15:06:08.736412+00:00"
+      "last_checked": "2026-11-23T18:55:52.115375+00:00"
     },
     {
       "id": "royal_80",
@@ -3042,7 +3042,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:06:35.234720+00:00"
+      "last_checked": "2026-11-23T18:56:14.157238+00:00"
     },
     {
       "id": "royal_81",
@@ -3096,7 +3096,7 @@
         4500000,
         4500000
       ],
-      "last_checked": "2026-11-22T15:06:39.606193+00:00"
+      "last_checked": "2026-11-23T18:56:18.240560+00:00"
     },
     {
       "id": "royal_73",
@@ -3150,7 +3150,7 @@
         6337500,
         6337500
       ],
-      "last_checked": "2026-11-22T15:06:58.766845+00:00"
+      "last_checked": "2026-11-23T18:56:36.552981+00:00"
     },
     {
       "id": "royal_34",
@@ -3204,7 +3204,7 @@
         6460000,
         6460000
       ],
-      "last_checked": "2026-11-22T15:07:25.533381+00:00"
+      "last_checked": "2026-11-23T18:57:02.835522+00:00"
     },
     {
       "id": "royal_71",
@@ -3258,7 +3258,7 @@
         8500000,
         8500000
       ],
-      "last_checked": "2026-11-22T15:07:48.735705+00:00"
+      "last_checked": "2026-11-23T18:57:23.594475+00:00"
     },
     {
       "id": "royal_55",
@@ -3309,10 +3309,10 @@
         5570000,
         5570000,
         5570000,
-        5570000,
+        5440000,
         5440000
       ],
-      "last_checked": "2026-11-22T15:08:12.331194+00:00"
+      "last_checked": "2026-11-23T18:57:45.936729+00:00"
     },
     {
       "id": "royal_75",
@@ -3366,7 +3366,7 @@
         14787500,
         14787500
       ],
-      "last_checked": "2026-11-22T15:08:38.247399+00:00"
+      "last_checked": "2026-11-23T18:58:08.547514+00:00"
     },
     {
       "id": "royal_26",
@@ -3417,10 +3417,10 @@
         5820000,
         5820000,
         5820000,
-        5820000,
+        5850000,
         5850000
       ],
-      "last_checked": "2026-11-22T15:09:00.776115+00:00"
+      "last_checked": "2026-11-23T18:58:30.613527+00:00"
     },
     {
       "id": "royal_86",
@@ -3474,7 +3474,7 @@
         2300000,
         2300000
       ],
-      "last_checked": "2026-11-22T15:09:26.694259+00:00"
+      "last_checked": "2026-11-23T18:58:52.162685+00:00"
     },
     {
       "id": "royal_37",
@@ -3528,7 +3528,7 @@
         15259500,
         15259500
       ],
-      "last_checked": "2026-11-22T15:09:51.296670+00:00"
+      "last_checked": "2026-11-23T18:59:14.252572+00:00"
     },
     {
       "id": "royal_74",
@@ -3582,7 +3582,7 @@
         3980000,
         3980000
       ],
-      "last_checked": "2026-11-22T15:10:00.466870+00:00"
+      "last_checked": "2026-11-23T18:59:22.462495+00:00"
     },
     {
       "id": "royal_79",
@@ -3636,7 +3636,7 @@
         3743430,
         3743430
       ],
-      "last_checked": "2026-11-22T15:10:25.646696+00:00"
+      "last_checked": "2026-11-23T18:59:45.342807+00:00"
     },
     {
       "id": "royal_89",
@@ -3690,7 +3690,7 @@
         10000000,
         10000000
       ],
-      "last_checked": "2026-11-22T15:10:52.219088+00:00"
+      "last_checked": "2026-11-23T19:00:11.259691+00:00"
     },
     {
       "id": "royal_58",
@@ -3744,7 +3744,7 @@
         11550000,
         11550000
       ],
-      "last_checked": "2026-11-22T15:11:15.741905+00:00"
+      "last_checked": "2026-11-23T19:00:33.884315+00:00"
     },
     {
       "id": "royal_72",
@@ -3798,7 +3798,7 @@
         6388950,
         6388950
       ],
-      "last_checked": "2026-11-22T15:11:40.947987+00:00"
+      "last_checked": "2026-11-23T19:00:55.351513+00:00"
     },
     {
       "id": "royal_78",
@@ -3852,7 +3852,7 @@
         11000000,
         11000000
       ],
-      "last_checked": "2026-11-22T15:12:08.823239+00:00"
+      "last_checked": "2026-11-23T19:01:18.040368+00:00"
     },
     {
       "id": "royal_66",
@@ -3906,7 +3906,7 @@
         4497000,
         4497000
       ],
-      "last_checked": "2026-11-22T15:12:33.863505+00:00"
+      "last_checked": "2026-11-23T19:01:42.533400+00:00"
     },
     {
       "id": "royal_98",
@@ -3960,7 +3960,7 @@
         5010000,
         5010000
       ],
-      "last_checked": "2026-11-22T15:12:57.425432+00:00"
+      "last_checked": "2026-11-23T19:02:05.657023+00:00"
     },
     {
       "id": "royal_91",
@@ -4014,7 +4014,7 @@
         23450000,
         23450000
       ],
-      "last_checked": "2026-11-22T15:13:22.767220+00:00"
+      "last_checked": "2026-11-23T19:02:28.974680+00:00"
     },
     {
       "id": "royal_90",
@@ -4068,7 +4068,7 @@
         32850000,
         32850000
       ],
-      "last_checked": "2026-11-22T15:13:35.989115+00:00"
+      "last_checked": "2026-11-23T19:02:40.302576+00:00"
     },
     {
       "id": "royal_124",
@@ -4119,10 +4119,10 @@
         12770000,
         12770000,
         12770000,
-        12770000,
+        13170000,
         13170000
       ],
-      "last_checked": "2026-11-22T15:13:49.182008+00:00"
+      "last_checked": "2026-11-23T19:02:51.066572+00:00"
     },
     {
       "id": "royal_94",
@@ -4173,10 +4173,10 @@
         12030000,
         12030000,
         12030000,
-        12030000,
+        12000000,
         12000000
       ],
-      "last_checked": "2026-11-22T15:14:11.990501+00:00"
+      "last_checked": "2026-11-23T19:03:15.171110+00:00"
     },
     {
       "id": "royal_69",
@@ -4227,10 +4227,10 @@
         4430000,
         4430000,
         4430000,
-        4430000,
+        6250000,
         6250000
       ],
-      "last_checked": "2026-11-22T15:14:36.813980+00:00"
+      "last_checked": "2026-11-23T19:03:37.856182+00:00"
     },
     {
       "id": "royal_102",
@@ -4281,10 +4281,10 @@
         15394000,
         15394000,
         15394000,
-        15394000,
+        15345000,
         15345000
       ],
-      "last_checked": "2026-11-22T15:15:03.489184+00:00"
+      "last_checked": "2026-11-23T19:04:01.087075+00:00"
     },
     {
       "id": "royal_105",
@@ -4338,7 +4338,7 @@
         8099000,
         8099000
       ],
-      "last_checked": "2026-11-22T15:15:29.394594+00:00"
+      "last_checked": "2026-11-23T19:04:24.956071+00:00"
     },
     {
       "id": "royal_97",
@@ -4389,10 +4389,10 @@
         7050000,
         7050000,
         7050000,
-        7050000,
+        7090000,
         7090000
       ],
-      "last_checked": "2026-11-22T15:15:54.423389+00:00"
+      "last_checked": "2026-11-23T19:04:46.898172+00:00"
     },
     {
       "id": "royal_131",
@@ -4443,10 +4443,10 @@
         25450000,
         25450000,
         25450000,
-        25450000,
+        25670000,
         25670000
       ],
-      "last_checked": "2026-11-22T15:16:24.917241+00:00"
+      "last_checked": "2026-11-23T19:05:09.483732+00:00"
     },
     {
       "id": "royal_92",
@@ -4497,10 +4497,10 @@
         2760000,
         2760000,
         2760000,
-        2760000,
+        2920000,
         2920000
       ],
-      "last_checked": "2026-11-22T15:16:55.022359+00:00"
+      "last_checked": "2026-11-23T19:05:31.420090+00:00"
     },
     {
       "id": "royal_125",
@@ -4551,10 +4551,10 @@
         6320000,
         6320000,
         6320000,
-        6320000,
+        6980000,
         6980000
       ],
-      "last_checked": "2026-11-22T15:17:08.353931+00:00"
+      "last_checked": "2026-11-23T19:05:42.782942+00:00"
     },
     {
       "id": "royal_117",
@@ -4608,7 +4608,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:17:31.950582+00:00"
+      "last_checked": "2026-11-23T19:06:02.936544+00:00"
     },
     {
       "id": "royal_113",
@@ -4662,7 +4662,7 @@
         6150000,
         6150000
       ],
-      "last_checked": "2026-11-22T15:17:57.501118+00:00"
+      "last_checked": "2026-11-23T19:06:22.362883+00:00"
     },
     {
       "id": "royal_126",
@@ -4716,7 +4716,7 @@
         7040000,
         7040000
       ],
-      "last_checked": "2026-11-22T15:18:21.966510+00:00"
+      "last_checked": "2026-11-23T19:06:46.386702+00:00"
     },
     {
       "id": "royal_48",
@@ -4770,7 +4770,7 @@
         9000000,
         9000000
       ],
-      "last_checked": "2026-11-22T15:18:49.243560+00:00"
+      "last_checked": "2026-11-23T19:07:09.604557+00:00"
     },
     {
       "id": "royal_50",
@@ -4824,7 +4824,7 @@
         9000000,
         9000000
       ],
-      "last_checked": "2026-11-22T15:19:15.497233+00:00"
+      "last_checked": "2026-11-23T19:07:32.622555+00:00"
     },
     {
       "id": "royal_54",
@@ -4875,10 +4875,10 @@
         5570000,
         5570000,
         5570000,
-        5570000,
+        5440000,
         5440000
       ],
-      "last_checked": "2026-11-22T15:19:40.277923+00:00"
+      "last_checked": "2026-11-23T19:07:52.669757+00:00"
     },
     {
       "id": "royal_83",
@@ -4929,10 +4929,10 @@
         3770000,
         3770000,
         3770000,
-        3770000,
+        4000000,
         4000000
       ],
-      "last_checked": "2026-11-22T15:20:04.998681+00:00"
+      "last_checked": "2026-11-23T19:08:15.782355+00:00"
     },
     {
       "id": "royal_96",
@@ -4986,7 +4986,7 @@
         7990000,
         7990000
       ],
-      "last_checked": "2026-11-22T15:20:31.300752+00:00"
+      "last_checked": "2026-11-23T19:08:38.824027+00:00"
     },
     {
       "id": "royal_132",
@@ -5036,11 +5036,11 @@
       "sparkline": [
         5888500,
         5888500,
-        5888500,
         5800000,
+        5888500,
         5888500
       ],
-      "last_checked": "2026-11-22T15:20:55.602007+00:00"
+      "last_checked": "2026-11-23T19:09:01.458531+00:00"
     },
     {
       "id": "royal_109",
@@ -5094,7 +5094,7 @@
         28920000,
         28920000
       ],
-      "last_checked": "2026-11-22T15:21:21.047979+00:00"
+      "last_checked": "2026-11-23T19:09:22.057060+00:00"
     },
     {
       "id": "royal_121",
@@ -5145,10 +5145,10 @@
         5820000,
         5820000,
         5820000,
-        5820000,
+        5850000,
         5850000
       ],
-      "last_checked": "2026-11-22T15:21:45.109379+00:00"
+      "last_checked": "2026-11-23T19:09:45.803986+00:00"
     },
     {
       "id": "royal_57",
@@ -5202,7 +5202,7 @@
         11550000,
         11550000
       ],
-      "last_checked": "2026-11-22T15:22:08.611318+00:00"
+      "last_checked": "2026-11-23T19:10:06.487464+00:00"
     },
     {
       "id": "royal_45",
@@ -5256,7 +5256,7 @@
         14500000,
         14500000
       ],
-      "last_checked": "2026-11-22T15:22:33.456708+00:00"
+      "last_checked": "2026-11-23T19:10:28.592046+00:00"
     },
     {
       "id": "royal_65",
@@ -5310,7 +5310,7 @@
         4497000,
         4497000
       ],
-      "last_checked": "2026-11-22T15:22:59.071035+00:00"
+      "last_checked": "2026-11-23T19:10:48.919663+00:00"
     },
     {
       "id": "royal_130",
@@ -5364,7 +5364,7 @@
         3580000,
         3580000
       ],
-      "last_checked": "2026-11-22T15:23:24.287012+00:00"
+      "last_checked": "2026-11-23T19:11:10.088843+00:00"
     },
     {
       "id": "royal_33",
@@ -5418,7 +5418,7 @@
         3050000,
         3050000
       ],
-      "last_checked": "2026-11-22T15:23:51.119501+00:00"
+      "last_checked": "2026-11-23T19:11:33.112990+00:00"
     },
     {
       "id": "royal_133",
@@ -5472,7 +5472,7 @@
         32850000,
         32850000
       ],
-      "last_checked": "2026-11-22T15:24:06.603761+00:00"
+      "last_checked": "2026-11-23T19:11:44.001101+00:00"
     },
     {
       "id": "royal_17",
@@ -5526,7 +5526,7 @@
         13070000,
         13070000
       ],
-      "last_checked": "2026-11-22T15:24:20.162026+00:00"
+      "last_checked": "2026-11-23T19:11:55.241682+00:00"
     },
     {
       "id": "royal_70",
@@ -5577,10 +5577,10 @@
         4430000,
         4430000,
         4430000,
-        4430000,
+        6250000,
         6250000
       ],
-      "last_checked": "2026-11-22T15:24:45.335942+00:00"
+      "last_checked": "2026-11-23T19:12:18.685756+00:00"
     },
     {
       "id": "royal_93",
@@ -5634,7 +5634,7 @@
         4650000,
         4650000
       ],
-      "last_checked": "2026-11-22T15:25:09.256410+00:00"
+      "last_checked": "2026-11-23T19:12:39.527945+00:00"
     },
     {
       "id": "royal_100",
@@ -5688,7 +5688,7 @@
         9200000,
         9200000
       ],
-      "last_checked": "2026-11-22T15:25:31.259035+00:00"
+      "last_checked": "2026-11-23T19:13:00.789646+00:00"
     },
     {
       "id": "royal_114",
@@ -5742,7 +5742,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:25:55.458380+00:00"
+      "last_checked": "2026-11-23T19:13:22.499119+00:00"
     },
     {
       "id": "royal_120",
@@ -5796,7 +5796,7 @@
         12275000,
         12275000
       ],
-      "last_checked": "2026-11-22T15:26:20.364322+00:00"
+      "last_checked": "2026-11-23T19:13:45.177733+00:00"
     },
     {
       "id": "royal_129",
@@ -5850,7 +5850,7 @@
         2250000,
         2250000
       ],
-      "last_checked": "2026-11-22T15:26:44.653796+00:00"
+      "last_checked": "2026-11-23T19:14:04.900344+00:00"
     },
     {
       "id": "royal_95",
@@ -5904,7 +5904,7 @@
         3580000,
         3580000
       ],
-      "last_checked": "2026-11-22T15:27:03.714048+00:00"
+      "last_checked": "2026-11-23T19:14:24.594576+00:00"
     },
     {
       "id": "royal_101",
@@ -5958,7 +5958,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:27:27.817681+00:00"
+      "last_checked": "2026-11-23T19:14:47.101282+00:00"
     },
     {
       "id": "royal_127",
@@ -6012,7 +6012,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:27:53.488377+00:00"
+      "last_checked": "2026-11-23T19:15:13.991130+00:00"
     },
     {
       "id": "royal_110",
@@ -6066,7 +6066,7 @@
         6900000,
         6900000
       ],
-      "last_checked": "2026-11-22T15:28:17.936300+00:00"
+      "last_checked": "2026-11-23T19:15:37.135110+00:00"
     },
     {
       "id": "royal_128",
@@ -6120,7 +6120,7 @@
         10000000,
         10000000
       ],
-      "last_checked": "2026-11-22T15:28:40.433188+00:00"
+      "last_checked": "2026-11-23T19:15:58.214437+00:00"
     },
     {
       "id": "royal_111",
@@ -6174,7 +6174,7 @@
         8900000,
         8900000
       ],
-      "last_checked": "2026-11-22T15:29:05.466581+00:00"
+      "last_checked": "2026-11-23T19:16:21.504248+00:00"
     },
     {
       "id": "royal_84",
@@ -6225,10 +6225,10 @@
         3770000,
         3770000,
         3770000,
-        3770000,
+        4000000,
         4000000
       ],
-      "last_checked": "2026-11-22T15:29:28.656588+00:00"
+      "last_checked": "2026-11-23T19:16:41.750051+00:00"
     },
     {
       "id": "royal_112",
@@ -6282,7 +6282,7 @@
         4400000,
         4400000
       ],
-      "last_checked": "2026-11-22T15:29:52.460298+00:00"
+      "last_checked": "2026-11-23T19:17:03.359220+00:00"
     },
     {
       "id": "royal_106",
@@ -6336,7 +6336,7 @@
         5248000,
         5248000
       ],
-      "last_checked": "2026-11-22T15:30:16.656996+00:00"
+      "last_checked": "2026-11-23T19:17:26.235944+00:00"
     },
     {
       "id": "royal_63",
@@ -6390,7 +6390,7 @@
         7810000,
         7810000
       ],
-      "last_checked": "2026-11-22T15:30:41.271233+00:00"
+      "last_checked": "2026-11-23T19:17:47.335867+00:00"
     },
     {
       "id": "royal_122",
@@ -6444,7 +6444,7 @@
         5950000,
         5950000
       ],
-      "last_checked": "2026-11-22T15:31:09.574910+00:00"
+      "last_checked": "2026-11-23T19:18:10.876716+00:00"
     },
     {
       "id": "royal_116",
@@ -6498,7 +6498,7 @@
         8350000,
         8350000
       ],
-      "last_checked": "2026-11-22T15:31:33.711663+00:00"
+      "last_checked": "2026-11-23T19:18:31.927892+00:00"
     },
     {
       "id": "royal_35",
@@ -6552,7 +6552,7 @@
         15150000,
         15150000
       ],
-      "last_checked": "2026-11-22T15:31:48.438600+00:00"
+      "last_checked": "2026-11-23T19:18:42.816418+00:00"
     },
     {
       "id": "royal_115",
@@ -6606,7 +6606,7 @@
         13850000,
         13850000
       ],
-      "last_checked": "2026-11-22T15:32:13.546414+00:00"
+      "last_checked": "2026-11-23T19:19:06.496781+00:00"
     },
     {
       "id": "royal_53",
@@ -6660,7 +6660,7 @@
         7550000,
         7550000
       ],
-      "last_checked": "2026-11-22T15:32:26.845222+00:00"
+      "last_checked": "2026-11-23T19:19:19.494277+00:00"
     },
     {
       "id": "royal_123",
@@ -6714,7 +6714,7 @@
         13000000,
         13000000
       ],
-      "last_checked": "2026-11-22T15:32:48.844127+00:00"
+      "last_checked": "2026-11-23T19:19:38.604159+00:00"
     },
     {
       "id": "royal_103",
@@ -6768,7 +6768,7 @@
         15150000,
         15150000
       ],
-      "last_checked": "2026-11-22T15:33:14.344272+00:00"
+      "last_checked": "2026-11-23T19:19:59.620742+00:00"
     },
     {
       "id": "royal_107",
@@ -6822,7 +6822,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:33:38.022143+00:00"
+      "last_checked": "2026-11-23T19:20:23.267926+00:00"
     },
     {
       "id": "royal_47",
@@ -6876,7 +6876,7 @@
         14500000,
         14500000
       ],
-      "last_checked": "2026-11-22T15:34:02.702186+00:00"
+      "last_checked": "2026-11-23T19:20:50.500238+00:00"
     },
     {
       "id": "royal_108",
@@ -6930,7 +6930,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:34:26.501968+00:00"
+      "last_checked": "2026-11-23T19:21:11.002914+00:00"
     },
     {
       "id": "royal_118",
@@ -6984,7 +6984,7 @@
         6690000,
         6690000
       ],
-      "last_checked": "2026-11-22T15:34:50.574586+00:00"
+      "last_checked": "2026-11-23T19:21:34.060331+00:00"
     },
     {
       "id": "royal_119",
@@ -7038,7 +7038,7 @@
         9000000,
         9000000
       ],
-      "last_checked": "2026-11-22T15:35:12.805631+00:00"
+      "last_checked": "2026-11-23T19:21:58.146161+00:00"
     },
     {
       "id": "royal_99",
@@ -7092,7 +7092,7 @@
         9945000,
         9945000
       ],
-      "last_checked": "2026-11-22T15:35:37.988391+00:00"
+      "last_checked": "2026-11-23T19:22:20.102347+00:00"
     },
     {
       "id": "royal_29",
@@ -7146,7 +7146,7 @@
         7539000,
         7539000
       ],
-      "last_checked": "2026-11-22T15:36:03.046042+00:00"
+      "last_checked": "2026-11-23T19:22:41.201820+00:00"
     },
     {
       "id": "royal_104",
@@ -7200,7 +7200,7 @@
         19000000,
         19000000
       ],
-      "last_checked": "2026-11-22T15:36:30.127954+00:00"
+      "last_checked": "2026-11-23T19:23:04.419261+00:00"
     },
     {
       "id": "royal_134",
@@ -7254,7 +7254,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:36:53.038872+00:00"
+      "last_checked": "2026-11-23T19:23:23.031830+00:00"
     },
     {
       "id": "royal_135",
@@ -7308,7 +7308,7 @@
         5280800,
         5280800
       ],
-      "last_checked": "2026-11-22T15:37:09.309804+00:00"
+      "last_checked": "2026-11-23T19:23:35.962091+00:00"
     },
     {
       "id": "royal_136",
@@ -7362,7 +7362,7 @@
         6500000,
         6500000
       ],
-      "last_checked": "2026-11-22T15:37:22.616038+00:00"
+      "last_checked": "2026-11-23T19:23:47.970663+00:00"
     },
     {
       "id": "royal_137",
@@ -7416,7 +7416,7 @@
         9250000,
         9250000
       ],
-      "last_checked": "2026-11-22T15:37:36.339280+00:00"
+      "last_checked": "2026-11-23T19:24:00.460060+00:00"
     },
     {
       "id": "royal_138",
@@ -7470,7 +7470,7 @@
         12000000,
         12000000
       ],
-      "last_checked": "2026-11-22T15:37:49.496146+00:00"
+      "last_checked": "2026-11-23T19:24:12.003192+00:00"
     },
     {
       "id": "royal_139",
@@ -7524,7 +7524,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:38:02.614616+00:00"
+      "last_checked": "2026-11-23T19:24:23.605508+00:00"
     },
     {
       "id": "royal_140",
@@ -7578,7 +7578,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:38:06.169458+00:00"
+      "last_checked": "2026-11-23T19:24:28.023326+00:00"
     },
     {
       "id": "royal_141",
@@ -7632,7 +7632,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:38:20.122897+00:00"
+      "last_checked": "2026-11-23T19:24:39.592875+00:00"
     },
     {
       "id": "royal_142",
@@ -7686,7 +7686,7 @@
         3000000,
         3000000
       ],
-      "last_checked": "2026-11-22T15:38:33.999339+00:00"
+      "last_checked": "2026-11-23T19:24:50.183564+00:00"
     },
     {
       "id": "royal_143",
@@ -7740,7 +7740,7 @@
         3050000,
         3050000
       ],
-      "last_checked": "2026-11-22T15:38:46.487657+00:00"
+      "last_checked": "2026-11-23T19:25:01.184912+00:00"
     },
     {
       "id": "royal_144",
@@ -7794,7 +7794,7 @@
         9350000,
         9350000
       ],
-      "last_checked": "2026-11-22T15:38:59.424683+00:00"
+      "last_checked": "2026-11-23T19:25:12.393438+00:00"
     },
     {
       "id": "royal_145",
@@ -7848,7 +7848,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:39:07.287956+00:00"
+      "last_checked": "2026-11-23T19:25:19.985114+00:00"
     },
     {
       "id": "royal_146",
@@ -7902,7 +7902,7 @@
         1344500,
         1344500
       ],
-      "last_checked": "2026-11-22T15:39:16.831984+00:00"
+      "last_checked": "2026-11-23T19:25:28.430137+00:00"
     },
     {
       "id": "royal_147",
@@ -7956,7 +7956,7 @@
         2350000,
         2350000
       ],
-      "last_checked": "2026-11-22T15:39:29.903413+00:00"
+      "last_checked": "2026-11-23T19:25:39.820864+00:00"
     },
     {
       "id": "royal_148",
@@ -8010,7 +8010,7 @@
         5708500,
         5708500
       ],
-      "last_checked": "2026-11-22T15:39:38.829212+00:00"
+      "last_checked": "2026-11-23T19:25:48.243627+00:00"
     },
     {
       "id": "royal_149",
@@ -8064,7 +8064,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:39:51.532510+00:00"
+      "last_checked": "2026-11-23T19:25:59.103731+00:00"
     },
     {
       "id": "royal_150",
@@ -8118,7 +8118,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:40:00.276544+00:00"
+      "last_checked": "2026-11-23T19:26:07.007248+00:00"
     },
     {
       "id": "royal_151",
@@ -8172,7 +8172,7 @@
         5950000,
         5950000
       ],
-      "last_checked": "2026-11-22T15:40:13.478050+00:00"
+      "last_checked": "2026-11-23T19:26:18.567278+00:00"
     },
     {
       "id": "royal_152",
@@ -8226,7 +8226,7 @@
         6312500,
         6312500
       ],
-      "last_checked": "2026-11-22T15:40:26.722922+00:00"
+      "last_checked": "2026-11-23T19:26:31.410474+00:00"
     },
     {
       "id": "royal_153",
@@ -8280,7 +8280,7 @@
         28493600,
         28493600
       ],
-      "last_checked": "2026-11-22T15:40:41.357291+00:00"
+      "last_checked": "2026-11-23T19:26:43.515310+00:00"
     },
     {
       "id": "royal_157",
@@ -8334,7 +8334,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:40:55.562661+00:00"
+      "last_checked": "2026-11-23T19:26:55.698432+00:00"
     },
     {
       "id": "royal_167",
@@ -8388,7 +8388,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:41:09.325364+00:00"
+      "last_checked": "2026-11-23T19:27:06.248071+00:00"
     },
     {
       "id": "royal_210",
@@ -8442,7 +8442,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:41:23.794571+00:00"
+      "last_checked": "2026-11-23T19:27:18.720984+00:00"
     },
     {
       "id": "royal_185",
@@ -8496,7 +8496,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:41:38.003183+00:00"
+      "last_checked": "2026-11-23T19:27:29.657263+00:00"
     },
     {
       "id": "royal_211",
@@ -8550,7 +8550,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:41:51.053395+00:00"
+      "last_checked": "2026-11-23T19:27:40.925865+00:00"
     },
     {
       "id": "royal_155",
@@ -8604,7 +8604,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:42:04.469401+00:00"
+      "last_checked": "2026-11-23T19:27:54.282962+00:00"
     },
     {
       "id": "royal_183",
@@ -8658,7 +8658,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:42:18.061057+00:00"
+      "last_checked": "2026-11-23T19:28:04.873745+00:00"
     },
     {
       "id": "royal_198",
@@ -8712,7 +8712,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:42:31.291157+00:00"
+      "last_checked": "2026-11-23T19:28:16.044829+00:00"
     },
     {
       "id": "royal_175",
@@ -8766,7 +8766,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:42:43.396288+00:00"
+      "last_checked": "2026-11-23T19:28:27.552814+00:00"
     },
     {
       "id": "royal_204",
@@ -8820,7 +8820,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:42:57.734090+00:00"
+      "last_checked": "2026-11-23T19:28:41.392006+00:00"
     },
     {
       "id": "royal_186",
@@ -8874,7 +8874,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:43:07.713044+00:00"
+      "last_checked": "2026-11-23T19:28:50.775915+00:00"
     },
     {
       "id": "royal_201",
@@ -8928,7 +8928,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:43:26.886249+00:00"
+      "last_checked": "2026-11-23T19:29:02.166485+00:00"
     },
     {
       "id": "royal_195",
@@ -8982,7 +8982,7 @@
         1000000,
         1000000
       ],
-      "last_checked": "2026-11-22T15:43:40.522004+00:00"
+      "last_checked": "2026-11-23T19:29:13.317594+00:00"
     }
   ]
 }
